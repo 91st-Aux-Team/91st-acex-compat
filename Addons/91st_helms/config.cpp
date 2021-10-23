@@ -20,14 +20,14 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 91st_Recruit_Helmet_JLTS
+        class Infrnakhelms
         {
             label="Rank Helmets";
             author="Chopper";
             options[]={"Rankhelms"};
             class Rankhelms
             {
-                labels="Officer Vests";
+                labels="Infantry Rank Helmets";
                 values[]=
                 {
                     "CR",
@@ -39,7 +39,7 @@ class XtdGearModels
                     "CLC",
                     "CP",
                     "CS",
-                    "CSS",
+                    //"CSS",
                     "CFS",
                     "CL",
                     "CC",
@@ -123,98 +123,225 @@ class XtdGearModels
                 };
             };
         };
-        class 91st_CXO_Helmet
+        class Pilotrankshelmets
         {
+            label="Pilot Rank Helmets";
+            author="Chopper";
+            options[]={"Pilotranks"};
             class Pilotranks
             {
-                label="Rank Helmets";
-                author="Chopper";
-                options[]={"PilotRankhelms"};
-                class PilotRankhelms
+                labels="Pilot Rank Helmets";
+                values[]=
                 {
-                    labels="Pilot Rank Helms";
-                    values[]=
-                    {
-                        "CXC",
-                        "CX",
-                        "CXX",
-                        "CXP",
-                        "CXS",
-                        "CXO",
-                        "CXW"
-                    };
-                    class CXC
-                    {
-                        label="CXC";
-                    };
-                    class CX
-                    {
-                        label="CX";
-                    };
-                    class CXX
-                    {
-                        label="CXX";
-                    };
-                    class CXP
-                    {
-                        label="CXP";
-                    };
-                    class CXS
-                    {
-                        label="CXS";
-                    };
-                    class CXO
-                    {
-                        label="CXO";
-                    };
-                    class CXW
-                    {
-                        label="CXW";
-                    };
+                    "CXC",
+                    "CX",
+                    "CXX",
+                    "CXP",
+                    "CXS",
+                    "CXO",
+                    "CXW"
+                };
+                class CXC
+                {
+                    label="CXC";
+                };
+                class CX
+                {
+                    label="CX";
+                };
+                class CXX
+                {
+                    label="CXX";
+                };
+                class CXP
+                {
+                    label="CXP";
+                };
+                class CXS
+                {
+                    label="CXS";
+                };
+                class CXO
+                {
+                    label="CXO";
+                };
+                class CXW
+                {
+                    label="CXW";
                 };
             };
         };
-        /*class
+        class PilotCustomshelmets
         {
-            class Pilotcustoms
+            label="Pilot Custom Helmets";
+            author="Chopper";
+            options[]={"PilotCustoms"};
+            class PilotCustoms
             {
-                label="Rank Helmets";
-                author="Chopper";
-                options[]={"Rankhelms"};
-                class Rankhelms
+                labels="Pilot Custom Helmets";
+                values[]=
                 {
-                    labels="Officer Vests";
-                    values[]=
-                    {
-                        "CR",
-                        "CRC",
-                        "CT",
-                        "SCT",
-                        "VCT",
-                        "CSP",
-                        "CLC",
-                        "CS",
-                        "CSS",
-                        "CFS",
-                        "CL",
-                        "CC",
-                        "WO1",
-                        "WO2",
-                        "WO3",
-                        "WO4",
-                        "WO5"
-                    };
-                    class CR
-                    {
-                        label="CR";
-                    };
-                    class CRC
-                    {
-                        label="CR-C";
-                    };
-                    class CT
+                    "Frog",
+                    "Hex",
+                    "Chopper",
+                    "Delta",
+                    "Bensen",
+                    "Pole",
+                    "Squids"
+                };
+                class Frog
+                {
+                    label="Frog";
+                };
+                class Hex
+                {
+                    label="Hex";
+                };
+                class Chopper
+                {
+                    label="Chopper";
+                };
+                class Delta
+                {
+                    label="Delta";
+                };
+                class Bensen
+                {
+                    label="Bensen";
+                };
+                class Pole
+                {
+                    label="Pole";
+                };
+                class Squids
+                {
+                    label="Squids";
+                };
             };
-        };*/
+            
+        };
+        class Archelmets
+        {
+            label="ARC Helmets";
+            author="Chopper";
+            options[]={"Archelms"};
+            class Archelms
+            {
+                labels="ARC Helmets";
+                values[]=
+                {
+                    "Tallyrand",
+                    "Caber",
+                    "Corn",
+                    "Roach",
+                    "Bacon",
+                    "Skittles",
+                    "Arcanist",
+                    "Nova",
+                    "Galahad",
+                    "Loken",
+                    "Scorch"
+                };
+                class Tallyrand
+                {
+                    label="Tallyrand";
+                };
+                class Caber
+                {
+                    label="Caber";
+                };
+                class Corn
+                {
+                    label="Corn";
+                };
+                class Roach
+                {
+                    label="Roach";
+                };
+                class Bacon
+                {
+                    label="Bacon";
+                };
+                class Skittles
+                {
+                    label="Skittles";
+                };
+                class Arcanist
+                {
+                    label="Arcanist";
+                };
+                class Nova
+                {
+                    label="Nova";
+                };
+                class Galahad
+                {
+                    label="Galahad";
+                };
+                class Loken
+                {
+                    label="Loken";
+                };
+                class Scorch
+                {
+                    label="Scorch";
+                };
+                
+            };
+        };
+        class Beskarhelmets
+        {
+            label="Beskar Helmets";
+            author="Chopper";
+            options[]={"Beskarhelms"};
+            class Beskarhelms
+            {
+                labels="Beskar Helmets";
+                values[]=
+                {
+                    "Base",
+                    "Kuro",
+                    "Toxic",
+                    "Fly",
+                    "Sentinel",
+                    "Max",
+                    "Zerda",
+                    "Crash"
+                };
+                class Base
+                {
+                    label="Base";
+                };
+                class Kuro
+                {
+                    label="Kuro";
+                };
+                class Toxic
+                {
+                    label="Toxic";
+                };
+                class Fly
+                {
+                    label="Fly";
+                };
+                class Sentinel
+                {
+                    label="Sentinel";
+                };
+                class Max
+                {
+                    label="Max";
+                };
+                class Zerda
+                {
+                    label="Zerda";
+                };
+                class Crash
+                {
+                    label="Crash";
+                };
+            };
+        };
     };
 };
 class CfgWeapons
@@ -228,11 +355,13 @@ class CfgWeapons
 	class JLTS_CloneHelmetARC;
 	class JLTS_CloneHelmetBARC;
 	class 212th_ATRT_helmet;
+    class JLTS_CloneHelmetARC_illum;
+    //Inf Ranks
     class 91st_Recruit_Helmet_JLTS: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CR";
         };
     };
@@ -240,7 +369,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CRC";
         };
     };
@@ -248,7 +377,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CT";
         };
     };
@@ -256,7 +385,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="SCT";
         };
     };
@@ -264,7 +393,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="VCT";
         };
     };
@@ -272,7 +401,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CSP";
         };
     };
@@ -280,7 +409,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CLC";
         };
     };
@@ -288,7 +417,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CP";
         };
     };
@@ -296,7 +425,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CS";
         };
     };
@@ -304,7 +433,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CFS";
         };
     };
@@ -312,7 +441,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CSM";
         };
     };
@@ -320,7 +449,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CL";
         };
     };
@@ -328,7 +457,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="CC";
         };
     };
@@ -336,7 +465,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="WO1";
         };
     };
@@ -344,7 +473,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="WO2";
         };
     };
@@ -352,7 +481,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="WO3";
         };
     };
@@ -360,7 +489,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="WO4";
         };
     };
@@ -368,64 +497,280 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
+            model="Infrnakhelms";
             Rankhelms="WO5";
         };
     };
+
+    //Pilot Ranks
     class 91st_CXO_Helmet: 212th_Pilot_Helmet_91st
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
-            PilotRankhelms="CXO";
+            model="Pilotrankshelmets";
+            Pilotranks="CXO";
         };
     };
     class 91st_CXS_Helmet: 212th_Pilot_Helmet_91st
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
-            PilotRankhelms="CXS";
+            model="Pilotrankshelmets";
+            Pilotranks="CXS";
         };
     };
     class 91st_CXP_Helmet: 212th_Pilot_Helmet_91st
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
-            PilotRankhelms="CXP";
+            model="Pilotrankshelmets";
+            Pilotranks="CXP";
         };
     };
     class 91st_CXX_Helmet: 212th_Pilot_Helmet_91st
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
-            PilotRankhelms="CXX";
+            model="Pilotrankshelmets";
+            Pilotranks="CXX";
         };
     };
     class 91st_CX_Helmet: 212th_Pilot_Helmet_91st
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
-            PilotRankhelms="CX";
+            model="Pilotrankshelmets";
+            Pilotranks="CX";
         };
     };
     class 91st_CXC_Helmet: 212th_Pilot_Helmet_91st
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
-            PilotRankhelms="CXC";
+            model="Pilotrankshelmets";
+            Pilotranks="CXC";
         };
     };
     class 91st_CXW_Helmet: 212th_Pilot_Helmet_91st
     {
         class XtdGearInfo
         {
-            model="91st_Recruit_Helmet_JLTS";
-            PilotRankhelms="CXW";
+            model="Pilotrankshelmets";
+            Pilotranks="CXW";
+        };
+    };
+
+    //Pilot customs
+    class 91st_Frog_Helmet: 212th_Pilot_Helmet_91st
+    {
+        class XtdGearInfo
+        {
+            model="PilotCustomshelmets";
+            PilotCustoms="Frog";
+        };
+    };
+    class 91st_Hex_Helmet: 212th_Pilot_Helmet_91st
+    {
+        class XtdGearInfo
+        {
+            model="PilotCustomshelmets";
+            PilotCustoms="Hex";
+        };
+    };
+    class 91st_Chopper_Helmet: 212th_Pilot_Helmet_91st
+    {
+        class XtdGearInfo
+        {
+            model="PilotCustomshelmets";
+            PilotCustoms="Chopper";
+        };
+    };
+    class 91st_Delta_Helmet: 212th_Pilot_Helmet_91st
+    {
+        class XtdGearInfo
+        {
+            model="PilotCustomshelmets";
+            PilotCustoms="Delta";
+        };
+    };
+    class 91st_Bensen_Helmet: 212th_Pilot_Helmet_91st
+    {
+        class XtdGearInfo
+        {
+            model="PilotCustomshelmets";
+            PilotCustoms="Bensen";
+        };
+    };
+    class 91st_Pole_Helmet: 212th_Pilot_Helmet_91st
+    {
+        class XtdGearInfo
+        {
+            model="PilotCustomshelmets";
+            PilotCustoms="Pole";
+        };
+    };
+    class 91st_Squids_Helmet: 212th_Pilot_Helmet_91st
+    {
+        class XtdGearInfo
+        {
+            model="PilotCustomshelmets";
+            PilotCustoms="Squids";
+        };
+    };
+
+    //Arc helms
+    class 91st_Talleyrand_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Tallyrand";
+        };
+    };
+    class 91st_Corn_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Corn";
+        };
+    };
+    class 91st_Roach_Helmet: JLTS_CloneHelmetARC_illum
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Roach";
+        };
+    };
+    class 91st_Bacon_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Bacon";
+        };
+    };
+    class 91st_Cabur_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Caber";
+        };
+    };
+    class 91st_Skittles_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Skittles";
+        };
+    };
+    class 91st_Arcanist_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Arcanist";
+        };
+    };
+    class 91st_Nova_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Nova";
+        };
+    };
+    class 91st_Galahad_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Galahad";
+        };
+    };
+    class 91st_Loken_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Loken";
+        };
+    };
+    class 91st_Scorch_Helmet: JLTS_CloneHelmetARC
+    {
+        class XtdGearInfo
+        {
+            model="Archelmets";
+            Archelms="Scorch";
+        };
+    };
+
+    //Beskar Helms
+    class 91st_Beskar_Helmet_JLTS: 212th_ATRT_helmet
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Base";
+        };
+    };
+    class 91st_Beskar_Kuro_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Kuro";
+        };
+    };
+    class 91st_Beskar_Toxic_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Toxic";
+        };
+    };
+    class 91st_Beskar_Fly_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Fly";
+        };
+    };
+    class 91st_Beskar_Sentinel_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Sentinel";
+        };
+    };
+    class 91st_Max_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Max";
+        };
+    };
+    class 91st_Zerda_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Zerda";
+        };
+    };
+    class 91st_Crash_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Crash";
         };
     };
 };
