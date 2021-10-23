@@ -1,440 +1,279 @@
+class CfgPatches
+{
+	class 91st_ACEAX_compat_vests
+	{
+		name="91st_ACEAX_compat_vests";
+		units[]={};
+		weapons[]={};
+		requiredVersion=1.88;
+		requiredAddons[]=
+		{
+			"aceax_gearinfo"
+		};
+		author="91st Aux Team";
+		version="0.1.1.2";
+		versionStr="0.1.1.2";
+		versionAr[]={0,1,1,2};
+	};
+};
 class XtdGearModels
 {
-    class CfgWeapons 
+    class CfgGlasses 
     {
-		class JLTS_Clone_P2_recon
-        {
-            label="91st Rank Armor";
-            author="Chopper";
-            options[]={"Rank"};
+		class 91st_glass_NV_red
+        { 
+            label="91st Visor";
+            author="91st Aux Team";
+            options[]={"Visor"};
             // Key word used in the cfg weapons below
-            class Rank
+            class Visor
             {
-                label="Ranks";
+                label="Visors";
                 values[]=
                 {
-                    "CR",
-                    "CT",
-                    "SCT",
-                    "VCT",
-                    "CSP",
-                    "CLC",
-                    "CP",
-                    "CS",
-                    "CSS",
-                    "CFS",
-                    "CL",
-                    "CC",
-                    "WO1",
-                    "WO2",
-                    "WO3",
-                    "WO4",
-                    "WO5"
+                    "Red",
+                    "Black",
+                    "FullGrey",
+                    "SpecRed",
+                    "SpecFullRed",
+                    "SpecGrey",
+                    "SpecBlack"
                 };
                 // Class used for defining in the shit below
-                class CR
+                class Red
                 {
                     // Labels just a display name
-                    label="CR";
+                    label="Red";
                 };
-                class CT
+                class Black
                 {
-                    label="CT";
+                    // Labels just a display name
+                    label="Black";
                 };
-                class SCT
+                class FullGrey
                 {
-                    label="SCT";
+                    // Labels just a display name
+                    label="Full Gray";
                 };
-                class VCT
+                class SpecRed
                 {
-                    label="VCT";
+                    // Labels just a display name
+                    label="Spec Red";
                 };
-                class CSP
+                class SpecFullRed
                 {
-                    label="CSP";
+                    // Labels just a display name
+                    label="Spec Full Red";
                 };
-                class CLC
+                class SpecGrey
                 {
-                    label="CLC";
+                    // Labels just a display name
+                    label="Spec Gray";
                 };
-                class CP
+                class SpecBlack
                 {
-                    label="CP";
-                };
-                class CS
-                {
-                    label="CS";
-                };
-                class CSS
-                {
-                    label="CSS";
-                };
-                class CSM
-                {
-                    label="CSM";
-                };
-                class CFS
-                {
-                    label="CFS";
-                };
-                class CL
-                {
-                    label="CL";
-                };
-                class CC
-                {
-                    label="CC";
-                };
-                class WO1
-                {
-                    label="W01";
-                };
-                class WO2
-                {
-                    label="W02";
-                };
-                class WO3
-                {
-                    label="W03";
-                };
-                class WO4
-                {
-                    label="W04";
-                };
-                class WO5
-                {
-                    label="W05";
+                    // Labels just a display name
+                    label="Spec Black";
                 };
             };
         };
-	};
+        class 91st_medic 
+        {
+            label="91st Medical Vests";
+            author="91st Aux Team";
+            options[]={"Medic"};
+            // Key word used in the cfg weapons below
+            class Medic
+            {
+                label="Medic Vests";
+                values[]=
+                {
+                    "Squad",
+                    "Platoon",
+                    "Company",
+                    "Archangel"
+                };
+                // Class used for defining in the shit below
+                class Squad
+                {
+                    // Labels just a display name
+                    label="Squad";
+                };
+                class Platoon
+                {
+                    // Labels just a display name
+                    label="Platoon";
+                };
+                class Company
+                {
+                    // Labels just a display name
+                    label="Company";
+                };
+                class Archangel
+                {
+                    // Labels just a display name
+                    label="Archangel";
+                };
+            };
+        };
+        class 91st_monkeys 
+        {
+            label="91st Jumptrooper Vests";
+            author="91st Aux Team";
+            options[]={"Monkey"};
+            // Key word used in the cfg weapons below
+            class Monkey
+            {
+                label="Jumptrooper Vests";
+                values[]=
+                {
+                    "Trooper",
+                    "Veteran",
+                    "Teamleader"
+                };
+                // Class used for defining in the shit below
+                class Trooper
+                {
+                    // Labels just a display name
+                    label="Trooper";
+                };
+                class Veteran
+                {
+                    // Labels just a display name
+                    label="Veteran";
+                };
+                class Teamleader
+                {
+                    // Labels just a display name
+                    label="Teamleader";
+                };
+            };
+        };
+    
+    };
+
 };
-class CfgWeapons
+class CfgGlasses
 {
-    class Uniform_Base;
-    class V_RebreatherB;
     // This class is the EXACT same as the aux mod
-    class 91st_Recruit_Armor: Uniform_Base
+    class 91st_glass_NV_red
     {
-        class XtdGearInfo : Uniform_Base
+        class XtdGearInfo
         {
             // model is the class name of the "lists" in CfgWeapons
-            model="JLTS_Clone_P2_recon";
+            model="91st_glass_NV_red";
             // "Rank" is the class name of the value list
             // The value of "Rank" is just the label used in the list
-            Rank="CR";
+            Visor="Red";
         };
     };
-    class 91st_CT_Armor: Uniform_Base
+
+    class 91st_glass_NV_black
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CT";
+            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
+            Visor="Black";
         };
     };
-    class 91st_SCT_Armor: Uniform_Base
+    class 91st_glass_NV_Grey2
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="SCT";
+            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
+            Visor="FullGrey";
         };
     };
-    class 91st_VCT_Armor: Uniform_Base
+    class 91st_glass_NVspec_red
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="VCT";
+            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
+            Visor="SpecRed";
         };
     };
-    class 91st_CSP_Armor: Uniform_Base
+    class 91st_glass_NVspec_red2
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CSP";
+            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
+            Visor="SpecFullRed";
         };
     };
-    class 91st_CLC_Armor: Uniform_Base
+    class 91st_glass_NVspec_Grey2
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CLC";
+            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
+            Visor="SpecGrey";
         };
     };
-    class 91st_CP_Armor: Uniform_Base
+    class 91st_glass_NVspec_black
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CP";
+            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
+            Visor="SpecBlack";
         };
     };
-    class 91st_CS_Armor: Uniform_Base
+    class 91st_med_squad_vest
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CS";
+            model="91st_medic";// The value of "Rank" is just the label used in the list
+            Medic="Squad";
         };
     };
-    class 91st_CSS_Armor: Uniform_Base
+    class 91st_med_platoon_vest
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CSS";
+            model="91st_medic";// The value of "Rank" is just the label used in the list
+            Medic="Platoon";
         };
     };
-    class 91st_CFS_Armor: Uniform_Base
+    class 91st_med_company_vest
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CFS";
+            model="91st_medic";// The value of "Rank" is just the label used in the list
+            Medic="Company";
         };
     };
-    class 91st_CL_Armor: Uniform_Base
+    class 91st_archangel_vest
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CL";
+            model="91st_medic";// The value of "Rank" is just the label used in the list
+            Medic="Archangel";
         };
     };
-    class 91st_CC_Armor: Uniform_Base
+    class 91st_jumptrooper_vest
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CC";
+            model="91st_monkeys";// The value of "Rank" is just the label used in the list
+            Monkey="Trooper";
         };
     };
-    class 91st_WO1_Armor: Uniform_Base
+    class 91st_jumptrooper_veteran_vest
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO1";
+            model="91st_monkeys";// The value of "Rank" is just the label used in the list
+            Monkey="Veteran";
         };
     };
-    class 91st_WO2_Armor: Uniform_Base
+    class 91st_jumptrooper_TL_vest
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO2";
+            model="91st_monkeys";// The value of "Rank" is just the label used in the list
+            Monkey="Teamleader";
         };
     };
-    class 91st_WO3_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO3";
-        };
-    };
-    class 91st_WO4_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO4";
-        };
-    };
-    class 91st_WO5_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO5";
-        };
-    };
-    class 91st_Axer_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Axer";
-        };
-    };
-    class 91st_Cross_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Cross";
-        };
-    };
-    class 91st_Corpse_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Corpse";
-        };
-    };
-    class 91st_Dex_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Dex";
-        };
-    };
-    class 91st_Frog_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Frog";
-        };
-    };
-    class 91st_Kuro_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Kuro";
-        };
-    };
-    class 91st_Mav_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Mav";
-        };
-    };
-    class 91st_Nova_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Nova";
-        };
-    };
-    class 91st_Raze_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Raze";
-        };
-    };
-    class 91st_Roach_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Roach";
-        };
-    };
-    class 91st_Scorch_Armor: Uniform_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Axer_Armor";
-            Custom="Scorch";
-        };
-    };
-    class 91st_Officer_Vest_gray: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_Officer_Vest_gray";
-            Officervest="Grey";
-        };
-    };
-    class 91st_Officer_Vest_redgray: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_Officer_Vest_gray";
-            Officervest="Red&Grey";
-        };
-    };
-    class 91st_Officer_Vest_red: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_Officer_Vest_gray";
-            Officervest="Red";
-        };
-    };
-    class 91st_Officer_rev_Vest_gray: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_Officer_Vest_gray";
-            Officervest="ReversedGrey";
-        };
-    };
-    class 91st_Officer_rev_Vest_redgray: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_Officer_Vest_gray";
-            Officervest="ReversedRed&Grey";
-        };
-    };
-    class 91st_Officer_rev_Vest_red: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_Officer_Vest_gray";
-            Officervest="ReversedRed";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_Trooper: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_JLTS_Vest_ARC_Trooper";
-            Officervest="Trooper";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_veteran: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_JLTS_Vest_ARC_Trooper";
-            Officervest="Veteran";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_TL: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_JLTS_Vest_ARC_Trooper";
-            Officervest="Teamlead";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_XO: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_JLTS_Vest_ARC_Trooper";
-            Officervest="XO";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_CO: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_JLTS_Vest_ARC_Trooper";
-            Officervest="CO";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_Scorch: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91st_JLTS_Vest_ARC_Trooper";
-            Officervest="Scorch";
-        };
-    };
+
+
+
+
 };

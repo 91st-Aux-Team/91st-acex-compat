@@ -10,7 +10,7 @@ class CfgPatches
 		{
 			"aceax_gearinfo"
 		};
-		author="91st aux";
+		author="91st Aux Team";
 		version="0.1.1.2";
 		versionStr="0.1.1.2";
 		versionAr[]={0,1,1,2};
