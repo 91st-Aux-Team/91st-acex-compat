@@ -24,13 +24,78 @@ class XtdGearModels
         {
             label="Custom Infantry Helmets";
             author="91st Aux Team";
-            options[]={"Rankhelms"};
-            class Rankhelms
+            options[]={"InfantryCustoms"};
+            class InfantryCustoms
             {
                 labels="Infantry Custom Helmets";
                 values[]=
                 {
-                    "CR"
+                    "Axer",
+                    "Baron",
+                    "Barr",
+                    "Banana",
+                    "Binns",
+                    "Blanks",
+                    "Charred",
+                    "Chop",
+                    "Cookie",
+                    "Con",
+                    "Corpse",
+                    "Crash",
+                    "Cross",
+                    "Crossout",
+                    "Dev",
+                    "Dex",
+                    "Dino",
+                    "Dumajin",
+                    "Edge",
+                    "Falcon",
+                    "Fallon",
+                    "Foxtrot",
+                    "Fraeyr",
+                    "Fraiser",
+                    "Freq",
+                    "Golden",
+                    "Ishi",
+                    "Jughead",
+                    "Jericho",
+                    "Lesk",
+                    "Lich",
+                    "Magic",
+                    "Mav",
+                    "Max",
+                    "Muddy",
+                    "Myrola",
+                    "Opossum",
+                    "Oddball",
+                    "Penguin",
+                    "Postal",
+                    "Praetorian",
+                    "Predator",
+                    "Qal",
+                    "Rat",
+                    "Raze",
+                    "Ricochet",
+                    "Saga",
+                    "Saint",
+                    "Sapphire",
+                    "Shields",
+                    "Shoto",
+                    "Skit",
+                    "Smig",
+                    "Steak",
+                    "Steve",
+                    "Strike",
+                    "Tarz",
+                    "Tig",
+                    "Trauma",
+                    "Trill",
+                    "Volx",
+                    "Viper",
+                    "Xenophon",
+                    "Xero",
+                    "Zerda",
+                    "Zoozle"
                 };
             };
         };
