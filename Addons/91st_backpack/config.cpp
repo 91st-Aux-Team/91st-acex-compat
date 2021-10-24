@@ -131,7 +131,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91stJumppack
+        class 91stJT12Jumppack
         {
             label="Jumppacks";
             author="Chopper";
@@ -141,40 +141,54 @@ class XtdGearModels
                 labels="Jumpack";
                 values[]=
                 {
-                    "JTrooper",
-                    "JVeteran",
-                    "JTeamlead",
-                    "Archangel",
-                    "Jade",
-                    "CDVTrooper"
+                    "Trooper",
+                    "Empty",
+                    "Veteran",
+                    "Teamlead"
                 };
-                class JT12
-                {
-                    label="JT12";
-                };
-                class JTrooper
+                class Trooper
                 {
                     label="Trooper";
                 };
-                class JVeteran
+                class Empty
+                {
+                    label="Empty";
+                };
+                class Veteran
                 {
                     label="Veteran";
                 };
-                class JTeamlead
+                class Teamlead
                 {
                     label="Teamlead";
                 };
-                class Archangel
+            };
+        };
+        class 91stCDVJumppack
+        {
+            label="Jumppacks";
+            author="91st Aux Team";
+            options[]={"CDV"};
+            class CDV
+            {
+                labels="Jumpack";
+                values[]=
                 {
-                    label="Archangel";
+                    "Trooper",
+                    "Jade",
+                    "Archangel"
+                };
+                class Trooper
+                {
+                    label="Trooper";
                 };
                 class Jade
                 {
                     label="Jade";
                 };
-                class CDVTrooper
+                class Archangel
                 {
-                    label="CDVTrooper";
+                    label="Archangel";
                 };
             };
         };
@@ -335,52 +349,62 @@ class CfgVehicles
     };
 
     //Jumppacks
+    // JT12
     class 91st_jumpack_JT12: JLTS_Clone_jumppack_JT12
     {
         class XtdGearInfo
         {
-            model="91stJumppack";
-            Jumpack="JTrooper";
+            model="91stJT12Jumppack";
+            Jumpack="Trooper";
         };
     };
-    class 91st_jumppack_trooper_mc: JLTS_Clone_jumppack_mc
+    class 91st_empty_JT12: 91st_jumpack_JT12
     {
         class XtdGearInfo
         {
-            model="91stJumppack";
-            Jumpack="CDVTrooper";
+            model="91stJT12Jumppack";
+            Jumpack="Empty";
         };
     };
-    class 91st_veteran_jumpack_JT12: JLTS_Clone_jumppack_JT12
+    class 91st_veteran_jumpack_JT12: 91st_jumpack_JT12
     {
         class XtdGearInfo
         {
-            model="91stJumppack";
-            Jumpack="JVeteran";
+            model="91stJT12Jumppack";
+            Jumpack="Veteran";
         };
     };
-    class 91st_TL_jumpack_JT12: JLTS_Clone_jumppack_JT12
+    class 91st_TL_jumpack_JT12: 91st_jumpack_JT12
     {
         class XtdGearInfo
         {
-            model="91stJumppack";
-            Jumpack="JTeamlead";
+            model="91stJT12Jumppack";
+            Jumpack="Teamlead";
         };
     };
-    class 91st_AA_jumpack_JT12: JLTS_Clone_jumppack_mc
+    // CDV
+    class 91st_jumppack_mc: JLTS_Clone_jumppack_mc
     {
         class XtdGearInfo
         {
-            model="91stJumppack";
-            Jumpack="Archangel";
+            model="91stCDVJumppack";
+            CDV="Trooper";
         };
     };
-    class 91st_jumppack_mc_jade: JLTS_Clone_jumppack_mc
+    class 91st_AA_jumpack_JT12: 91st_jumppack_mc
     {
         class XtdGearInfo
         {
-            model="91stJumppack";
-            Jumpack="Jade";
+            model="91stCDVJumppack";
+            CDV="Archangel";
+        };
+    };
+    class 91st_jumppack_mc_jade: 91st_jumppack_mc
+    {
+        class XtdGearInfo
+        {
+            model="91stCDVJumppack";
+            CDV="Jade";
         };
     };
 };
