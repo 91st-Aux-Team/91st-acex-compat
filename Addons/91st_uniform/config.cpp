@@ -122,7 +122,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91st_Axer_Armor
+        class 91stCustomArmor
         {
             label="91st Custom Armor";
             author="91st Aux Team";
@@ -142,7 +142,8 @@ class XtdGearModels
                     "Nova",
                     "Raze",
                     "Roach",
-                    "Scorch"
+                    "Scorch",
+                    "Scorch2"
                 };
                 class Axer
                 {
@@ -196,6 +197,10 @@ class XtdGearModels
                 {
                     label="Scorch";
                 };
+                class Scorch2
+                {
+                    label="Scorch 2";
+                };
             };
         };
     };
@@ -203,6 +208,7 @@ class XtdGearModels
 class CfgWeapons
 {
     class Uniform_Base;
+    //Rank Armor
     class 91st_Recruit_Armor: Uniform_Base
     {
         class XtdGearInfo : Uniform_Base
@@ -339,11 +345,13 @@ class CfgWeapons
             Rank="WO5";
         };
     };
+
+    // Custom Armor
     class 91st_Axer_Armor: Uniform_Base
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Axer";
         };
     };
@@ -351,7 +359,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Cross";
         };
     };
@@ -359,7 +367,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Corpse";
         };
     };
@@ -367,7 +375,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Dex";
         };
     };
@@ -375,7 +383,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Frog";
         };
     };
@@ -383,7 +391,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Kuro";
         };
     };
@@ -391,7 +399,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Mav";
         };
     };
@@ -399,7 +407,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Nova";
         };
     };
@@ -407,7 +415,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Raze";
         };
     };
@@ -415,7 +423,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Roach";
         };
     };
@@ -423,8 +431,16 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Axer_Armor";
+            model="91stCustomArmor";
             Custom="Scorch";
+        };
+    };
+    class 91st_Scorch_Armor_Alt: Uniform_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stCustomArmor";
+            Custom="Scorch2";
         };
     };
 };

@@ -20,7 +20,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 91st_Officer_Vest_gray
+        class 91stOfficerVests
         {
             label="91st Officer Vests";
             author="91st Aux Team";
@@ -68,7 +68,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91st_JLTS_Vest_ARC_Trooper
+        class 91stARCVests
         {
             label="ARC Vests";
             author="91st Aux Team";
@@ -111,16 +111,45 @@ class XtdGearModels
                 };
             };
         };
+	    class 91stOfficerPauldrons
+        {
+            label="91st Officer Pauldrons";
+            author="91st Aux Team";
+            options[]={"Officerpauldron"};
+            class Officerpauldron
+            {
+                labels="Officer pauldron";
+                values[]=
+                {
+                    "Grey",
+                    "Red_Grey",
+                    "Red"
+                };
+                class Grey
+                {
+                    label="Grey";
+                };
+                class Red_Grey
+                {
+                    label="Red Grey";
+                }; 
+                class Red
+                {
+                    label="Red";
+                };
+            };
+        };
 	};
 };
 class CfgWeapons
 {
     class V_RebreatherB;
+    //Officer Vests
     class 91st_Officer_Vest_gray: V_RebreatherB
     {
         class XtdGearInfo
         {
-            model="91st_Officer_Vest_gray";
+            model="91stOfficerVests";
             Officervest="Grey";
         };
     };
@@ -128,7 +157,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Officer_Vest_gray";
+            model="91stOfficerVests";
             Officervest="Red_Grey";
         };
     };
@@ -136,7 +165,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Officer_Vest_gray";
+            model="91stOfficerVests";
             Officervest="Red";
         };
     };
@@ -144,7 +173,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Officer_Vest_gray";
+            model="91stOfficerVests";
             Officervest="ReversedGrey";
         };
     };
@@ -152,7 +181,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Officer_Vest_gray";
+            model="91stOfficerVests";
             Officervest="Rev_Red_Grey";
         };
     };
@@ -160,7 +189,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Officer_Vest_gray";
+            model="91stOfficerVests";
             Officervest="ReversedRed";
         };
     };
@@ -168,16 +197,43 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_Officer_Vest_gray";
+            model="91stOfficerVests";
             Officervest="Commander";
         };
     };
 
+    // Officer Pauldrons
+    class 91st_Officer_pauldron_gray: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="91stOfficerPauldrons";
+            Officerpauldron="Grey";
+        };
+    };
+    class 91st_Officer_pauldron_red: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="91stOfficerPauldrons";
+            Officerpauldron="Red";
+        };
+    };
+    class 91st_Officer_pauldron_redgray: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="91stOfficerPauldrons";
+            Officerpauldron="Red_Grey";
+        };
+    };
+
+    // ARC Vests
     class 91st_JLTS_Vest_ARC_Trooper: V_RebreatherB
     {
         class XtdGearInfo
         {
-            model="91st_JLTS_Vest_ARC_Trooper";
+            model="91stARCVests";
             Arcvests="Trooper";
         };
     };
@@ -185,7 +241,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_JLTS_Vest_ARC_Trooper";
+            model="91stARCVests";
             Arcvests="Veteran";
         };
     };
@@ -193,7 +249,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_JLTS_Vest_ARC_Trooper";
+            model="91stARCVests";
             Arcvests="Teamlead";
         };
     };
@@ -201,7 +257,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_JLTS_Vest_ARC_Trooper";
+            model="91stARCVests";
             Arcvests="XO";
         };
     };
@@ -209,7 +265,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_JLTS_Vest_ARC_Trooper";
+            model="91stARCVests";
             Arcvests="CO";
         };
     };
@@ -217,7 +273,7 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="91st_JLTS_Vest_ARC_Trooper";
+            model="91stARCVests";
             Arcvests="Scorch";
         };
     };
