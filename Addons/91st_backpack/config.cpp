@@ -37,7 +37,8 @@ class XtdGearModels
                     "Medicbelt",
                     "MedicStrap",
                     "EOD",
-                    "EODStrap"
+                    "EODStrap",
+                    "Straps"
                 };
                 class Standard
                 {
@@ -70,6 +71,10 @@ class XtdGearModels
                 class EODStrap
                 {
                     label="EOD Strap";
+                };
+                class Straps
+                {
+                    label="Straps";
                 };
             };
         };
@@ -254,6 +259,14 @@ class CfgVehicles
             Backpacks="EODStrap";
         };
     };
+    class 91st_Straps_bag: JLTS_Clone_belt_bag
+    {
+        class XtdGearInfo
+        {
+            model="91stBackpacks";
+            Backpacks="Straps";
+        };
+    };
 
     //Long Ranges
     class 91st_RTO_backpack: JLTS_Clone_backpack_RTO
@@ -362,7 +375,7 @@ class CfgVehicles
             Jumpack="Archangel";
         };
     };
-    class 91st_jumppack_mc: JLTS_Clone_jumppack_mc
+    class 91st_jumppack_mc_jade: JLTS_Clone_jumppack_mc
     {
         class XtdGearInfo
         {
