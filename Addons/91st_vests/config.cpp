@@ -83,7 +83,8 @@ class XtdGearModels
                     "Teamlead",
                     "XO",
                     "CO",
-                    "Scorch"
+                    "Scorch",
+                    "Arcanist"
                 };
                 class Trooper
                 {
@@ -109,6 +110,10 @@ class XtdGearModels
                 {
                     label="Scorch";
                 };
+                class Arcanist
+                {
+                    label="Arcanist";
+                }
             };
         };
 	    class 91stOfficerPauldrons
@@ -275,6 +280,14 @@ class CfgWeapons
         {
             model="91stARCVests";
             Arcvests="Scorch";
+        };
+    };
+    class 91st_JLTS_Vest_ARC_Arcanist: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="91stARCVests";
+            Arcvests="Arcanist";
         };
     };
 };
