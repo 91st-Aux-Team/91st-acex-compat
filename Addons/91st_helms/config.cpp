@@ -316,7 +316,7 @@ class CfgWeapons
             Rankhelms="CR";
         };
     };
-    class 91st_Cadet_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_Cadet_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -324,7 +324,7 @@ class CfgWeapons
             Rankhelms="CRC";
         };
     };
-    class 91st_CT_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CT_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -332,7 +332,7 @@ class CfgWeapons
             Rankhelms="CT";
         };
     };
-    class 91st_SCT_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_SCT_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -340,7 +340,7 @@ class CfgWeapons
             Rankhelms="SCT";
         };
     };
-    class 91st_VCT_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_VCT_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -348,7 +348,7 @@ class CfgWeapons
             Rankhelms="VCT";
         };
     };
-    class 91st_CSP_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CSP_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -356,7 +356,7 @@ class CfgWeapons
             Rankhelms="CSP";
         };
     };
-    class 91st_CLC_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CLC_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -364,7 +364,7 @@ class CfgWeapons
             Rankhelms="CLC";
         };
     };
-    class 91st_CP_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CP_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -372,7 +372,7 @@ class CfgWeapons
             Rankhelms="CP";
         };
     };
-    class 91st_CS_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CS_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -380,7 +380,7 @@ class CfgWeapons
             Rankhelms="CS";
         };
     };
-    class 91st_CFS_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CFS_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -388,7 +388,7 @@ class CfgWeapons
             Rankhelms="CFS";
         };
     };
-    class 91st_CSM_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CSM_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -396,7 +396,7 @@ class CfgWeapons
             Rankhelms="CSM";
         };
     };
-    class 91st_CL_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CL_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -404,7 +404,7 @@ class CfgWeapons
             Rankhelms="CL";
         };
     };
-    class 91st_CC_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_CC_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -412,7 +412,7 @@ class CfgWeapons
             Rankhelms="CC";
         };
     };
-    class 91st_WO1_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_WO1_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -420,7 +420,7 @@ class CfgWeapons
             Rankhelms="WO1";
         };
     };
-    class 91st_WO2_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_WO2_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -428,7 +428,7 @@ class CfgWeapons
             Rankhelms="WO2";
         };
     };
-    class 91st_WO3_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_WO3_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -436,7 +436,7 @@ class CfgWeapons
             Rankhelms="WO3";
         };
     };
-    class 91st_WO4_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_WO4_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
@@ -444,7 +444,7 @@ class CfgWeapons
             Rankhelms="WO4";
         };
     };
-    class 91st_WO5_Helmet_JLTS: JLTS_CloneHelmetP2
+    class 91st_WO5_Helmet_JLTS: 91st_Recruit_Helmet_JLTS
     {
         class XtdGearInfo
         {
