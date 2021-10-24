@@ -23,7 +23,7 @@ class XtdGearModels
 		class JLTS_Clone_P2_recon
         {
             label="91st Rank Armor";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Rank"};
             class Rank
             {
@@ -125,7 +125,7 @@ class XtdGearModels
         class 91st_Axer_Armor
         {
             label="91st Custom Armor";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Custom"};
             class Custom
             {

@@ -22,8 +22,8 @@ class XtdGearModels
     {
         class 91st_Officer_Vest_gray
         {
-            label="91st Officer Pulds";
-            author="Chopper";
+            label="91st Officer Vests";
+            author="91st Aux Team";
             options[]={"Officervest"};
             class Officervest
             {
@@ -71,7 +71,7 @@ class XtdGearModels
         class 91st_JLTS_Vest_ARC_Trooper
         {
             label="ARC Vests";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Arcvests"};
             class Arcvests
             {

@@ -23,7 +23,7 @@ class XtdGearModels
         class 91st_ARCRangefinders
         {
             label="ARC Rangefinders";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"ARCRangefinders"};
             class ARCRangefinders
             {
@@ -86,7 +86,7 @@ class XtdGearModels
         class 91st_Rangefinders
         {
             label="Rangefinders";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Rangefinders"};
             class Rangefinders
             {
@@ -114,7 +114,7 @@ class XtdGearModels
         class 91stNvVisors
         {
             label="NV Visor";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"NvVisor"};
             class NvVisor
             {

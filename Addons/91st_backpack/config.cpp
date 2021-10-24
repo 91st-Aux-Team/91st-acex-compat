@@ -23,7 +23,7 @@ class XtdGearModels
         class 91stBackpacks
         {
             label="91st Backpacks";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Backpacks"};
             class Backpacks
             {
@@ -81,7 +81,7 @@ class XtdGearModels
         class 91stLRs
         {
             label="91st Long Ranges";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"LRs"};
             class LRs
             {
@@ -134,7 +134,7 @@ class XtdGearModels
         class 91stJT12Jumppack
         {
             label="Jumppacks";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Jumpack"};
             class Jumpack
             {

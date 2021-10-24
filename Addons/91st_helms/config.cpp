@@ -23,7 +23,7 @@ class XtdGearModels
         class Infrnakhelms
         {
             label="Rank Helmets";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Rankhelms"};
             class Rankhelms
             {
@@ -126,7 +126,7 @@ class XtdGearModels
         class Pilotrankshelmets
         {
             label="Pilot Rank Helmets";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Pilotranks"};
             class Pilotranks
             {
@@ -171,59 +171,10 @@ class XtdGearModels
                 };
             };
         };
-        class PilotCustomshelmets
-        {
-            label="Pilot Custom Helmets";
-            author="Chopper";
-            options[]={"PilotCustoms"};
-            class PilotCustoms
-            {
-                labels="Pilot Custom Helmets";
-                values[]=
-                {
-                    "Frog",
-                    "Hex",
-                    "Chopper",
-                    "Delta",
-                    "Bensen",
-                    "Pole",
-                    "Squids"
-                };
-                class Frog
-                {
-                    label="Frog";
-                };
-                class Hex
-                {
-                    label="Hex";
-                };
-                class Chopper
-                {
-                    label="Chopper";
-                };
-                class Delta
-                {
-                    label="Delta";
-                };
-                class Bensen
-                {
-                    label="Bensen";
-                };
-                class Pole
-                {
-                    label="Pole";
-                };
-                class Squids
-                {
-                    label="Squids";
-                };
-            };
-            
-        };
         class Archelmets
         {
             label="ARC Helmets";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Archelms"};
             class Archelms
             {
@@ -292,7 +243,7 @@ class XtdGearModels
         class Beskarhelmets
         {
             label="Beskar Helmets";
-            author="Chopper";
+            author="91st Aux Team";
             options[]={"Beskarhelms"};
             class Beskarhelms
             {
@@ -559,155 +510,7 @@ class CfgWeapons
             Pilotranks="CXW";
         };
     };
-
-    //Pilot customs
-    class 91st_Frog_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="PilotCustomshelmets";
-            PilotCustoms="Frog";
-        };
-    };
-    class 91st_Hex_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="PilotCustomshelmets";
-            PilotCustoms="Hex";
-        };
-    };
-    class 91st_Chopper_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="PilotCustomshelmets";
-            PilotCustoms="Chopper";
-        };
-    };
-    class 91st_Delta_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="PilotCustomshelmets";
-            PilotCustoms="Delta";
-        };
-    };
-    class 91st_Bensen_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="PilotCustomshelmets";
-            PilotCustoms="Bensen";
-        };
-    };
-    class 91st_Pole_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="PilotCustomshelmets";
-            PilotCustoms="Pole";
-        };
-    };
-    class 91st_Squids_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="PilotCustomshelmets";
-            PilotCustoms="Squids";
-        };
-    };
-
-    //Arc helms
-    class 91st_Talleyrand_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Tallyrand";
-        };
-    };
-    class 91st_Corn_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Corn";
-        };
-    };
-    class 91st_Roach_Helmet: JLTS_CloneHelmetARC_illum
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Roach";
-        };
-    };
-    class 91st_Bacon_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Bacon";
-        };
-    };
-    class 91st_Cabur_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Caber";
-        };
-    };
-    class 91st_Skittles_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Skittles";
-        };
-    };
-    class 91st_Arcanist_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Arcanist";
-        };
-    };
-    class 91st_Nova_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Nova";
-        };
-    };
-    class 91st_Galahad_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Galahad";
-        };
-    };
-    class 91st_Loken_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Loken";
-        };
-    };
-    class 91st_Scorch_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
-        {
-            model="Archelmets";
-            Archelms="Scorch";
-        };
-    };
-
+    
     //Beskar Helms
     class 91st_Beskar_Helmet_JLTS: 212th_ATRT_helmet
     {
