@@ -123,14 +123,12 @@ class XtdGearModels
                 {
                     "Red",
                     "RedFull",
-                    "Grey",
                     "GreyFull",
-                    "Black",
+                    "BlackFull",
                     "SpecRed",
                     "SpecRedFull",
-                    "SpecGrey",
                     "SpecGreyFull",
-                    "SpecBlack"
+                    "SpecBlackFull"
                 };
                 class Red
                 {
@@ -140,17 +138,13 @@ class XtdGearModels
                 {
                     label="RedFull";
                 };
-                class Grey
-                {
-                    label="Grey";
-                };
                 class GreyFull
                 {
                     label="GreyFull";
                 };
                 class Black
                 {
-                    label="Black";
+                    label="BlackFull";
                 };
                 class SpecRed
                 {
@@ -160,17 +154,13 @@ class XtdGearModels
                 {
                     label="SpecRedFull";
                 };
-                class SpecGrey
-                {
-                    label="SpecGrey";
-                };
                 class SpecGreyFull
                 {
                     label="SpecGreyFull";
                 };
-                class SpecBlack
+                class SpecBlackFull
                 {
-                    label="SpecBlack";
+                    label="SpecBlackFull";
                 };
             };
         };
@@ -307,14 +297,6 @@ class CfgWeapons
             NvVisor="RedFull";
         };
     };
-    class 91st_CloneNVG_gray: rd501_JLTS_CloneNVG
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="Grey";
-        };
-    };
     class 91st_CloneNVG_gray2: rd501_JLTS_CloneNVG
     {
         class XtdGearInfo
@@ -328,7 +310,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91stNvVisors";
-            NvVisor="Black";
+            NvVisor="BlackFull";
         };
     };
     class 91st_CloneNVG_spec_red: rd501_JLTS_CloneNVG_spec
@@ -347,14 +329,6 @@ class CfgWeapons
             NvVisor="SpecRedFull";
         };
     };
-    class 91st_CloneNVG_spec_gray: rd501_JLTS_CloneNVG_spec
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="SpecGrey";
-        };
-    };
     class 91st_CloneNVG_spec_gray2: rd501_JLTS_CloneNVG_spec
     {
         class XtdGearInfo
@@ -368,7 +342,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91stNvVisors";
-            NvVisor="SpecBlack";
+            NvVisor="SpecBlackFull";
         };
     };
 };

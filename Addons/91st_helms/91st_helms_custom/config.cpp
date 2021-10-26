@@ -41,9 +41,11 @@ class XtdGearModels
                     "Cookie",
                     "Con",
                     "Corpse",
+                    "Courtney",
                     "Crash",
                     "Cross",
                     "Crossout",
+                    "Demo",
                     "Dev",
                     "Dex",
                     "Dino",
@@ -62,6 +64,7 @@ class XtdGearModels
                     "Lesk",
                     "Lich",
                     "Magic",
+                    "Marf",
                     "Mav",
                     "Max",
                     "Muddy",
@@ -92,11 +95,13 @@ class XtdGearModels
                     "Trill",
                     "Volx",
                     "Viper",
+                    "Widget",
                     "Xenophon",
                     "Xero",
                     "Zerda",
                     "Zoozle"
                 };
+                
             };
         };
         
@@ -324,6 +329,14 @@ class CfgWeapons
             InfantryCustoms="Corpse";
         };
     };
+    class 91st_Courtney_Helmet_JLTS: JLTS_CloneHelmetP2_illum
+    {
+        class XtdGearInfo
+        {
+            model="InfantryCustomHelms";
+            InfantryCustoms="Courtney";
+        };
+    };
     class 91st_Crash_Helmet_JLTS: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
@@ -346,6 +359,14 @@ class CfgWeapons
         {
             model="InfantryCustomHelms";
             InfantryCustoms="Crossout";
+        };
+    };
+    class 91st_Demo_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="InfantryCustomHelms";
+            InfantryCustoms="Demo";
         };
     };
     class 91st_Dev_Helmet_JLTS: JLTS_CloneHelmetP2
@@ -490,6 +511,14 @@ class CfgWeapons
         {
             model="InfantryCustomHelms";
             InfantryCustoms="Magic";
+        };
+    };
+    class 91st_Marf_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="InfantryCustomHelms";
+            InfantryCustoms="Marf";
         };
     };
     class 91st_Mav_Helmet_JLTS: JLTS_CloneHelmetP2
@@ -730,6 +759,14 @@ class CfgWeapons
         {
             model="InfantryCustomHelms";
             InfantryCustoms="Viper";
+        };
+    };
+    class 91st_Widget_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="InfantryCustomHelms";
+            InfantryCustoms="Widget";
         };
     };
     class 91st_Xenophon_Helmet_JLTS: JLTS_CloneHelmetP2

@@ -32,12 +32,13 @@ class XtdGearModels
                 values[]=
                 {
                     "Red",
-                    "Black",
+                    "FullBlack",
                     "FullGrey",
+                    "FullRed",
                     "SpecRed",
                     "SpecFullRed",
-                    "SpecGrey",
-                    "SpecBlack"
+                    "SpecFullGrey",
+                    "SpecFullBlack"
                 };
                 // Class used for defining in the shit below
                 class Red
@@ -45,15 +46,20 @@ class XtdGearModels
                     // Labels just a display name
                     label="Red";
                 };
-                class Black
+                class FullBlack
                 {
                     // Labels just a display name
-                    label="Black";
+                    label="Full Black";
                 };
                 class FullGrey
                 {
                     // Labels just a display name
                     label="Full Gray";
+                };
+                class FullRed
+                {
+                    // Labels just a display name
+                    label="Full Red";
                 };
                 class SpecRed
                 {
@@ -65,15 +71,15 @@ class XtdGearModels
                     // Labels just a display name
                     label="Spec Full Red";
                 };
-                class SpecGrey
+                class SpecFullGrey
                 {
                     // Labels just a display name
-                    label="Spec Gray";
+                    label="Spec Full Gray";
                 };
-                class SpecBlack
+                class SpecFullBlack
                 {
                     // Labels just a display name
-                    label="Spec Black";
+                    label="Spec Full Black";
                 };
             };
         };
@@ -167,13 +173,23 @@ class CfgGlasses
             Visor="Red";
         };
     };
-
+    class 91st_glass_NV_full_red
+    {
+        class XtdGearInfo
+        {
+            // model is the class name of the "lists" in CfgWeapons
+            model="91st_glass_NV_red";
+            // "Rank" is the class name of the value list
+            // The value of "Rank" is just the label used in the list
+            Visor="FullRed";
+        };
+    };
     class 91st_glass_NV_black
     {
         class XtdGearInfo
         {
             model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="Black";
+            Visor="FullBlack";
         };
     };
     class 91st_glass_NV_Grey2
@@ -205,7 +221,7 @@ class CfgGlasses
         class XtdGearInfo
         {
             model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="SpecGrey";
+            Visor="SpecFullGrey";
         };
     };
     class 91st_glass_NVspec_black
@@ -213,7 +229,7 @@ class CfgGlasses
         class XtdGearInfo
         {
             model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="SpecBlack";
+            Visor="SpecFullBlack";
         };
     };
     class 91st_med_squad_vest

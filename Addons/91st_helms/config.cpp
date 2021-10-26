@@ -254,10 +254,7 @@ class XtdGearModels
                     "Kuro",
                     "Toxic",
                     "Fly",
-                    "Sentinel",
-                    "Max",
-                    "Zerda",
-                    "Crash"
+                    "Sentinel"
                 };
                 class Base
                 {
@@ -278,18 +275,6 @@ class XtdGearModels
                 class Sentinel
                 {
                     label="Sentinel";
-                };
-                class Max
-                {
-                    label="Max";
-                };
-                class Zerda
-                {
-                    label="Zerda";
-                };
-                class Crash
-                {
-                    label="Crash";
                 };
             };
         };
@@ -551,30 +536,6 @@ class CfgWeapons
         {
             model="Beskarhelmets";
             Beskarhelms="Sentinel";
-        };
-    };
-    class 91st_Max_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="Beskarhelmets";
-            Beskarhelms="Max";
-        };
-    };
-    class 91st_Zerda_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="Beskarhelmets";
-            Beskarhelms="Zerda";
-        };
-    };
-    class 91st_Crash_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="Beskarhelmets";
-            Beskarhelms="Crash";
         };
     };
 };
