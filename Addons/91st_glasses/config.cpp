@@ -1,8 +1,9 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_vests
+	class 91st_ACEAX_compat_glasses
 	{
-		name="91st_ACEAX_compat_vests";
+		addonRootClass="91st_ACEAX_compat"
+        name="91st_ACEAX_compat_glasses";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;

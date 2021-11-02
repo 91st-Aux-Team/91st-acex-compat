@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_vests
+	class 91st_ACEAX_compat_helmcustom
 	{
 		addonRootClass="91st_ACEAX_compat"
 		units[]={};
