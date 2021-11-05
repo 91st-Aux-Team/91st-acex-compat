@@ -61,10 +61,12 @@ class XtdGearModels
                     "Ishi",
                     "Jughead",
                     "Jericho",
+                    "Laser",
                     "Lesk",
                     "Lich",
                     "Magic",
                     "Marf",
+                    "Mauser",
                     "Mav",
                     "Max",
                     "Muddy",
@@ -489,6 +491,14 @@ class CfgWeapons
             InfantryCustoms="Jericho";
         };
     };
+    class 91st_Laser_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="InfantryCustomHelms";
+            InfantryCustoms="Laser";
+        };
+    };
     class 91st_Lesk_Helmet_JLTS: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
@@ -519,6 +529,14 @@ class CfgWeapons
         {
             model="InfantryCustomHelms";
             InfantryCustoms="Marf";
+        };
+    };
+    class 91st_Mauser_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="InfantryCustomHelms";
+            InfantryCustoms="Mauser";
         };
     };
     class 91st_Mav_Helmet_JLTS: JLTS_CloneHelmetP2
