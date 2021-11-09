@@ -174,19 +174,34 @@ class XtdGearModels
                 labels="Jumpack";
                 values[]=
                 {
-                    "Trooper",
-                    "Jade",
-                    "Archangel"
+                    "TrooperCDV",
+                    "KyberCDV",
+                    "BeskarCDV",
+                    "NovaCDV",
+                    "JadeCDV",
+                    "ArchangelCDV"
                 };
-                class Trooper
+                class TrooperCDV
                 {
                     label="Trooper";
                 };
-                class Jade
+                class KyberCDV
+                {
+                    label="Kyber";
+                };
+                class BeskarCDV
+                {
+                    label="Beskar";
+                };
+                class NovaCDV
+                {
+                    label="Nova";
+                };
+                class JadeCDV
                 {
                     label="Jade";
                 };
-                class Archangel
+                class ArchangelCDV
                 {
                     label="Archangel";
                 };
@@ -388,15 +403,15 @@ class CfgVehicles
         class XtdGearInfo
         {
             model="91stCDVJumppack";
-            CDV="Trooper";
+            CDV="TrooperCDV";
         };
     };
-    class 91st_AA_jumpack_JT12: 91st_jumppack_mc
+    class 91st_AA_jumpack_archangel: 91st_jumppack_mc
     {
         class XtdGearInfo
         {
             model="91stCDVJumppack";
-            CDV="Archangel";
+            CDV="ArchangelCDV";
         };
     };
     class 91st_jumppack_mc_jade: 91st_jumppack_mc
@@ -404,7 +419,31 @@ class CfgVehicles
         class XtdGearInfo
         {
             model="91stCDVJumppack";
-            CDV="Jade";
+            CDV="JadeCDV";
+        };
+    };
+    class 91st_jumppack_mc_kyber: 91st_jumppack_mc
+    {
+        class XtdGearInfo
+        {
+            model="91stCDVJumppack";
+            CDV="KyberCDV";
+        };
+    };
+    class 91st_jumppack_mc_nova: 91st_jumppack_mc
+    {
+        class XtdGearInfo
+        {
+            model="91stCDVJumppack";
+            CDV="NovaCDV";
+        };
+    };
+    class 91st_jumppack_mc_beskar: 91st_jumppack_mc
+    {
+        class XtdGearInfo
+        {
+            model="91stCDVJumppack";
+            CDV="BeskarCDV";
         };
     };
 };

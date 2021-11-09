@@ -31,7 +31,6 @@ class XtdGearModels
                 values[]=
                 {
                     "Axer",
-                    "Baron",
                     "Barr",
                     "Banana",
                     "Binns",
@@ -48,7 +47,6 @@ class XtdGearModels
                     "Demo",
                     "Dev",
                     "Dex",
-                    "Dino",
                     "Dumajin",
                     "Edge",
                     "Falcon",
@@ -64,12 +62,10 @@ class XtdGearModels
                     "Laser",
                     "Lesk",
                     "Lich",
-                    "Magic",
                     "Marf",
                     "Mauser",
                     "Mav",
                     "Max",
-                    "Muddy",
                     "Myrola",
                     "Opossum",
                     "Oddball",
@@ -79,7 +75,6 @@ class XtdGearModels
                     "Predator",
                     "Qal",
                     "Rat",
-                    "Raze",
                     "Ricochet",
                     "Saga",
                     "Saint",
@@ -100,8 +95,7 @@ class XtdGearModels
                     "Widget",
                     "Xenophon",
                     "Xero",
-                    "Zerda",
-                    "Zoozle"
+                    "Zerda"
                 };
                 
             };
@@ -122,7 +116,6 @@ class XtdGearModels
                     "Chopper",
                     "Delta",
                     "Bensen",
-                    "Pole",
                     "Squids"
                 };
                 class Frog
@@ -144,10 +137,6 @@ class XtdGearModels
                 class Bensen
                 {
                     label="Bensen";
-                };
-                class Pole
-                {
-                    label="Pole";
                 };
                 class Squids
                 {
@@ -249,14 +238,6 @@ class CfgWeapons
         {
             model="InfantryCustomHelms";
             InfantryCustoms="Axer";
-        };
-    };
-    class 91st_Baron_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Baron";
         };
     };
     class 91st_Barr_Helmet_JLTS: JLTS_CloneHelmetP2
@@ -387,14 +368,6 @@ class CfgWeapons
             InfantryCustoms="Dex";
         };
     };
-    class 91st_Dino_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Dino";
-        };
-    };
     class 91st_Dumajin_Helmet_JLTS: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
@@ -515,14 +488,6 @@ class CfgWeapons
             InfantryCustoms="Lich";
         };
     };
-    class 91st_Magic_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Magic";
-        };
-    };
     class 91st_Marf_Helmet_JLTS: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
@@ -553,14 +518,6 @@ class CfgWeapons
         {
             model="InfantryCustomHelms";
             InfantryCustoms="Max";
-        };
-    };
-    class 91st_Muddy_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Muddy";
         };
     };
     class 91st_Myrola_Helmet_JLTS: JLTS_CloneHelmetP2
@@ -633,14 +590,6 @@ class CfgWeapons
         {
             model="InfantryCustomHelms";
             InfantryCustoms="Rat";
-        };
-    };
-    class 91st_Raze_Helmet_JLTS: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Raze";
         };
     };
     class 91st_Ricochet_Helmet_JLTS: JLTS_CloneHelmetP2
@@ -811,14 +760,6 @@ class CfgWeapons
             InfantryCustoms="Zerda";
         };
     };
-    class 91st_Zoozle_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Zoozle";
-        };
-    };
     
     //Pilot customs
     class 91st_Frog_Helmet: 212th_Pilot_Helmet_91st
@@ -859,14 +800,6 @@ class CfgWeapons
         {
             model="PilotCustomshelmets";
             PilotCustoms="Bensen";
-        };
-    };
-    class 91st_Pole_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="PilotCustomshelmets";
-            PilotCustoms="Pole";
         };
     };
     class 91st_Squids_Helmet: 212th_Pilot_Helmet_91st

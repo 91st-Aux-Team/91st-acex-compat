@@ -278,6 +278,39 @@ class XtdGearModels
                 };
             };
         };
+        class CampaignHelmets
+        {
+            label="Campaign Helmets";
+            author="91st Aux Team";
+            options[]={"Campaignhelms"};
+            class Campaignhelms
+            {
+                labels="Campaign Helmets";
+                values[]=
+                {
+                    "CampaignStandard",
+                    "CampaignMedic",
+                    "CampaignBARC",
+                    "CampaignBARCMedic"
+                };
+                class CampaignStandard
+                {
+                    label="Standard";
+                };
+                class CampaignMedic
+                {
+                    label="Medic";
+                };
+                class CampaignBARC
+                {
+                    label="BARC";
+                };
+                class CampaignBARCMedic
+                {
+                    label="BARC Medic";
+                };
+            };
+        };
     };
 };
 class CfgWeapons
@@ -536,6 +569,40 @@ class CfgWeapons
         {
             model="Beskarhelmets";
             Beskarhelms="Sentinel";
+        };
+    };
+
+    // Campaign
+    class 91st_Campaign_Helmet: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="CampaignHelmets";
+            Campaignhelms="CampaignStandard";
+        };
+    };
+    class 91st_Campaign_Medic_Helmet: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="CampaignHelmets";
+            Campaignhelms="CampaignMedic";
+        };
+    };
+    class 91st_Campaign_BARC_Helmet: JLTS_CloneHelmetBARC
+    {
+        class XtdGearInfo
+        {
+            model="CampaignHelmets";
+            Campaignhelms="CampaignBARC";
+        };
+    };
+    class 91st_Campaign_BARC_Medic_Helmet: JLTS_CloneHelmetBARC
+    {
+        class XtdGearInfo
+        {
+            model="CampaignHelmets";
+            Campaignhelms="CampaignBARCMedic";
         };
     };
 };

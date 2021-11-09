@@ -81,10 +81,9 @@ class XtdGearModels
                     "Trooper",
                     "Veteran",
                     "Teamlead",
+                    "NCOIC",
                     "XO",
-                    "CO",
-                    "Scorch",
-                    "Arcanist"
+                    "CO"
                 };
                 class Trooper
                 {
@@ -98,6 +97,10 @@ class XtdGearModels
                 {
                     label="Teamlead";
                 };
+                class NCOIC
+                {
+                    label="NCOIC";
+                };
                 class XO
                 {
                     label="XO";
@@ -106,14 +109,6 @@ class XtdGearModels
                 {
                     label="CO";
                 };
-                class Scorch
-                {
-                    label="Scorch";
-                };
-                class Arcanist
-                {
-                    label="Arcanist";
-                }
             };
         };
 	    class 91stOfficerPauldrons
@@ -258,6 +253,14 @@ class CfgWeapons
             Arcvests="Teamlead";
         };
     };
+    class 91st_JLTS_Vest_ARC_NCOIC: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="91stARCVests";
+            Arcvests="NCOIC";
+        };
+    };
     class 91st_JLTS_Vest_ARC_XO: V_RebreatherB
     {
         class XtdGearInfo
@@ -272,22 +275,6 @@ class CfgWeapons
         {
             model="91stARCVests";
             Arcvests="CO";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_Scorch: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Scorch";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_Arcanist: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Arcanist";
         };
     };
 };
