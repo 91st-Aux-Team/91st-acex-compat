@@ -32,7 +32,9 @@ class XtdGearModels
                 {
                     "Arcanist",
                     "Corn",
-                    "Scorch"
+                    "Rat",
+                    "Scorch",
+                    "Smig"
                 };
                 class Arcanist
                 {
@@ -42,9 +44,17 @@ class XtdGearModels
                 {
                     label="Corn";
                 }; 
+                class Rat
+                {
+                    label="Rat";
+                }; 
                 class Scorch
                 {
                     label="Scorch";
+                };
+                class Smig
+                {
+                    label="Smig";
                 };
             };
         };
@@ -76,6 +86,22 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Corn";
+        };
+    };
+    class 91st_Officer_Vest_Rat: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Rat";
+        };
+    };
+    class 91st_Officer_Vest_Smig: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Smig";
         };
     };
 };

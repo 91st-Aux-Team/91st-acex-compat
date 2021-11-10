@@ -179,7 +179,8 @@ class XtdGearModels
                     "BeskarCDV",
                     "NovaCDV",
                     "JadeCDV",
-                    "ArchangelCDV"
+                    "ArchangelCDV",
+                    "ScorchCDV"
                 };
                 class TrooperCDV
                 {
@@ -204,6 +205,10 @@ class XtdGearModels
                 class ArchangelCDV
                 {
                     label="Archangel";
+                };
+                class ScorchCDV
+                {
+                    label="Scorch";
                 };
             };
         };
@@ -444,6 +449,14 @@ class CfgVehicles
         {
             model="91stCDVJumppack";
             CDV="BeskarCDV";
+        };
+    };
+    class 91st_jumppack_mc_scorch: 91st_jumppack_mc
+    {
+        class XtdGearInfo
+        {
+            model="91stCDVJumppack";
+            CDV="ScorchCDV";
         };
     };
 };

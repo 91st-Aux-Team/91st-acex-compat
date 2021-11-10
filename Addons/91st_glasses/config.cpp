@@ -98,7 +98,8 @@ class XtdGearModels
                     "Squad",
                     "Platoon",
                     "Company",
-                    "Archangel"
+                    "Archangel",
+                    "Fallon"
                 };
                 // Class used for defining in the shit below
                 class Squad
@@ -120,6 +121,11 @@ class XtdGearModels
                 {
                     // Labels just a display name
                     label="Archangel";
+                };
+                class Fallon
+                {
+                    // Labels just a display name
+                    label="Fallon";
                 };
             };
         };
@@ -263,6 +269,14 @@ class CfgGlasses
         {
             model="91st_medic";// The value of "Rank" is just the label used in the list
             Medic="Archangel";
+        };
+    };
+    class 91st_med_fallon_vest
+    {
+        class XtdGearInfo
+        {
+            model="91st_medic";// The value of "Rank" is just the label used in the list
+            Medic="Fallon";
         };
     };
     class 91st_jumptrooper_vest
