@@ -60,6 +60,7 @@ class XtdGearModels
                     "Jughead",
                     "Jericho",
                     "Laser",
+                    "Leeroy",
                     "Lesk",
                     "Lich",
                     "Marf",
@@ -81,6 +82,7 @@ class XtdGearModels
                     "Sapphire",
                     "Shields",
                     "Shoto",
+                    "Silver",
                     "Skit",
                     "Smig",
                     "Steak",
@@ -114,6 +116,7 @@ class XtdGearModels
                     "Frog",
                     "Hex",
                     "Chopper",
+                    "Grady",
                     "Delta",
                     "Bensen",
                     "Squids"
@@ -129,6 +132,10 @@ class XtdGearModels
                 class Chopper
                 {
                     label="Chopper";
+                };
+                class Grady
+                {
+                    label="Grady";
                 };
                 class Delta
                 {
@@ -157,7 +164,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Tallyrand",
-                    "Caber",
+                    "Cabur",
                     "Corn",
                     "Roach",
                     "Bacon",
@@ -172,9 +179,9 @@ class XtdGearModels
                 {
                     label="Tallyrand";
                 };
-                class Caber
+                class Cabur
                 {
-                    label="Caber";
+                    label="Cabur";
                 };
                 class Corn
                 {
@@ -472,6 +479,14 @@ class CfgWeapons
             InfantryCustoms="Laser";
         };
     };
+    class 91st_Leeroy_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="InfantryCustomHelms";
+            InfantryCustoms="Leeroy";
+        };
+    };
     class 91st_Lesk_Helmet_JLTS: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
@@ -640,6 +655,14 @@ class CfgWeapons
             InfantryCustoms="Shoto";
         };
     };
+    class 91st_Silver_Helmet_JLTS: JLTS_CloneHelmetP2
+    {
+        class XtdGearInfo
+        {
+            model="InfantryCustomHelms";
+            InfantryCustoms="Silver";
+        };
+    };
     class 91st_Skit_Helmet_JLTS: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
@@ -786,6 +809,14 @@ class CfgWeapons
             PilotCustoms="Chopper";
         };
     };
+    class 91st_Grady_Helmet: 212th_Pilot_Helmet_91st
+    {
+        class XtdGearInfo
+        {
+            model="PilotCustomshelmets";
+            PilotCustoms="Grady";
+        };
+    };
     class 91st_Delta_Helmet: 212th_Pilot_Helmet_91st
     {
         class XtdGearInfo
@@ -849,7 +880,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="Archelmets";
-            Archelms="Caber";
+            Archelms="Cabur";
         };
     };
     class 91st_Skittles_Helmet: JLTS_CloneHelmetARC

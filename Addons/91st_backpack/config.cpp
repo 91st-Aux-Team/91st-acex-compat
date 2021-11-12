@@ -141,18 +141,18 @@ class XtdGearModels
                 labels="Jumpack";
                 values[]=
                 {
-                    "Trooper",
                     "Empty",
+                    "Trooper",
                     "Veteran",
                     "Teamlead"
-                };
-                class Trooper
-                {
-                    label="Trooper";
                 };
                 class Empty
                 {
                     label="Empty";
+                };
+                class Trooper
+                {
+                    label="Trooper";
                 };
                 class Veteran
                 {

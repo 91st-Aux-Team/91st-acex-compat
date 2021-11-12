@@ -254,7 +254,9 @@ class XtdGearModels
                     "Kuro",
                     "Toxic",
                     "Fly",
-                    "Sentinel"
+                    "Sentinel",
+                    "Samael",
+                    "Crit"
                 };
                 class Base
                 {
@@ -275,6 +277,14 @@ class XtdGearModels
                 class Sentinel
                 {
                     label="Sentinel";
+                };
+                class Samael
+                {
+                    label="Samael";
+                };
+                class Crit
+                {
+                    label="Crit";
                 };
             };
         };
@@ -308,6 +318,34 @@ class XtdGearModels
                 class CampaignBARCMedic
                 {
                     label="BARC Medic";
+                };
+            };
+        };
+        class ARFHelmets
+        {
+            label="ARF Helmets";
+            author="91st Aux Team";
+            options[]={"ARFhelms"};
+            class ARFhelms
+            {
+                labels="ARF Helmets";
+                values[]=
+                {
+                    "ARF",
+                    "Raze",
+                    "Kappa"
+                };
+                class ARF
+                {
+                    label="ARF";
+                };
+                class Raze
+                {
+                    label="Raze";
+                };
+                class Kappa
+                {
+                    label="Kappa";
                 };
             };
         };
@@ -571,6 +609,22 @@ class CfgWeapons
             Beskarhelms="Sentinel";
         };
     };
+    class 91st_Beskar_Samael_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Samael";
+        };
+    };
+    class 91st_Beskar_Crit_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            Beskarhelms="Crit";
+        };
+    };
 
     // Campaign
     class 91st_Campaign_Helmet: JLTS_CloneHelmetP2
@@ -603,6 +657,34 @@ class CfgWeapons
         {
             model="CampaignHelmets";
             Campaignhelms="CampaignBARCMedic";
+        };
+    };
+
+    //ARF
+    class 327th_ARF;
+    class 91st_ARF_Base;
+    class 91st_ARF: 91st_ARF_Base
+    {
+        class XtdGearInfo
+        {
+            model="ARFHelmets";
+            ARFhelms="ARF";
+        };
+    };
+    class 91st_Raze_ARF: 91st_ARF_Base
+    {
+        class XtdGearInfo
+        {
+            model="ARFHelmets";
+            ARFhelms="Raze";
+        };
+    };
+    class 91st_Kappa_ARF: 91st_ARF_Base
+    {
+        class XtdGearInfo
+        {
+            model="ARFHelmets";
+            ARFhelms="Kappa";
         };
     };
 };
