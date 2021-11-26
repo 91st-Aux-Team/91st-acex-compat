@@ -79,6 +79,7 @@ class XtdGearModels
                     "Ricochet",
                     "Saga",
                     "Saint",
+                    "Sappheron",
                     "Sapphire",
                     "Shields",
                     "Shoto",
@@ -99,7 +100,6 @@ class XtdGearModels
                     "Xero",
                     "Zerda"
                 };
-                
             };
         };
         
@@ -121,36 +121,7 @@ class XtdGearModels
                     "Bensen",
                     "Squids"
                 };
-                class Frog
-                {
-                    label="Frog";
-                };
-                class Hex
-                {
-                    label="Hex";
-                };
-                class Chopper
-                {
-                    label="Chopper";
-                };
-                class Grady
-                {
-                    label="Grady";
-                };
-                class Delta
-                {
-                    label="Delta";
-                };
-                class Bensen
-                {
-                    label="Bensen";
-                };
-                class Squids
-                {
-                    label="Squids";
-                };
-            };
-            
+            };            
         };
         
         class Archelmets
@@ -174,54 +145,24 @@ class XtdGearModels
                     "Galahad",
                     "Loken",
                     "Scorch"
-                };
-                class Tallyrand
+                };                
+            };        
+        };
+        class Barchelmets
+        {
+            label="BARC Helmets";
+            author="91st Aux Team";
+            options[]={"Barchelms"};
+            class Barchelms
+            {
+                labels="BARC Helmets";
+                values[]=
                 {
-                    label="Tallyrand";
+                    "Base",
+                    "Medic",
+                    "Mav",
                 };
-                class Cabur
-                {
-                    label="Cabur";
-                };
-                class Corn
-                {
-                    label="Corn";
-                };
-                class Roach
-                {
-                    label="Roach";
-                };
-                class Bacon
-                {
-                    label="Bacon";
-                };
-                class Skittles
-                {
-                    label="Skittles";
-                };
-                class Arcanist
-                {
-                    label="Arcanist";
-                };
-                class Nova
-                {
-                    label="Nova";
-                };
-                class Galahad
-                {
-                    label="Galahad";
-                };
-                class Loken
-                {
-                    label="Loken";
-                };
-                class Scorch
-                {
-                    label="Scorch";
-                };
-                
             };
-        
         };
     };
 };
@@ -239,696 +180,729 @@ class CfgWeapons
     class JLTS_CloneHelmetARC_illum;
     
     //Infantry Custom Helmets
-    class 91st_Axer_Helmet_JLTS: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Axer";
-        };
-    };
-    class 91st_Barr_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Barr";
-        };
-    };
-    class 91st_Banana_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Banana";
-        };
-    };
-    class 91st_Binns_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Binns";
-        };
-    };
-    class 91st_Blanks_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Blanks";
-        };
-    };
-    class 91st_Charred_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Charred";
-        };
-    };
-    class 91st_Chop_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Chop";
-        };
-    };
-    class 91st_Cookie_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Cookie";
-        };
-    };
-    class 91st_Con_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Con";
-        };
-    };
-    class 91st_Corpse_Helmet_JLTS: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Corpse";
-        };
-    };
-    class 91st_Courtney_Helmet_JLTS: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Courtney";
-        };
-    };
-    class 91st_Crash_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Crash";
-        };
-    };
-    class 91st_Cross_Helmet_JLTS: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Cross";
-        };
-    };
-    class 91st_Crossout_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Crossout";
-        };
-    };
-    class 91st_Demo_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Demo";
-        };
-    };
-    class 91st_Dev_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Dev";
-        };
-    };
-    class 91st_Dex_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Dex";
-        };
-    };
-    class 91st_Dumajin_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Dumajin";
-        };
-    };
-    class 91st_Edge_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Edge";
-        };
-    };
-    class 91st_Falcon_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Falcon";
-        };
-    };
-    class 91st_Fallon_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Fallon";
-        };
-    };
-    class 91st_Foxtrot_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Foxtrot";
-        };
-    };
-    class 91st_Fraeyr_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Fraeyr";
-        };
-    };
-    class 91st_Fraiser_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Fraiser";
-        };
-    };
-    class 91st_Freq_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Freq";
-        };
-    };
-    class 91st_Golden_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Golden";
-        };
-    };
-    class 91st_Ishi_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Ishi";
-        };
-    };
-    class 91st_Jughead_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Jughead";
-        };
-    };
-    class 91st_Jericho_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Jericho";
-        };
-    };
-    class 91st_Laser_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Laser";
-        };
-    };
-    class 91st_Leeroy_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Leeroy";
-        };
-    };
-    class 91st_Lesk_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Lesk";
-        };
-    };
-    class 91st_Lich_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Lich";
-        };
-    };
-    class 91st_Marf_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Marf";
-        };
-    };
-    class 91st_Mauser_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Mauser";
-        };
-    };
-    class 91st_Mav_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Mav";
-        };
-    };
-    class 91st_Max_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Max";
-        };
-    };
-    class 91st_Myrola_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Myrola";
-        };
-    };
-    class 91st_Opossum_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Opossum";
-        };
-    };
-    class 91st_Oddball_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Oddball";
-        };
-    };
-    class 91st_Penguin_Helmet_JLTS: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Penguin";
-        };
-    };
-    class 91st_Postal_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Postal";
-        };
-    };
-    class 91st_Praetorian_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Praetorian";
-        };
-    };
-    class 91st_Predator_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Predator";
-        };
-    };
-    class 91st_Qal_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Qal";
-        };
-    };
-    class 91st_Rat_Helmet_JLTS: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Rat";
-        };
-    };
-    class 91st_Ricochet_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Ricochet";
-        };
-    };
-    class 91st_Saga_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Saga";
-        };
-    };
-    class 91st_Saint_Helmet_JLTS: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Saint";
-        };
-    };
-    class 91st_Sapphire_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Sapphire";
-        };
-    };
-    class 91st_Shields_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Shields";
-        };
-    };
-    class 91st_Shoto_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Shoto";
-        };
-    };
-    class 91st_Silver_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Silver";
-        };
-    };
-    class 91st_Skit_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Skit";
-        };
-    };
-    class 91st_Smig_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Smig";
-        };
-    };
-    class 91st_Steak_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Steak";
+        class 91st_Axer_Helmet_JLTS: JLTS_CloneHelmetP2_illum
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Axer";
+            };
+        };
+        class 91st_Barr_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Barr";
+            };
+        };
+        class 91st_Banana_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Banana";
+            };
+        };
+        class 91st_Binns_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Binns";
+            };
+        };
+        class 91st_Blanks_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Blanks";
+            };
+        };
+        class 91st_Charred_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Charred";
+            };
+        };
+        class 91st_Chop_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Chop";
+            };
+        };
+        class 91st_Cookie_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Cookie";
+            };
+        };
+        class 91st_Con_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Con";
+            };
+        };
+        class 91st_Corpse_Helmet_JLTS: JLTS_CloneHelmetP2_illum
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Corpse";
+            };
+        };
+        class 91st_Courtney_Helmet_JLTS: JLTS_CloneHelmetP2_illum
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Courtney";
+            };
+        };
+        class 91st_Crash_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Crash";
+            };
+        };
+        class 91st_Cross_Helmet_JLTS: JLTS_CloneHelmetP2_illum
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Cross";
+            };
+        };
+        class 91st_Crossout_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Crossout";
+            };
+        };
+        class 91st_Demo_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Demo";
+            };
+        };
+        class 91st_Dev_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Dev";
+            };
+        };
+        class 91st_Dex_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Dex";
+            };
+        };
+        class 91st_Dumajin_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Dumajin";
+            };
+        };
+        class 91st_Edge_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Edge";
+            };
+        };
+        class 91st_Falcon_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Falcon";
+            };
+        };
+        class 91st_Fallon_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Fallon";
+            };
+        };
+        class 91st_Foxtrot_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Foxtrot";
+            };
+        };
+        class 91st_Fraeyr_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Fraeyr";
+            };
+        };
+        class 91st_Fraiser_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Fraiser";
+            };
+        };
+        class 91st_Freq_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Freq";
+            };
+        };
+        class 91st_Golden_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Golden";
+            };
+        };
+        class 91st_Ishi_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Ishi";
+            };
+        };
+        class 91st_Jughead_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Jughead";
+            };
+        };
+        class 91st_Jericho_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Jericho";
+            };
+        };
+        class 91st_Laser_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Laser";
+            };
+        };
+        class 91st_Leeroy_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Leeroy";
+            };
+        };
+        class 91st_Lesk_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Lesk";
+            };
+        };
+        class 91st_Lich_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Lich";
+            };
+        };
+        class 91st_Marf_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Marf";
+            };
+        };
+        class 91st_Mauser_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Mauser";
+            };
+        };
+        class 91st_Mav_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Mav";
+            };
+        };
+        class 91st_Max_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Max";
+            };
+        };
+        class 91st_Myrola_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Myrola";
+            };
+        };
+        class 91st_Opossum_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Opossum";
+            };
+        };
+        class 91st_Oddball_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Oddball";
+            };
+        };
+        class 91st_Penguin_Helmet_JLTS: JLTS_CloneHelmetP2_illum
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Penguin";
+            };
+        };
+        class 91st_Postal_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Postal";
+            };
+        };
+        class 91st_Praetorian_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Praetorian";
+            };
+        };
+        class 91st_Predator_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Predator";
+            };
+        };
+        class 91st_Qal_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Qal";
+            };
+        };
+        class 91st_Rat_Helmet_JLTS: JLTS_CloneHelmetP2_illum
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Rat";
+            };
+        };
+        class 91st_Ricochet_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Ricochet";
+            };
+        };
+        class 91st_Saga_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Saga";
+            };
+        };
+        class 91st_Saint_Helmet_JLTS: JLTS_CloneHelmetP2_illum
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Saint";
+            };
+        };
+        class 91st_Sappheron_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Sappheron";
+            };
+        };
+        class 91st_Sapphire_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Sapphire";
+            };
+        };
+        class 91st_Shields_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Shields";
+            };
+        };
+        class 91st_Shoto_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Shoto";
+            };
+        };
+        class 91st_Silver_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Silver";
+            };
+        };
+        class 91st_Skit_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Skit";
+            };
+        };
+        class 91st_Smig_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Smig";
+            };
+        };
+        class 91st_Steak_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Steak";
+            };
         };
-    };
-    class 91st_Steve_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Steve_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Steve";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Steve";
+            };
         };
-    };
-    class 91st_Strike_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Strike_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Strike";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Strike";
+            };
         };
-    };
-    class 91st_Tarz_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Tarz_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Tarz";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Tarz";
+            };
         };
-    };
-    class 91st_Tig_Helmet_JTLS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Tig_Helmet_JTLS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Tig";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Tig";
+            };
         };
-    };
-    class 91st_Trauma_Helmet_JTLS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Trauma_Helmet_JTLS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Trauma";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Trauma";
+            };
         };
-    };
-    class 91st_Trill_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Trill_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Trill";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Trill";
+            };
         };
-    };
-    class 91st_Volx_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Volx_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Volx";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Volx";
+            };
         };
-    };
-    class 91st_Viper_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Viper_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Viper";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Viper";
+            };
         };
-    };
-    class 91st_Widget_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Widget_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Widget";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Widget";
+            };
         };
-    };
-    class 91st_Xenophon_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Xenophon_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Xenophon";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Xenophon";
+            };
         };
-    };
-    class 91st_Xero_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Xero_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Xero";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Xero";
+            };
         };
-    };
-    class 91st_Zerda_Helmet_JLTS: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
+        class 91st_Zerda_Helmet_JLTS: JLTS_CloneHelmetP2
         {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Zerda";
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Zerda";
+            };
         };
-    };
     
     //Pilot customs
-    class 91st_Frog_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
+        class 91st_Frog_Helmet: 212th_Pilot_Helmet_91st
         {
-            model="PilotCustomshelmets";
-            PilotCustoms="Frog";
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Frog";
+            };
         };
-    };
-    class 91st_Hex_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
+        class 91st_Hex_Helmet: 212th_Pilot_Helmet_91st
         {
-            model="PilotCustomshelmets";
-            PilotCustoms="Hex";
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Hex";
+            };
         };
-    };
-    class 91st_Chopper_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
+        class 91st_Chopper_Helmet: 212th_Pilot_Helmet_91st
         {
-            model="PilotCustomshelmets";
-            PilotCustoms="Chopper";
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Chopper";
+            };
         };
-    };
-    class 91st_Grady_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
+        class 91st_Grady_Helmet: 212th_Pilot_Helmet_91st
         {
-            model="PilotCustomshelmets";
-            PilotCustoms="Grady";
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Grady";
+            };
         };
-    };
-    class 91st_Delta_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
+        class 91st_Delta_Helmet: 212th_Pilot_Helmet_91st
         {
-            model="PilotCustomshelmets";
-            PilotCustoms="Delta";
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Delta";
+            };
         };
-    };
-    class 91st_Bensen_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
+        class 91st_Bensen_Helmet: 212th_Pilot_Helmet_91st
         {
-            model="PilotCustomshelmets";
-            PilotCustoms="Bensen";
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Bensen";
+            };
         };
-    };
-    class 91st_Squids_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
+        class 91st_Squids_Helmet: 212th_Pilot_Helmet_91st
         {
-            model="PilotCustomshelmets";
-            PilotCustoms="Squids";
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Squids";
+            };
         };
-    };
 
     //Arc helms
-    class 91st_Talleyrand_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Talleyrand_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Tallyrand";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Tallyrand";
+            };
         };
-    };
-    class 91st_Corn_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Corn_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Corn";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Corn";
+            };
         };
-    };
-    class 91st_Roach_Helmet: JLTS_CloneHelmetARC_illum
-    {
-        class XtdGearInfo
+        class 91st_Roach_Helmet: JLTS_CloneHelmetARC_illum
         {
-            model="Archelmets";
-            Archelms="Roach";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Roach";
+            };
         };
-    };
-    class 91st_Bacon_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Bacon_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Bacon";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Bacon";
+            };
         };
-    };
-    class 91st_Cabur_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Cabur_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Cabur";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Cabur";
+            };
         };
-    };
-    class 91st_Skittles_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Skittles_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Skittles";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Skittles";
+            };
         };
-    };
-    class 91st_Arcanist_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Arcanist_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Arcanist";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Arcanist";
+            };
         };
-    };
-    class 91st_Nova_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Nova_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Nova";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Nova";
+            };
         };
-    };
-    class 91st_Galahad_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Galahad_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Galahad";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Galahad";
+            };
         };
-    };
-    class 91st_Loken_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Loken_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Loken";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Loken";
+            };
         };
-    };
-    class 91st_Scorch_Helmet: JLTS_CloneHelmetARC
-    {
-        class XtdGearInfo
+        class 91st_Scorch_Helmet: JLTS_CloneHelmetARC
         {
-            model="Archelmets";
-            Archelms="Scorch";
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Scorch";
+            };
         };
-    };
+    //BARC Helms
+        class 91st_BARC_Base_Helmet: JLTS_CloneHelmetBARC
+        {
+            class XtdGearInfo
+            {
+                model="Barchelmets";
+                Barchelms="Base";
+            };
+        };
+        class 91st_Medic_BARC_Helmet: JLTS_CloneHelmetBARC
+        {
+            class XtdGearInfo
+            {
+                model="Barchelmets";
+                Barchelms="Medic";
+            };
+        };
+        class 91st_Mav_BARC_Helmet: JLTS_CloneHelmetBARC
+        {
+            class XtdGearInfo
+            {
+                model="Barchelmets";
+                Barchelms="Mav";
+            };
+        };
 };

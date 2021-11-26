@@ -32,6 +32,7 @@ class XtdGearModels
                 {
                     "Arcanist",
                     "Corn",
+                    "Nova",
                     "Rat",
                     "Scorch",
                     "Smig"
@@ -43,7 +44,11 @@ class XtdGearModels
                 class Corn
                 {
                     label="Corn";
-                }; 
+                };
+                class Nova
+                {
+                    label="Nova";
+                };
                 class Rat
                 {
                     label="Rat";
@@ -78,6 +83,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Scorch";
+        };
+    };
+    class 91st_JLTS_Vest_ARC_Nova: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Nova";
         };
     };
     class 91st_Officer_Vest_Corn: V_RebreatherB
