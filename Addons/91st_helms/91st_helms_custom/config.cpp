@@ -59,6 +59,7 @@ class XtdGearModels
                     "Ishi",
                     "Jughead",
                     "Jericho",
+                    "Kitsune",
                     "Laser",
                     "Leeroy",
                     "Lesk",
@@ -410,6 +411,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Jericho";
+            };
+        };
+        class 91st_Kitsune_Helmet_JLTS: JLTS_CloneHelmetP2
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Kitsune";
             };
         };
         class 91st_Laser_Helmet_JLTS: JLTS_CloneHelmetP2
