@@ -137,6 +137,7 @@ class XtdGearModels
                     "Kuro",
                     "Mav",
                     "Nova",
+                    "Rat",
                     "Raze",
                     "Roach",
                     "Scorch",
@@ -177,6 +178,10 @@ class XtdGearModels
                 class Penguin
                 {
                     label="Penguin";
+                };
+                class Rat
+                {
+                    label="Rat";
                 };
                 class Raze
                 {
@@ -406,6 +411,14 @@ class CfgWeapons
         {
             model="91stCustomArmor";
             Custom="Nova";
+        };
+    };
+    class 91st_Rat_Armor: Uniform_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stCustomArmor";
+            Custom="Rat";
         };
     };
     class 91st_Raze_Armor: Uniform_Base
