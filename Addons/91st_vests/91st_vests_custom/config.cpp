@@ -45,6 +45,10 @@ class XtdGearModels
                 {
                     label="Corn";
                 };
+                class Mav
+                {
+                    label="Mav";
+                };
                 class Nova
                 {
                     label="Nova";
@@ -83,6 +87,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Scorch";
+        };
+    };
+    class 91st_Officer_Vest_Mav: V_RebreatherB
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Mav";
         };
     };
     class 91st_JLTS_Vest_ARC_Nova: V_RebreatherB

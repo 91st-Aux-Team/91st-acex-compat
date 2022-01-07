@@ -118,6 +118,7 @@ class XtdGearModels
                     "Hex",
                     "Chopper",
                     "Grady",
+                    "Grizzly",
                     "Delta",
                     "Bensen",
                     "Squids"
@@ -773,6 +774,14 @@ class CfgWeapons
             {
                 model="PilotCustomshelmets";
                 PilotCustoms="Grady";
+            };
+        };
+        class 91st_Grizzly_Helmet: 212th_Pilot_Helmet_91st
+        {
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Grizzly";
             };
         };
         class 91st_Delta_Helmet: 212th_Pilot_Helmet_91st
