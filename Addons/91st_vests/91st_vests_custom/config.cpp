@@ -32,10 +32,10 @@ class XtdGearModels
                 {
                     "Arcanist",
                     "Corn",
+                    "Mav",
                     "Nova",
                     "Rat",
-                    "Scorch",
-                    "Smig"
+                    "Scorch"
                 };
                 class Arcanist
                 {
@@ -60,10 +60,6 @@ class XtdGearModels
                 class Scorch
                 {
                     label="Scorch";
-                };
-                class Smig
-                {
-                    label="Smig";
                 };
             };
         };
@@ -119,14 +115,6 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Rat";
-        };
-    };
-    class 91st_Officer_Vest_Smig: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Smig";
         };
     };
 };

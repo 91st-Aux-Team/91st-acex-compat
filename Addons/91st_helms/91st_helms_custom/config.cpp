@@ -45,7 +45,6 @@ class XtdGearModels
                     "Cross",
                     "Crossout",
                     "Demo",
-                    "Dev",
                     "Dex",
                     "Dumajin",
                     "Edge",
@@ -300,14 +299,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Demo";
-            };
-        };
-        class 91st_Dev_Helmet_JLTS: JLTS_CloneHelmetP2
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Dev";
             };
         };
         class 91st_Dex_Helmet_JLTS: JLTS_CloneHelmetP2
