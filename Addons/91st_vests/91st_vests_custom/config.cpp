@@ -30,33 +30,41 @@ class XtdGearModels
                 labels="Infantry Custom Helmets";
                 values[]=
                 {
-                    "Arcanist",
-                    "Corn",
                     "Mav",
-                    "Nova",
                     "Rat",
+                    "Dex",
+                    "Corn",
+                    //ARC
+                    "Arcanist",
+                    "Nova",
                     "Scorch"
-                };
-                class Arcanist
-                {
-                    label="Arcanist";
-                };
-                class Corn
-                {
-                    label="Corn";
                 };
                 class Mav
                 {
                     label="Mav";
                 };
-                class Nova
-                {
-                    label="Nova";
-                };
                 class Rat
                 {
                     label="Rat";
                 }; 
+                class Dex
+                {
+                    label="Dex";
+                }; 
+                class Corn
+                {
+                    label="Corn";
+                };
+
+                //ARC
+                class Arcanist
+                {
+                    label="Arcanist";
+                };
+                class Nova
+                {
+                    label="Nova";
+                };
                 class Scorch
                 {
                     label="Scorch";
@@ -68,24 +76,10 @@ class XtdGearModels
 class CfgWeapons
 {
     class V_RebreatherB;
+    class 91st_Officer_Vest_Gray;
+    class 91st_Vest_ARC_Base;
     //Officer Vests
-    class 91st_JLTS_Vest_ARC_Arcanist: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Arcanist";
-        };
-    };
-    class 91st_JLTS_Vest_ARC_Scorch: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Scorch";
-        };
-    };
-    class 91st_Officer_Vest_Mav: V_RebreatherB
+    class 91st_Officer_Vest_Mav: 91st_Officer_Vest_Gray
     {
         class XtdGearInfo
         {
@@ -93,15 +87,23 @@ class CfgWeapons
             CustomVest="Mav";
         };
     };
-    class 91st_JLTS_Vest_ARC_Nova: V_RebreatherB
+    class 91st_Officer_Vest_Rat: 91st_Officer_Vest_Gray
     {
         class XtdGearInfo
         {
             model="CustomVests";
-            CustomVest="Nova";
+            CustomVest="Rat";
         };
     };
-    class 91st_Officer_Vest_Corn: V_RebreatherB
+    class 91st_Officer_Vest_Dex: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Dex";
+        };
+    };
+    class 91st_Officer_Vest_Corn: 91st_Officer_Vest_Gray
     {
         class XtdGearInfo
         {
@@ -109,12 +111,30 @@ class CfgWeapons
             CustomVest="Corn";
         };
     };
-    class 91st_Officer_Vest_Rat: V_RebreatherB
+
+    //ARC
+    class 91st_Vest_ARC_Arcanist: 91st_Vest_ARC_Base
     {
         class XtdGearInfo
         {
             model="CustomVests";
-            CustomVest="Rat";
+            CustomVest="Arcanist";
+        };
+    };
+    class 91st_Vest_ARC_Scorch: 91st_Vest_ARC_Base
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Scorch";
+        };
+    };
+    class 91st_Vest_ARC_Nova: 91st_Vest_ARC_Base
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Nova";
         };
     };
 };

@@ -1,9 +1,9 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_uniforms
+	class 91st_Infantry_ACEAX_compat_uniforms
 	{
-		addonRootClass="91st_ACEAX_compat";
-        name="91st_ACEAX_compat_uniforms";
+		addonRootClass="91st_Infantry_ACEAX_compat";
+        name="91st_Infantry_ACEAX_compat_uniforms";
 		units[]={};
 		weapons[]={};
 		requiredAddons[]=
@@ -17,17 +17,18 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-		class JLTS_Clone_P2_recon
+		class 91st_Infantry_Ranks
         {
-            label="91st Rank Armor";
+            label="91st Infanry Armor";
             author="91st Aux Team";
-            options[]={"Rank"};
-            class Rank
+            options[]={"InfanryRank"};
+            class InfanryRank
             {
                 label="Ranks";
                 values[]=
                 {
                     "CR",
+                    "CRC",
                     "CT",
                     "SCT",
                     "VCT",
@@ -36,9 +37,8 @@ class XtdGearModels
                     "CP",
                     "CS",
                     "CSS",
+                    "CSM",
                     "CFS",
-                    "CL",
-                    "CC",
                     "WO1",
                     "WO2",
                     "WO3",
@@ -46,77 +46,278 @@ class XtdGearModels
                     "WO5"
                 };
                 class CR
+				{
+					label = "CR";
+				};
+                class CRC
+				{
+					label = "CRC";
+				};
+				class CT
+				{
+					label = "CT";
+				};
+				class SCT
+				{
+					label = "SCT";
+				};
+				class VCT
+				{
+					label = "VCT";
+				};
+				class CSP
+				{
+					label = "CSP";
+				};
+				class CLC
+				{
+					label = "CLC";
+				};
+				class CP
+				{
+					label = "CP";
+				};
+				class CS
+				{
+					label = "CS";
+				};
+				class CSS
+				{
+					label = "CSS";
+				};
+				class CSM
+				{
+					label = "CSM";
+				};
+				class CFS
+				{
+					label = "CFS";
+				};
+				class WO1
+				{
+					label = "W01";
+				};
+				class WO2
+				{
+					label = "W02";
+				};
+				class WO3
+				{
+					label = "W03";
+				};
+				class WO4
+				{
+					label = "W04";
+				};
+				class WO5
+				{
+					label = "W05";
+				};
+            };
+        };
+        class 91st_Pilot_Ranks
+        {
+            label="91st Pilot Rank Armor";
+            author="91st Aux Team";
+            options[]={"PilotRank"};
+            class PilotRank
+            {
+                label="Ranks";
+                values[]=
                 {
-                    label="CR";
+                    "CXC",
+                    "CX",
+                    "CXX",
+                    "CXP",
+                    "CXS",
+                    "CXSS",
+                    "CX1",
+                    "CX2",
+                    "CX3",
+                    "CX4",
+                    "CX5"
                 };
-                class CT
+                class CXC
+				{
+					label = "CXC";
+				};
+				class CX
+				{
+					label = "CX";
+				};
+				class CXX
+				{
+					label = "CXX";
+				};
+				class CXP
+				{
+					label = "CXP";
+				};
+				class CXS
+				{
+					label = "CXS";
+				};
+				class CXSS
+				{
+					label = "CXSS";
+				};
+				class CX1
+				{
+					label = "CX1";
+				};
+				class CX2
+				{
+					label = "CX2";
+				};
+				class CX3
+				{
+					label = "CX3";
+				};
+				class CX4
+				{
+					label = "CX4";
+				};
+				class CX5
+				{
+					label = "CX5";
+				};
+            };
+        };
+        class 91st_Beskar_Ranks
+        {
+            label="91st Beskar Rank Armor";
+            author="91st Aux Team";
+            options[]={"BeskarRank"};
+            class BeskarRank
+            {
+                label="Ranks";
+                values[]=
                 {
-                    label="CT";
-                };
-                class SCT
-                {
-                    label="SCT";
-                };
-                class VCT
-                {
-                    label="VCT";
+                    "CT",
+                    "SCT",
+                    "VCT",
+                    "CSP",
+                    "CLC",
+                    "CP",
+                    "CS",
+                    "CSS",
+                    "WO1",
+                    "WO2",
+                    "WO3",
+                    "WO4",
+                    "WO5"
                 };
                 class CSP
+				{
+					label = "CSP";
+				};
+				class CLC
+				{
+					label = "CLC";
+				};
+				class CP
+				{
+					label = "CP";
+				};
+				class CS
+				{
+					label = "CS";
+				};
+				class CSS
+				{
+					label = "CSS";
+				};
+				class CSM
+				{
+					label = "CSM";
+				};
+				class CFS
+				{
+					label = "CFS";
+				};
+				class WO1
+				{
+					label = "W01";
+				};
+				class WO2
+				{
+					label = "W02";
+				};
+				class WO3
+				{
+					label = "W03";
+				};
+				class WO4
+				{
+					label = "W04";
+				};
+				class WO5
+				{
+					label = "W05";
+				};
+            };
+        };
+        class 91st_ARC_Ranks
+        {
+            label="91st ARC Rank Armor";
+            author="91st Aux Team";
+            options[]={"ARCRank"};
+            class ARCRank
+            {
+                label="Ranks";
+                values[]=
                 {
-                    label="CSP";
+                    "CSP",
+                    "CLC",
+                    "CP",
+                    "CS",
+                    "CSS",
+                    "WO1",
+                    "WO2",
+                    "WO3",
+                    "WO4",
+                    "WO5"
                 };
-                class CLC
-                {
-                    label="CLC";
-                };
-                class CP
-                {
-                    label="CP";
-                };
-                class CS
-                {
-                    label="CS";
-                };
-                class CSS
-                {
-                    label="CSS";
-                };
-                class CSM
-                {
-                    label="CSM";
-                };
-                class CFS
-                {
-                    label="CFS";
-                };
-                class CL
-                {
-                    label="CL";
-                };
-                class CC
-                {
-                    label="CC";
-                };
-                class WO1
-                {
-                    label="W01";
-                };
-                class WO2
-                {
-                    label="W02";
-                };
-                class WO3
-                {
-                    label="W03";
-                };
-                class WO4
-                {
-                    label="W04";
-                };
-                class WO5
-                {
-                    label="W05";
-                };
+                class CSP
+				{
+					label = "CSP";
+				};
+				class CLC
+				{
+					label = "CLC";
+				};
+				class CP
+				{
+					label = "CP";
+				};
+				class CS
+				{
+					label = "CS";
+				};
+				class CSS
+				{
+					label = "CSS";
+				};
+				class WO1
+				{
+					label = "W01";
+				};
+				class WO2
+				{
+					label = "W02";
+				};
+				class WO3
+				{
+					label = "W03";
+				};
+				class WO4
+				{
+					label = "W04";
+				};
+				class WO5
+				{
+					label = "W05";
+				};
             };
         };
         class 91stCustomArmor
@@ -210,146 +411,439 @@ class XtdGearModels
 class CfgWeapons
 {
     class Uniform_Base;
+    class JLTS_Clone_P2_recon;
     //Rank Armor
-    class 91st_Recruit_Armor: Uniform_Base
-    {
-        class XtdGearInfo : Uniform_Base
-        {
-            model="JLTS_Clone_P2_recon";
-            Rank="CR";
-        };
-    };
-    class 91st_CT_Armor: Uniform_Base
+    class 91st_Infantry_CR_Armor: Uniform_Base
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CT";
+            model="91st_Infantry_Ranks";
+            InfanryRank="CR";
         };
     };
-    class 91st_SCT_Armor: Uniform_Base
+    class 91st_Infantry_CRC_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="SCT";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CRC";
         };
     };
-    class 91st_VCT_Armor: Uniform_Base
+    class 91st_Infantry_CT_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="VCT";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CT";
         };
     };
-    class 91st_CSP_Armor: Uniform_Base
+    class 91st_Infantry_SCT_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CSP";
+            model="91st_Infantry_Ranks";
+           InfanryRank="SCT";
         };
     };
-    class 91st_CLC_Armor: Uniform_Base
+    class 91st_Infantry_VCT_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CLC";
+            model="91st_Infantry_Ranks";
+           InfanryRank="VCT";
         };
     };
-    class 91st_CP_Armor: Uniform_Base
+    class 91st_Infantry_CSP_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CP";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CSP";
         };
     };
-    class 91st_CS_Armor: Uniform_Base
+    class 91st_Infantry_CLC_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CS";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CLC";
         };
     };
-    class 91st_CSS_Armor: Uniform_Base
+    class 91st_Infantry_CP_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CSS";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CP";
         };
     };
-    class 91st_CFS_Armor: Uniform_Base
+    class 91st_Infantry_CS_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CFS";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CS";
         };
     };
-    class 91st_CL_Armor: Uniform_Base
+    class 91st_Infantry_CSS_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CL";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CSS";
         };
     };
-    class 91st_CC_Armor: Uniform_Base
+    class 91st_Infantry_CSM_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="CC";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CSM";
         };
     };
-    class 91st_WO1_Armor: Uniform_Base
+    class 91st_Infantry_CFS_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO1";
+            model="91st_Infantry_Ranks";
+           InfanryRank="CFS";
         };
     };
-    class 91st_WO2_Armor: Uniform_Base
+    class 91st_Infantry_WO1_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO2";
+            model="91st_Infantry_Ranks";
+           InfanryRank="WO1";
         };
     };
-    class 91st_WO3_Armor: Uniform_Base
+    class 91st_Infantry_WO2_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO3";
+            model="91st_Infantry_Ranks";
+           InfanryRank="WO2";
         };
     };
-    class 91st_WO4_Armor: Uniform_Base
+    class 91st_Infantry_WO3_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO4";
+            model="91st_Infantry_Ranks";
+           InfanryRank="WO3";
         };
     };
-    class 91st_WO5_Armor: Uniform_Base
+    class 91st_Infantry_WO4_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
-            model="JLTS_Clone_P2_recon";
-            Rank="WO5";
+            model="91st_Infantry_Ranks";
+           InfanryRank="WO4";
+        };
+    };
+    class 91st_Infantry_WO5_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Infantry_Ranks";
+           InfanryRank="WO5";
         };
     };
 
+    //Pilots Armor
+    class 91st_Pilot_CT_Armor: Uniform_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CT";
+        };
+    };
+    class 91st_Pilot_CXC_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CXC";
+        };
+    };
+    class 91st_Pilot_CX_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CX";
+        };
+    };
+    class 91st_Pilot_CXX_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CXX";
+        };
+    };
+    class 91st_Pilot_CXP_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CXP";
+        };
+    };
+    class 91st_Pilot_CXS_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CXS";
+        };
+    };
+    class 91st_Pilot_CXSS_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CXSS";
+        };
+    };
+    class 91st_Pilot_CX1_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CX1";
+        };
+    };
+    class 91st_Pilot_CX2_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CX2";
+        };
+    };
+    class 91st_Pilot_CX3_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CX3";
+        };
+    };
+    class 91st_Pilot_CX4_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CX4";
+        };
+    };
+    class 91st_Pilot_CX5_Armor: 91st_Pilot_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Pilot_Ranks";
+            PilotRank="CX5";
+        };
+    };
+
+    //Mech Armor
+    class 91st_Mechanized_CT_Armor: JLTS_Clone_P2_recon
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="CT";
+        };
+    };
+    class 91st_Mechanized_SCT_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="SCT";
+        };
+    };
+    class 91st_Mechanized_VCT_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="VCT";
+        };
+    };
+    class 91st_Mechanized_CSP_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="CSP";
+        };
+    };
+    class 91st_Mechanized_CLC_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="CLC";
+        };
+    };
+    class 91st_Mechanized_CP_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="CP";
+        };
+    };
+    class 91st_Mechanized_CS_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="CS";
+        };
+    };
+    class 91st_Mechanized_CSS_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="CSS";
+        };
+    };
+    class 91st_Mechanized_WO1_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="WO1";
+        };
+    };
+    class 91st_Mechanized_WO2_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="WO2";
+        };
+    };
+    class 91st_Mechanized_WO3_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="WO3";
+        };
+    };
+    class 91st_Mechanized_WO4_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="WO4";
+        };
+    };
+    class 91st_Mechanized_WO5_Armor: 91st_Mechanized_CT_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_Beskar_Ranks";
+            BeskarRank="WO5";
+        };
+    };
+
+    //Jade Armor
+    class 91st_ARC_CSP_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="CSP";
+        };
+    };
+    class 91st_ARC_CLC_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="CLC";
+        };
+    };
+    class 91st_ARC_CP_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="CP";
+        };
+    };
+    class 91st_ARC_CS_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="CS";
+        };
+    };
+    class 91st_ARC_CSS_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="CSS";
+        };
+    };
+    class 91st_ARC_WO1_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="WO1";
+        };
+    };
+    class 91st_ARC_WO2_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="WO2";
+        };
+    };
+    class 91st_ARC_WO3_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="WO3";
+        };
+    };
+    class 91st_ARC_WO4_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="WO4";
+        };
+    };
+    class 91st_ARC_WO5_Armor: 91st_Infantry_CR_Armor
+    {
+        class XtdGearInfo
+        {
+            model="91st_ARC_Ranks";
+            ARCRank="WO5";
+        };
+    };
+
+    //Munka Armor
+
+
+    //ARF Armor
+
+
     // Custom Armor
-    class 91st_Axer_Armor: Uniform_Base
+    class 91st_Infantry_Axer_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -357,7 +851,7 @@ class CfgWeapons
             Custom="Axer";
         };
     };
-    class 91st_Cross_Armor: Uniform_Base
+    class 91st_Infantry_Cross_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -365,7 +859,7 @@ class CfgWeapons
             Custom="Cross";
         };
     };
-    class 91st_Corpse_Armor: Uniform_Base
+    class 91st_Infantry_Corpse_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -373,7 +867,7 @@ class CfgWeapons
             Custom="Corpse";
         };
     };
-    class 91st_Dex_Armor: Uniform_Base
+    class 91st_Infantry_Dex_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -381,7 +875,7 @@ class CfgWeapons
             Custom="Dex";
         };
     };
-    class 91st_Frog_Armor: Uniform_Base
+    class 91st_Infantry_Frog_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -389,7 +883,7 @@ class CfgWeapons
             Custom="Frog";
         };
     };
-    class 91st_Kuro_Armor: Uniform_Base
+    class 91st_Infantry_Kuro_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -397,7 +891,7 @@ class CfgWeapons
             Custom="Kuro";
         };
     };
-    class 91st_Mav_Armor: Uniform_Base
+    class 91st_Infantry_Mav_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -405,7 +899,7 @@ class CfgWeapons
             Custom="Mav";
         };
     };
-    class 91st_Nova_Armor: Uniform_Base
+    class 91st_Infantry_Nova_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -413,7 +907,7 @@ class CfgWeapons
             Custom="Nova";
         };
     };
-    class 91st_Rat_Armor: Uniform_Base
+    class 91st_Infantry_Rat_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -421,7 +915,7 @@ class CfgWeapons
             Custom="Rat";
         };
     };
-    class 91st_Raze_Armor: Uniform_Base
+    class 91st_Infantry_Raze_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -429,7 +923,7 @@ class CfgWeapons
             Custom="Raze";
         };
     };
-    class 91st_Roach_Armor: Uniform_Base
+    class 91st_Infantry_Roach_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -437,7 +931,7 @@ class CfgWeapons
             Custom="Roach";
         };
     };
-    class 91st_Scorch_Armor: Uniform_Base
+    class 91st_Infantry_Scorch_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
@@ -445,7 +939,7 @@ class CfgWeapons
             Custom="Scorch";
         };
     };
-    class 91st_Scorch_Armor_Alt: Uniform_Base
+    class 91st_Infantry_Sconch_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {

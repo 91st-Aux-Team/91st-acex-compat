@@ -24,53 +24,105 @@ class XtdGearModels
         {
             label="91st Backpacks";
             author="91st Aux Team";
-            options[]={"Backpacks"};
+            options[]={"Backpacks","Type"};
             class Backpacks
             {
                 labels="Backpacks";
                 values[]=
                 {
-                    "Standard",
-                    "StandardStrap",
-                    "StandardBelt",
+                    "GAR",
+                    "Kyber",
+                    "Beskar",
+                    "Nova",
                     "Medic",
-                    "Medicbelt",
-                    "MedicStrap",
-                    "EOD",
-                    "EODStrap",
-                    "Straps"
+                    "EOD"
                 };
-                class Standard
+                class GAR
                 {
-                    label="Standard";
+                    label="GAR";
                 };
-                class StandardStrap
+                class Kyber
                 {
-                    label="Stand Strap";
+                    label="Kyber";
                 };
-                class StandardBelt
+                class Beskar
                 {
-                    label="Stand Belt";
+                    label="Beskar";
+                };
+                class Nova
+                {
+                    label="Nova";
                 };
                 class Medic
                 {
                     label="Medic";
                 };
-                class Medicbelt
-                {
-                    label="Med belt";
-                };
-                class MedicStrap
-                {
-                    label="Medic Strap";
-                };
                 class EOD
                 {
                     label="EOD";
                 };
-                class EODStrap
+            };
+            class Type
+            {
+             labels="Backpacks";
+                values[]=
                 {
-                    label="EOD Strap";
+                    "Standard",
+                    "Strap"
+                };
+                class Standard
+                {
+                    label="Standard";
+                };
+                class Straps
+                {
+                    label="Straps";
+                };
+            };
+        };
+        class 91stRTOBackpacks
+        {
+            label="91st RTO Backpacks";
+            author="91st Aux Team";
+            options[]={"RTOBackpacks","Type"};
+            class RTOBackpacks
+            {
+                labels="RTO Backpacks";
+                values[]=
+                {
+                    "GAR",
+                    "Kyber",
+                    "Beskar",
+                    "Nova"
+                };
+                class GAR
+                {
+                    label="GAR";
+                };
+                class Kyber
+                {
+                    label="Kyber";
+                };
+                class Beskar
+                {
+                    label="Beskar";
+                };
+                class Nova
+                {
+                    label="Nova";
+                };
+            };
+            class Type
+            {
+                labels="Backpacks";
+                values[]=
+                {
+                    "Standard",
+                    "Strap"
+                };
+                class Standard
+                {
+                    label="Standard";
                 };
                 class Straps
                 {
@@ -88,22 +140,8 @@ class XtdGearModels
                 labels="Backpacks";
                 values[]=
                 {
-                    "RTO",
-                    "RTOStrap",
                     "MiniSmall",
-                    "MiniBig",
-                    "RTOArrow",
-                    "RTOStrapArrow",
-                    "MiniSmallArrow",
-                    "MiniBigArrow"
-                };
-                class RTO
-                {
-                    label="RTO";
-                };
-                class RTOStrap
-                {
-                    label="RTOStrap";
+                    "MiniBig"
                 };
                 class MiniSmall
                 {
@@ -112,22 +150,6 @@ class XtdGearModels
                 class MiniBig
                 {
                     label="MiniBig";
-                };
-                class RTOArrow
-                {
-                    label="RTOBeta";
-                };
-                class RTOStrapArrow
-                {
-                    label="RTOStrapBeta";
-                };
-                class MiniSmallArrow
-                {
-                    label="MiniSmallBeta";
-                };
-                class MiniBigArrow
-                {
-                    label="MiniBigBeta";
                 };
             };
         };
@@ -229,97 +251,208 @@ class CfgVehicles
     class JLTS_Clone_jumppack_mc;
     class JLTS_Clone_jumppack_JT12;
     //Standard backpacks
-    class 91st_Standard_Backpack: JLTS_Clone_backpack
-    {
-        class XtdGearInfo
+        class 91st_GAR_Backpack: JLTS_Clone_backpack
         {
-            model="91stBackpacks";
-            Backpacks="Standard";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="GAR";
+                Type="Standard";
+            };
         };
-    };
-    class 91st_Standard_Backpack_s: JLTS_Clone_backpack_s
-    {
-        class XtdGearInfo
+        class 91st_GAR_Straps_Backpack: JLTS_Clone_backpack_s
         {
-            model="91stBackpacks";
-            Backpacks="StandardStrap";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="GAR";
+                Type="Strap";
+            };
         };
-    };
-    class 91st_JLTS_Clone_belt_bag: JLTS_Clone_belt_bag
-    {
-        class XtdGearInfo
+
+        //Kyber
+        class 91st_Kyber_Backpack: JLTS_Clone_backpack
         {
-            model="91stBackpacks";
-            Backpacks="StandardBelt";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="Kyber";
+                Type="Standard";
+            };
         };
-    };
-    class 91st_Medic_Backpack: JLTS_Clone_backpack_medic
-    {
-        class XtdGearInfo
+        class 91st_Kyber_Straps_Backpack: JLTS_Clone_backpack_s
         {
-            model="91stBackpacks";
-            Backpacks="Medic";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="Kyber";
+                Type="Strap";
+            };
         };
-    };
-    class 91st_Medic_Belt_Backpack: JLTS_Clone_belt_bag
-    {
-        class XtdGearInfo
+
+        //Beskar
+        class 91st_Beskar_Backpack: JLTS_Clone_backpack
         {
-            model="91stBackpacks";
-            Backpacks="Medicbelt";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="Beskar";
+                Type="Standard";
+            };
         };
-    };
-    class 91st_Medic_Backpack_s: JLTS_Clone_backpack_s
-    {
-        class XtdGearInfo
+        class 91st_Beskar_Straps_Backpack: JLTS_Clone_backpack_s
         {
-            model="91stBackpacks";
-            Backpacks="MedicStrap";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="Beskar";
+                Type="Strap";
+            };
         };
-    };
-    class 91st_EOD_Backpack: JLTS_Clone_backpack_eod
-    {
-        class XtdGearInfo
+
+        //Nova
+        class 91st_Nova_Backpack: JLTS_Clone_backpack
         {
-            model="91stBackpacks";
-            Backpacks="EOD";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="Nova";
+                Type="Standard";
+            };
         };
-    };
-    class 91st_EOD_Backpack_s: JLTS_Clone_backpack_s
-    {
-        class XtdGearInfo
+        class 91st_Nova_Straps_Backpack: JLTS_Clone_backpack_s
         {
-            model="91stBackpacks";
-            Backpacks="EODStrap";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="Nova";
+                Type="Strap";
+            };
         };
-    };
-    class 91st_Straps_bag: JLTS_Clone_belt_bag
-    {
-        class XtdGearInfo
+
+        //Medic
+        class 91st_Medic_Backpack: 91st_GAR_Backpack
         {
-            model="91stBackpacks";
-            Backpacks="Straps";
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="Medic";
+                Type="Standard";
+            };
         };
-    };
+        class 91st_Medic_Straps_Backpack: 91st_GAR_Straps_Backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="Medic";
+                Type="Strap";
+            };
+        };
+        //EOD
+        class 91st_EOD_Backpack: 91st_GAR_Backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="EOD";
+                Type="Standard";
+            };
+        };
+        class 91st_EOD_Straps_Backpack: 91st_GAR_Straps_Backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stBackpacks";
+                Backpacks="EOD";
+                Type="Strap";
+            };
+        };
+
+    //RTO Backpack
+        class 91st_GAR_RTO_backpack: TFAR_rt1523g_big
+        {
+            class XtdGearInfo
+            {
+                model="91stRTOBackpacks";
+                RTOBackpacks="GAR";
+                Type="Standard";
+            };
+        };
+	    class 91st_GAR_RTO_strap_packpack: 91st_GAR_RTO_backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stRTOBackpacks";
+                RTOBackpacks="GAR";
+                Type="Strap";
+            };
+        };
+
+        //Kyber
+        class 91st_Kyber_RTO_packpack: 91st_GAR_RTO_backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stRTOBackpacks";
+                RTOBackpacks="Kyber";
+                Type="Standard";
+            };
+        };
+        class 91st_Kyber_RTO_strap_packpack: 91st_GAR_RTO_backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stRTOBackpacks";
+                RTOBackpacks="Kyber";
+                Type="Strap";
+            };
+        };
+
+        //Beskar
+        class 91st_Beskar_RTO_packpack: 91st_GAR_RTO_backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stRTOBackpacks";
+                RTOBackpacks="Beskar";
+                Type="Standard";
+            };
+        };
+        class 91st_Beskar_RTO_strap_packpack: 91st_GAR_RTO_backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stRTOBackpacks";
+                RTOBackpacks="Beskar";
+                Type="Strap";
+            };
+        };
+
+        //Nova
+        class 91st_Nova_RTO_packpack: 91st_GAR_RTO_backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stRTOBackpacks";
+                RTOBackpacks="Nova";
+                Type="Standard";
+            };
+        };
+        class 91st_Nova_RTO_strap_packpack: 91st_GAR_RTO_backpack
+        {
+            class XtdGearInfo
+            {
+                model="91stRTOBackpacks";
+                RTOBackpacks="Nova";
+                Type="Strap";
+            };
+        };
+
+       
 
     //Long Ranges
-    class 91st_RTO_backpack: JLTS_Clone_backpack_RTO
-    {
-        class XtdGearInfo
-        {
-            model="91stLRs";
-            LRs="RTO";
-        };
-    };
-    class 91st_RTO_backpack_s: JLTS_Clone_backpack_s_RTO
-    {
-        class XtdGearInfo
-        {
-            model="91stLRs";
-            LRs="RTOStrap";
-        };
-    };
-    class 91st_mini_LR_attachment: JLTS_Clone_LR_attachment
+    class 91st_mini_LR_attachment_arrow: 91st_GAR_RTO_backpack
     {
         class XtdGearInfo
         {
@@ -327,44 +460,12 @@ class CfgVehicles
             LRs="MiniSmall";
         };
     };
-    class 91st_mini_LR_pack: JLTS_Clone_RTO_pack
+    class 91st_mini_LR_pack_arrow: 91st_GAR_RTO_backpack
     {
         class XtdGearInfo
         {
             model="91stLRs";
             LRs="MiniBig";
-        };
-    };
-    class 91st_RTO_backpack_arrow: TFAR_rt1523g_big
-    {
-        class XtdGearInfo
-        {
-            model="91stLRs";
-            LRs="RTOArrow";
-        };
-    };
-    class 91st_RTO_backpack_s_arrow: TFAR_rt1523g_big
-    {
-        class XtdGearInfo
-        {
-            model="91stLRs";
-            LRs="RTOStrapArrow";
-        };
-    };
-    class 91st_mini_LR_attachment_arrow: TFAR_rt1523g_big
-    {
-        class XtdGearInfo
-        {
-            model="91stLRs";
-            LRs="MiniSmallArrow";
-        };
-    };
-    class 91st_mini_LR_pack_arrow: TFAR_rt1523g_big
-    {
-        class XtdGearInfo
-        {
-            model="91stLRs";
-            LRs="MiniBigArrow";
         };
     };
 

@@ -24,8 +24,8 @@ class XtdGearModels
         {
             label="Rank Helmets";
             author="91st Aux Team";
-            options[]={"Rankhelms"};
-            class Rankhelms
+            options[]={"InfantryRankhelms"};
+            class InfantryRankhelms
             {
                 labels="Infantry Rank Helmets";
                 values[]=
@@ -39,10 +39,8 @@ class XtdGearModels
                     "CLC",
                     "CP",
                     "CS",
-                    //"CSS",
+                    "CSS",
                     "CFS",
-                    "CL",
-                    "CC",
                     "WO1",
                     "WO2",
                     "WO3",
@@ -93,14 +91,6 @@ class XtdGearModels
                 {
                     label="CFS";
                 };
-                class CL
-                {
-                    label="CL";
-                };
-                class CC
-                {
-                    label="CC";
-                };
                 class WO1
                 {
                     label="W01";
@@ -127,98 +117,163 @@ class XtdGearModels
         {
             label="Pilot Rank Helmets";
             author="91st Aux Team";
-            options[]={"Pilotranks"};
+            options[]={"Type","Pilotranks"};
+            class Type
+            {
+                labels="Type";
+                values[]=
+                {
+                    "Pilot",
+                    "Infantry"
+                };
+            };
             class Pilotranks
             {
                 labels="Pilot Rank Helmets";
                 values[]=
                 {
+                    "Crewman",
                     "CXC",
                     "CX",
                     "CXX",
                     "CXP",
                     "CXS",
-                    "CXO",
+                    "CXSS",
+                    "CX1",
+                    "CX2",
+                    "CX3",
+                    "CX4",
                     "CXW"
                 };
                 class CXC
-                {
-                    label="CXC";
-                };
-                class CX
-                {
-                    label="CX";
-                };
-                class CXX
-                {
-                    label="CXX";
-                };
-                class CXP
-                {
-                    label="CXP";
-                };
-                class CXS
-                {
-                    label="CXS";
-                };
-                class CXO
-                {
-                    label="CXO";
-                };
-                class CXW
-                {
-                    label="CXW";
-                };
+				{
+					label = "CXC";
+				};
+				class CX
+				{
+					label = "CX";
+				};
+				class CXX
+				{
+					label = "CXX";
+				};
+				class CXP
+				{
+					label = "CXP";
+				};
+				class CXS
+				{
+					label = "CXS";
+				};
+				class CXSS
+				{
+					label = "CXSS";
+				};
+				class CX1
+				{
+					label = "CX1";
+				};
+				class CX2
+				{
+					label = "CX2";
+				};
+				class CX3
+				{
+					label = "CX3";
+				};
+				class CX4
+				{
+					label = "CX4";
+				};
+				class CXW
+				{
+					label = "CXW";
+				};
             };
         };
         class Beskarhelmets
         {
-            label="Beskar Helmets";
+            label="Beskar Rank Helmets";
             author="91st Aux Team";
-            options[]={"Beskarhelms"};
-            class Beskarhelms
+            options[]={"BeskarInfantryRankhelms"};
+            class BeskarInfantryRankhelms
             {
-                labels="Beskar Helmets";
+                labels="Beskar Rank Helmets";
                 values[]=
                 {
-                    "Base",
-                    "Kuro",
-                    "Toxic",
-                    "Fly",
-                    "Sentinel",
-                    "Samael",
-                    "Crit"
+                    "CT",
+                    "SCT",
+                    "VCT",
+                    "CSP",
+                    "CLC",
+                    "CP",
+                    "CS",
+                    "CSS",
+                    "WO1",
+                    "WO2",
+                    "WO3",
+                    "WO4",
+                    "WO5"
                 };
-                class Base
+                class CT
                 {
-                    label="Base";
+                    label="CT";
                 };
-                class Kuro
+                class SCT
                 {
-                    label="Kuro";
+                    label="SCT";
                 };
-                class Toxic
+                class VCT
                 {
-                    label="Toxic";
+                    label="VCT";
                 };
-                class Fly
+                class CSP
                 {
-                    label="Fly";
+                    label="CSP";
                 };
-                class Sentinel
+                class CLC
                 {
-                    label="Sentinel";
+                    label="CLC";
                 };
-                class Samael
+                class CP
                 {
-                    label="Samael";
+                    label="CP";
                 };
-                class Crit
+                class CS
                 {
-                    label="Crit";
+                    label="CS";
+                };
+                class CSM
+                {
+                    label="CSM";
+                };
+                class CFS
+                {
+                    label="CFS";
+                };
+                class WO1
+                {
+                    label="W01";
+                };
+                class WO2
+                {
+                    label="W02";
+                };
+                class WO3
+                {
+                    label="W03";
+                };
+                class WO4
+                {
+                    label="W04";
+                };
+                class WO5
+                {
+                    label="W05";
                 };
             };
         };
+
         class CampaignHelmets
         {
             label="Campaign Helmets";
@@ -252,310 +307,426 @@ class XtdGearModels
                 };
             };
         };
-        class ARFHelmets
-        {
-            label="ARF Helmets";
-            author="91st Aux Team";
-            options[]={"ARFhelms"};
-            class ARFhelms
-            {
-                labels="ARF Helmets";
-                values[]=
-                {
-                    "ARF",
-                    "Raze",
-                    "Kappa"
-                };
-                class ARF
-                {
-                    label="ARF";
-                };
-                class Raze
-                {
-                    label="Raze";
-                };
-                class Kappa
-                {
-                    label="Kappa";
-                };
-            };
-        };
     };
 };
 class CfgWeapons
 {
-	class 212th_AB_Helmet;
-	class 212th_Pilot_Helmet_91st;
+    class 91st_Pilot_Infantry_Helmet;
+    class 91st_Beskar_Infantry_Helmet;
+    class 91st_Pilot_Helmet;
 	class Uniform_Base;
 	class H_HelmetSpecB;
 	class JLTS_CloneHelmetP2;
 	class JLTS_CloneHelmetP2_illum;
 	class JLTS_CloneHelmetARC;
 	class JLTS_CloneHelmetBARC;
-	class 212th_ATRT_helmet;
     class JLTS_CloneHelmetARC_illum;
     class 91st_Base_Helmet;
     //Inf Ranks
-    class 91st_Recruit_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_Recruit_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CR";
+            InfantryRankhelms="CR";
         };
     };
-    class 91st_Cadet_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_Cadet_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CRC";
+            InfantryRankhelms="CRC";
         };
     };
-    class 91st_CT_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_CT_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CT";
+            InfantryRankhelms="CT";
         };
     };
-    class 91st_SCT_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_SCT_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="SCT";
+            InfantryRankhelms="SCT";
         };
     };
-    class 91st_VCT_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_VCT_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="VCT";
+            InfantryRankhelms="VCT";
         };
     };
-    class 91st_CSP_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_CSP_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CSP";
+            InfantryRankhelms="CSP";
         };
     };
-    class 91st_CLC_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_CLC_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CLC";
+            InfantryRankhelms="CLC";
         };
     };
-    class 91st_CP_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_CP_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CP";
+            InfantryRankhelms="CP";
         };
     };
-    class 91st_CS_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_CS_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CS";
+            InfantryRankhelms="CS";
         };
     };
-    class 91st_CFS_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_CFS_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CFS";
+            InfantryRankhelms="CFS";
         };
     };
-    class 91st_CSM_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_CSM_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CSM";
+            InfantryRankhelms="CSM";
         };
     };
-    class 91st_CL_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_WO1_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CL";
+            InfantryRankhelms="WO1";
         };
     };
-    class 91st_CC_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_WO2_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="CC";
+            InfantryRankhelms="WO2";
         };
     };
-    class 91st_WO1_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_WO3_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="WO1";
+            InfantryRankhelms="WO3";
         };
     };
-    class 91st_WO2_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_WO4_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="WO2";
+            InfantryRankhelms="WO4";
         };
     };
-    class 91st_WO3_Helmet_JLTS: 91st_Base_Helmet
+    class 91st_WO5_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
             model="Infrnakhelms";
-            Rankhelms="WO3";
-        };
-    };
-    class 91st_WO4_Helmet_JLTS: 91st_Base_Helmet
-    {
-        class XtdGearInfo
-        {
-            model="Infrnakhelms";
-            Rankhelms="WO4";
-        };
-    };
-    class 91st_WO5_Helmet_JLTS: 91st_Base_Helmet
-    {
-        class XtdGearInfo
-        {
-            model="Infrnakhelms";
-            Rankhelms="WO5";
+            InfantryRankhelms="WO5";
         };
     };
 
     //Pilot Ranks
-    class 91st_CXO_Helmet: 212th_Pilot_Helmet_91st
+    class 91st_CXS_Pilot_Helmet: 91st_Pilot_Helmet
     {
         class XtdGearInfo
         {
             model="Pilotrankshelmets";
-            Pilotranks="CXO";
-        };
-    };
-    class 91st_CXS_Helmet: 212th_Pilot_Helmet_91st
-    {
-        class XtdGearInfo
-        {
-            model="Pilotrankshelmets";
+            Type="Pilot";
             Pilotranks="CXS";
         };
     };
-    class 91st_CXP_Helmet: 212th_Pilot_Helmet_91st
+    class 91st_CXP_Pilot_Helmet: 91st_Pilot_Helmet
     {
         class XtdGearInfo
         {
             model="Pilotrankshelmets";
+            Type="Pilot";
             Pilotranks="CXP";
         };
     };
-    class 91st_CXX_Helmet: 212th_Pilot_Helmet_91st
+    class 91st_CXX_Pilot_Helmet: 91st_Pilot_Helmet
     {
         class XtdGearInfo
         {
             model="Pilotrankshelmets";
+            Type="Pilot";
             Pilotranks="CXX";
         };
     };
-    class 91st_CX_Helmet: 212th_Pilot_Helmet_91st
+    class 91st_CX_Pilot_Helmet: 91st_Pilot_Helmet
     {
         class XtdGearInfo
         {
             model="Pilotrankshelmets";
+            Type="Pilot";
             Pilotranks="CX";
         };
     };
-    class 91st_CXC_Helmet: 212th_Pilot_Helmet_91st
+    class 91st_CXC_Pilot_Helmet: 91st_Pilot_Helmet
     {
         class XtdGearInfo
         {
             model="Pilotrankshelmets";
+            Type="Pilot";
             Pilotranks="CXC";
         };
     };
-    class 91st_CXW_Helmet: 212th_Pilot_Helmet_91st
+    class 91st_CXW_Pilot_Helmet: 91st_Pilot_Helmet
     {
         class XtdGearInfo
         {
             model="Pilotrankshelmets";
+            Type="Pilot";
+            Pilotranks="CX1";
+        };
+    };
+
+   //Pilot Infantry
+    class 91st_Crew_Pilot_Helmet: 91st_Pilot_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="Crewman";
+        };
+    };
+    class 91st_CXSS_Helmet: 91st_Pilot_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CXSS";
+        };
+    };
+    class 91st_CXS_Helmet: 91st_Pilot_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CXS";
+        };
+    };
+    class 91st_CXP_Helmet: 91st_Pilot_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CXP";
+        };
+    };
+    class 91st_CXX_Helmet: 91st_Pilot_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CXX";
+        };
+    };
+    class 91st_CX_Helmet: 91st_Pilot_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CX";
+        };
+    };
+    class 91st_CXC_Helmet: 91st_Pilot_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CXC";
+        };
+    };
+    class 91st_CX1_Helmet: 91st_Pilot_Infantry_Helmet
+	{
+		class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CX1";
+        };
+	};
+	class 91st_CX2_Helmet: 91st_Pilot_Infantry_Helmet
+	{
+		class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CX2";
+        };
+	};
+	class 91st_CX3_Helmet: 91st_Pilot_Infantry_Helmet
+	{
+		class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CX3";
+        };
+	};
+	class 91st_CX4_Helmet: 91st_Pilot_Infantry_Helmet
+	{
+		class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
+            Pilotranks="CX4";
+        };
+	};
+    class 91st_CXW_Helmet: 91st_Pilot_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Pilotrankshelmets";
+            Type="Infantry";
             Pilotranks="CXW";
         };
     };
-    
-    //Beskar Helms
-    class 91st_Beskar_Helmet_JLTS: 212th_ATRT_helmet
+
+    //Beskar
+    class 91st_Beskar_CT_Helmet: 91st_Beskar_Infantry_Helmet
     {
         class XtdGearInfo
         {
             model="Beskarhelmets";
-            Beskarhelms="Base";
+            BeskarInfantryRankhelms="CT";
         };
     };
-    class 91st_Beskar_Kuro_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    class 91st_Beskar_SCT_Helmet: 91st_Beskar_Infantry_Helmet
     {
         class XtdGearInfo
         {
             model="Beskarhelmets";
-            Beskarhelms="Kuro";
+            BeskarInfantryRankhelms="SCT";
         };
     };
-    class 91st_Beskar_Toxic_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    class 91st_Beskar_VCT_Helmet: 91st_Beskar_Infantry_Helmet
     {
         class XtdGearInfo
         {
             model="Beskarhelmets";
-            Beskarhelms="Toxic";
+            BeskarInfantryRankhelms="VCT";
         };
     };
-    class 91st_Beskar_Fly_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    class 91st_Beskar_CSP_Helmet: 91st_Beskar_Infantry_Helmet
     {
         class XtdGearInfo
         {
             model="Beskarhelmets";
-            Beskarhelms="Fly";
+            BeskarInfantryRankhelms="CSP";
         };
     };
-    class 91st_Beskar_Sentinel_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    class 91st_Beskar_CLC_Helmet: 91st_Beskar_Infantry_Helmet
     {
         class XtdGearInfo
         {
             model="Beskarhelmets";
-            Beskarhelms="Sentinel";
+            BeskarInfantryRankhelms="CLC";
         };
     };
-    class 91st_Beskar_Samael_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    class 91st_Beskar_CP_Helmet: 91st_Beskar_Infantry_Helmet
     {
         class XtdGearInfo
         {
             model="Beskarhelmets";
-            Beskarhelms="Samael";
+            BeskarInfantryRankhelms="CP";
         };
     };
-    class 91st_Beskar_Crit_Helmet_JLTS: 91st_Beskar_Helmet_JLTS
+    class 91st_Beskar_CS_Helmet: 91st_Beskar_Infantry_Helmet
     {
         class XtdGearInfo
         {
             model="Beskarhelmets";
-            Beskarhelms="Crit";
+            BeskarInfantryRankhelms="CS";
         };
     };
+    class 91st_Beskar_CSS_Helmet: 91st_Beskar_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            BeskarInfantryRankhelms="CSS";
+        };
+    };
+    class 91st_Beskar_WO1_Helmet: 91st_Beskar_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            BeskarInfantryRankhelms="WO1";
+        };
+    };
+    class 91st_Beskar_WO2_Helmet: 91st_Beskar_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            BeskarInfantryRankhelms="WO2";
+        };
+    };
+    class 91st_Beskar_WO3_Helmet: 91st_Beskar_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            BeskarInfantryRankhelms="WO3";
+        };
+    };
+    class 91st_Beskar_WO4_Helmet: 91st_Beskar_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            BeskarInfantryRankhelms="WO4";
+        };
+    };
+    class 91st_Beskar_WO5_Helmet: 91st_Beskar_Infantry_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Beskarhelmets";
+            BeskarInfantryRankhelms="WO5";
+        };
+    };
+
+
+
+
 
     // Campaign
     class 91st_Campaign_Helmet: JLTS_CloneHelmetP2
@@ -588,34 +759,6 @@ class CfgWeapons
         {
             model="CampaignHelmets";
             Campaignhelms="CampaignBARCMedic";
-        };
-    };
-
-    //ARF
-    class 327th_ARF;
-    class 91st_ARF_Base;
-    class 91st_ARF: 91st_ARF_Base
-    {
-        class XtdGearInfo
-        {
-            model="ARFHelmets";
-            ARFhelms="ARF";
-        };
-    };
-    class 91st_Raze_ARF: 91st_ARF_Base
-    {
-        class XtdGearInfo
-        {
-            model="ARFHelmets";
-            ARFhelms="Raze";
-        };
-    };
-    class 91st_Kappa_ARF: 91st_ARF_Base
-    {
-        class XtdGearInfo
-        {
-            model="ARFHelmets";
-            ARFhelms="Kappa";
         };
     };
 };
