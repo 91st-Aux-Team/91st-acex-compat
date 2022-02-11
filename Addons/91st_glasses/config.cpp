@@ -21,7 +21,7 @@ class XtdGearModels
 {
     class CfgGlasses 
     {
-		class 91st_glass_NV_red
+		class 91st_Visors_Glasses
         { 
             label="91st Visor";
             author="91st Aux Team";
@@ -29,58 +29,39 @@ class XtdGearModels
             // Key word used in the cfg weapons below
             class Visor
             {
-                label="Visors";
+                labels="Visors";
                 values[]=
                 {
-                    "Red",
-                    "FullBlack",
-                    "FullGrey",
-                    "FullRed",
-                    "SpecRed",
-                    "SpecFullRed",
-                    "SpecFullGrey",
-                    "SpecFullBlack"
+                    "CT",
+                    "SCT",
+                    "VCT",
+                    "CSP",
+                    "WO4",
+                    "CSS"
                 };
-                // Class used for defining in the shit below
-                class Red
+                class CT
                 {
-                    // Labels just a display name
-                    label="Red";
+                    label="CT";
                 };
-                class FullBlack
+                class SCT
                 {
-                    // Labels just a display name
-                    label="Full Black";
+                    label="SCT";
                 };
-                class FullGrey
+                class VCT
                 {
-                    // Labels just a display name
-                    label="Full Gray";
+                    label="VCT";
                 };
-                class FullRed
+                class CSP
                 {
-                    // Labels just a display name
-                    label="Full Red";
+                    label="CSP";
                 };
-                class SpecRed
+                class WO4
                 {
-                    // Labels just a display name
-                    label="Spec Red";
+                    label="WO4";
                 };
-                class SpecFullRed
+                class CSS
                 {
-                    // Labels just a display name
-                    label="Spec Full Red";
-                };
-                class SpecFullGrey
-                {
-                    // Labels just a display name
-                    label="Spec Full Gray";
-                };
-                class SpecFullBlack
-                {
-                    // Labels just a display name
-                    label="Spec Full Black";
+                    label="CSS";
                 };
             };
         };
@@ -98,7 +79,6 @@ class XtdGearModels
                     "Squad",
                     "Platoon",
                     "Company",
-                    "Archangel",
                     "Fallon"
                 };
                 // Class used for defining in the shit below
@@ -141,6 +121,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Trooper",
+                    "Trooper2",
                     "Veteran",
                     "Teamleader"
                 };
@@ -149,6 +130,11 @@ class XtdGearModels
                 {
                     // Labels just a display name
                     label="Trooper";
+                };
+                class Trooper2
+                {
+                    // Labels just a display name
+                    label="Arcangle";
                 };
                 class Veteran
                 {
@@ -162,84 +148,204 @@ class XtdGearModels
                 };
             };
         };
-    
+        class Rangefinder_Glasses
+        {
+            label="91st Rangefinder Glasses";
+            author="91st Aux Team";
+            options[]={"Rangefinder_glass"};
+            // Key word used in the cfg weapons below
+            class Rangefinder_glass
+            {
+                label="Rangefinder";
+                values[]=
+                {
+                    "Black",
+                    "Grey",
+                    "Red"
+                };
+                // Class used for defining in the shit below
+                class Black
+                {
+                    // Labels just a display name
+                    label="Black";
+                };
+                class Grey
+                {
+                    // Labels just a display name
+                    label="Grey";
+                };
+                class Red
+                {
+                    // Labels just a display name
+                    label="Red";
+                };
+            };
+        };
+        class StandardVests
+        {
+            label="Standard Vests";
+            author="91st Aux Team";
+            options[]={"StandardVestss"};
+            class Standardvestss
+            {
+                labels="Standard Vests";
+                values[]=
+                {
+                    "Vests",
+                    "Suspenders",
+                    "WO",
+                    "WO3",
+                    "NCO",
+                    "TeamLead",
+                    "SquadLead"
+                };
+                class Vests
+                {
+                    label="Vests"
+                };
+                class Suspenders
+                {
+                    label="Suspenders"
+                };
+                class WO
+                {
+                    label="WO"
+                };
+                class WO3
+                {
+                    label="WO3"
+                };
+                class NCO
+                {
+                    label="NCO"
+                };
+                class TeamLead
+                {
+                    label="Team Lead"
+                };
+                class SquadLead
+                {
+                    label="Squad Lead"
+                };
+            };
+        };
     };
-
 };
 class CfgGlasses
 {
-    // This class is the EXACT same as the aux mod
-    class 91st_glass_NV_red
+    //This class is the EXACT same as the aux mod
+    class 91st_Visor_Glasses
     {
         class XtdGearInfo
         {
             // model is the class name of the "lists" in CfgWeapons
-            model="91st_glass_NV_red";
+            model="91st_Visors_Glasses";
             // "Rank" is the class name of the value list
             // The value of "Rank" is just the label used in the list
-            Visor="Red";
+            Visor="CT";
         };
     };
-    class 91st_glass_NV_full_red
+    class 91st_Visor_SCT_Glasses: 91st_Visor_Glasses
     {
         class XtdGearInfo
         {
-            // model is the class name of the "lists" in CfgWeapons
-            model="91st_glass_NV_red";
-            // "Rank" is the class name of the value list
-            // The value of "Rank" is just the label used in the list
-            Visor="FullRed";
+            model="91st_Visors_Glasses";
+            Visor="SCT";
         };
     };
-    class 91st_glass_NV_black
+    class 91st_Visor_VCT_Glasses: 91st_Visor_Glasses
     {
         class XtdGearInfo
         {
-            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="FullBlack";
+            model="91st_Visors_Glasses";
+            Visor="VCT";
         };
     };
-    class 91st_glass_NV_Grey2
+    class 91st_Visor_CSP_Glasses: 91st_Visor_Glasses
     {
         class XtdGearInfo
         {
-            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="FullGrey";
+            model="91st_Visors_Glasses";
+            Visor="CSP";
         };
     };
-    class 91st_glass_NVspec_red
+    class 91st_Visor_WO4_Glasses: 91st_Visor_Glasses
     {
         class XtdGearInfo
         {
-            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="SpecRed";
+            model="91st_Visors_Glasses";
+            Visor="WO4";
         };
     };
-    class 91st_glass_NVspec_red2
+    class 91st_Visor_CSS_Glasses: 91st_Visor_Glasses
     {
         class XtdGearInfo
         {
-            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="SpecFullRed";
+            model="91st_Visors_Glasses";
+            Visor="CSS";
         };
     };
-    class 91st_glass_NVspec_Grey2
+
+    //Standards
+	class 91st_Vest: 91st_Visor_Glasses
     {
         class XtdGearInfo
         {
-            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="SpecFullGrey";
+            model="StandardVests";// The value of "Rank" is just the label used in the list
+            Standardvestss="Vests";
         };
     };
-    class 91st_glass_NVspec_black
+	class 91st_Suspenders: 91st_Vest
     {
         class XtdGearInfo
         {
-            model="91st_glass_NV_red";// The value of "Rank" is just the label used in the list
-            Visor="SpecFullBlack";
+            model="StandardVests";// The value of "Rank" is just the label used in the list
+            Standardvestss="Suspenders";
         };
     };
-    class 91st_med_squad_vest
+	class 91st_Vest_WO1: 91st_Vest
+    {
+        class XtdGearInfo
+        {
+            model="StandardVests";// The value of "Rank" is just the label used in the list
+            Standardvestss="WO";
+        };
+    };
+	class 91st_Vest_WO3: 91st_Vest
+    {
+        class XtdGearInfo
+        {
+            model="StandardVests";// The value of "Rank" is just the label used in the list
+            Standardvestss="WO3";
+        };
+    };
+	class 91st_Vest_NCO: 91st_Vest
+    {
+        class XtdGearInfo
+        {
+            model="StandardVests";// The value of "Rank" is just the label used in the list
+            Standardvestss="NCO";
+        };
+    };
+	class 91st_Vest_Teamlead: 91st_Vest
+    {
+        class XtdGearInfo
+        {
+            model="StandardVests";// The value of "Rank" is just the label used in the list
+            Standardvestss="TeamLead";
+        };
+    };
+	class 91st_Vest_Squadlead: 91st_Vest
+    {
+        class XtdGearInfo
+        {
+            model="StandardVests";// The value of "Rank" is just the label used in the list
+            Standardvestss="SquadLead";
+        };
+    };
+
+    //Medic
+	class 91st_Medic_Vest: 91st_Vest
     {
         class XtdGearInfo
         {
@@ -247,7 +353,7 @@ class CfgGlasses
             Medic="Squad";
         };
     };
-    class 91st_med_platoon_vest
+	class 91st_Medic_Vest_Platoon: 91st_Medic_Vest
     {
         class XtdGearInfo
         {
@@ -255,7 +361,7 @@ class CfgGlasses
             Medic="Platoon";
         };
     };
-    class 91st_med_company_vest
+	class 91st_Medic_Vest_Company: 91st_Medic_Vest
     {
         class XtdGearInfo
         {
@@ -263,15 +369,7 @@ class CfgGlasses
             Medic="Company";
         };
     };
-    class 91st_archangel_vest
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Archangel";
-        };
-    };
-    class 91st_med_fallon_vest
+	class 91st_Medic_Vest_Fallon: 91st_Medic_Vest
     {
         class XtdGearInfo
         {
@@ -279,7 +377,17 @@ class CfgGlasses
             Medic="Fallon";
         };
     };
-    class 91st_jumptrooper_vest
+
+    //monkies
+	class 91st_archangel_vest: 91st_Vest
+    {
+        class XtdGearInfo
+        {
+            model="91st_monkeys";// The value of "Rank" is just the label used in the list
+            Monkey="Trooper2";
+        };
+    };
+	class 91st_Jumptrooper_Vest: 91st_Vest
     {
         class XtdGearInfo
         {
@@ -287,7 +395,7 @@ class CfgGlasses
             Monkey="Trooper";
         };
     };
-    class 91st_jumptrooper_veteran_vest
+	class 91st_Jumptrooper_Vest_Veteran: 91st_Jumptrooper_Vest
     {
         class XtdGearInfo
         {
@@ -295,7 +403,7 @@ class CfgGlasses
             Monkey="Veteran";
         };
     };
-    class 91st_jumptrooper_TL_vest
+	class 91st_Jumptrooper_Vest_Teamlead: 91st_Jumptrooper_Vest
     {
         class XtdGearInfo
         {
@@ -304,7 +412,29 @@ class CfgGlasses
         };
     };
 
-
-
-
+    //RANGEFINDER
+    class 91st_Rangefinder_Glasses
+    {
+        class XtdGearInfo
+        {
+            model="Rangefinder_Glasses";// The value of "Rank" is just the label used in the list
+            Rangefinder_glass="Red";
+        };
+    };
+	class 91st_Rangefinder_Grey_Glasses: 91st_Rangefinder_Glasses
+    {
+        class XtdGearInfo
+        {
+            model="Rangefinder_Glasses";// The value of "Rank" is just the label used in the list
+            Rangefinder_glass="Grey";
+        };
+    };
+	class 91st_Rangefinder_Black_Glasses: 91st_Rangefinder_Glasses
+    {
+        class XtdGearInfo
+        {
+            model="Rangefinder_Glasses";// The value of "Rank" is just the label used in the list
+            Rangefinder_glass="Black";
+        };
+    };
 };

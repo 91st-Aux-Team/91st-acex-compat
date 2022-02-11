@@ -44,13 +44,14 @@ class XtdGearModels
 };
 class CfgWeapons
 {
-	class JLTS_DC17SA;
+	class hgun_P07_F;
+    class sPistol_Base_F;
     class 3AS_DC17STest_F;
     class 3AS_pistol_DC15SA_F;
     class 327th_revolver;
     class 327th_buddy1911;
     //Pistols
-    class 91st_JLTS_DC17SA: JLTS_DC17SA
+    class 91st_DC17SA: hgun_P07_F
     {
         class XtdGearInfo
         {
@@ -58,7 +59,7 @@ class CfgWeapons
             Pistols="DC17";
         };
     };
-   class 91st_JLTS_DC17SA_A: JLTS_DC17SA
+   class 91st_DC17SA_A: 91st_DC17SA
     {
         class XtdGearInfo
         {
@@ -66,7 +67,7 @@ class CfgWeapons
             Pistols="DC17A";
         };
     };
-    class 91st_JLTS_DC17SA_M: JLTS_DC17SA
+    class 91st_DC17SA_M: 91st_DC17SA
     {
         class XtdGearInfo
         {
@@ -74,7 +75,7 @@ class CfgWeapons
             Pistols="DC17h";
         };
     };
-    class 91st_JLTS_DC17SA_Dual: 3AS_DC17STest_F
+    class 91st_DC17SA_Dual: sPistol_Base_F
     {
         class XtdGearInfo
         {
@@ -82,7 +83,7 @@ class CfgWeapons
             Pistols="DC17 Dual";
         };
     };
-    class 91st_DC15SA: 3AS_pistol_DC15SA_F
+    class 91st_DC15SA: 91st_DC17SA
     {
         class XtdGearInfo
         {

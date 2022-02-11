@@ -92,11 +92,9 @@ class XtdGearModels
 };
 class CfgWeapons
 {
-    class 3AS_DC15A_F;
-    class 3AS_DC15A_GL;
-    class 3AS_DC15C_F;
-    class 3AS_DC15C_GL;
-    class 3AS_DC15L_F;
+    class 91st_DC15C_Base;
+    class aRifle_MX_Base_F;
+    class Rifle_Base_F;
     class JLTS_DC15X;
     class 327th_dc15le;
     class JLTS_DC15S;
@@ -108,7 +106,7 @@ class CfgWeapons
     class 3AS_Flamer_Base;
     
     //Rifles
-    class 91st_3AS_DC15A: 3AS_DC15A_F
+    class 91st_DC15A: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
@@ -116,7 +114,7 @@ class CfgWeapons
             Rifles="DC15a";
         };
     };
-    class 91st_3AS_DC15A_GL: 3AS_DC15A_GL
+    class 91st_DC15A_GL: 91st_DC15A
     {
         class XtdGearInfo
         {
@@ -124,7 +122,7 @@ class CfgWeapons
             Rifles="DC15aGL";
         };
     };
-    class 91st_3AS_DC15C: 3AS_DC15C_F
+    class 91st_DC15C: 91st_DC15C_Base
     {
         class XtdGearInfo
         {
@@ -132,7 +130,7 @@ class CfgWeapons
             Rifles="DC15c";
         };
     };
-    class 91st_3AS_DC15C_GL: 3AS_DC15C_GL
+    class 91st_DC15C_GL: 91st_DC15C
     {
         class XtdGearInfo
         {
@@ -140,7 +138,7 @@ class CfgWeapons
             Rifles="DC15cGL";
         };
     };
-    class 91st_JLTS_DC15S: JLTS_DC15S
+    class 91st_DC15S: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
@@ -150,7 +148,7 @@ class CfgWeapons
     };
 
     //LMG's
-    class 91st_3AS_DC15L:3AS_DC15L_F
+    class 91st_DC15L:aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
@@ -158,7 +156,7 @@ class CfgWeapons
             LMG="DC15L";
         };
     };
-    class 91st_Valken_SAW: 91st_3AS_DC15L
+    class 91st_Valken_SAW: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
@@ -166,7 +164,7 @@ class CfgWeapons
             LMG="Valken-38L";
         };
     };
-    class 91st_JLTS_Z6: JLTS_Z6
+    class 91st_Z6: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
@@ -176,7 +174,7 @@ class CfgWeapons
     };
 
     //specialist
-    class 91st_JLTS_DP23: JLTS_DP23
+    class 91st_DP23: JLTS_DP23
     {
         class XtdGearInfo
         {
@@ -184,7 +182,7 @@ class CfgWeapons
             Specialist="DP-23";
         };
     };
-    class 91st_JLTS_EPL2: JLTS_EPL2
+    class 91st_EPL2: JLTS_EPL2
     {
         class XtdGearInfo
         {
@@ -192,7 +190,7 @@ class CfgWeapons
             Specialist="EPL-2";
         };
     };
-    class 91st_Flamer: 3AS_Flamer_Base
+    class 91st_Flamer: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
@@ -200,7 +198,7 @@ class CfgWeapons
             Specialist="Flamer";
         };
     };
-    class 91st_musket: 91st_3AS_DC15C
+    class 91st_musket: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
@@ -219,7 +217,7 @@ class CfgWeapons
             Marksmen="Firepuncher";
         };
     };
-    class 91st_JLTS_DC15X: JLTS_DC15X
+    class 91st_DC15X: JLTS_DC15X
     {
         class XtdGearInfo
         {
@@ -227,7 +225,7 @@ class CfgWeapons
             Marksmen="DC15X";
         };
     };
-    class 91st_327_DC15LE: 327th_dc15le
+    class 91st_327_DC15LE: Rifle_Base_F
     {
         class XtdGearInfo
         {
@@ -235,7 +233,7 @@ class CfgWeapons
             Marksmen="DC15LE";
         };
     };
-    class 91st_JLTS_DW32S: JLTS_DW32S
+    class 91st_DW32S: JLTS_DW32S
     {
         class XtdGearInfo
         {

@@ -37,7 +37,7 @@ class XtdGearModels
                     "CP",
                     "CS",
                     "CSS",
-                    "CSM",
+                    //"CSM",
                     "CFS",
                     "WO1",
                     "WO2",
@@ -85,10 +85,10 @@ class XtdGearModels
 				{
 					label = "CSS";
 				};
-				class CSM
+				/*class CSM
 				{
 					label = "CSM";
-				};
+				};*/
 				class CFS
 				{
 					label = "CFS";
@@ -490,17 +490,17 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="CSS";
+            InfanryRank="CSS";
         };
     };
-    class 91st_Infantry_CSM_Armor: 91st_Infantry_CR_Armor
+    /*class 91st_Infantry_CSM_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
            InfanryRank="CSM";
         };
-    };
+    };*/
     class 91st_Infantry_CFS_Armor: 91st_Infantry_CR_Armor
     {
         class XtdGearInfo
