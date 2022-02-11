@@ -234,7 +234,8 @@ class XtdGearModels
 class CfgGlasses
 {
     //This class is the EXACT same as the aux mod
-    class 91st_Visor_Glasses
+    class 91st_Glasses_Base;
+    class 91st_Visor_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -245,7 +246,7 @@ class CfgGlasses
             Visor="CT";
         };
     };
-    class 91st_Visor_SCT_Glasses: 91st_Visor_Glasses
+    class 91st_Visor_SCT_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -253,7 +254,7 @@ class CfgGlasses
             Visor="SCT";
         };
     };
-    class 91st_Visor_VCT_Glasses: 91st_Visor_Glasses
+    class 91st_Visor_VCT_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -261,7 +262,7 @@ class CfgGlasses
             Visor="VCT";
         };
     };
-    class 91st_Visor_CSP_Glasses: 91st_Visor_Glasses
+    class 91st_Visor_CSP_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -269,7 +270,7 @@ class CfgGlasses
             Visor="CSP";
         };
     };
-    class 91st_Visor_WO4_Glasses: 91st_Visor_Glasses
+    class 91st_Visor_WO4_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -277,7 +278,7 @@ class CfgGlasses
             Visor="WO4";
         };
     };
-    class 91st_Visor_CSS_Glasses: 91st_Visor_Glasses
+    class 91st_Visor_CSS_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -287,7 +288,7 @@ class CfgGlasses
     };
 
     //Standards
-	class 91st_Vest: 91st_Visor_Glasses
+	class 91st_Vest: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -295,7 +296,7 @@ class CfgGlasses
             Standardvestss="Vests";
         };
     };
-	class 91st_Suspenders: 91st_Vest
+	class 91st_Suspenders: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -303,7 +304,7 @@ class CfgGlasses
             Standardvestss="Suspenders";
         };
     };
-	class 91st_Vest_WO1: 91st_Vest
+	class 91st_Vest_WO1: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -311,7 +312,7 @@ class CfgGlasses
             Standardvestss="WO";
         };
     };
-	class 91st_Vest_WO3: 91st_Vest
+	class 91st_Vest_WO3: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -319,7 +320,7 @@ class CfgGlasses
             Standardvestss="WO3";
         };
     };
-	class 91st_Vest_NCO: 91st_Vest
+	class 91st_Vest_NCO: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -327,7 +328,7 @@ class CfgGlasses
             Standardvestss="NCO";
         };
     };
-	class 91st_Vest_Teamlead: 91st_Vest
+	class 91st_Vest_Teamlead: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -335,7 +336,7 @@ class CfgGlasses
             Standardvestss="TeamLead";
         };
     };
-	class 91st_Vest_Squadlead: 91st_Vest
+	class 91st_Vest_Squadlead: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -345,7 +346,7 @@ class CfgGlasses
     };
 
     //Medic
-	class 91st_Medic_Vest: 91st_Vest
+	class 91st_Medic_Vest: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -353,7 +354,7 @@ class CfgGlasses
             Medic="Squad";
         };
     };
-	class 91st_Medic_Vest_Platoon: 91st_Medic_Vest
+	class 91st_Medic_Vest_Platoon: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -361,7 +362,7 @@ class CfgGlasses
             Medic="Platoon";
         };
     };
-	class 91st_Medic_Vest_Company: 91st_Medic_Vest
+	class 91st_Medic_Vest_Company: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -369,7 +370,7 @@ class CfgGlasses
             Medic="Company";
         };
     };
-	class 91st_Medic_Vest_Fallon: 91st_Medic_Vest
+	class 91st_Medic_Vest_Fallon: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -379,7 +380,7 @@ class CfgGlasses
     };
 
     //monkies
-	class 91st_archangel_vest: 91st_Vest
+	class 91st_archangel_vest: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -387,7 +388,7 @@ class CfgGlasses
             Monkey="Trooper2";
         };
     };
-	class 91st_Jumptrooper_Vest: 91st_Vest
+	class 91st_Jumptrooper_Vest: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -395,7 +396,7 @@ class CfgGlasses
             Monkey="Trooper";
         };
     };
-	class 91st_Jumptrooper_Vest_Veteran: 91st_Jumptrooper_Vest
+	class 91st_Jumptrooper_Vest_Veteran: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -403,7 +404,7 @@ class CfgGlasses
             Monkey="Veteran";
         };
     };
-	class 91st_Jumptrooper_Vest_Teamlead: 91st_Jumptrooper_Vest
+	class 91st_Jumptrooper_Vest_Teamlead: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -413,7 +414,7 @@ class CfgGlasses
     };
 
     //RANGEFINDER
-    class 91st_Rangefinder_Glasses
+    class 91st_Rangefinder_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -421,7 +422,7 @@ class CfgGlasses
             Rangefinder_glass="Red";
         };
     };
-	class 91st_Rangefinder_Grey_Glasses: 91st_Rangefinder_Glasses
+	class 91st_Rangefinder_Grey_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -429,7 +430,7 @@ class CfgGlasses
             Rangefinder_glass="Grey";
         };
     };
-	class 91st_Rangefinder_Black_Glasses: 91st_Rangefinder_Glasses
+	class 91st_Rangefinder_Black_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
         {

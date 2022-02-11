@@ -300,23 +300,23 @@ class XtdGearModels
 				};
 				class WO1
 				{
-					label = "W01";
+					label = "WO1";
 				};
 				class WO2
 				{
-					label = "W02";
+					label = "WO2";
 				};
 				class WO3
 				{
-					label = "W03";
+					label = "WO3";
 				};
 				class WO4
 				{
-					label = "W04";
+					label = "WO4";
 				};
 				class WO5
 				{
-					label = "W05";
+					label = "WO5";
 				};
             };
         };
@@ -412,8 +412,9 @@ class CfgWeapons
 {
     class Uniform_Base;
     class JLTS_Clone_P2_recon;
+    class 91st_Armor_Base;
     //Rank Armor
-    class 91st_Infantry_CR_Armor: Uniform_Base
+    class 91st_Infantry_CR_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -421,7 +422,7 @@ class CfgWeapons
             InfanryRank="CR";
         };
     };
-    class 91st_Infantry_CRC_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_CRC_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -429,7 +430,7 @@ class CfgWeapons
            InfanryRank="CRC";
         };
     };
-    class 91st_Infantry_CT_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_CT_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -437,7 +438,7 @@ class CfgWeapons
            InfanryRank="CT";
         };
     };
-    class 91st_Infantry_SCT_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_SCT_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -445,7 +446,7 @@ class CfgWeapons
            InfanryRank="SCT";
         };
     };
-    class 91st_Infantry_VCT_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_VCT_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -453,7 +454,7 @@ class CfgWeapons
            InfanryRank="VCT";
         };
     };
-    class 91st_Infantry_CSP_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_CSP_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -461,7 +462,7 @@ class CfgWeapons
            InfanryRank="CSP";
         };
     };
-    class 91st_Infantry_CLC_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_CLC_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -469,7 +470,7 @@ class CfgWeapons
            InfanryRank="CLC";
         };
     };
-    class 91st_Infantry_CP_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_CP_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -477,7 +478,7 @@ class CfgWeapons
            InfanryRank="CP";
         };
     };
-    class 91st_Infantry_CS_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_CS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -485,7 +486,7 @@ class CfgWeapons
            InfanryRank="CS";
         };
     };
-    class 91st_Infantry_CSS_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_CSS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -493,7 +494,7 @@ class CfgWeapons
             InfanryRank="CSS";
         };
     };
-    /*class 91st_Infantry_CSM_Armor: 91st_Infantry_CR_Armor
+    /*class 91st_Infantry_CSM_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -501,7 +502,7 @@ class CfgWeapons
            InfanryRank="CSM";
         };
     };*/
-    class 91st_Infantry_CFS_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_CFS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -509,7 +510,7 @@ class CfgWeapons
            InfanryRank="CFS";
         };
     };
-    class 91st_Infantry_WO1_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_WO1_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -517,7 +518,7 @@ class CfgWeapons
            InfanryRank="WO1";
         };
     };
-    class 91st_Infantry_WO2_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_WO2_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -525,7 +526,7 @@ class CfgWeapons
            InfanryRank="WO2";
         };
     };
-    class 91st_Infantry_WO3_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_WO3_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -533,7 +534,7 @@ class CfgWeapons
            InfanryRank="WO3";
         };
     };
-    class 91st_Infantry_WO4_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_WO4_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -541,7 +542,7 @@ class CfgWeapons
            InfanryRank="WO4";
         };
     };
-    class 91st_Infantry_WO5_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_WO5_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -754,8 +755,8 @@ class CfgWeapons
         };
     };
 
-    //Jade Armor
-    class 91st_ARC_CSP_Armor: 91st_Infantry_CR_Armor
+    //Jade 
+    class 91st_ARC_CSP_Armor: Uniform_Base
     {
         class XtdGearInfo
         {
@@ -763,7 +764,7 @@ class CfgWeapons
             ARCRank="CSP";
         };
     };
-    class 91st_ARC_CLC_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_CLC_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -771,7 +772,7 @@ class CfgWeapons
             ARCRank="CLC";
         };
     };
-    class 91st_ARC_CP_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_CP_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -779,7 +780,7 @@ class CfgWeapons
             ARCRank="CP";
         };
     };
-    class 91st_ARC_CS_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_CS_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -787,7 +788,7 @@ class CfgWeapons
             ARCRank="CS";
         };
     };
-    class 91st_ARC_CSS_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_CSS_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -795,7 +796,7 @@ class CfgWeapons
             ARCRank="CSS";
         };
     };
-    class 91st_ARC_WO1_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_WO1_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -803,7 +804,7 @@ class CfgWeapons
             ARCRank="WO1";
         };
     };
-    class 91st_ARC_WO2_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_WO2_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -811,7 +812,7 @@ class CfgWeapons
             ARCRank="WO2";
         };
     };
-    class 91st_ARC_WO3_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_WO3_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -819,7 +820,7 @@ class CfgWeapons
             ARCRank="WO3";
         };
     };
-    class 91st_ARC_WO4_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_WO4_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -827,7 +828,7 @@ class CfgWeapons
             ARCRank="WO4";
         };
     };
-    class 91st_ARC_WO5_Armor: 91st_Infantry_CR_Armor
+    class 91st_ARC_WO5_Armor: 91st_ARC_CSP_Armor
     {
         class XtdGearInfo
         {
@@ -843,7 +844,7 @@ class CfgWeapons
 
 
     // Custom Armor
-    class 91st_Infantry_Axer_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Axer_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -851,7 +852,7 @@ class CfgWeapons
             Custom="Axer";
         };
     };
-    class 91st_Infantry_Cross_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Cross_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -859,7 +860,7 @@ class CfgWeapons
             Custom="Cross";
         };
     };
-    class 91st_Infantry_Corpse_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Corpse_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -867,7 +868,7 @@ class CfgWeapons
             Custom="Corpse";
         };
     };
-    class 91st_Infantry_Dex_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Dex_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -875,7 +876,7 @@ class CfgWeapons
             Custom="Dex";
         };
     };
-    class 91st_Infantry_Frog_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Frog_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -883,7 +884,7 @@ class CfgWeapons
             Custom="Frog";
         };
     };
-    class 91st_Infantry_Kuro_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Kuro_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -891,7 +892,7 @@ class CfgWeapons
             Custom="Kuro";
         };
     };
-    class 91st_Infantry_Mav_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Mav_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -899,7 +900,7 @@ class CfgWeapons
             Custom="Mav";
         };
     };
-    class 91st_Infantry_Nova_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Nova_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -907,7 +908,7 @@ class CfgWeapons
             Custom="Nova";
         };
     };
-    class 91st_Infantry_Rat_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Rat_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -915,7 +916,7 @@ class CfgWeapons
             Custom="Rat";
         };
     };
-    class 91st_Infantry_Raze_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Raze_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -923,7 +924,7 @@ class CfgWeapons
             Custom="Raze";
         };
     };
-    class 91st_Infantry_Roach_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Roach_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -931,7 +932,7 @@ class CfgWeapons
             Custom="Roach";
         };
     };
-    class 91st_Infantry_Scorch_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Scorch_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -939,7 +940,7 @@ class CfgWeapons
             Custom="Scorch";
         };
     };
-    class 91st_Infantry_Sconch_Armor: 91st_Infantry_CR_Armor
+    class 91st_Infantry_Sconch_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {

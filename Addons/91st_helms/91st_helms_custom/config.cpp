@@ -240,11 +240,10 @@ class CfgWeapons
     class 91st_Base_Helmet;
 	class Uniform_Base;
 	class H_HelmetSpecB;
-	class 91st_Base_Helmet;
 	class JLTS_CloneHelmetP2_illum;
 	class 91st_ARC_Helmet;
 	class JLTS_CloneHelmetBARC;
-    class 91st_ARC_Helmet_illum;
+    class JLTS_CloneHelmetARC_illum;
     
     //Infantry Custom Helmets
         class 91st_Axer_Helmet: JLTS_CloneHelmetP2_illum
@@ -965,8 +964,8 @@ class CfgWeapons
             };
         };
     //ARF
-        class 91st_ARF_Base;
-        class 91st_ARF: 91st_ARF_Base
+        class 91st_ARF;
+        class 91st_ARF: 91st_ARF
         {
             class XtdGearInfo
             {
@@ -974,7 +973,7 @@ class CfgWeapons
                 ARFhelms="ARF";
             };
         };
-        class 91st_Raze_ARF: 91st_ARF_Base
+        class 91st_Raze_ARF: 91st_ARF
         {
             class XtdGearInfo
             {
@@ -982,7 +981,7 @@ class CfgWeapons
                 ARFhelms="Raze";
             };
         };
-        class 91st_Kappa_ARF: 91st_ARF_Base
+        class 91st_Kappa_ARF: 91st_ARF
         {
             class XtdGearInfo
             {
