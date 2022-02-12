@@ -57,10 +57,6 @@ class XtdGearModels
                 {
                     label="Medic";
                 };
-                class EOD
-                {
-                    label="EOD";
-                };
             };
             class Type
             {
@@ -196,17 +192,12 @@ class XtdGearModels
                 labels="Jumpack";
                 values[]=
                 {
-                    "TrooperCDV",
                     "KyberCDV",
                     "BeskarCDV",
                     "NovaCDV",
                     "JadeCDV",
                     "ArchangelCDV",
                     "ScorchCDV"
-                };
-                class TrooperCDV
-                {
-                    label="Trooper";
                 };
                 class KyberCDV
                 {
@@ -238,20 +229,13 @@ class XtdGearModels
 };
 class CfgVehicles
 {
-    class JLTS_Clone_backpack;
-    class JLTS_Clone_backpack_eod;
-    class JLTS_Clone_backpack_medic;
-	class JLTS_Clone_backpack_s;
-    class JLTS_Clone_belt_bag;
-    class TFAR_rt1523g_big;
-    class JLTS_Clone_backpack_RTO;
-    class JLTS_Clone_LR_attachment;
-    class JLTS_Clone_RTO_pack;
-    class JLTS_Clone_backpack_s_RTO;
-    class JLTS_Clone_jumppack_mc;
+    class 91st_Base_Backpack;
+    class 91st_Base_Straps_Backpack;
+    class 91st_LR_Base;
     class JLTS_Clone_jumppack_JT12;
+    class 91st_Base_MC_JP;
     //Standard backpacks
-        class 91st_GAR_Backpack: JLTS_Clone_backpack
+        class 91st_GAR_Backpack: 91st_Base_Backpack
         {
             class XtdGearInfo
             {
@@ -260,7 +244,7 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-        class 91st_GAR_Straps_Backpack: JLTS_Clone_backpack_s
+        class 91st_GAR_Straps_Backpack: 91st_Base_Straps_Backpack
         {
             class XtdGearInfo
             {
@@ -271,7 +255,7 @@ class CfgVehicles
         };
 
         //Kyber
-        class 91st_Kyber_Backpack: JLTS_Clone_backpack
+        class 91st_Kyber_Backpack: 91st_Base_Backpack
         {
             class XtdGearInfo
             {
@@ -280,7 +264,7 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-        class 91st_Kyber_Straps_Backpack: JLTS_Clone_backpack_s
+        class 91st_Kyber_Straps_Backpack: 91st_Base_Straps_Backpack
         {
             class XtdGearInfo
             {
@@ -291,7 +275,7 @@ class CfgVehicles
         };
 
         //Beskar
-        class 91st_Beskar_Backpack: JLTS_Clone_backpack
+        class 91st_Beskar_Backpack: 91st_Base_Backpack
         {
             class XtdGearInfo
             {
@@ -300,7 +284,7 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-        class 91st_Beskar_Straps_Backpack: JLTS_Clone_backpack_s
+        class 91st_Beskar_Straps_Backpack: 91st_Base_Straps_Backpack
         {
             class XtdGearInfo
             {
@@ -311,7 +295,7 @@ class CfgVehicles
         };
 
         //Nova
-        class 91st_Nova_Backpack: JLTS_Clone_backpack
+        class 91st_Nova_Backpack: 91st_Base_Backpack
         {
             class XtdGearInfo
             {
@@ -320,7 +304,7 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-        class 91st_Nova_Straps_Backpack: JLTS_Clone_backpack_s
+        class 91st_Nova_Straps_Backpack: 91st_Base_Straps_Backpack
         {
             class XtdGearInfo
             {
@@ -331,7 +315,7 @@ class CfgVehicles
         };
 
         //Medic
-        class 91st_Medic_Backpack: 91st_GAR_Backpack
+        class 91st_Medic_Backpack: 91st_Base_Backpack
         {
             class XtdGearInfo
             {
@@ -340,37 +324,18 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-        class 91st_Medic_Straps_Backpack: 91st_GAR_Straps_Backpack
+        class 91st_Medic_Straps_Backpack: 91st_Base_Straps_Backpack
         {
             class XtdGearInfo
             {
                 model="91stBackpacks";
                 Backpacks="Medic";
-                Type="Strap";
-            };
-        };
-        //EOD
-        class 91st_EOD_Backpack: 91st_GAR_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="EOD";
-                Type="Standard";
-            };
-        };
-        class 91st_EOD_Straps_Backpack: 91st_GAR_Straps_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="EOD";
                 Type="Strap";
             };
         };
 
     //RTO Backpack
-        class 91st_GAR_RTO_backpack: TFAR_rt1523g_big
+        class 91st_GAR_RTO_Backpack: 91st_LR_Base
         {
             class XtdGearInfo
             {
@@ -379,7 +344,7 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-	    class 91st_GAR_RTO_strap_packpack: 91st_GAR_RTO_backpack
+	    class 91st_GAR_RTO_Straps_Backpack: 91st_LR_Base
         {
             class XtdGearInfo
             {
@@ -390,7 +355,7 @@ class CfgVehicles
         };
 
         //Kyber
-        class 91st_Kyber_RTO_packpack: 91st_GAR_RTO_backpack
+        class 91st_Kyber_RTO_Backpack: 91st_LR_Base
         {
             class XtdGearInfo
             {
@@ -399,7 +364,7 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-        class 91st_Kyber_RTO_strap_packpack: 91st_GAR_RTO_backpack
+        class 91st_Kyber_RTO_Straps_Backpack: 91st_LR_Base
         {
             class XtdGearInfo
             {
@@ -410,7 +375,7 @@ class CfgVehicles
         };
 
         //Beskar
-        class 91st_Beskar_RTO_packpack: 91st_GAR_RTO_backpack
+        class 91st_Beskar_RTO_Backpack: 91st_LR_Base
         {
             class XtdGearInfo
             {
@@ -419,7 +384,7 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-        class 91st_Beskar_RTO_strap_packpack: 91st_GAR_RTO_backpack
+        class 91st_Beskar_RTO_Straps_Backpack: 91st_LR_Base
         {
             class XtdGearInfo
             {
@@ -430,7 +395,7 @@ class CfgVehicles
         };
 
         //Nova
-        class 91st_Nova_RTO_packpack: 91st_GAR_RTO_backpack
+        class 91st_Nova_RTO_Backpack: 91st_LR_Base
         {
             class XtdGearInfo
             {
@@ -439,7 +404,7 @@ class CfgVehicles
                 Type="Standard";
             };
         };
-        class 91st_Nova_RTO_strap_packpack: 91st_GAR_RTO_backpack
+        class 91st_Nova_RTO_Straps_Backpack: 91st_LR_Base
         {
             class XtdGearInfo
             {
@@ -452,7 +417,7 @@ class CfgVehicles
        
 
     //Long Ranges
-    class 91st_mini_LR_attachment_arrow: 91st_GAR_RTO_backpack
+    class 91st_mini_LR_attachment_arrow: 91st_LR_Base
     {
         class XtdGearInfo
         {
@@ -460,7 +425,7 @@ class CfgVehicles
             LRs="MiniSmall";
         };
     };
-    class 91st_mini_LR_pack_arrow: 91st_GAR_RTO_backpack
+    class 91st_mini_LR_pack_arrow: 91st_LR_Base
     {
         class XtdGearInfo
         {
@@ -504,15 +469,7 @@ class CfgVehicles
         };
     };
     // CDV
-    class 91st_jumppack_mc: JLTS_Clone_jumppack_mc
-    {
-        class XtdGearInfo
-        {
-            model="91stCDVJumppack";
-            CDV="TrooperCDV";
-        };
-    };
-    class 91st_AA_jumpack_archangel: 91st_jumppack_mc
+    class 91st_AA_jumpack_archangel: 91st_Base_MC_JP
     {
         class XtdGearInfo
         {
@@ -520,7 +477,7 @@ class CfgVehicles
             CDV="ArchangelCDV";
         };
     };
-    class 91st_jumppack_mc_jade: 91st_jumppack_mc
+    class 91st_jumppack_mc_jade: 91st_Base_MC_JP
     {
         class XtdGearInfo
         {
@@ -528,7 +485,7 @@ class CfgVehicles
             CDV="JadeCDV";
         };
     };
-    class 91st_jumppack_mc_kyber: 91st_jumppack_mc
+    class 91st_jumppack_mc_kyber: 91st_Base_MC_JP
     {
         class XtdGearInfo
         {
@@ -536,7 +493,7 @@ class CfgVehicles
             CDV="KyberCDV";
         };
     };
-    class 91st_jumppack_mc_nova: 91st_jumppack_mc
+    class 91st_jumppack_mc_nova: 91st_Base_MC_JP
     {
         class XtdGearInfo
         {
@@ -544,7 +501,7 @@ class CfgVehicles
             CDV="NovaCDV";
         };
     };
-    class 91st_jumppack_mc_beskar: 91st_jumppack_mc
+    class 91st_jumppack_mc_beskar: 91st_Base_MC_JP
     {
         class XtdGearInfo
         {
@@ -552,7 +509,7 @@ class CfgVehicles
             CDV="BeskarCDV";
         };
     };
-    class 91st_jumppack_mc_scorch: 91st_jumppack_mc
+    class 91st_jumppack_mc_scorch: 91st_Base_MC_JP
     {
         class XtdGearInfo
         {

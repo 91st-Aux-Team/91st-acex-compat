@@ -552,7 +552,7 @@ class CfgWeapons
     };
 
     //Pilots Armor
-    class 91st_Pilot_CT_Armor: Uniform_Base
+    class 91st_Pilot_CT_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -560,7 +560,7 @@ class CfgWeapons
             PilotRank="CT";
         };
     };
-    class 91st_Pilot_CXC_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CXC_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -568,7 +568,7 @@ class CfgWeapons
             PilotRank="CXC";
         };
     };
-    class 91st_Pilot_CX_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CX_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -576,7 +576,7 @@ class CfgWeapons
             PilotRank="CX";
         };
     };
-    class 91st_Pilot_CXX_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CXX_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -584,7 +584,7 @@ class CfgWeapons
             PilotRank="CXX";
         };
     };
-    class 91st_Pilot_CXP_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CXP_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -592,7 +592,7 @@ class CfgWeapons
             PilotRank="CXP";
         };
     };
-    class 91st_Pilot_CXS_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CXS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -600,7 +600,7 @@ class CfgWeapons
             PilotRank="CXS";
         };
     };
-    class 91st_Pilot_CXSS_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CXSS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -608,7 +608,7 @@ class CfgWeapons
             PilotRank="CXSS";
         };
     };
-    class 91st_Pilot_CX1_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CX1_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -616,7 +616,7 @@ class CfgWeapons
             PilotRank="CX1";
         };
     };
-    class 91st_Pilot_CX2_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CX2_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -624,7 +624,7 @@ class CfgWeapons
             PilotRank="CX2";
         };
     };
-    class 91st_Pilot_CX3_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CX3_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -632,7 +632,7 @@ class CfgWeapons
             PilotRank="CX3";
         };
     };
-    class 91st_Pilot_CX4_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CX4_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -640,7 +640,7 @@ class CfgWeapons
             PilotRank="CX4";
         };
     };
-    class 91st_Pilot_CX5_Armor: 91st_Pilot_CT_Armor
+    class 91st_Pilot_CX5_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -650,7 +650,7 @@ class CfgWeapons
     };
 
     //Mech Armor
-    class 91st_Mechanized_CT_Armor: JLTS_Clone_P2_recon
+    class 91st_Mechanized_CT_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -658,7 +658,7 @@ class CfgWeapons
             BeskarRank="CT";
         };
     };
-    class 91st_Mechanized_SCT_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_SCT_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -666,7 +666,7 @@ class CfgWeapons
             BeskarRank="SCT";
         };
     };
-    class 91st_Mechanized_VCT_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_VCT_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -674,7 +674,7 @@ class CfgWeapons
             BeskarRank="VCT";
         };
     };
-    class 91st_Mechanized_CSP_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_CSP_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -682,7 +682,7 @@ class CfgWeapons
             BeskarRank="CSP";
         };
     };
-    class 91st_Mechanized_CLC_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_CLC_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -690,7 +690,7 @@ class CfgWeapons
             BeskarRank="CLC";
         };
     };
-    class 91st_Mechanized_CP_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_CP_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -698,7 +698,7 @@ class CfgWeapons
             BeskarRank="CP";
         };
     };
-    class 91st_Mechanized_CS_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_CS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -706,7 +706,7 @@ class CfgWeapons
             BeskarRank="CS";
         };
     };
-    class 91st_Mechanized_CSS_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_CSS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -714,7 +714,7 @@ class CfgWeapons
             BeskarRank="CSS";
         };
     };
-    class 91st_Mechanized_WO1_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_WO1_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -722,7 +722,7 @@ class CfgWeapons
             BeskarRank="WO1";
         };
     };
-    class 91st_Mechanized_WO2_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_WO2_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -730,7 +730,7 @@ class CfgWeapons
             BeskarRank="WO2";
         };
     };
-    class 91st_Mechanized_WO3_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_WO3_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -738,7 +738,7 @@ class CfgWeapons
             BeskarRank="WO3";
         };
     };
-    class 91st_Mechanized_WO4_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_WO4_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -746,7 +746,7 @@ class CfgWeapons
             BeskarRank="WO4";
         };
     };
-    class 91st_Mechanized_WO5_Armor: 91st_Mechanized_CT_Armor
+    class 91st_Mechanized_WO5_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -756,7 +756,7 @@ class CfgWeapons
     };
 
     //Jade 
-    class 91st_ARC_CSP_Armor: Uniform_Base
+    class 91st_ARC_CSP_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -764,7 +764,7 @@ class CfgWeapons
             ARCRank="CSP";
         };
     };
-    class 91st_ARC_CLC_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_CLC_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -772,7 +772,7 @@ class CfgWeapons
             ARCRank="CLC";
         };
     };
-    class 91st_ARC_CP_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_CP_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -780,7 +780,7 @@ class CfgWeapons
             ARCRank="CP";
         };
     };
-    class 91st_ARC_CS_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_CS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -788,7 +788,7 @@ class CfgWeapons
             ARCRank="CS";
         };
     };
-    class 91st_ARC_CSS_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_CSS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -796,7 +796,7 @@ class CfgWeapons
             ARCRank="CSS";
         };
     };
-    class 91st_ARC_WO1_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_WO1_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -804,7 +804,7 @@ class CfgWeapons
             ARCRank="WO1";
         };
     };
-    class 91st_ARC_WO2_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_WO2_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -812,7 +812,7 @@ class CfgWeapons
             ARCRank="WO2";
         };
     };
-    class 91st_ARC_WO3_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_WO3_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -820,7 +820,7 @@ class CfgWeapons
             ARCRank="WO3";
         };
     };
-    class 91st_ARC_WO4_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_WO4_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -828,7 +828,7 @@ class CfgWeapons
             ARCRank="WO4";
         };
     };
-    class 91st_ARC_WO5_Armor: 91st_ARC_CSP_Armor
+    class 91st_ARC_WO5_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
