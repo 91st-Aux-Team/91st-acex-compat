@@ -197,7 +197,10 @@ class XtdGearModels
                 {
                     "ARF",
                     "Raze",
-                    "Kappa"
+                    "Kappa",
+                    "Shoto",
+                    "Sponks",
+                    "Postal"
                 };
                 class ARF
                 {
@@ -210,6 +213,18 @@ class XtdGearModels
                 class Kappa
                 {
                     label="Kappa";
+                };
+                class Shoto
+                {
+                    label="Shoto";
+                };
+                class Sponks
+                {
+                    label="Sponks";
+                };
+                class Postal
+                {
+                    label="Postal";
                 };
             };
         };
@@ -978,6 +993,30 @@ class CfgWeapons
             {
                 model="ARFHelmets";
                 ARFhelms="Kappa";
+            };
+        };
+        class 91st_Shoto_ARF: 91st_ARF
+        {
+            class XtdGearInfo
+            {
+                model="ARFHelmets";
+                ARFhelms="Shoto";
+            };
+        };
+        class 91st_Sponks_ARF: 91st_ARF
+        {
+            class XtdGearInfo
+            {
+                model="ARFHelmets";
+                ARFhelms="Sponks";
+            };
+        };
+        class 91st_Postal_ARF: 91st_ARF
+        {
+            class XtdGearInfo
+            {
+                model="ARFHelmets";
+                ARFhelms="Postal";
             };
         };
     //BARC Helms
