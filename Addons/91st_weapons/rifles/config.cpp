@@ -88,12 +88,29 @@ class XtdGearModels
                 };
             };
         };
+        class WestarRilfes
+        {
+            label="Westars";
+            author="91st Aux Team";
+            options[]={"Variance"};
+            class Variance
+            {
+                labels="Variance";
+                values[]=
+                {
+                    "M5GL",
+                    "C",
+                    "S"
+                };
+            };
+        };
     };
 };
 class CfgWeapons
 {
     class 91st_DC15C_Base;
     class aRifle_MX_Base_F;
+    class 91st_DC15L_base;
     class Rifle_Base_F;
     class JLTS_DC15X;
     class 327th_dc15le;
@@ -148,7 +165,7 @@ class CfgWeapons
     };
 
     //LMG's
-    class 91st_DC15L:aRifle_MX_Base_F
+    class 91st_DC15L: 91st_DC15L_base
     {
         class XtdGearInfo
         {
@@ -156,7 +173,7 @@ class CfgWeapons
             LMG="DC15L";
         };
     };
-    class 91st_Valken_SAW: aRifle_MX_Base_F
+    class 91st_Valken_SAW: 91st_DC15L
     {
         class XtdGearInfo
         {
@@ -190,7 +207,7 @@ class CfgWeapons
             Specialist="EPL-2";
         };
     };
-    class 91st_Flamer: aRifle_MX_Base_F
+    class 91st_Flamer: 3AS_Flamer_Base
     {
         class XtdGearInfo
         {
@@ -217,7 +234,7 @@ class CfgWeapons
             Marksmen="Firepuncher";
         };
     };
-    class 91st_DC15X: JLTS_DC15X
+    class 91st_JLTS_DC15X: JLTS_DC15X
     {
         class XtdGearInfo
         {
@@ -225,7 +242,7 @@ class CfgWeapons
             Marksmen="DC15X";
         };
     };
-    class 91st_327_DC15LE: Rifle_Base_F
+    class 91st_DC15LE: Rifle_Base_F
     {
         class XtdGearInfo
         {
@@ -239,6 +256,34 @@ class CfgWeapons
         {
             model="MarksmenRilfes";
             Marksmen="DW-31S";
+        };
+    };
+
+    //Westars
+    class 91st_WestarM5_Base_F;
+    class 91st_westar_c_pre;
+    class 91st_westar_gl:91st_WestarM5_Base_F
+    {
+        class XtdGearInfo
+        {
+            model="WestarRilfes";
+            Variance="M5GL";
+        };
+    };
+    class 91st_westar35c: 91st_westar_c_pre
+    {
+        class XtdGearInfo
+        {
+            model="WestarRilfes";
+            Variance="C";
+        };
+    };
+    class 91st_Westar35S: 91st_westar_c_pre
+    {
+        class XtdGearInfo
+        {
+            model="WestarRilfes";
+            Variance="S";
         };
     };
 };
