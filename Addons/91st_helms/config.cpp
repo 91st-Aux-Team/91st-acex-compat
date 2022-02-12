@@ -53,7 +53,7 @@ class XtdGearModels
                 };
                 class CRC
                 {
-                    label="CR-C";
+                    label="CRC";
                 };
                 class CT
                 {
@@ -143,7 +143,7 @@ class XtdGearModels
                     "CX2",
                     "CX3",
                     "CX4",
-                    "CXW"
+                    "CX5"
                 };
                 class CXC
 				{
@@ -185,9 +185,9 @@ class XtdGearModels
 				{
 					label = "CX4";
 				};
-				class CXW
+				class CX5
 				{
-					label = "CXW";
+					label = "CX5";
 				};
             };
         };
@@ -323,7 +323,7 @@ class CfgWeapons
     class JLTS_CloneHelmetARC_illum;
     class 91st_Base_Helmet;
     //Inf Ranks
-    class 91st_Recruit_Helmet: 91st_Base_Helmet
+    class 91st_CR_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
@@ -331,7 +331,7 @@ class CfgWeapons
             InfantryRankhelms="CR";
         };
     };
-    class 91st_Cadet_Helmet: 91st_Base_Helmet
+    class 91st_CRC_Helmet: 91st_Base_Helmet
     {
         class XtdGearInfo
         {
@@ -393,6 +393,14 @@ class CfgWeapons
         {
             model="Infrnakhelms";
             InfantryRankhelms="CS";
+        };
+    };
+    class 91st_CSS_Helmet: 91st_Base_Helmet
+    {
+        class XtdGearInfo
+        {
+            model="Infrnakhelms";
+            InfantryRankhelms="CSS";
         };
     };
     class 91st_CFS_Helmet: 91st_Base_Helmet
@@ -608,15 +616,15 @@ class CfgWeapons
             Pilotranks="CX4";
         };
 	};
-    class 91st_CXW_Helmet: 91st_Pilot_Infantry_Helmet
-    {
-        class XtdGearInfo
+    class 91st_CX5_Helmet: 91st_Pilot_Infantry_Helmet
+	{
+		class XtdGearInfo
         {
             model="Pilotrankshelmets";
             Type="Infantry";
-            Pilotranks="CXW";
+            Pilotranks="CX5";
         };
-    };
+	};
 
     //Beskar
     class 91st_Beskar_CT_Helmet: 91st_Beskar_Infantry_Helmet

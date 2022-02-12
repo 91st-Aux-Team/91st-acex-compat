@@ -43,7 +43,6 @@ class XtdGearModels
                     "Cross",
                     "Crossout",
                     "Dex",
-                    "Dumajin",
                     "Edge",
                     "Falcon",
                     "Fallon",
@@ -348,14 +347,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Dex";
-            };
-        };
-        class 91st_Dumajin_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Dumajin";
             };
         };
         class 91st_Edge_Helmet: 91st_Base_Helmet
@@ -678,7 +669,7 @@ class CfgWeapons
                 InfantryCustoms="Tarz";
             };
         };
-        class 91st_Tig_Helmet_JTLS: 91st_Base_Helmet
+        class 91st_Tig_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
             {
@@ -686,7 +677,7 @@ class CfgWeapons
                 InfantryCustoms="Tig";
             };
         };
-        class 91st_Trauma_Helmet_JTLS: 91st_Base_Helmet
+        class 91st_Trauma_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
             {
@@ -964,8 +955,8 @@ class CfgWeapons
             };
         };
     //ARF
-        class 91st_ARF;
-        class 91st_ARF: 91st_ARF
+        class 327th_ARF;
+        class 91st_ARF: 327th_ARF
         {
             class XtdGearInfo
             {

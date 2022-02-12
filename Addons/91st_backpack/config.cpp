@@ -34,8 +34,7 @@ class XtdGearModels
                     "Kyber",
                     "Beskar",
                     "Nova",
-                    "Medic",
-                    "EOD"
+                    "Medic"
                 };
                 class GAR
                 {

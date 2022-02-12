@@ -19,10 +19,10 @@ class XtdGearModels
     {
 		class 91st_Infantry_Ranks
         {
-            label="91st Infanry Armor";
+            label="91st Infantry Armor";
             author="91st Aux Team";
-            options[]={"InfanryRank"};
-            class InfanryRank
+            options[]={"InfantryRank"};
+            class InfantryRank
             {
                 label="Ranks";
                 values[]=
@@ -37,8 +37,8 @@ class XtdGearModels
                     "CP",
                     "CS",
                     "CSS",
-                    //"CSM",
                     "CFS",
+                    "CSM",
                     "WO1",
                     "WO2",
                     "WO3",
@@ -85,13 +85,13 @@ class XtdGearModels
 				{
 					label = "CSS";
 				};
-				/*class CSM
-				{
-					label = "CSM";
-				};*/
 				class CFS
 				{
 					label = "CFS";
+				};
+				class CSM
+				{
+					label = "CSM";
 				};
 				class WO1
 				{
@@ -115,6 +115,79 @@ class XtdGearModels
 				};
             };
         };
+        class 91st_Medic_Ranks
+        {
+            label="91st Medic Armor";
+            author="91st Aux Team";
+            options[]={"MedicRank"};
+            class MedicRank
+            {
+                label="Ranks";
+                values[]=
+                {
+                    "CT",
+                    "SCT",
+                    "VCT",
+                    "CSP",
+                    "CLC",
+                    "CP",
+                    "CS",
+                    "CSS",
+                    "WO1",
+                    "WO2",
+                    "WO3",
+                    "WO4"
+                };
+				class CT
+				{
+					label = "CT";
+				};
+				class SCT
+				{
+					label = "SCT";
+				};
+				class VCT
+				{
+					label = "VCT";
+				};
+				class CSP
+				{
+					label = "CSP";
+				};
+				class CLC
+				{
+					label = "CLC";
+				};
+				class CP
+				{
+					label = "CP";
+				};
+				class CS
+				{
+					label = "CS";
+				};
+				class CSS
+				{
+					label = "CSS";
+				};
+				class WO1
+				{
+					label = "W01";
+				};
+				class WO2
+				{
+					label = "W02";
+				};
+				class WO3
+				{
+					label = "W03";
+				};
+				class WO4
+				{
+					label = "W04";
+				};
+            };
+        };
         class 91st_Pilot_Ranks
         {
             label="91st Pilot Rank Armor";
@@ -125,6 +198,7 @@ class XtdGearModels
                 label="Ranks";
                 values[]=
                 {
+                    "CT",
                     "CXC",
                     "CX",
                     "CXX",
@@ -137,6 +211,10 @@ class XtdGearModels
                     "CX4",
                     "CX5"
                 };
+                class CT
+				{
+					label = "CT";
+				};
                 class CXC
 				{
 					label = "CXC";
@@ -419,7 +497,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-            InfanryRank="CR";
+            InfantryRank="CR";
         };
     };
     class 91st_Infantry_CRC_Armor: 91st_Armor_Base
@@ -427,7 +505,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="CRC";
+           InfantryRank="CRC";
         };
     };
     class 91st_Infantry_CT_Armor: 91st_Armor_Base
@@ -435,7 +513,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="CT";
+           InfantryRank="CT";
         };
     };
     class 91st_Infantry_SCT_Armor: 91st_Armor_Base
@@ -443,7 +521,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="SCT";
+           InfantryRank="SCT";
         };
     };
     class 91st_Infantry_VCT_Armor: 91st_Armor_Base
@@ -451,7 +529,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="VCT";
+           InfantryRank="VCT";
         };
     };
     class 91st_Infantry_CSP_Armor: 91st_Armor_Base
@@ -459,7 +537,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="CSP";
+           InfantryRank="CSP";
         };
     };
     class 91st_Infantry_CLC_Armor: 91st_Armor_Base
@@ -467,7 +545,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="CLC";
+           InfantryRank="CLC";
         };
     };
     class 91st_Infantry_CP_Armor: 91st_Armor_Base
@@ -475,7 +553,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="CP";
+           InfantryRank="CP";
         };
     };
     class 91st_Infantry_CS_Armor: 91st_Armor_Base
@@ -483,7 +561,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="CS";
+           InfantryRank="CS";
         };
     };
     class 91st_Infantry_CSS_Armor: 91st_Armor_Base
@@ -491,23 +569,23 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-            InfanryRank="CSS";
+            InfantryRank="CSS";
         };
     };
-    /*class 91st_Infantry_CSM_Armor: 91st_Armor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Infantry_Ranks";
-           InfanryRank="CSM";
-        };
-    };*/
     class 91st_Infantry_CFS_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="CFS";
+            InfantryRank="CFS";
+        };
+    };
+    class 91st_Infantry_CSM_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Infantry_Ranks";
+            InfantryRank="CSM";
         };
     };
     class 91st_Infantry_WO1_Armor: 91st_Armor_Base
@@ -515,7 +593,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="WO1";
+           InfantryRank="WO1";
         };
     };
     class 91st_Infantry_WO2_Armor: 91st_Armor_Base
@@ -523,7 +601,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="WO2";
+           InfantryRank="WO2";
         };
     };
     class 91st_Infantry_WO3_Armor: 91st_Armor_Base
@@ -531,7 +609,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="WO3";
+           InfantryRank="WO3";
         };
     };
     class 91st_Infantry_WO4_Armor: 91st_Armor_Base
@@ -539,7 +617,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="WO4";
+           InfantryRank="WO4";
         };
     };
     class 91st_Infantry_WO5_Armor: 91st_Armor_Base
@@ -547,7 +625,105 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Infantry_Ranks";
-           InfanryRank="WO5";
+           InfantryRank="WO5";
+        };
+    };
+
+    //Medic Armor
+    class 91st_Medic_CT_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="CT";
+        };
+    };
+    class 91st_Medic_SCT_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="SCT";
+        };
+    };
+    class 91st_Medic_VCT_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="VCT";
+        };
+    };
+    class 91st_Medic_CSP_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="CSP";
+        };
+    };
+    class 91st_Medic_CLC_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="CLC";
+        };
+    };
+    class 91st_Medic_CP_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="CP";
+        };
+    };
+    class 91st_Medic_CS_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+            MedicRank="CS";
+        };
+    };
+    class 91st_Medic_CSS_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+            MedicRank="CSS";
+        };
+    };
+    class 91st_Medic_WO1_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="WO1";
+        };
+    };
+    class 91st_Medic_WO2_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="WO2";
+        };
+    };
+    class 91st_Medic_WO3_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="WO3";
+        };
+    };
+    class 91st_Medic_WO4_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="WO4";
         };
     };
 
