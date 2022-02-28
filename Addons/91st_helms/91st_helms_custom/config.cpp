@@ -32,6 +32,7 @@ class XtdGearModels
                 {
                     "Axer",
                     "Barr",
+                    "Bart",
                     "Banana",
                     "Binns",
                     "Blanks",
@@ -274,6 +275,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Barr";
+            };
+        };
+        class 91st_Bart_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Bart";
             };
         };
         class 91st_Banana_Helmet: 91st_Base_Helmet
