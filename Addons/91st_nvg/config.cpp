@@ -21,74 +21,56 @@ class XtdGearModels
         {
             label="Rangefinders";
             author="91st Aux Team";
-            options[]={"Rangefinders"};
-            class Rangefinders
+            options[]={"RFType", "RFThermal"};
+            class RFType
             {
-                labels="Rangefinders";
+                labels="Rangefinder Type";
                 values[]=
                 {
-                    "RedBW",
-                    "RedBG",
-                    "RedBO",
-                    "GreyBW",
-                    "GreyBG",
-                    "GreyBO",
-                    "BlackBW",
-                    "BlackBG",
-                    "BlackBO",
-                    "ARFBW",
-                    "ARFBG",
-                    "ARFBO"
+                    "Red",
+                    "Grey",
+                    "Black",
+                    "ARF"
                 };
-                class RedBW
+                class Red
                 {
-                    label="RedBW";
+                    label="Red";
                 };
-                class RedBG
+                class Grey
                 {
-                    label="RedBG";
+                    label="Grey";
                 };
-                class RedBO
+                class Black
                 {
-                    label="RedBO";
+                    label="Black";
                 };
-                class GreyBW
+                class ARF
                 {
-                    label="GreyBW";
-                };
-                class GreyBG
-                {
-                    label="GreyBG";
-                };
-                class GreyBO
-                {
-                    label="GreyBO";
-                };
-                class BlackBW
-                {
-                    label="BlackBW";
-                };
-                class BlackBG
-                {
-                    label="BlackBG";
-                };
-                class BlackBO
-                {
-                    label="BlackBO";
-                };
-                class ARFBW
-                {
-                    label="ARFBW";
-                };
-                class ARFBG
-                {
-                    label="ARFBG";
-                };
-                class ARFBO
-                {
-                    label="ARFBO";
+                    label="ARF";
                 };
             };
+            class RFThermal
+            {
+                labels="Thermal Type";
+                values[]=
+                {
+                    "BW",
+                    "BG",
+                    "BO"
+                };
+                class BW
+                {
+                    label="Black White";
+                };
+                class BG
+                {
+                    label="Black Green";
+                };
+                class BO
+                {
+                    label="Black Orange";
+                };
+            }
         };
         class 91stNvVisors
         {
@@ -156,9 +138,8 @@ class XtdGearModels
 class CfgWeapons
 {
     class JLTS_CloneNVGRange;
-    class JLTS_CloneNVG;
-    class JLTS_CloneNVG_spec;
-    class 91st_Visor_Down;
+    class 91st_Visor_Base;
+    class 91st_Visor_Down_Base;
 
     //Arc Rangfinders
     class 91st_Rangefinder_Red_BW: JLTS_CloneNVGRange
@@ -166,7 +147,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="RedBW";
+            RFType="Red";
+            RFThermal="BW";
         };
     };
     class 91st_Rangefinder_Red_BG: JLTS_CloneNVGRange
@@ -174,7 +156,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="RedBG";
+            RFType="Red";
+            RFThermal="BG";
         };
     };
     class 91st_Rangefinder_Red_BO: JLTS_CloneNVGRange
@@ -182,7 +165,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="RedBO";
+            RFType="Red";
+            RFThermal="BO";
         };
     };
     class 91st_Rangefinder_Gray_BW: JLTS_CloneNVGRange
@@ -190,7 +174,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="GreyBW";
+            RFType="Grey";
+            RFThermal="BW";
         };
     };
     class 91st_Rangefinder_Gray_BG: JLTS_CloneNVGRange
@@ -198,7 +183,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="GreyBG";
+            RFType="Grey";
+            RFThermal="BG";
         };
     };
     class 91st_Rangefinder_Gray_BO: JLTS_CloneNVGRange
@@ -206,7 +192,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="GreyBO";
+            RFType="Grey";
+            RFThermal="BO";
         };
     };
     class 91st_Rangefinder_Black_BW: JLTS_CloneNVGRange
@@ -214,7 +201,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="BlackBW";
+            RFType="Black";
+            RFThermal="BW";
         };
     };
     class 91st_Rangefinder_Black_BG: JLTS_CloneNVGRange
@@ -222,7 +210,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="BlackBG";
+            RFType="Black";
+            RFThermal="BG";
         };
     };
     class 91st_Rangefinder_Black_BO: JLTS_CloneNVGRange
@@ -230,7 +219,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="BlackBO";
+            RFType="Black";
+            RFThermal="BO";
         };
     };
     class 91st_Rangefinder_ARF_BW: JLTS_CloneNVGRange
@@ -238,7 +228,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="ARFBW";
+            RFType="ARF";
+            RFThermal="BW";
         };
     };
     class 91st_Rangefinder_ARF_BG: JLTS_CloneNVGRange
@@ -246,7 +237,8 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="ARFBG";
+            RFType="ARF";
+            RFThermal="BG";
         };
     };
     class 91st_Rangefinder_ARF_BO: JLTS_CloneNVGRange
@@ -254,12 +246,13 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91st_Rangefinders";
-            Rangefinders="ARFBO";
+            RFType="ARF";
+            RFThermal="BO";
         };
     };
 
     //Visors
-	class 91st_Visor: JLTS_CloneNVG
+	class 91st_Visor: 91st_Visor_Base
     {
         class XtdGearInfo
         {
@@ -268,7 +261,7 @@ class CfgWeapons
             Type="Up";
         };
     };
-	class 91st_Visor_Down: JLTS_CloneNVG_spec
+	class 91st_Visor_Down: 91st_Visor_Down_Base
     {
         class XtdGearInfo
         {
@@ -277,7 +270,7 @@ class CfgWeapons
             Type="Down";
         };
     };
-    class 91st_Visor_CSS: 91st_Visor
+    class 91st_Visor_CSS: 91st_Visor_Base
     {
         class XtdGearInfo
         {
@@ -286,7 +279,7 @@ class CfgWeapons
             Type="Up";
         };
     };
-    class 91st_Visor_CSS_Down: 91st_Visor_Down
+    class 91st_Visor_CSS_Down: 91st_Visor_Down_Base
     {
         class XtdGearInfo
         {
@@ -295,7 +288,7 @@ class CfgWeapons
             Type="Down";
         };
     };
-    class 91st_Visor_SCT: 91st_Visor
+    class 91st_Visor_SCT: 91st_Visor_Base
     {
         class XtdGearInfo
         {
@@ -304,7 +297,7 @@ class CfgWeapons
             Type="Up";
         };
     };
-    class 91st_Visor_SCT_Down: 91st_Visor_Down
+    class 91st_Visor_SCT_Down: 91st_Visor_Down_Base
     {
         class XtdGearInfo
         {
@@ -313,7 +306,7 @@ class CfgWeapons
             Type="Down";
         };
     };
-    class 91st_Visor_VCT: 91st_Visor
+    class 91st_Visor_VCT: 91st_Visor_Base
     {
         class XtdGearInfo
         {
@@ -322,7 +315,7 @@ class CfgWeapons
             Type="Up";
         };
     };
-    class 91st_Visor_VCT_Down: 91st_Visor_Down
+    class 91st_Visor_VCT_Down: 91st_Visor_Down_Base
     {
         class XtdGearInfo
         {
@@ -331,7 +324,7 @@ class CfgWeapons
             Type="Down";
         };
     };
-    class 91st_Visor_CSP: 91st_Visor
+    class 91st_Visor_CSP: 91st_Visor_Base
     {
         class XtdGearInfo
         {
@@ -340,7 +333,7 @@ class CfgWeapons
             Type="Up";
         };
     };
-    class 91st_Visor_CSP_Down: 91st_Visor_Down
+    class 91st_Visor_CSP_Down: 91st_Visor_Down_Base
     {
         class XtdGearInfo
         {
@@ -349,7 +342,7 @@ class CfgWeapons
             Type="Down";
         };
     };
-    class 91st_Visor_WO4: 91st_Visor
+    class 91st_Visor_WO4: 91st_Visor_Base
     {
         class XtdGearInfo
         {
@@ -358,7 +351,7 @@ class CfgWeapons
             Type="Up";
         };
     };
-    class 91st_Visor_WO4_Down: 91st_Visor_Down
+    class 91st_Visor_WO4_Down: 91st_Visor_Down_Base
     {
         class XtdGearInfo
         {
