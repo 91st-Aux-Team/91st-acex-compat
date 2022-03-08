@@ -52,6 +52,7 @@ class XtdGearModels
             class RFThermal
             {
                 labels="Thermal Type";
+                changeingame = 1;
                 values[]=
                 {
                     "BW",
@@ -61,14 +62,17 @@ class XtdGearModels
                 class BW
                 {
                     label="Black White";
+                    actionlabel = "Black White";
                 };
                 class BG
                 {
                     label="Black Green";
+                    actionlabel = "Black Green";
                 };
                 class BO
                 {
                     label="Black Orange";
+                    actionlabel = "Black Orange";
                 };
             }
         };

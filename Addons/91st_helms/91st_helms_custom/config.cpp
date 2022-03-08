@@ -44,7 +44,6 @@ class XtdGearModels
                     "Cross",
                     "Crossout",
                     "Dex",
-                    "Edge",
                     "Falcon",
                     "Fallon",
                     "Foxtrot",
@@ -52,7 +51,6 @@ class XtdGearModels
                     "Fraiser",
                     "Freq",
                     "Golden",
-                    "Ishi",
                     "Jughead",
                     "Jericho",
                     "Kitsune",
@@ -67,6 +65,7 @@ class XtdGearModels
                     "Myrola",
                     "Opossum",
                     "Oddball",
+                    "Perry",
                     "Praetorian",
                     "Predator",
                     "Qal",
@@ -197,6 +196,7 @@ class XtdGearModels
                 values[]=
                 {
                     "ARF",
+                    "Edge",
                     "Raze",
                     "Kappa",
                     "Shoto",
@@ -206,6 +206,10 @@ class XtdGearModels
                 class ARF
                 {
                     label="ARF";
+                };
+                class Edge
+                {
+                    label="Edge";
                 };
                 class Raze
                 {
@@ -373,14 +377,6 @@ class CfgWeapons
                 InfantryCustoms="Dex";
             };
         };
-        class 91st_Edge_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Edge";
-            };
-        };
         class 91st_Falcon_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -435,14 +431,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Golden";
-            };
-        };
-        class 91st_Ishi_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Ishi";
             };
         };
         class 91st_Jughead_Helmet: 91st_Base_Helmet
@@ -555,6 +543,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Oddball";
+            };
+        };
+        class 91st_Perry_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Perry";
             };
         };
         class 91st_Praetorian_Helmet: 91st_Base_Helmet
@@ -986,6 +982,14 @@ class CfgWeapons
             {
                 model="ARFHelmets";
                 ARFhelms="ARF";
+            };
+        };
+        class 91st_Edge_ARF: 91st_ARF
+        {
+            class XtdGearInfo
+            {
+                model="ARFHelmets";
+                ARFhelms="Edge";
             };
         };
         class 91st_Raze_ARF: 91st_ARF
