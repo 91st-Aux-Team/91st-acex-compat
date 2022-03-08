@@ -35,7 +35,7 @@ class XtdGearModels
                     "DC17h",
                     "DC17 Dual",
                     "DC15SA",
-                    "Revolver",
+                    //"Revolver",
                     "1911SW"
                 };
             };
@@ -46,6 +46,7 @@ class CfgWeapons
 {
 	class hgun_P07_F;
     class sPistol_Base_F;
+    class Pistol_Base_F;
     class 3AS_DC17STest_F;
     class 3AS_pistol_DC15SA_F;
     class 327th_revolver;
@@ -83,7 +84,7 @@ class CfgWeapons
             Pistols="DC17 Dual";
         };
     };
-    class 91st_DC15SA: 91st_DC17SA
+    class 91st_DC15SA: Pistol_Base_F
     {
         class XtdGearInfo
         {
@@ -91,14 +92,14 @@ class CfgWeapons
             Pistols="DC15SA";
         };
     };
-    class 91st_Revolver: 327th_revolver
+    /*class 91st_Revolver: 327th_revolver
     {
         class XtdGearInfo
         {
             model="Secondary";
             Pistols="Revolver";
         };
-    };
+    };*/
     class 91st_1911SW: 327th_buddy1911
     {
         class XtdGearInfo

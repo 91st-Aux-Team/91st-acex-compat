@@ -108,7 +108,10 @@ class XtdGearModels
 };
 class CfgWeapons
 {
+    class 91st_Rifle_Base;
+    class 91st_Rifle_Base2;
     class 91st_DC15C_Base;
+    class 91st_LMG_Base;
     class aRifle_MX_Base_F;
     class 91st_DC15L_base;
     class Rifle_Base_F;
@@ -123,7 +126,7 @@ class CfgWeapons
     class 3AS_Flamer_Base;
     
     //Rifles
-    class 91st_DC15A: aRifle_MX_Base_F
+    class 91st_DC15A: 91st_Rifle_Base
     {
         class XtdGearInfo
         {
@@ -181,7 +184,7 @@ class CfgWeapons
             LMG="Valken-38L";
         };
     };
-    class 91st_Z6: aRifle_MX_Base_F
+    class 91st_Z6: 91st_LMG_Base
     {
         class XtdGearInfo
         {
@@ -215,7 +218,7 @@ class CfgWeapons
             Specialist="Flamer";
         };
     };
-    class 91st_musket: aRifle_MX_Base_F
+    class 91st_musket: 91st_DC15C
     {
         class XtdGearInfo
         {
@@ -242,7 +245,7 @@ class CfgWeapons
             Marksmen="DC15X";
         };
     };
-    class 91st_DC15LE: Rifle_Base_F
+    class 91st_DC15LE: 91st_Rifle_Base2
     {
         class XtdGearInfo
         {
