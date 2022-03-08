@@ -84,7 +84,7 @@ class XtdGearModels
                     "DC15LE",
                     "DC15X",
                     "Firepuncher",
-                    "DW-31S"
+                    "DW-32S"
                 };
             };
         };
@@ -258,7 +258,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="MarksmenRilfes";
-            Marksmen="DW-31S";
+            Marksmen="DW-32S";
         };
     };
 
