@@ -43,6 +43,8 @@ class XtdGearModels
                     "Crash",
                     "Cross",
                     "Crossout",
+                    "Cryptic",
+                    "Dante",
                     "Dex",
                     "Falcon",
                     "Fallon",
@@ -55,14 +57,17 @@ class XtdGearModels
                     "Jericho",
                     "Kitsune",
                     "Laser",
+                    "Leer",
                     "Leeroy",
                     "Lesk",
                     "Lich",
+                    "Magic",
                     "Marf",
                     "Mauser",
                     "Mav",
                     "Max",
                     "Myrola",
+                    "Oni",
                     "Opossum",
                     "Oddball",
                     "Perry",
@@ -369,6 +374,22 @@ class CfgWeapons
                 InfantryCustoms="Crossout";
             };
         };
+        class 91st_Cryptic_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Cryptic";
+            };
+        };
+        class 91st_Dante_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Dante";
+            };
+        };
         class 91st_Dex_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -465,6 +486,14 @@ class CfgWeapons
                 InfantryCustoms="Laser";
             };
         };
+        class 91st_Leer_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Leer";
+            };
+        };
         class 91st_Leeroy_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -487,6 +516,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Lich";
+            };
+        };
+        class 91st_Magic_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Magic";
             };
         };
         class 91st_Marf_Helmet: 91st_Base_Helmet
@@ -543,6 +580,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Oddball";
+            };
+        };
+        class 91st_Oni_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Oni";
             };
         };
         class 91st_Perry_Helmet: 91st_Base_Helmet
