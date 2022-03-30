@@ -40,6 +40,33 @@ class XtdGearModels
                 };
             };
         };
+        class AutoDualies_dc17a
+		{
+			label = "Modified DC-17A";
+			author = "Scorch";
+			options[] = {"dc17Aswap"};
+			class dc17Aswap
+			{
+				label = "Onyx DC-17A's";
+				values[] = {"Single","Dual"};
+				changeingame = 1;
+				icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\logo_ca.paa";
+                class Single
+				{
+					label = "Single";
+					description = "Holster Left";
+					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\ScorchDC17A_ui_ca.paa";
+					actionlabel = "Single";
+				};
+				class Dual
+				{
+					label = "Pair";
+					description = "Pull Left";
+					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\u\ScorchDC17As_ui_ca.paa";
+					actionlabel = "Dual";
+				};
+        	};
+		};
     };
 };
 class CfgWeapons
@@ -108,4 +135,22 @@ class CfgWeapons
             Pistols="1911SW";
         };
     };
+
+    // Scorch's Dualies
+    class Scorch_DC17A: Pistol_Base_F
+	{
+		class XtdGearInfo
+		{
+			model = "AutoDualies_dc17a";
+			dc17Aswap = "Single";
+		};
+	};
+	class Scorch_DC17A_Dual: sPistol_Base_F
+	{
+		class XtdGearInfo
+		{
+			model = "AutoDualies_dc17a";
+			dc17Aswap = "Dual";
+		};
+	};
 };
