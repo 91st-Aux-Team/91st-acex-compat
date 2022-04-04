@@ -22,7 +22,7 @@ class XtdGearModels
     {
         class Rilfes
         {
-            label="Rilfes";
+            label="Rifles";
             author="91st Aux Team";
             options[]={"Rifles"};
             class Rifles
@@ -30,11 +30,11 @@ class XtdGearModels
                 labels="Rifles";
                 values[]=
                 {
-                    "DC15a",
-                    "DC15aGL",
-                    "DC15c",
-                    "DC15cGL",
-                    "DC15s"
+                    "DC15A",
+                    "DC15AGL",
+                    "DC15C",
+                    "DC15CGL",
+                    "DC15S"
                 };
             };
         };
@@ -73,7 +73,7 @@ class XtdGearModels
         };
         class MarksmenRilfes
         {
-            label="MarksmenRilfes";
+            label="Marksmen Rilfes";
             author="91st Aux Team";
             options[]={"Marksmen"};
             class Marksmen
@@ -84,6 +84,7 @@ class XtdGearModels
                     "DC15LE",
                     "DC15X",
                     "Firepuncher",
+                    "773EVR",
                     "DW-32S"
                 };
             };
@@ -92,10 +93,10 @@ class XtdGearModels
         {
             label="Westars";
             author="91st Aux Team";
-            options[]={"Variance"};
-            class Variance
+            options[]={"Variant"};
+            class Variant
             {
-                labels="Variance";
+                labels="Variant";
                 values[]=
                 {
                     "M5GL",
@@ -124,6 +125,7 @@ class CfgWeapons
     class JLTS_DP23;
     class JLTS_EPL2;
     class 3AS_Flamer_Base;
+    class k_773_rifle_base;
     
     //Rifles
     class 91st_DC15A: 91st_Rifle_Base
@@ -245,12 +247,20 @@ class CfgWeapons
             Marksmen="DC15X";
         };
     };
-    class 91st_DC15LE: 91st_Rifle_Base2
+    class 91st_DC15ALE: 91st_DC15A
     {
         class XtdGearInfo
         {
             model="MarksmenRilfes";
             Marksmen="DC15LE";
+        };
+    };
+    class 91_773_rifle_base: k_773_rifle_base
+    {
+        class XtdGearInfo
+        {
+            model="MarksmenRilfes";
+            Marksmen="773EVR";
         };
     };
     class 91st_DW32S: JLTS_DW32S
@@ -270,7 +280,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="WestarRilfes";
-            Variance="M5GL";
+            Variant="M5GL";
         };
     };
     class 91st_westar35c: 91st_westar_c_pre
@@ -278,7 +288,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="WestarRilfes";
-            Variance="C";
+            Variant="C";
         };
     };
     class 91st_Westar35S: 91st_westar_c_pre
@@ -286,7 +296,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="WestarRilfes";
-            Variance="S";
+            Variant="S";
         };
     };
 };
