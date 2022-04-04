@@ -20,9 +20,9 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class Rilfes
+        class Rifle
         {
-            label="Rifles";
+            label="Rifle";
             author="91st Aux Team";
             options[]={"Rifles"};
             class Rifles
@@ -36,6 +36,26 @@ class XtdGearModels
                     "DC15CGL",
                     "DC15S"
                 };
+                class DC15A
+                {
+                    label="DC15A";
+                };
+                class DC15AGL
+                {
+                    label="DC15AGL";
+                };
+                class DC15C
+                {
+                    label="DC15C";
+                };
+                class DC15CGL
+                {
+                    label="DC15CGL";
+                };
+                class DC15S
+                {
+                    label="DC15S";
+                };                
             };
         };
         class LMGS
@@ -84,8 +104,12 @@ class XtdGearModels
                     "DC15LE",
                     "DC15X",
                     "Firepuncher",
-                    "773EVR",
+                    "773EBR",
                     "DW-32S"
+                };
+                class DC15LE
+                {
+                    label="DC15LE";
                 };
             };
         };
@@ -132,40 +156,40 @@ class CfgWeapons
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15a";
+            model="Rifle";
+            Rifles="DC15A";
         };
     };
     class 91st_DC15A_GL: 91st_DC15A
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15aGL";
+            model="Rifle";
+            Rifles="DC15AGL";
         };
     };
     class 91st_DC15C: 91st_DC15C_Base
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15c";
+            model="Rifle";
+            Rifles="DC15C";
         };
     };
     class 91st_DC15C_GL: 91st_DC15C
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15cGL";
+            model="Rifle";
+            Rifles="DC15CGL";
         };
     };
     class 91st_DC15S: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15s";
+            model="Rifle";
+            Rifles="DC15S";
         };
     };
 
@@ -260,7 +284,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="MarksmenRilfes";
-            Marksmen="773EVR";
+            Marksmen="773EBR";
         };
     };
     class 91st_DW32S: JLTS_DW32S
