@@ -43,7 +43,7 @@ class XtdGearModels
         class AutoDualies_dc17a
 		{
 			label = "Modified DC-17A";
-			author = "Scorch";
+			author = "91st Aux Team";
 			options[] = {"dc17Aswap"};
 			class dc17Aswap
 			{
@@ -55,14 +55,14 @@ class XtdGearModels
 				{
 					label = "Single";
 					description = "Holster Left";
-					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\ScorchDC17A_ui_ca.paa";
+					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
 					actionlabel = "Single";
 				};
 				class Dual
 				{
 					label = "Pair";
 					description = "Pull Left";
-					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\u\ScorchDC17As_ui_ca.paa";
+					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\u\OnyxDC17As_ui_ca.paa";
 					actionlabel = "Dual";
 				};
         	};
@@ -136,8 +136,8 @@ class CfgWeapons
         };
     };
 
-    // Scorch's Dualies
-    class Scorch_DC17A: Pistol_Base_F
+    // Onyx's Dualies
+    class Onyx_DC17A: Pistol_Base_F
 	{
 		class XtdGearInfo
 		{
@@ -145,7 +145,7 @@ class CfgWeapons
 			dc17Aswap = "Single";
 		};
 	};
-	class Scorch_DC17A_Dual: sPistol_Base_F
+	class Onyx_DC17A_Dual: sPistol_Base_F
 	{
 		class XtdGearInfo
 		{
