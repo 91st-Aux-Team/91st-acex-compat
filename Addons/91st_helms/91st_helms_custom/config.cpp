@@ -40,9 +40,7 @@ class XtdGearModels
                     "Chop",
                     "Con",
                     "Corpse",
-                    "Crash",
                     "Cross",
-                    "Crossout",
                     "Cryptic",
                     "Dante",
                     "Dex",
@@ -66,7 +64,6 @@ class XtdGearModels
                     "Mauser",
                     "Mav",
                     "Max",
-                    "Myrola",
                     "Oni",
                     "Opossum",
                     "Oddball",
@@ -79,20 +76,17 @@ class XtdGearModels
                     "Ricochet",
                     "Saga",
                     "Sappheron",
-                    "Sapphire",
                     "Shields",
                     "Silver",
                     "Skit",
                     "Smig",
                     "Steak",
-                    "Steve",
                     "Strike",
                     "Tarz",
                     "Tig",
                     "Trauma",
                     "Trill",
                     "Volx",
-                    "Viper",
                     "Widget",
                     "Xenophon",
                     "Xero",
@@ -350,28 +344,12 @@ class CfgWeapons
                 InfantryCustoms="Corpse";
             };
         };
-        class 91st_Crash_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Crash";
-            };
-        };
         class 91st_Cross_Helmet: JLTS_CloneHelmetP2_illum
         {
             class XtdGearInfo
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Cross";
-            };
-        };
-        class 91st_Crossout_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Crossout";
             };
         };
         class 91st_Cryptic_Helmet: 91st_Base_Helmet
@@ -558,14 +536,6 @@ class CfgWeapons
                 InfantryCustoms="Max";
             };
         };
-        class 91st_Myrola_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Myrola";
-            };
-        };
         class 91st_Opossum_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -662,14 +632,6 @@ class CfgWeapons
                 InfantryCustoms="Sappheron";
             };
         };
-        class 91st_Sapphire_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Sapphire";
-            };
-        };
         class 91st_Shields_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -708,14 +670,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Steak";
-            };
-        };
-        class 91st_Steve_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Steve";
             };
         };
         class 91st_Strike_Helmet: 91st_Base_Helmet
@@ -764,14 +718,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Volx";
-            };
-        };
-        class 91st_Viper_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Viper";
             };
         };
         class 91st_Widget_Helmet: 91st_Base_Helmet
