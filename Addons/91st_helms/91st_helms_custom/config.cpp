@@ -51,6 +51,7 @@ class XtdGearModels
                     "Fraiser",
                     "Freq",
                     "Golden",
+                    "Hoxton",
                     "Jughead",
                     "Jericho",
                     "Kitsune",
@@ -112,7 +113,8 @@ class XtdGearModels
                     "Grizzly",
                     "Delta",
                     "Bensen",
-                    "Squids"
+                    "Squids",
+                    "Oxide"
                 };
             };            
         };
@@ -244,7 +246,8 @@ class XtdGearModels
                 {
                     "Base",
                     "Medic",
-                    "Mav"
+                    "Mav",
+                    "Lesk"
                 };
             };
         };
@@ -430,6 +433,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Golden";
+            };
+        };
+        class 91st_Hoxton_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Hoxton";
             };
         };
         class 91st_Jughead_Helmet: 91st_Base_Helmet
@@ -818,6 +829,14 @@ class CfgWeapons
                 PilotCustoms="Squids";
             };
         };
+        class 91st_Oxide_Helmet: 91st_Pilot_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Oxide";
+            };
+        };
 
     //Beskar Helms
         class 91st_Beskar_Helmet: 212th_ATRT_helmet
@@ -1046,6 +1065,14 @@ class CfgWeapons
             {
                 model="Barchelmets";
                 Barchelms="Mav";
+            };
+        };
+        class 91st_Lesk_BARC_Helmet: JLTS_CloneHelmetBARC
+        {
+            class XtdGearInfo
+            {
+                model="Barchelmets";
+                Barchelms="Lesk";
             };
         };
 };

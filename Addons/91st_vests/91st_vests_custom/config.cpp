@@ -34,6 +34,7 @@ class XtdGearModels
                     "Rat",
                     "Dex",
                     "Corn",
+                    "Kuro",
                     //ARC
                     "Arcanist",
                     "Nova",
@@ -54,6 +55,10 @@ class XtdGearModels
                 class Corn
                 {
                     label="Corn";
+                };
+                class Kuro
+                {
+                    label="Kuro";
                 };
 
                 //ARC
@@ -77,6 +82,7 @@ class CfgWeapons
 {
     class V_RebreatherB;
     class 91st_Officer_Vest_Gray;
+    class 91st_Reverse_Officer_Gray;
     class 91st_Vest_ARC_Base;
     //Officer Vests
     class 91st_Officer_Vest_Mav: 91st_Officer_Vest_Gray
@@ -109,6 +115,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Corn";
+        };
+    };
+    class 91st_Officer_Vest_Kuro: 91st_Reverse_Officer_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Kuro";
         };
     };
 
