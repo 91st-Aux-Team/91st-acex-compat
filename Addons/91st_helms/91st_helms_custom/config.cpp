@@ -43,7 +43,9 @@ class XtdGearModels
                     "Cross",
                     "Cryptic",
                     "Dante",
+                    "Dev",
                     "Dex",
+                    "Dumajin",
                     "Falcon",
                     "Fallon",
                     "Foxtrot",
@@ -51,7 +53,6 @@ class XtdGearModels
                     "Fraiser",
                     "Freq",
                     "Golden",
-                    "Hoxton",
                     "Jughead",
                     "Jericho",
                     "Kitsune",
@@ -61,6 +62,7 @@ class XtdGearModels
                     "Lesk",
                     "Lich",
                     "Magic",
+                    "Main",
                     "Marf",
                     "Mauser",
                     "Mav",
@@ -77,6 +79,7 @@ class XtdGearModels
                     "Ricochet",
                     "Saga",
                     "Sappheron",
+                    "Scorch",
                     "Shields",
                     "Silver",
                     "Skit",
@@ -88,6 +91,7 @@ class XtdGearModels
                     "Trauma",
                     "Trill",
                     "Volx",
+                    "Wagner",
                     "Widget",
                     "Xenophon",
                     "Xero",
@@ -371,12 +375,28 @@ class CfgWeapons
                 InfantryCustoms="Dante";
             };
         };
+        class 91st_Dev_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Dev";
+            };
+        };
         class 91st_Dex_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Dex";
+            };
+        };
+        class 91st_Dumajin_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Dumajin";
             };
         };
         class 91st_Falcon_Helmet: 91st_Base_Helmet
@@ -433,14 +453,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Golden";
-            };
-        };
-        class 91st_Hoxton_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Hoxton";
             };
         };
         class 91st_Jughead_Helmet: 91st_Base_Helmet
@@ -514,6 +526,14 @@ class CfgWeapons
                 model="InfantryCustomHelms";
                 InfantryCustoms="Magic";
             };
+        };        
+        class 91st_Main_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Main";
+            };
         };
         class 91st_Marf_Helmet: 91st_Base_Helmet
         {
@@ -547,6 +567,7 @@ class CfgWeapons
                 InfantryCustoms="Max";
             };
         };
+        
         class 91st_Opossum_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -643,6 +664,14 @@ class CfgWeapons
                 InfantryCustoms="Sappheron";
             };
         };
+        class 91st_Scorch_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Scorch";
+            };
+        };
         class 91st_Shields_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -729,6 +758,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Volx";
+            };
+        };
+        class 91st_Wagner_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Wagner";
             };
         };
         class 91st_Widget_Helmet: 91st_Base_Helmet
@@ -896,7 +933,7 @@ class CfgWeapons
             };
         };
     //Arc helms
-        class 91st_Talleyrand_Helmet: 91st_ARC_Helmet
+        class 91st_Talleyrand_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -904,7 +941,7 @@ class CfgWeapons
                 Archelms="Tallyrand";
             };
         };
-        class 91st_Corn_Helmet: 91st_ARC_Helmet
+        class 91st_Corn_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -920,7 +957,7 @@ class CfgWeapons
                 Archelms="Roach";
             };
         };
-        class 91st_Bacon_Helmet: 91st_ARC_Helmet
+        class 91st_Bacon_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -928,7 +965,7 @@ class CfgWeapons
                 Archelms="Bacon";
             };
         };
-        class 91st_Cabur_Helmet: 91st_ARC_Helmet
+        class 91st_Cabur_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -936,7 +973,7 @@ class CfgWeapons
                 Archelms="Cabur";
             };
         };
-        class 91st_Skittles_Helmet: 91st_ARC_Helmet
+        class 91st_Skittles_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -944,7 +981,7 @@ class CfgWeapons
                 Archelms="Skittles";
             };
         };
-        class 91st_Arcanist_Helmet: 91st_ARC_Helmet
+        class 91st_Arcanist_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -952,7 +989,7 @@ class CfgWeapons
                 Archelms="Arcanist";
             };
         };
-        class 91st_Nova_Helmet: 91st_ARC_Helmet
+        class 91st_Nova_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -960,7 +997,7 @@ class CfgWeapons
                 Archelms="Nova";
             };
         };
-        class 91st_Galahad_Helmet: 91st_ARC_Helmet
+        class 91st_Galahad_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -968,7 +1005,7 @@ class CfgWeapons
                 Archelms="Galahad";
             };
         };
-        class 91st_Loken_Helmet: 91st_ARC_Helmet
+        class 91st_Loken_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
@@ -976,7 +1013,7 @@ class CfgWeapons
                 Archelms="Loken";
             };
         };
-        class 91st_Scorch_Helmet: 91st_ARC_Helmet
+        class 91st_Scorch_ARC_Helmet: 91st_ARC_Helmet
         {
             class XtdGearInfo
             {
