@@ -35,6 +35,7 @@ class XtdGearModels
                     "Dex",
                     "Corn",
                     "Kuro",
+                    "Predator",
                     //ARC
                     "Arcanist",
                     "Nova",
@@ -60,7 +61,10 @@ class XtdGearModels
                 {
                     label="Kuro";
                 };
-
+                class Predator
+                {
+                    label = "Predator";
+                };
                 //ARC
                 class Arcanist
                 {
@@ -123,6 +127,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Kuro";
+        };
+    };
+    class 91st_Officer_Vest_Predator: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Predator";
         };
     };
 
