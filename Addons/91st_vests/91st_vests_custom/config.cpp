@@ -33,9 +33,11 @@ class XtdGearModels
                     "Mav",
                     "Rat",
                     "Dex",
+                    "Chopper",
                     "Corn",
                     "Kuro",
                     "Predator",
+                    "Trill",
                     //ARC
                     "Arcanist",
                     "Nova",
@@ -53,6 +55,10 @@ class XtdGearModels
                 {
                     label="Dex";
                 }; 
+                class Chopper
+                {
+                    label="Chopper";
+                };
                 class Corn
                 {
                     label="Corn";
@@ -64,6 +70,10 @@ class XtdGearModels
                 class Predator
                 {
                     label = "Predator";
+                };
+                class Trill
+                {
+                    label = "Trill";
                 };
                 //ARC
                 class Arcanist
@@ -103,6 +113,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Rat";
+        };
+    };
+    class 91st_Officer_Vest_Chopper: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Chopper";
         };
     };
     class 91st_Officer_Vest_Dex: 91st_Officer_Vest_Gray

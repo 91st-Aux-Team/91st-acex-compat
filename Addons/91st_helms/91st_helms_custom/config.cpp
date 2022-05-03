@@ -58,8 +58,6 @@ class XtdGearModels
                     "Kitsune",
                     "Laser",
                     "Leer",
-                    "Leeroy",
-                    "Lesk",
                     "Lich",
                     "Magic",
                     "Main",
@@ -74,7 +72,6 @@ class XtdGearModels
                     "Praetorian",
                     "Predator",
                     "Qal",
-                    "Quiet",
                     "Rat",
                     "Ricochet",
                     "Saga",
@@ -83,7 +80,6 @@ class XtdGearModels
                     "Shields",
                     "Silver",
                     "Skit",
-                    "Smig",
                     "Steak",
                     "Strike",
                     "Tarz",
@@ -202,7 +198,6 @@ class XtdGearModels
                 {
                     "ARF",
                     "Edge",
-                    "Raze",
                     "Kappa",
                     "Shoto",
                     "Sponks",
@@ -215,10 +210,6 @@ class XtdGearModels
                 class Edge
                 {
                     label="Edge";
-                };
-                class Raze
-                {
-                    label="Raze";
                 };
                 class Kappa
                 {
@@ -261,7 +252,7 @@ class CfgWeapons
 {
 	class 212th_AB_Helmet;
 	class 91st_Pilot_Helmet;
-    class 212th_ATRT_helmet;
+    class 3as_ATRT_helmet;
     class 91st_Base_Helmet;
 	class Uniform_Base;
 	class H_HelmetSpecB;
@@ -495,22 +486,6 @@ class CfgWeapons
                 InfantryCustoms="Leer";
             };
         };
-        class 91st_Leeroy_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Leeroy";
-            };
-        };
-        class 91st_Lesk_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Lesk";
-            };
-        };
         class 91st_Lich_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -624,14 +599,6 @@ class CfgWeapons
                 InfantryCustoms="Qal";
             };
         };
-        class 91st_Quiet_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Quiet";
-            };
-        };
         class 91st_Rat_Helmet: JLTS_CloneHelmetP2_illum
         {
             class XtdGearInfo
@@ -694,14 +661,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Skit";
-            };
-        };
-        class 91st_Smig_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Smig";
             };
         };
         class 91st_Steak_Helmet: 91st_Base_Helmet
@@ -876,7 +835,7 @@ class CfgWeapons
         };
 
     //Beskar Helms
-        class 91st_Beskar_Helmet: 212th_ATRT_helmet
+        class 91st_Beskar_Helmet: 3as_ATRT_helmet
         {
             class XtdGearInfo
             {
@@ -1037,14 +996,6 @@ class CfgWeapons
             {
                 model="ARFHelmets";
                 ARFhelms="Edge";
-            };
-        };
-        class 91st_Raze_ARF: 91st_ARF
-        {
-            class XtdGearInfo
-            {
-                model="ARFHelmets";
-                ARFhelms="Raze";
             };
         };
         class 91st_Kappa_ARF: 91st_ARF

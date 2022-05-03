@@ -79,7 +79,8 @@ class XtdGearModels
                     "Squad",
                     "Platoon",
                     "Company",
-                    "Fallon"
+                    "Fallon",
+                    "Trill"
                 };
                 // Class used for defining in the shit below
                 class Squad
@@ -106,6 +107,11 @@ class XtdGearModels
                 {
                     // Labels just a display name
                     label="Fallon";
+                };
+                class Trill
+                {
+                    // Labels just a display name
+                    label="Trill";
                 };
             };
         };
@@ -404,6 +410,14 @@ class CfgGlasses
         {
             model="91st_medic";// The value of "Rank" is just the label used in the list
             Medic="Fallon";
+        };
+    };
+    class 91st_Medic_Vest_Trill: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_medic";// The value of "Rank" is just the label used in the list
+            Medic="Trill";
         };
     };
 

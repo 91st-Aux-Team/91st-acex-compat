@@ -417,7 +417,6 @@ class XtdGearModels
                     "Mav",
                     "Nova",
                     "Rat",
-                    "Raze",
                     "Roach",
                     "Scorch",
                     "Scorch2"
@@ -461,10 +460,6 @@ class XtdGearModels
                 class Rat
                 {
                     label="Rat";
-                };
-                class Raze
-                {
-                    label="Raze";
                 };
                 class Roach
                 {
@@ -1090,14 +1085,6 @@ class CfgWeapons
         {
             model="91stCustomArmor";
             Custom="Rat";
-        };
-    };
-    class 91st_Infantry_Raze_Armor: 91st_Armor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stCustomArmor";
-            Custom="Raze";
         };
     };
     class 91st_Infantry_Roach_Armor: 91st_Armor_Base
