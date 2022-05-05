@@ -81,34 +81,14 @@ class XtdGearModels
                     "Cadet",
                     "Trooper",
                     "Veteran",
-                    "Teamlead",
+                    "TL",
                     "NCOIC",
                     "XO",
                     "CO"
                 };
-                class Trooper
+                class TL
                 {
-                    label="Trooper";
-                };
-                class Veteran
-                {
-                    label="Veteran";
-                }; 
-                class Teamlead
-                {
-                    label="Teamlead";
-                };
-                class NCOIC
-                {
-                    label="NCOIC";
-                };
-                class XO
-                {
-                    label="XO";
-                };
-                class CO
-                {
-                    label="CO";
+                    label="Team Lead";
                 };
             };
         };
@@ -290,7 +270,7 @@ class CfgWeapons
     };
     class 91st_Commander_CSM: 91st_Commander_Vest 
     {
-       class XtdGearInfo
+        class XtdGearInfo
         {
             model="91stOfficerVests";
             Officervest="CSM";
@@ -324,6 +304,7 @@ class CfgWeapons
     };
 
     // ARC Vests
+    
     class 91st_Vest_ARC_Cadet: V_RebreatherB
     {
         class XtdGearInfo
@@ -332,54 +313,21 @@ class CfgWeapons
             Arcvests="Cadet";
         };
     };
-    class 91st_Vest_ARC_Trooper: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Trooper";
-        };
+
+    #define Macro_91st_ARC_Compat_Vests(a) class 91st_Vest_ARC_##a## : 91st_Vest_ARC_Cadet {\
+        class XtdGearInfo\
+        {\
+            model="91stARCVests";\
+            Arcvests=##a##;\
+        };\
     };
-    class 91st_Vest_ARC_veteran: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Veteran";
-        };
-    };
-    class 91st_Vest_ARC_TL: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Teamlead";
-        };
-    };
-    class 91st_Vest_ARC_NCOIC: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="NCOIC";
-        };
-    };
-    class 91st_Vest_ARC_XO: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="XO";
-        };
-    };
-    class 91st_Vest_ARC_CO: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="CO";
-        };
-    };
+
+    Macro_91st_ARC_Compat_Vests(Trooper);
+    Macro_91st_ARC_Compat_Vests(Veteran);
+    Macro_91st_ARC_Compat_Vests(TL);
+    Macro_91st_ARC_Compat_Vests(NCOIC);
+    Macro_91st_ARC_Compat_Vests(XO);
+    Macro_91st_ARC_Compat_Vests(CO);
 
     //Holsters
     class 91st_SCT_Holster: V_RebreatherB

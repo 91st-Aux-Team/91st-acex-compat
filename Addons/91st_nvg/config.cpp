@@ -32,22 +32,6 @@ class XtdGearModels
                     "Black",
                     "ARF"
                 };
-                class Red
-                {
-                    label="Red";
-                };
-                class Grey
-                {
-                    label="Grey";
-                };
-                class Black
-                {
-                    label="Black";
-                };
-                class ARF
-                {
-                    label="ARF";
-                };
             };
             class RFThermal
             {
@@ -93,31 +77,6 @@ class XtdGearModels
                     "WO4",
                     "CSS"
                 };
-                class CT
-                {
-                    label="CT";
-                };
-                class SCT
-                {
-                    label="SCT";
-                };
-                class VCT
-                {
-                    label="VCT";
-                };
-                class CSP
-                {
-                    label="CSP";
-                };
-                class WO4
-                {
-                    label="WO4";
-                };
-                class CSS
-                {
-                    label="CSS";
-                };
-                
             };
             class Type
             {
@@ -126,14 +85,6 @@ class XtdGearModels
                 {
                     "Up",
                     "Down"
-                };
-                class Up
-                {
-                    label="Up";
-                };
-                class Down
-                {
-                    label="Down";
                 };
             };
         };
@@ -256,112 +207,35 @@ class CfgWeapons
     };
 
     //Visors
-	class 91st_Visor: 91st_Visor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="CT";
-            Type="Up";
-        };
+    #define Macro_91st_Copmat_Visors(a) class 91st_Visor_##a## : 91st_Visor_Base {\
+        class XtdGearInfo\
+        {\
+            model="91stNvVisors";\
+            NvVisor=##a##;\
+            Type="Up";\
+        };\
     };
-	class 91st_Visor_Down: 91st_Visor_Down_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="CT";
-            Type="Down";
-        };
+
+    Macro_91st_Copmat_Visors(CT);
+	Macro_91st_Copmat_Visors(SCT);
+	Macro_91st_Copmat_Visors(VCT);
+	Macro_91st_Copmat_Visors(CSP);
+	Macro_91st_Copmat_Visors(WO4);
+	Macro_91st_Copmat_Visors(CSS);
+
+    #define Macro_91st_Copmat_Visors_Down(a) class 91st_Visor_Down_##a##: 91st_Visor_Down_Base {\
+        class XtdGearInfo\
+        {\
+            model="91stNvVisors";\
+            NvVisor=##a##;\
+            Type="Down";\
+        };\
     };
-    class 91st_Visor_CSS: 91st_Visor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="CSS";
-            Type="Up";
-        };
-    };
-    class 91st_Visor_CSS_Down: 91st_Visor_Down_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="CSS";
-            Type="Down";
-        };
-    };
-    class 91st_Visor_SCT: 91st_Visor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="SCT";
-            Type="Up";
-        };
-    };
-    class 91st_Visor_SCT_Down: 91st_Visor_Down_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="SCT";
-            Type="Down";
-        };
-    };
-    class 91st_Visor_VCT: 91st_Visor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="VCT";
-            Type="Up";
-        };
-    };
-    class 91st_Visor_VCT_Down: 91st_Visor_Down_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="VCT";
-            Type="Down";
-        };
-    };
-    class 91st_Visor_CSP: 91st_Visor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="CSP";
-            Type="Up";
-        };
-    };
-    class 91st_Visor_CSP_Down: 91st_Visor_Down_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="CSP";
-            Type="Down";
-        };
-    };
-    class 91st_Visor_WO4: 91st_Visor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="WO4";
-            Type="Up";
-        };
-    };
-    class 91st_Visor_WO4_Down: 91st_Visor_Down_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="WO4";
-            Type="Down";
-        };
-    };
+
+    Macro_91st_Copmat_Visors_Down(CT);
+	Macro_91st_Copmat_Visors_Down(SCT);
+	Macro_91st_Copmat_Visors_Down(VCT);
+	Macro_91st_Copmat_Visors_Down(CSP);
+	Macro_91st_Copmat_Visors_Down(WO4);
+	Macro_91st_Copmat_Visors_Down(CSS);
 };

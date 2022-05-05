@@ -37,56 +37,10 @@ class XtdGearModels
                     "Corn",
                     "Kuro",
                     "Predator",
-                    "Trill",
                     //ARC
                     "Arcanist",
                     "Nova",
                     "Scorch"
-                };
-                class Mav
-                {
-                    label="Mav";
-                };
-                class Rat
-                {
-                    label="Rat";
-                }; 
-                class Dex
-                {
-                    label="Dex";
-                }; 
-                class Chopper
-                {
-                    label="Chopper";
-                };
-                class Corn
-                {
-                    label="Corn";
-                };
-                class Kuro
-                {
-                    label="Kuro";
-                };
-                class Predator
-                {
-                    label = "Predator";
-                };
-                class Trill
-                {
-                    label = "Trill";
-                };
-                //ARC
-                class Arcanist
-                {
-                    label="Arcanist";
-                };
-                class Nova
-                {
-                    label="Nova";
-                };
-                class Scorch
-                {
-                    label="Scorch";
                 };
             };
         };
@@ -99,86 +53,31 @@ class CfgWeapons
     class 91st_Reverse_Officer_Gray;
     class 91st_Vest_ARC_Base;
     //Officer Vests
-    class 91st_Officer_Vest_Mav: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Mav";
-        };
-    };
-    class 91st_Officer_Vest_Rat: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Rat";
-        };
-    };
-    class 91st_Officer_Vest_Chopper: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Chopper";
-        };
-    };
-    class 91st_Officer_Vest_Dex: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Dex";
-        };
-    };
-    class 91st_Officer_Vest_Corn: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Corn";
-        };
-    };
-    class 91st_Officer_Vest_Kuro: 91st_Reverse_Officer_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Kuro";
-        };
-    };
-    class 91st_Officer_Vest_Predator: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Predator";
-        };
+    #define Macro_91st_Customs_Compat_Vests(a) class 91st_Officer_Vest_##a## : 91st_Officer_Vest_Gray {\
+        class XtdGearInfo\
+        {\
+            model="CustomVests";\
+            CustomVest=##a##;\
+        };\
     };
 
+    Macro_91st_Customs_Compat_Vests(Chopper);
+    Macro_91st_Customs_Compat_Vests(Corn);
+    Macro_91st_Customs_Compat_Vests(Dex);
+    Macro_91st_Customs_Compat_Vests(Kuro);
+    Macro_91st_Customs_Compat_Vests(Mav);
+    Macro_91st_Customs_Compat_Vests(Predator);
+    Macro_91st_Customs_Compat_Vests(Rat);
+
     //ARC
-    class 91st_Vest_ARC_Arcanist: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Arcanist";
-        };
+    #define Macro_91st_Customs_Arc_Compat_Vests(a) class 91st_Vest_ARC_##a## : 91st_Vest_ARC_Base {\
+        class XtdGearInfo\
+        {\
+            model="CustomVests";\
+            CustomVest=##a##;\
+        };\
     };
-    class 91st_Vest_ARC_Scorch: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Scorch";
-        };
-    };
-    class 91st_Vest_ARC_Nova: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Nova";
-        };
-    };
+    Macro_91st_Customs_Arc_Compat_Vests(Arcanist);
+    Macro_91st_Customs_Arc_Compat_Vests(Scorch);
+    Macro_91st_Customs_Arc_Compat_Vests(Nova);
 };
