@@ -11,9 +11,7 @@ class CfgPatches
 		{
 		};
 		author="91st aux";
-		version="0.1.1.2";
-		versionStr="0.1.1.2";
-		versionAr[]={0,1,1,2};
+		version="0.1";
 	};
 };
 class XtdGearModels
@@ -233,187 +231,64 @@ class CfgVehicles
     class 91st_LR_Base;
     class JLTS_Clone_jumppack_JT12;
     class 91st_Base_MC_JP;
-    //Standard backpacks
-        class 91st_GAR_Backpack: 91st_Base_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="GAR";
-                Type="Standard";
-            };
-        };
-        class 91st_GAR_Straps_Backpack: 91st_Base_Straps_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="GAR";
-                Type="Strap";
-            };
-        };
+    #define Macro_91st_Compat_Backpack(a) class 91st_##a##_Backpack : 91st_Base_Backpack {\
+		class XtdGearInfo\
+        {\
+            model="91stBackpacks";\
+            Backpacks=##a##;\
+            Type="Standard";\
+        };\
+	};
 
-        //Kyber
-        class 91st_Kyber_Backpack: 91st_Base_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="Kyber";
-                Type="Standard";
-            };
-        };
-        class 91st_Kyber_Straps_Backpack: 91st_Base_Straps_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="Kyber";
-                Type="Strap";
-            };
-        };
+	#define Macro_91st_Compat_Straps_Backpack(a) class 91st_##a##_Straps_Backpack : 91st_Base_Straps_Backpack {\
+		class XtdGearInfo\
+        {\
+            model="91stBackpacks";\
+            Backpacks="Beskar";\
+            Type="Strap";\
+        };\
+	};
 
-        //Beskar
-        class 91st_Beskar_Backpack: 91st_Base_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="Beskar";
-                Type="Standard";
-            };
-        };
-        class 91st_Beskar_Straps_Backpack: 91st_Base_Straps_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="Beskar";
-                Type="Strap";
-            };
-        };
+    Macro_91st_Compat_Backpack(GAR);
+	Macro_91st_Compat_Backpack(Kyber);
+	Macro_91st_Compat_Backpack(Nova);
+	Macro_91st_Compat_Backpack(Beskar);
+	Macro_91st_Compat_Backpack(Medic);
 
-        //Nova
-        class 91st_Nova_Backpack: 91st_Base_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="Nova";
-                Type="Standard";
-            };
-        };
-        class 91st_Nova_Straps_Backpack: 91st_Base_Straps_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="Nova";
-                Type="Strap";
-            };
-        };
+	Macro_91st_Compat_Straps_Backpack(GAR);
+	Macro_91st_Compat_Straps_Backpack(Kyber);
+	Macro_91st_Compat_Straps_Backpack(Nova);
+	Macro_91st_Compat_Straps_Backpack(Beskar);
+	Macro_91st_Compat_Straps_Backpack(Medic);
 
-        //Medic
-        class 91st_Medic_Backpack: 91st_Base_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="Medic";
-                Type="Standard";
-            };
-        };
-        class 91st_Medic_Straps_Backpack: 91st_Base_Straps_Backpack
-        {
-            class XtdGearInfo
-            {
-                model="91stBackpacks";
-                Backpacks="Medic";
-                Type="Strap";
-            };
-        };
+    #define Macro_91st_Compat_RTO_Backpack(a) class 91st_##a##_RTO_Backpack : 91st_Base_Backpack {\
+		class XtdGearInfo\
+        {\
+            model="91stRTOBackpacks";\
+            RTOBackpacks=##a##;\
+            Type="Standard";\
+        };\
+	};
+    #define Macro_91st_Compat_RTO_Straps_Backpack(a) class 91st_##a##_RTO_Straps_Backpack : 91st_Base_Straps_Backpack {\
+		class XtdGearInfo\
+        {\
+            model="91stRTOBackpacks";\
+            RTOBackpacks="Beskar";\
+            Type="Strap";\
+        };\
+	};
 
-    //RTO Backpack
-        class 91st_GAR_RTO_Backpack: 91st_LR_Base
-        {
-            class XtdGearInfo
-            {
-                model="91stRTOBackpacks";
-                RTOBackpacks="GAR";
-                Type="Standard";
-            };
-        };
-	    class 91st_GAR_RTO_Straps_Backpack: 91st_LR_Base
-        {
-            class XtdGearInfo
-            {
-                model="91stRTOBackpacks";
-                RTOBackpacks="GAR";
-                Type="Strap";
-            };
-        };
+    Macro_91st_Compat_RTO_Backpack(GAR);
+	Macro_91st_Compat_RTO_Backpack(Kyber);
+	Macro_91st_Compat_RTO_Backpack(Nova);
+	Macro_91st_Compat_RTO_Backpack(Beskar);
+	Macro_91st_Compat_RTO_Backpack(Medic);
 
-        //Kyber
-        class 91st_Kyber_RTO_Backpack: 91st_LR_Base
-        {
-            class XtdGearInfo
-            {
-                model="91stRTOBackpacks";
-                RTOBackpacks="Kyber";
-                Type="Standard";
-            };
-        };
-        class 91st_Kyber_RTO_Straps_Backpack: 91st_LR_Base
-        {
-            class XtdGearInfo
-            {
-                model="91stRTOBackpacks";
-                RTOBackpacks="Kyber";
-                Type="Strap";
-            };
-        };
-
-        //Beskar
-        class 91st_Beskar_RTO_Backpack: 91st_LR_Base
-        {
-            class XtdGearInfo
-            {
-                model="91stRTOBackpacks";
-                RTOBackpacks="Beskar";
-                Type="Standard";
-            };
-        };
-        class 91st_Beskar_RTO_Straps_Backpack: 91st_LR_Base
-        {
-            class XtdGearInfo
-            {
-                model="91stRTOBackpacks";
-                RTOBackpacks="Beskar";
-                Type="Strap";
-            };
-        };
-
-        //Nova
-        class 91st_Nova_RTO_Backpack: 91st_LR_Base
-        {
-            class XtdGearInfo
-            {
-                model="91stRTOBackpacks";
-                RTOBackpacks="Nova";
-                Type="Standard";
-            };
-        };
-        class 91st_Nova_RTO_Straps_Backpack: 91st_LR_Base
-        {
-            class XtdGearInfo
-            {
-                model="91stRTOBackpacks";
-                RTOBackpacks="Nova";
-                Type="Strap";
-            };
-        };
-
-       
+	Macro_91st_Compat_RTO_Straps_Backpack(GAR);
+	Macro_91st_Compat_RTO_Straps_Backpack(Kyber);
+	Macro_91st_Compat_RTO_Straps_Backpack(Nova);
+	Macro_91st_Compat_RTO_Straps_Backpack(Beskar);
+	Macro_91st_Compat_RTO_Straps_Backpack(Medic);
 
     //Long Ranges
     class 91st_mini_LR_attachment_arrow: 91st_LR_Base
@@ -476,44 +351,17 @@ class CfgVehicles
             CDV="ArchangelCDV";
         };
     };
-    class 91st_jumppack_mc_jade: 91st_Base_MC_JP
-    {
-        class XtdGearInfo
-        {
-            model="91stCDVJumppack";
-            CDV="JadeCDV";
-        };
-    };
-    class 91st_jumppack_mc_kyber: 91st_Base_MC_JP
-    {
-        class XtdGearInfo
-        {
-            model="91stCDVJumppack";
-            CDV="KyberCDV";
-        };
-    };
-    class 91st_jumppack_mc_nova: 91st_Base_MC_JP
-    {
-        class XtdGearInfo
-        {
-            model="91stCDVJumppack";
-            CDV="NovaCDV";
-        };
-    };
-    class 91st_jumppack_mc_beskar: 91st_Base_MC_JP
-    {
-        class XtdGearInfo
-        {
-            model="91stCDVJumppack";
-            CDV="BeskarCDV";
-        };
-    };
-    class 91st_jumppack_mc_scorch: 91st_Base_MC_JP
-    {
-        class XtdGearInfo
-        {
-            model="91stCDVJumppack";
-            CDV="ScorchCDV";
-        };
-    };
+    #define Macro_91st_Compat_Jumppack_MC_Backpack(a) class 91st_jumppack_mc_##a## : 91st_Base_MC_JP {\
+		class XtdGearInfo\
+        {\
+            model="91stCDVJumppack";\
+            CDV=##a##CDV;\
+        };\
+	};
+
+    Macro_91st_Compat_Jumppack_MC_Backpack(Jade);
+    Macro_91st_Compat_Jumppack_MC_Backpack(Kyber);
+    Macro_91st_Compat_Jumppack_MC_Backpack(Nova);
+    Macro_91st_Compat_Jumppack_MC_Backpack(Beskar);
+    Macro_91st_Compat_Jumppack_MC_Backpack(Scorch);
 };

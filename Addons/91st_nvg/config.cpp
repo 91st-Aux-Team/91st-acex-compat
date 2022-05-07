@@ -97,114 +97,28 @@ class CfgWeapons
     class 91st_Visor_Down_Base;
 
     //Arc Rangfinders
-    class 91st_Rangefinder_Red_BW: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Red";
-            RFThermal="BW";
-        };
+    #define Macro_91st_Copmat_Rangefinders(a,b) class 91st_Rangefinder_##a##_##b## : JLTS_CloneNVGRange {\
+        class XtdGearInfo\
+        {\
+            model="91st_Rangefinders";\
+            RFType=##a##;\
+            RFThermal=##b##;\
+        };\
     };
-    class 91st_Rangefinder_Red_BG: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Red";
-            RFThermal="BG";
-        };
-    };
-    class 91st_Rangefinder_Red_BO: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Red";
-            RFThermal="BO";
-        };
-    };
-    class 91st_Rangefinder_Gray_BW: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Grey";
-            RFThermal="BW";
-        };
-    };
-    class 91st_Rangefinder_Gray_BG: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Grey";
-            RFThermal="BG";
-        };
-    };
-    class 91st_Rangefinder_Gray_BO: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Grey";
-            RFThermal="BO";
-        };
-    };
-    class 91st_Rangefinder_Black_BW: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Black";
-            RFThermal="BW";
-        };
-    };
-    class 91st_Rangefinder_Black_BG: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Black";
-            RFThermal="BG";
-        };
-    };
-    class 91st_Rangefinder_Black_BO: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="Black";
-            RFThermal="BO";
-        };
-    };
-    class 91st_Rangefinder_ARF_BW: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="ARF";
-            RFThermal="BW";
-        };
-    };
-    class 91st_Rangefinder_ARF_BG: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="ARF";
-            RFThermal="BG";
-        };
-    };
-    class 91st_Rangefinder_ARF_BO: JLTS_CloneNVGRange
-    {
-        class XtdGearInfo
-        {
-            model="91st_Rangefinders";
-            RFType="ARF";
-            RFThermal="BO";
-        };
-    };
+
+    Macro_91st_Copmat_Rangefinders(Red,BW);
+    Macro_91st_Copmat_Rangefinders(Red,BG);
+    Macro_91st_Copmat_Rangefinders(Red,BO);
+    Macro_91st_Copmat_Rangefinders(Gray,BW);
+    Macro_91st_Copmat_Rangefinders(Gray,BG);
+    Macro_91st_Copmat_Rangefinders(Gray,BO);
+    Macro_91st_Copmat_Rangefinders(Black,BW);
+    Macro_91st_Copmat_Rangefinders(Black,BG);
+    Macro_91st_Copmat_Rangefinders(Black,BO);
+    Macro_91st_Copmat_Rangefinders(ARF,BW);
+    Macro_91st_Copmat_Rangefinders(ARF,BG);
+    Macro_91st_Copmat_Rangefinders(ARF,BO);
+
 
     //Visors
     #define Macro_91st_Copmat_Visors(a) class 91st_Visor_##a## : 91st_Visor_Base {\

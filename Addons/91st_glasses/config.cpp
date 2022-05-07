@@ -39,30 +39,6 @@ class XtdGearModels
                     "WO4",
                     "CSS"
                 };
-                class CT
-                {
-                    label="CT";
-                };
-                class SCT
-                {
-                    label="SCT";
-                };
-                class VCT
-                {
-                    label="VCT";
-                };
-                class CSP
-                {
-                    label="CSP";
-                };
-                class WO4
-                {
-                    label="WO4";
-                };
-                class CSS
-                {
-                    label="CSS";
-                };
             };
         };
         class 91st_medic 
@@ -82,37 +58,6 @@ class XtdGearModels
                     "Fallon",
                     "Trill"
                 };
-                // Class used for defining in the shit below
-                class Squad
-                {
-                    // Labels just a display name
-                    label="Squad";
-                };
-                class Platoon
-                {
-                    // Labels just a display name
-                    label="Platoon";
-                };
-                class Company
-                {
-                    // Labels just a display name
-                    label="Company";
-                };
-                class Archangel
-                {
-                    // Labels just a display name
-                    label="Archangel";
-                };
-                class Fallon
-                {
-                    // Labels just a display name
-                    label="Fallon";
-                };
-                class Trill
-                {
-                    // Labels just a display name
-                    label="Trill";
-                };
             };
         };
         class 91st_monkeys 
@@ -131,27 +76,6 @@ class XtdGearModels
                     "Veteran",
                     "Teamleader"
                 };
-                // Class used for defining in the shit below
-                class Trooper
-                {
-                    // Labels just a display name
-                    label="Trooper";
-                };
-                class Archangel
-                {
-                    // Labels just a display name
-                    label="Archangel";
-                };
-                class Veteran
-                {
-                    // Labels just a display name
-                    label="Veteran";
-                };
-                class Teamleader
-                {
-                    // Labels just a display name
-                    label="Teamleader";
-                };
             };
         };
         class Rangefinder_Glasses
@@ -169,22 +93,6 @@ class XtdGearModels
                     "Grey",
                     "Red"
                 };
-                // Class used for defining in the shit below
-                class Black
-                {
-                    // Labels just a display name
-                    label="Black";
-                };
-                class Grey
-                {
-                    // Labels just a display name
-                    label="Grey";
-                };
-                class Red
-                {
-                    // Labels just a display name
-                    label="Red";
-                };
             };
         };
         
@@ -199,7 +107,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Vests",
-                    "WO",
+                    "WO1",
                     "WO3",
                     "NCO",
                     "TeamLead",
@@ -209,9 +117,9 @@ class XtdGearModels
                 {
                     label="Vests"
                 };
-                class WO
+                class WO1
                 {
-                    label="WO"
+                    label="WO1"
                 };
                 class WO3
                 {
@@ -288,46 +196,20 @@ class CfgGlasses
             Visor="CT";
         };
     };
-    class 91st_Visor_SCT_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="SCT";
-        };
+
+    #define Macro_91st_Compat_Medic_Vests(a) class 91st_Visor_##a##_Glasses : 91st_Glasses_Base {\
+        class XtdGearInfo\
+        {\
+            model="91st_Visors_Glasses";\
+            Visor=##a##;\
+        };\
     };
-    class 91st_Visor_VCT_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="VCT";
-        };
-    };
-    class 91st_Visor_CSP_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="CSP";
-        };
-    };
-    class 91st_Visor_WO4_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="WO4";
-        };
-    };
-    class 91st_Visor_CSS_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="CSS";
-        };
-    };
+
+    Macro_91st_Compat_Medic_Vests(SCT);
+    Macro_91st_Compat_Medic_Vests(VCT);
+    Macro_91st_Compat_Medic_Vests(CSP);
+    Macro_91st_Compat_Medic_Vests(WO4);
+    Macro_91st_Compat_Medic_Vests(CSS);
 
     //Standards
 	class 91st_Vest: 91st_Glasses_Base
@@ -338,46 +220,20 @@ class CfgGlasses
             Standardvestss="Vests";
         };
     };
-	class 91st_Vest_WO1: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="WO";
-        };
+
+    #define Macro_91st_Compat_Vests(a) class 91st_Vest_##a## : 91st_Glasses_Base {\
+        class XtdGearInfo\
+        {\
+            model="StandardVests";\
+            Standardvestss=##a##;\
+        };\
     };
-	class 91st_Vest_WO3: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="WO3";
-        };
-    };
-	class 91st_Vest_NCO: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="NCO";
-        };
-    };
-	class 91st_Vest_Teamlead: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="TeamLead";
-        };
-    };
-	class 91st_Vest_Squadlead: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="SquadLead";
-        };
-    };
+
+    Macro_91st_Compat_Medic_Vests(WO1);
+    Macro_91st_Compat_Medic_Vests(WO3);
+    Macro_91st_Compat_Medic_Vests(NCO);
+    Macro_91st_Compat_Medic_Vests(Teamlead);
+    Macro_91st_Compat_Medic_Vests(Squadlead);
 
     //Medic
 	class 91st_Medic_Vest: 91st_Glasses_Base
@@ -388,48 +244,23 @@ class CfgGlasses
             Medic="Squad";
         };
     };
-	class 91st_Medic_Vest_Platoon: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Platoon";
-        };
-    };
-	class 91st_Medic_Vest_Company: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Company";
-        };
-    };
-	class 91st_Medic_Vest_Fallon: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Fallon";
-        };
-    };
-    class 91st_Medic_Vest_Trill: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Trill";
-        };
+
+    #define Macro_91st_Compat_Medic_Vests(a) class 91st_Jumptrooper_Vest_##a## : 91st_Glasses_Base {\
+        class XtdGearInfo\
+        {\
+            model="91st_medic";\
+            Medic=##a##;\
+        };\
     };
 
+    Macro_91st_Compat_Medic_Vests(Platoon);
+    Macro_91st_Compat_Medic_Vests(Company);
+    Macro_91st_Compat_Medic_Vests(Fallon);
+    Macro_91st_Compat_Medic_Vests(Trill);
+
     //monkies
-	class 91st_archangel_vest: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_monkeys";// The value of "Rank" is just the label used in the list
-            Monkey="Archangel";
-        };
-    };
+    
+
 	class 91st_Jumptrooper_Vest: 91st_Glasses_Base
     {
         class XtdGearInfo
@@ -438,22 +269,27 @@ class CfgGlasses
             Monkey="Trooper";
         };
     };
-	class 91st_Jumptrooper_Vest_Veteran: 91st_Glasses_Base
+	
+    #define Macro_91st_Compat_Jumptroopr_Vests(a) class 91st_Jumptrooper_Vest_##a## : 91st_Glasses_Base {\
+        class XtdGearInfo\
+        {\
+            model="CustomVests";\
+            CustomVest=##a##;\
+        };\
+    };
+
+    Macro_91st_Compat_Jumptroopr_Vests(Veteran);    
+    Macro_91st_Compat_Jumptroopr_Vests(Teamlead);
+
+    class 91st_archangel_vest: 91st_Glasses_Base
     {
         class XtdGearInfo
         {
             model="91st_monkeys";// The value of "Rank" is just the label used in the list
-            Monkey="Veteran";
+            Monkey="Archangel";
         };
     };
-	class 91st_Jumptrooper_Vest_Teamlead: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_monkeys";// The value of "Rank" is just the label used in the list
-            Monkey="Teamleader";
-        };
-    };
+
 
     //RANGEFINDER
     class 91st_Rangefinder_Glasses: 91st_Glasses_Base
