@@ -36,7 +36,8 @@ class XtdGearModels
                     "Grey",
                     "Red_Grey",
                     "Red",
-                    "Commander"
+                    "Commander",
+                    "CSM"
                 };
                 class ReversedGrey
                 {
@@ -65,6 +66,10 @@ class XtdGearModels
                 class Commander
                 {
                     label="Commander";
+                };
+                class CSM
+                {
+                    label="CSM";
                 };
             };
         };
@@ -218,10 +223,6 @@ class XtdGearModels
                 class Sergeant
                 {
                     label="Sergeant";
-                };
-                class CSM
-                {
-                    label="CSM";
                 };
             };
         }; 
