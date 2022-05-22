@@ -182,7 +182,9 @@ class XtdGearModels
                     "Nova",
                     "Galahad",
                     "Loken",
-                    "Scorch"
+                    "Scorch",
+                    "Oddball",
+                    "Trauma"
                 };                
             };        
         };
@@ -946,6 +948,22 @@ class CfgWeapons
             {
                 model="Archelmets";
                 Archelms="Arcanist";
+            };
+        };
+        class 91st_Oddball_ARC_Helmet: 91st_ARC_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Oddball";
+            };
+        };
+        class 91st_Trauma_ARC_Helmet: 91st_ARC_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Trauma";
             };
         };
         class 91st_Nova_ARC_Helmet: 91st_ARC_Helmet
