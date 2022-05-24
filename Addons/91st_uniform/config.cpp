@@ -136,56 +136,9 @@ class XtdGearModels
                     "WO1",
                     "WO2",
                     "WO3",
-                    "WO4"
+                    "WO4",
+                    "WO5"
                 };
-				class CT
-				{
-					label = "CT";
-				};
-				class SCT
-				{
-					label = "SCT";
-				};
-				class VCT
-				{
-					label = "VCT";
-				};
-				class CSP
-				{
-					label = "CSP";
-				};
-				class CLC
-				{
-					label = "CLC";
-				};
-				class CP
-				{
-					label = "CP";
-				};
-				class CS
-				{
-					label = "CS";
-				};
-				class CSS
-				{
-					label = "CSS";
-				};
-				class WO1
-				{
-					label = "W01";
-				};
-				class WO2
-				{
-					label = "W02";
-				};
-				class WO3
-				{
-					label = "W03";
-				};
-				class WO4
-				{
-					label = "W04";
-				};
             };
         };
         class 91st_Pilot_Ranks
@@ -719,6 +672,14 @@ class CfgWeapons
         {
             model="91st_Medic_Ranks";
            MedicRank="WO4";
+        };
+    };
+    class 91st_Medic_WO5_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Medic_Ranks";
+           MedicRank="WO5";
         };
     };
 
