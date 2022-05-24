@@ -37,7 +37,6 @@ class XtdGearModels
                     "Corn",
                     "Kuro",
                     "Predator",
-                    "Trill",
                     //ARC
                     "Arcanist",
                     "Nova",
@@ -70,10 +69,6 @@ class XtdGearModels
                 class Predator
                 {
                     label = "Predator";
-                };
-                class Trill
-                {
-                    label = "Trill";
                 };
                 //ARC
                 class Arcanist

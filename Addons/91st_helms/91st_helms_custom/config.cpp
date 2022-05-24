@@ -67,7 +67,6 @@ class XtdGearModels
                     "Max",
                     "Oni",
                     "Opossum",
-                    "Oddball",
                     "Perry",
                     "Praetorian",
                     "Predator",
@@ -84,7 +83,6 @@ class XtdGearModels
                     "Strike",
                     "Tarz",
                     "Tig",
-                    "Trauma",
                     "Trill",
                     "Volx",
                     "Wagner",
@@ -182,7 +180,10 @@ class XtdGearModels
                     "Nova",
                     "Galahad",
                     "Loken",
-                    "Scorch"
+                    "Scorch",
+                    "Trauma",
+                    "Jericho",
+                    "Oddball"
                 };                
             };        
         };
@@ -551,14 +552,6 @@ class CfgWeapons
                 InfantryCustoms="Opossum";
             };
         };
-        class 91st_Oddball_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Oddball";
-            };
-        };
         class 91st_Oni_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -693,14 +686,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Tig";
-            };
-        };
-        class 91st_Trauma_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Trauma";
             };
         };
         class 91st_Trill_Helmet: 91st_Base_Helmet
@@ -978,6 +963,30 @@ class CfgWeapons
             {
                 model="Archelmets";
                 Archelms="Scorch";
+            };
+        };
+        class 91st_Trauma_ARC_Helmet: 91st_ARC_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Trauma";
+            };
+        };
+        class 91st_Jericho_ARC_Helmet: 91st_ARC_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Jericho";
+            };
+        };
+        class 91st_Oddball_ARC_Helmet: 91st_ARC_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="Archelmets";
+                Archelms="Oddball";
             };
         };
     //ARF

@@ -98,10 +98,10 @@ class XtdGearModels
                     // Labels just a display name
                     label="Company";
                 };
-                class Archangel
+                class Munka
                 {
                     // Labels just a display name
-                    label="Archangel";
+                    label="Munka";
                 };
                 class Fallon
                 {
@@ -127,7 +127,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Trooper",
-                    "Archangel",
+                    "Medic",
                     "Veteran",
                     "Teamleader"
                 };
@@ -137,10 +137,10 @@ class XtdGearModels
                     // Labels just a display name
                     label="Trooper";
                 };
-                class Archangel
+                class Medic
                 {
                     // Labels just a display name
-                    label="Archangel";
+                    label="Medic";
                 };
                 class Veteran
                 {
@@ -427,7 +427,7 @@ class CfgGlasses
         class XtdGearInfo
         {
             model="91st_monkeys";// The value of "Rank" is just the label used in the list
-            Monkey="Archangel";
+            Monkey="Medic";
         };
     };
 	class 91st_Jumptrooper_Vest: 91st_Glasses_Base
