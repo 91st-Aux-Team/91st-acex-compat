@@ -124,8 +124,9 @@ class XtdGearModels
                 values[]=
                 {
                     "M5GL",
-                    "C",
-                    "S"
+                    "35C",
+                    "35S",
+                    "SPR"
                 };
             };
         };
@@ -299,6 +300,7 @@ class CfgWeapons
     //Westars
     class 91st_WestarM5_Base_F;
     class 91st_westar_c_pre;
+    class LFP_rifle_base;
     class 91st_westar_gl:91st_WestarM5_Base_F
     {
         class XtdGearInfo
@@ -312,7 +314,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="WestarRilfes";
-            Variant="C";
+            Variant="35C";
         };
     };
     class 91st_Westar35S: 91st_westar_c_pre
@@ -320,7 +322,15 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="WestarRilfes";
-            Variant="S";
+            Variant="35S";
+        };
+    };
+    class 91st_WestarSPR: LFP_rifle_base
+    {
+        class XtdGearInfo
+        {
+            model="WestarRilfes";
+            Variant="SPR";
         };
     };
 };
