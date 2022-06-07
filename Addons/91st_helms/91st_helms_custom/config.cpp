@@ -83,7 +83,7 @@ class XtdGearModels
                     "Strike",
                     "Tarz",
                     "Tig",
-                    "Trill",
+                    // "Trill",
                     "Volx",
                     "Wagner",
                     "Widget",
@@ -243,7 +243,7 @@ class XtdGearModels
                     "Base",
                     "Medic",
                     "Mav",
-                    "Lesk"
+                    "Trill"
                 };
             };
         };
@@ -1064,12 +1064,12 @@ class CfgWeapons
                 Barchelms="Mav";
             };
         };
-        class 91st_Lesk_BARC_Helmet: JLTS_CloneHelmetBARC
+        class 91st_Trill_BARC_Helmet: JLTS_CloneHelmetBARC
         {
             class XtdGearInfo
             {
                 model="Barchelmets";
-                Barchelms="Lesk";
+                Barchelms="Trill";
             };
         };
 };

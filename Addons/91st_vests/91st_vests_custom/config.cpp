@@ -40,7 +40,8 @@ class XtdGearModels
                     //ARC
                     "Arcanist",
                     "Nova",
-                    "Scorch"
+                    "Scorch",
+                    "Nylon"
                 };
                 class Mav
                 {
@@ -82,6 +83,10 @@ class XtdGearModels
                 class Scorch
                 {
                     label="Scorch";
+                };
+                class Nylon
+                {
+                    label="Nylon";
                 };
             };
         };
@@ -150,6 +155,14 @@ class CfgWeapons
             CustomVest="Predator";
         };
     };
+    class 91st_Officer_Vest_Nylon: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Nylon";
+        };
+    };
 
     //ARC
     class 91st_Vest_ARC_Arcanist: 91st_Vest_ARC_Base
@@ -176,4 +189,5 @@ class CfgWeapons
             CustomVest="Nova";
         };
     };
+    
 };
