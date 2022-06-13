@@ -195,8 +195,9 @@ class XtdGearModels
                     "BeskarCDV",
                     "NovaCDV",
                     "JadeCDV",
-                    "ArchangelCDV",
-                    "ScorchCDV"
+                    "MedicCDV",
+                    "ScorchCDV",
+                    "MunkaCDV"
                 };
                 class KyberCDV
                 {
@@ -214,13 +215,17 @@ class XtdGearModels
                 {
                     label="Jade";
                 };
-                class ArchangelCDV
+                class MedicCDV
                 {
-                    label="Archangel";
+                    label="Medic";
                 };
                 class ScorchCDV
                 {
                     label="Scorch";
+                };
+                class MunkaCDV
+                {
+                    label="Munka";
                 };
             };
         };
@@ -473,7 +478,7 @@ class CfgVehicles
         class XtdGearInfo
         {
             model="91stCDVJumppack";
-            CDV="ArchangelCDV";
+            CDV="MedicCDV";
         };
     };
     class 91st_jumppack_mc_jade: 91st_Base_MC_JP
@@ -514,6 +519,14 @@ class CfgVehicles
         {
             model="91stCDVJumppack";
             CDV="ScorchCDV";
+        };
+    };
+    class 91st_jumppack_mc_munka: 91st_Base_MC_JP
+    {
+        class XtdGearInfo
+        {
+            model="91stCDVJumppack";
+            CDV="MunkaCDV";
         };
     };
 };

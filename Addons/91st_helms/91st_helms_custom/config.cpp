@@ -43,6 +43,7 @@ class XtdGearModels
                     "Cross",
                     "Cryptic",
                     "Dante",
+                    "Dark",
                     "Dev",
                     "Dex",
                     "Dumajin",
@@ -53,6 +54,7 @@ class XtdGearModels
                     "Fraiser",
                     "Freq",
                     "Golden",
+                    "Happy",
                     "Jughead",
                     "Jericho",
                     "Kitsune",
@@ -79,6 +81,7 @@ class XtdGearModels
                     "Shields",
                     "Silver",
                     "Skit",
+                    "Sound",
                     "Steak",
                     "Strike",
                     "Tarz",
@@ -89,6 +92,7 @@ class XtdGearModels
                     "Widget",
                     "Xenophon",
                     "Xero",
+                    "Xetor",
                     "Zerda"
                 };
             };
@@ -367,6 +371,14 @@ class CfgWeapons
                 InfantryCustoms="Dante";
             };
         };
+        class 91st_Dark_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Dark";
+            };
+        };
         class 91st_Dev_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -445,6 +457,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Golden";
+            };
+        };
+        class 91st_Happy_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Happy";
             };
         };
         class 91st_Jughead_Helmet: 91st_Base_Helmet
@@ -656,6 +676,14 @@ class CfgWeapons
                 InfantryCustoms="Skit";
             };
         };
+        class 91st_Sound_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Sound";
+            };
+        };
         class 91st_Steak_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -718,6 +746,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Widget";
+            };
+        };
+        class 91st_Xetor_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Xetor";
             };
         };
         class 91st_Xenophon_Helmet: 91st_Base_Helmet
