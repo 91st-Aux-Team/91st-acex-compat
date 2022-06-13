@@ -107,7 +107,7 @@ class CfgWeapons
             CustomVest="Mav";
         };
     };
-    class 91st_Officer_Vest_Rat: 91st_Officer_Vest_Gray
+    class 91st_Rat_Kama: 91st_Officer_Vest_Gray
     {
         class XtdGearInfo
         {

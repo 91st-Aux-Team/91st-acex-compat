@@ -137,6 +137,24 @@ class XtdGearModels
                 };
             };
         };
+        class 91stNvVisorsCustom
+        {
+            label="NV Visor Custom";
+            author="91st Aux Team";
+            options[]={"NvVisor"};
+            class NvVisor
+            {
+                labels="Visors";
+                values[]=
+                {
+                    "Leer"
+                };
+                class Leer
+                {
+                    label="Leer";
+                };
+            };
+        };
     };
 };
 class CfgWeapons
@@ -362,6 +380,14 @@ class CfgWeapons
             model="91stNvVisors";
             NvVisor="WO4";
             Type="Down";
+        };
+    };
+    class 91st_Visor_Leer: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Leer";
         };
     };
 };

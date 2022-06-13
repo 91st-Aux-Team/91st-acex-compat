@@ -351,6 +351,69 @@ class XtdGearModels
 				};
             };
         };
+        class 91st_Munka_Ranks
+        {
+            label="91st Munka Rank Armor";
+            author="91st Aux Team";
+            options[]={"MunkaRank"};
+            class MunkaRank
+            {
+                label="Ranks";
+                values[]=
+                {
+                    "CSP",
+                    "CLC",
+                    "CP",
+                    "CS",
+                    "CSS",
+                    "WO1",
+                    "WO2",
+                    "WO3",
+                    "WO4",
+                    "WO5"
+                };
+                class CSP
+				{
+					label = "CSP";
+				};
+				class CLC
+				{
+					label = "CLC";
+				};
+				class CP
+				{
+					label = "CP";
+				};
+				class CS
+				{
+					label = "CS";
+				};
+				class CSS
+				{
+					label = "CSS";
+				};
+				class WO1
+				{
+					label = "WO1";
+				};
+				class WO2
+				{
+					label = "WO2";
+				};
+				class WO3
+				{
+					label = "WO3";
+				};
+				class WO4
+				{
+					label = "WO4";
+				};
+				class WO5
+				{
+					label = "WO5";
+				};
+            };
+        };
         class 91stCustomArmor
         {
             label="91st Custom Armor";
@@ -372,7 +435,8 @@ class XtdGearModels
                     "Rat",
                     "Roach",
                     "Scorch",
-                    "Scorch2"
+                    "Saint",
+                    "Penguin"
                 };
                 class Axer
                 {
@@ -970,7 +1034,86 @@ class CfgWeapons
     };
 
     //Munka Armor
-
+    class 91st_Munka_CSP_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="CSP";
+        };
+    };
+    class 91st_Munka_CLC_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="CLC";
+        };
+    };
+    class 91st_Munka_CP_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="CP";
+        };
+    };
+    class 91st_Munka_CS_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="CS";
+        };
+    };
+    class 91st_Munka_CSS_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="CSS";
+        };
+    };
+    class 91st_Munka_WO1_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="WO1";
+        };
+    };
+    class 91st_Munka_WO2_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="WO2";
+        };
+    };
+    class 91st_Munka_WO3_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="WO3";
+        };
+    };
+    class 91st_Munka_WO4_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="WO4";
+        };
+    };
+    class 91st_Munka_WO5_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_Munka_Ranks";
+            MunkaRank="WO5";
+        };
+    };
 
     //ARF Armor
 
@@ -1040,7 +1183,7 @@ class CfgWeapons
             Custom="Nova";
         };
     };
-    class 91st_Infantry_Rat_Armor: 91st_Armor_Base
+    class 91st_Rat_MC_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
@@ -1064,12 +1207,20 @@ class CfgWeapons
             Custom="Scorch";
         };
     };
-    class 91st_Infantry_Sconch_Armor: 91st_Armor_Base
+    class 91st_Infantry_Saint_Armor: 91st_Armor_Base
     {
         class XtdGearInfo
         {
             model="91stCustomArmor";
-            Custom="Scorch2";
+            Custom="Saint";
+        };
+    };
+    class 91st_Infantry_Penguin_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stCustomArmor";
+            Custom="Penguin";
         };
     };
 };
