@@ -147,11 +147,11 @@ class XtdGearModels
                 labels="Visors";
                 values[]=
                 {
-                    "Leer"
-                };
-                class Leer
-                {
-                    label="Leer";
+                    "Arcanist",
+                    "Binns",
+                    "Frasier",
+                    "Leer",
+                    "Perry"
                 };
             };
         };
@@ -382,6 +382,8 @@ class CfgWeapons
             Type="Down";
         };
     };
+
+    //custom
     class 91st_Visor_Leer: 91st_Visor_Base
     {
         class XtdGearInfo
