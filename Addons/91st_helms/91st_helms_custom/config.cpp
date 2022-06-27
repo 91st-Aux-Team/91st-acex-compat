@@ -874,6 +874,14 @@ class CfgWeapons
                 PilotCustoms="Oxide";
             };
         };
+        class 91st_Winter_Helmet: 91st_Pilot_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="PilotCustomshelmets";
+                PilotCustoms="Winter";
+            };
+        };
 
     //Beskar Helms
         class 91st_Beskar_Helmet: 3as_ATRT_helmet
