@@ -147,11 +147,11 @@ class XtdGearModels
                 labels="Visors";
                 values[]=
                 {
-                    "Leer"
-                };
-                class Leer
-                {
-                    label="Leer";
+                    "Arcanist",
+                    "Binns",
+                    "Frasier",
+                    "Leer",
+                    "Perry"
                 };
             };
         };
@@ -382,12 +382,46 @@ class CfgWeapons
             Type="Down";
         };
     };
+
+    //custom
     class 91st_Visor_Leer: 91st_Visor_Base
     {
         class XtdGearInfo
         {
             model="91stNvVisorsCustom";
             NvVisor="Leer";
+        };
+    };
+    class 91st_Visor_Arcanist: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Arcanist";
+        };
+    };
+    class 91st_Visor_Binns: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Binns";
+        };
+    };
+    class 91st_Visor_Frasier: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Frasier";
+        };
+    };
+    class 91st_Visor_Perry: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Perry";
         };
     };
 };

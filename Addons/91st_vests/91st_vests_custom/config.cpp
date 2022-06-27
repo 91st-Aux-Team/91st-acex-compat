@@ -33,6 +33,7 @@ class XtdGearModels
                     "Mav",
                     "Rat",
                     "Dex",
+                    "Doc",
                     "Chopper",
                     "Corn",
                     "Kuro",
@@ -129,6 +130,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Dex";
+        };
+    };
+    class 91st_Officer_Vest_Doc: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Doc";
         };
     };
     class 91st_Officer_Vest_Corn: 91st_Officer_Vest_Gray

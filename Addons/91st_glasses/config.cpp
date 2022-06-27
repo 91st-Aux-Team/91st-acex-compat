@@ -187,7 +187,6 @@ class XtdGearModels
                 };
             };
         };
-        
         class StandardVests
         {
             label="Standard Vests";
@@ -231,7 +230,6 @@ class XtdGearModels
                 };
             };
         };
-
         class ARFSuspenders
         {
             label="ARF Suspenders";
@@ -267,6 +265,24 @@ class XtdGearModels
                 {
                     label="Lush";
                     actionlabel = "Lush";
+                };
+            };
+        };
+        class Custom_NVG_Visors_Glasses
+        { 
+            label="91st Custom Visor";
+            author="91st Aux Team";
+            options[]={"Visor"};
+            class Visor
+            {
+                labels="Visors";
+                values[]=
+                {
+                    "Arcanist",
+                    "Binns",
+                    "Frasier",
+                    "Leer",
+                    "Perry"
                 };
             };
         };
@@ -514,4 +530,46 @@ class CfgGlasses
             ARFCamo="Lush";
         };
     };
+    //Customs
+    class 91st_Visor_Arcanist_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Arcanist";
+        };
+    };
+    class 91st_Visor_Binns_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Binns";
+        };
+    };
+    class 91st_Visor_Frasier_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Frasier";
+        };
+    };
+    class 91st_Visor_Leer_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Leer";
+        };
+    };
+    class 91st_Visor_Perry_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Perry";
+        };
+    };
 };
+    
