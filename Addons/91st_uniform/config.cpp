@@ -435,6 +435,7 @@ class XtdGearModels
                     "Rat",
                     "Roach",
                     "Scorch",
+                    "ScorchARC",
                     "Saint",
                     "Penguin"
                 };
@@ -1205,6 +1206,14 @@ class CfgWeapons
         {
             model="91stCustomArmor";
             Custom="Scorch";
+        };
+    };
+    class 91st_Infantry_ScorchARC_Armor: 91st_Armor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stCustomArmor";
+            Custom="ScorchARC";
         };
     };
     class 91st_Infantry_Saint_Armor: 91st_Armor_Base
