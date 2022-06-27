@@ -392,4 +392,36 @@ class CfgWeapons
             NvVisor="Leer";
         };
     };
+    class 91st_Visor_Arcanist: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Arcanist";
+        };
+    };
+    class 91st_Visor_Binns: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Binns";
+        };
+    };
+    class 91st_Visor_Frasier: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Frasier";
+        };
+    };
+    class 91st_Visor_Perry: 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisorsCustom";
+            NvVisor="Perry";
+        };
+    };
 };

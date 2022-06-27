@@ -34,7 +34,6 @@ class XtdGearModels
                     "Barr",
                     "Bart",
                     "Banana",
-                    "Binns",
                     "Blanks",
                     "Charred",
                     "Chop",
@@ -61,6 +60,7 @@ class XtdGearModels
                     "Laser",
                     "Leer",
                     "Lich",
+                    "Loki",
                     "Magic",
                     "Main",
                     "Marf",
@@ -75,6 +75,7 @@ class XtdGearModels
                     "Qal",
                     "Rat",
                     "Ricochet",
+                    "Romeo",
                     "Saga",
                     "Sappheron",
                     "Scorch",
@@ -84,6 +85,7 @@ class XtdGearModels
                     "Sound",
                     "Steak",
                     "Strike",
+                    "Sytha",
                     "Tarz",
                     "Tig",
                     // "Trill",
@@ -116,7 +118,8 @@ class XtdGearModels
                     "Delta",
                     "Bensen",
                     "Squids",
-                    "Oxide"
+                    "Oxide",
+                    "Winter"
                 };
             };            
         };
@@ -246,6 +249,7 @@ class XtdGearModels
                 {
                     "Base",
                     "Medic",
+                    "Binns",
                     "Mav",
                     "Trill"
                 };
@@ -297,14 +301,6 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Banana";
-            };
-        };
-        class 91st_Binns_Helmet: 91st_Base_Helmet
-        {
-            class XtdGearInfo
-            {
-                model="InfantryCustomHelms";
-                InfantryCustoms="Binns";
             };
         };
         class 91st_Blanks_Helmet: 91st_Base_Helmet
@@ -515,6 +511,14 @@ class CfgWeapons
                 InfantryCustoms="Lich";
             };
         };
+        class 91st_Loki_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Loki";
+            };
+        };
         class 91st_Magic_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -628,6 +632,14 @@ class CfgWeapons
                 InfantryCustoms="Ricochet";
             };
         };
+        class 91st_Romeo_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Romeo";
+            };
+        };
         class 91st_Saga_Helmet: 91st_Base_Helmet
         {
             class XtdGearInfo
@@ -698,6 +710,14 @@ class CfgWeapons
             {
                 model="InfantryCustomHelms";
                 InfantryCustoms="Strike";
+            };
+        };
+        class 91st_Sytha_Helmet: 91st_Base_Helmet
+        {
+            class XtdGearInfo
+            {
+                model="InfantryCustomHelms";
+                InfantryCustoms="Sytha";
             };
         };
         class 91st_Tarz_Helmet: 91st_Base_Helmet
@@ -1106,6 +1126,14 @@ class CfgWeapons
             {
                 model="Barchelmets";
                 Barchelms="Trill";
+            };
+        };
+        class 91st_Binns_BARC_Helmet: JLTS_CloneHelmetBARC
+        {
+            class XtdGearInfo
+            {
+                model="Barchelmets";
+                Barchelms="Binns";
             };
         };
 };
