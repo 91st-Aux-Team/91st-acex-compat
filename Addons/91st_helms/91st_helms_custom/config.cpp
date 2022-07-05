@@ -153,7 +153,7 @@ class XtdGearModels
                 labels="ARC Helmets";
                 values[]=
                 {
-                    "Tallyrand",
+                    "Talleyrand",
                     "Cabur",
                     "Corn",
                     "Roach",

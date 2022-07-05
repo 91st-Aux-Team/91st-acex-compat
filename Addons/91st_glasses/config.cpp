@@ -12,9 +12,7 @@ class CfgPatches
 			"aceax_gearinfo"
 		};
 		author="91st Aux Team";
-		version="0.1.1.2";
-		versionStr="0.1.1.2";
-		versionAr[]={0,1,1,2};
+		version="0.1";
 	};
 };
 class XtdGearModels
@@ -272,8 +270,8 @@ class XtdGearModels
         { 
             label="91st Custom Visor";
             author="91st Aux Team";
-            options[]={"Visor"};
-            class Visor
+            options[]={"Visors"};
+            class Visors
             {
                 labels="Visors";
                 values[]=
@@ -293,6 +291,7 @@ class CfgGlasses
     //This class is the EXACT same as the aux mod
     class 91st_Glasses_Base;
     class 91st_ARF_Camo_Base;
+    
     class 91st_Visor_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
@@ -304,46 +303,20 @@ class CfgGlasses
             Visor="CT";
         };
     };
-    class 91st_Visor_SCT_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="SCT";
-        };
+
+    #define Macro_91st_Visors_Compat(a) class 91st_Visor_##a##_Glasses : 91st_Glasses_Base  {\
+        class XtdGearInfo\
+        {\
+            model="91st_Visors_Glasses";\
+            Visor=##a##;\
+        };\
     };
-    class 91st_Visor_VCT_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="VCT";
-        };
-    };
-    class 91st_Visor_CSP_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="CSP";
-        };
-    };
-    class 91st_Visor_WO4_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="WO4";
-        };
-    };
-    class 91st_Visor_CSS_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_Visors_Glasses";
-            Visor="CSS";
-        };
-    };
+
+    Macro_91st_Visors_Compat(SCT);
+    Macro_91st_Visors_Compat(VCT);
+    Macro_91st_Visors_Compat(CSP);
+    Macro_91st_Visors_Compat(WO4);
+    Macro_91st_Visors_Compat(CSS);
 
     //Standards
 	class 91st_Vest: 91st_Glasses_Base
@@ -354,48 +327,23 @@ class CfgGlasses
             Standardvestss="Vests";
         };
     };
-	class 91st_Vest_WO1: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="WO";
-        };
-    };
-	class 91st_Vest_WO3: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="WO3";
-        };
-    };
-	class 91st_Vest_NCO: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="NCO";
-        };
-    };
-	class 91st_Vest_Teamlead: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="TeamLead";
-        };
-    };
-	class 91st_Vest_Squadlead: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="SquadLead";
-        };
+
+    #define Macro_91st_Vests_Glasses_Compat(a) class 91st_Vest_##a## : 91st_Glasses_Base  {\
+        class XtdGearInfo\
+        {\
+            model="StandardVests";\
+            Standardvestss=##a##;\
+        };\
     };
 
+    Macro_91st_Vests_Glasses_Compat(WO);
+    Macro_91st_Vests_Glasses_Compat(WO3);
+    Macro_91st_Vests_Glasses_Compat(NCO);
+    Macro_91st_Vests_Glasses_Compat(TeamLead);
+    Macro_91st_Vests_Glasses_Compat(SquadLead);
+
     //Medic
+    
 	class 91st_Medic_Vest: 91st_Glasses_Base
     {
         class XtdGearInfo
@@ -404,38 +352,18 @@ class CfgGlasses
             Medic="Squad";
         };
     };
-	class 91st_Medic_Vest_Platoon: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Platoon";
-        };
+    #define Macro_91st_Medic_Vests_Compat(a) class 91st_Medic_Vest_##a## : 91st_Glasses_Base  {\
+        class XtdGearInfo\
+        {\
+            model="91st_medic";\
+            Medic=##a##;\
+        };\
     };
-	class 91st_Medic_Vest_Company: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Company";
-        };
-    };
-	class 91st_Medic_Vest_Fallon: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Fallon";
-        };
-    };
-    class 91st_Medic_Vest_Trill: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
-            Medic="Trill";
-        };
-    };
+
+    Macro_91st_Medic_Vests_Compat(Platoon);
+    Macro_91st_Medic_Vests_Compat(Company);
+    Macro_91st_Medic_Vests_Compat(Fallon);
+    Macro_91st_Medic_Vests_Compat(Trill);
 
     //monkies
 	class 91st_archangel_vest: 91st_Glasses_Base
@@ -530,46 +458,19 @@ class CfgGlasses
             ARFCamo="Lush";
         };
     };
-    //Customs
-    class 91st_Visor_Arcanist_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Arcanist";
-        };
-    };
-    class 91st_Visor_Binns_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Binns";
-        };
-    };
-    class 91st_Visor_Frasier_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Frasier";
-        };
-    };
-    class 91st_Visor_Leer_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Leer";
-        };
-    };
-    class 91st_Visor_Perry_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Perry";
-        };
-    };
-};
     
+    //Customs
+    #define Macro_91st_Visor_Custom_Compat_Glasses(a) class 91st_Visor_##a##_Glasses : 91st_Glasses_Base  {\
+        class XtdGearInfo\
+        {\
+            model="Custom_NVG_Visors_Glasses";\
+            Visors=##a##;\
+        };\
+    };
+
+    Macro_91st_Visor_Custom_Compat_Glasses(Arcanist);
+    Macro_91st_Visor_Custom_Compat_Glasses(Binns);
+    Macro_91st_Visor_Custom_Compat_Glasses(Fraiser);
+    Macro_91st_Visor_Custom_Compat_Glasses(Leer);
+    Macro_91st_Visor_Custom_Compat_Glasses(Perry);
+};
