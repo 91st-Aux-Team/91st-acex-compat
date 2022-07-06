@@ -106,6 +106,23 @@ class XtdGearModels
                 };
             };
         };
+        class NF_Chips
+        {
+            label="NVG Chips";
+            author="91st Aux Team";
+            options[]={"NVGChips"};
+            class NVGChips
+            {
+                labels="NVG Chips";
+                values[]=
+                {
+                    "NVG",
+                    "White",
+                    "Green",
+                    "Orange"
+                };
+            };
+        };
     };
 };
 class CfgWeapons
@@ -138,6 +155,16 @@ class CfgWeapons
     Macro_91st_Copmat_Rangefinders(ARF,BO);
 
     //Visors
+    class 91st_Visor : 91st_Visor_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisors";
+            NvVisor="CT";
+            Type="Up";
+        };
+    };
+
     #define Macro_91st_Copmat_Visors(a) class 91st_Visor_##a## : 91st_Visor_Base {\
         class XtdGearInfo\
         {\
@@ -147,14 +174,23 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Copmat_Visors(CT);
 	Macro_91st_Copmat_Visors(SCT);
 	Macro_91st_Copmat_Visors(VCT);
 	Macro_91st_Copmat_Visors(CSP);
 	Macro_91st_Copmat_Visors(WO4);
 	Macro_91st_Copmat_Visors(CSS);
 
-    #define Macro_91st_Copmat_Visors_Down(a) class 91st_Visor_Down_##a##: 91st_Visor_Down_Base {\
+    class 91st_Visor_Down: 91st_Visor_Down_Base
+    {
+        class XtdGearInfo
+        {
+            model="91stNvVisors";
+            NvVisor="CT";
+            Type="Down";
+        };
+    };
+
+    #define Macro_91st_Copmat_Visors_Down(a) class 91st_Visor_##a##_Down: 91st_Visor_Down_Base {\
         class XtdGearInfo\
         {\
             model="91stNvVisors";\
@@ -163,7 +199,6 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Copmat_Visors_Down(CT);
 	Macro_91st_Copmat_Visors_Down(SCT);
 	Macro_91st_Copmat_Visors_Down(VCT);
 	Macro_91st_Copmat_Visors_Down(CSP);
@@ -181,7 +216,30 @@ class CfgWeapons
 
     Macro_91st_Visor_Custom_Compat_NVG(Arcanist);
     Macro_91st_Visor_Custom_Compat_NVG(Binns);
-    Macro_91st_Visor_Custom_Compat_NVG(Fraiser);
+    Macro_91st_Visor_Custom_Compat_NVG(Frasier);
     Macro_91st_Visor_Custom_Compat_NVG(Leer);
     Macro_91st_Visor_Custom_Compat_NVG(Perry);
+
+    //chips
+    class JLTS_NVG_droid_chip_1;
+    class 91st_NVG_Chip : JLTS_NVG_droid_chip_1 
+    {
+        class XtdGearInfo
+        {
+            model="NF_Chips";
+            NVGChips="NVG";
+        };
+    };
+    #define Macro_91st_Chips_Compat_NVG(a) class 91st_##a##_NVG_Chip : JLTS_NVG_droid_chip_1  {\
+        class XtdGearInfo\
+        {\
+            model="NF_Chips";\
+            NVGChips=##a##;\
+        };\
+    };
+
+    Macro_91st_Chips_Compat_NVG(White);
+    Macro_91st_Chips_Compat_NVG(Green);
+    Macro_91st_Chips_Compat_NVG(Orange);
+
 };
