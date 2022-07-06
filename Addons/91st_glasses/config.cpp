@@ -196,7 +196,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Vests",
-                    "WO",
+                    "WO1",
                     "WO3",
                     "NCO",
                     "TeamLead",
@@ -206,7 +206,7 @@ class XtdGearModels
                 {
                     label="Vests"
                 };
-                class WO
+                class WO1
                 {
                     label="WO"
                 };
@@ -336,7 +336,7 @@ class CfgGlasses
         };\
     };
 
-    Macro_91st_Vests_Glasses_Compat(WO);
+    Macro_91st_Vests_Glasses_Compat(WO1);
     Macro_91st_Vests_Glasses_Compat(WO3);
     Macro_91st_Vests_Glasses_Compat(NCO);
     Macro_91st_Vests_Glasses_Compat(TeamLead);
@@ -470,7 +470,7 @@ class CfgGlasses
 
     Macro_91st_Visor_Custom_Compat_Glasses(Arcanist);
     Macro_91st_Visor_Custom_Compat_Glasses(Binns);
-    Macro_91st_Visor_Custom_Compat_Glasses(Fraiser);
+    Macro_91st_Visor_Custom_Compat_Glasses(Frasier);
     Macro_91st_Visor_Custom_Compat_Glasses(Leer);
     Macro_91st_Visor_Custom_Compat_Glasses(Perry);
 };
