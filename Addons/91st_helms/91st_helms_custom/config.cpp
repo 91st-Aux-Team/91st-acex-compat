@@ -61,6 +61,7 @@ class XtdGearModels
                     "Marf",
                     "Mauser",
                     "Mav",
+                    "Misery",
                     "Oni",
                     "Opossum",
                     "Perry",
@@ -254,6 +255,7 @@ class CfgWeapons
 	Macro_91st_Inf_Custom_Compat_Helmet(Marf);
 	Macro_91st_Inf_Custom_Compat_Helmet(Mauser);
 	Macro_91st_Inf_Custom_Compat_Helmet(Mav);
+    Macro_91st_Inf_Custom_Compat_Helmet(Misery);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Opossum);
 	Macro_91st_Inf_Custom_Compat_Helmet(Oni);
@@ -327,7 +329,7 @@ class CfgWeapons
     };
 
     Macro_91st_Pilot_Custom_Compat_Helmet(Bensen);
-	Macro_91st_Pilot_Custom_Compat_Helmet(Chopper);
+	// Macro_91st_Pilot_Custom_Compat_Helmet(Chopper);
 	Macro_91st_Pilot_Custom_Compat_Helmet(Delta);
 	Macro_91st_Pilot_Custom_Compat_Helmet(Frog);
 	Macro_91st_Pilot_Custom_Compat_Helmet(Grady);
