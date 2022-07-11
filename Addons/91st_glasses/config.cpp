@@ -244,7 +244,8 @@ class XtdGearModels
                     "NoCamo",
                     "Arid",
                     "SemiArid",
-                    "Lush"
+                    "Lush",
+                    "Kappa"
                 };
                 class NoCamo
                 {
@@ -265,6 +266,11 @@ class XtdGearModels
                 {
                     label="Lush";
                     actionlabel = "Lush";
+                };
+                class Kappa
+                {
+                    label="Kappa";
+                    actionlabel = "Kappa";
                 };
             };
         };
@@ -530,6 +536,14 @@ class CfgGlasses
             ARFCamo="Lush";
         };
     };
+    class 91st_Kappa_Vest_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="ARFSuspenders";// The value of "Rank" is just the label used in the list
+            ARFCamo="Kappa";
+        };
+    };
     //Customs
     class 91st_Visor_Arcanist_Glasses: 91st_Glasses_Base
     {
@@ -572,4 +586,3 @@ class CfgGlasses
         };
     };
 };
-    
