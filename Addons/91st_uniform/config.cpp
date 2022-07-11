@@ -187,8 +187,6 @@ class XtdGearModels
                     "Frog",
                     "Kuro",
                     "Mav",
-                    "Nova",
-                    "Rat",
                     "Roach",
                     "Scorch",
                     "ScorchARC",

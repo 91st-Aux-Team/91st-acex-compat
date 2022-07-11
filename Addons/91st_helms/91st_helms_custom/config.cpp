@@ -46,35 +46,27 @@ class XtdGearModels
                     "Dev",
                     "Dex",
                     "Dumajin",
-                    "Falcon",
                     "Fallon",
                     "Foxtrot",
                     "Fraeyr",
                     "Fraiser",
                     "Freq",
                     "Golden",
-                    "Happy",
                     "Jughead",
-                    "Jericho",
-                    "Kitsune",
                     "Laser",
                     "Leer",
-                    "Lich",
                     "Loki",
                     "Magic",
                     "Main",
                     "Marf",
                     "Mauser",
                     "Mav",
-                    "Max",
                     "Oni",
                     "Opossum",
                     "Perry",
                     "Praetorian",
                     "Predator",
                     "Qal",
-                    "Rat",
-                    "Ricochet",
                     "Romeo",
                     "Saga",
                     "Sappheron",
@@ -88,14 +80,12 @@ class XtdGearModels
                     "Sytha",
                     "Tarz",
                     "Tig",
-                    //"Trill",
                     "Volx",
                     "Wagner",
                     "Widget",
                     "Xenophon",
                     "Xero",
                     "Xetor",
-                    "Zerda"
                 };
             };
         };
@@ -136,7 +126,6 @@ class XtdGearModels
                     "Crew",
                     "Kuro",
                     "Toxic",
-                    "Fly",
                     "Sentinel",
                     "Samael",
                     "Crit"
@@ -160,8 +149,6 @@ class XtdGearModels
                     "Bacon",
                     "Skittles",
                     "Arcanist",
-                    "Nova",
-                    "Galahad",
                     "Loken",
                     "Scorch",
                     "Trauma",
@@ -247,7 +234,6 @@ class CfgWeapons
 	Macro_91st_Inf_Custom_Compat_Helmet(Dex);
 	Macro_91st_Inf_Custom_Compat_Helmet(Dumajin);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Falcon);
 	Macro_91st_Inf_Custom_Compat_Helmet(Fallon);
 	Macro_91st_Inf_Custom_Compat_Helmet(Foxtrot);
 	Macro_91st_Inf_Custom_Compat_Helmet(Fraeyr);
@@ -256,16 +242,11 @@ class CfgWeapons
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Golden);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Happy);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Jericho);
 	Macro_91st_Inf_Custom_Compat_Helmet(Jughead);
 	
-	Macro_91st_Inf_Custom_Compat_Helmet(Kitsune);
-
 	Macro_91st_Inf_Custom_Compat_Helmet(Laser);
 	Macro_91st_Inf_Custom_Compat_Helmet(Leer);
-	Macro_91st_Inf_Custom_Compat_Helmet(Lich);
 	Macro_91st_Inf_Custom_Compat_Helmet(Loki);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Magic);
@@ -273,7 +254,6 @@ class CfgWeapons
 	Macro_91st_Inf_Custom_Compat_Helmet(Marf);
 	Macro_91st_Inf_Custom_Compat_Helmet(Mauser);
 	Macro_91st_Inf_Custom_Compat_Helmet(Mav);
-	Macro_91st_Inf_Custom_Compat_Helmet(Max);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Opossum);
 	Macro_91st_Inf_Custom_Compat_Helmet(Oni);
@@ -284,7 +264,6 @@ class CfgWeapons
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Qal);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Ricochet);
 	Macro_91st_Inf_Custom_Compat_Helmet(Romeo);
 	
 	Macro_91st_Inf_Custom_Compat_Helmet(Saga);
@@ -311,7 +290,6 @@ class CfgWeapons
 	Macro_91st_Inf_Custom_Compat_Helmet(Xetor);
 	Macro_91st_Inf_Custom_Compat_Helmet(Xero);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Zerda);
 
     class 91st_Axer_Helmet: JLTS_CloneHelmetP2_illum
     {
@@ -338,14 +316,6 @@ class CfgWeapons
         };
     };
     
-    class 91st_Rat_Helmet: JLTS_CloneHelmetP2_illum
-    {
-        class XtdGearInfo
-        {
-            model="InfantryCustomHelms";
-            InfantryCustoms="Rat";
-        };
-    };
     
     //Pilot customs
     #define Macro_91st_Pilot_Custom_Compat_Helmet(a) class 91st_##a##_Helmet : 91st_Pilot_Helmet  {\
@@ -390,7 +360,6 @@ class CfgWeapons
 	Macro_91st_Beskar_Custom_Compat_Helmet(Sentinel);
 	Macro_91st_Beskar_Custom_Compat_Helmet(Toxic);
 	Macro_91st_Beskar_Custom_Compat_Helmet(Crit);
-	Macro_91st_Beskar_Custom_Compat_Helmet(Fly);
 
 
     //Arc helms
@@ -418,8 +387,6 @@ class CfgWeapons
 	Macro_91st_ARC_Compat_Helmet(Skittles);
 	Macro_91st_ARC_Compat_Helmet(Scorch);
 	Macro_91st_ARC_Compat_Helmet(Arcanist);
-	Macro_91st_ARC_Compat_Helmet(Nova);
-	Macro_91st_ARC_Compat_Helmet(Galahad);
 	Macro_91st_ARC_Compat_Helmet(Loken);
 	Macro_91st_ARC_Compat_Helmet(Oddball);
 	Macro_91st_ARC_Compat_Helmet(Trauma);

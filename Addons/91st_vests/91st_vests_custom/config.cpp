@@ -29,7 +29,6 @@ class XtdGearModels
                 values[]=
                 {
                     "Mav",
-                    "Rat",
                     "Doc",
                     "Chopper",
                     "Corn",
@@ -37,9 +36,7 @@ class XtdGearModels
                     "Predator",
                     //ARC
                     "Arcanist",
-                    "Nova",
                     "Scorch",
-                    "Nylon"
                 };
             };
         };
@@ -67,16 +64,6 @@ class CfgWeapons
     Macro_91st_off_Vest_Compat(Corn);
     Macro_91st_off_Vest_Compat(Kuro);
     Macro_91st_off_Vest_Compat(Predator);
-    Macro_91st_off_Vest_Compat(Nylon);
-
-    class 91st_Rat_Kama: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Rat";
-        };
-    };
 
     //ARC
     class 91st_Vest_ARC_Arcanist: 91st_Vest_ARC_Base
@@ -93,14 +80,6 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Scorch";
-        };
-    };
-    class 91st_Vest_ARC_Nova: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Nova";
         };
     };
     
