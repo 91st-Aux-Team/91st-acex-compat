@@ -181,6 +181,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Axer",
+                    "Charred",
                     "Corpse",
                     "Cross",
                     "Dex",
@@ -369,6 +370,7 @@ class CfgWeapons
     };
 
     Macro_91st_Custom_Compat_Armor(Axer);
+    Macro_91st_Custom_Compat_Armor(Charred);
 	Macro_91st_Custom_Compat_Armor(Corpse);
 	Macro_91st_Custom_Compat_Armor(Cross);
 	Macro_91st_Custom_Compat_Armor(Dex);
