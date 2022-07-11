@@ -36,7 +36,8 @@ class XtdGearModels
                     "Grey",
                     "Red_Grey",
                     "Red",
-                    "Commander"
+                    "Commander",
+                    "CSM"
                 };
                 class ReversedGrey
                 {
@@ -65,6 +66,10 @@ class XtdGearModels
                 class Commander
                 {
                     label="Commander";
+                };
+                class CSM
+                {
+                    label="CSM";
                 };
             };
         };
@@ -283,6 +288,14 @@ class CfgWeapons
             model="91stOfficerVests";
             Officervest="Commander";
         };
+    };
+    class 91st_Commander_CSM: 91st_Commander_Vest 
+    {
+       class XtdGearInfo
+        {
+            model="91stOfficerVests";
+            Officervest="CSM";
+        }; 
     };
 
     // Officer Pauldrons

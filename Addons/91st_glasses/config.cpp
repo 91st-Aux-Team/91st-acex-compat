@@ -79,7 +79,8 @@ class XtdGearModels
                     "Squad",
                     "Platoon",
                     "Company",
-                    "Fallon"
+                    "Fallon",
+                    "Trill"
                 };
                 // Class used for defining in the shit below
                 class Squad
@@ -97,15 +98,20 @@ class XtdGearModels
                     // Labels just a display name
                     label="Company";
                 };
-                class Archangel
+                class Munka
                 {
                     // Labels just a display name
-                    label="Archangel";
+                    label="Munka";
                 };
                 class Fallon
                 {
                     // Labels just a display name
                     label="Fallon";
+                };
+                class Trill
+                {
+                    // Labels just a display name
+                    label="Trill";
                 };
             };
         };
@@ -121,7 +127,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Trooper",
-                    "Trooper2",
+                    "Medic",
                     "Veteran",
                     "Teamleader"
                 };
@@ -131,10 +137,10 @@ class XtdGearModels
                     // Labels just a display name
                     label="Trooper";
                 };
-                class Trooper2
+                class Medic
                 {
                     // Labels just a display name
-                    label="Arcangle";
+                    label="Medic";
                 };
                 class Veteran
                 {
@@ -192,7 +198,6 @@ class XtdGearModels
                 values[]=
                 {
                     "Vests",
-                    "Suspenders",
                     "WO",
                     "WO3",
                     "NCO",
@@ -202,10 +207,6 @@ class XtdGearModels
                 class Vests
                 {
                     label="Vests"
-                };
-                class Suspenders
-                {
-                    label="Suspenders"
                 };
                 class WO
                 {
@@ -229,12 +230,69 @@ class XtdGearModels
                 };
             };
         };
+        class ARFSuspenders
+        {
+            label="ARF Suspenders";
+            author="91st Aux Team";
+            options[]={"ARFCamo"};
+            class ARFCamo
+            {
+                labels="ARF Camo";
+                changeingame = 1;
+                values[]=
+                {
+                    "NoCamo",
+                    "Arid",
+                    "SemiArid",
+                    "Lush"
+                };
+                class NoCamo
+                {
+                    label="No Camo";
+                    actionlabel = "No Camo";
+                };
+                class Arid
+                {
+                    label="Arid";
+                    actionlabel = "Arid";
+                };
+                class SemiArid
+                {
+                    label="Semi-Arid";
+                    actionlabel = "Semi-Arid";
+                };
+                class Lush
+                {
+                    label="Lush";
+                    actionlabel = "Lush";
+                };
+            };
+        };
+        class Custom_NVG_Visors_Glasses
+        { 
+            label="91st Custom Visor";
+            author="91st Aux Team";
+            options[]={"Visor"};
+            class Visor
+            {
+                labels="Visors";
+                values[]=
+                {
+                    "Arcanist",
+                    "Binns",
+                    "Frasier",
+                    "Leer",
+                    "Perry"
+                };
+            };
+        };
     };
 };
 class CfgGlasses
 {
     //This class is the EXACT same as the aux mod
     class 91st_Glasses_Base;
+    class 91st_ARF_Camo_Base;
     class 91st_Visor_Glasses: 91st_Glasses_Base
     {
         class XtdGearInfo
@@ -294,14 +352,6 @@ class CfgGlasses
         {
             model="StandardVests";// The value of "Rank" is just the label used in the list
             Standardvestss="Vests";
-        };
-    };
-	class 91st_Suspenders: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="StandardVests";// The value of "Rank" is just the label used in the list
-            Standardvestss="Suspenders";
         };
     };
 	class 91st_Vest_WO1: 91st_Glasses_Base
@@ -378,6 +428,14 @@ class CfgGlasses
             Medic="Fallon";
         };
     };
+    class 91st_Medic_Vest_Trill: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="91st_medic";// The value of "Rank" is just the label used in the list
+            Medic="Trill";
+        };
+    };
 
     //monkies
 	class 91st_archangel_vest: 91st_Glasses_Base
@@ -385,7 +443,7 @@ class CfgGlasses
         class XtdGearInfo
         {
             model="91st_monkeys";// The value of "Rank" is just the label used in the list
-            Monkey="Trooper2";
+            Monkey="Medic";
         };
     };
 	class 91st_Jumptrooper_Vest: 91st_Glasses_Base
@@ -438,4 +496,80 @@ class CfgGlasses
             Rangefinder_glass="Black";
         };
     };
+
+    // ARF Suspenders
+	class 91st_Suspenders: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="ARFSuspenders";// The value of "Rank" is just the label used in the list
+            ARFCamo="NoCamo";
+        };
+    };
+    class 91st_ARF_Camo_SemiArid: 91st_ARF_Camo_Base
+    {
+        class XtdGearInfo
+        {
+            model="ARFSuspenders";// The value of "Rank" is just the label used in the list
+            ARFCamo="SemiArid";
+        };
+    };
+    class 91st_ARF_Camo_Arid: 91st_ARF_Camo_Base
+    {
+        class XtdGearInfo
+        {
+            model="ARFSuspenders";// The value of "Rank" is just the label used in the list
+            ARFCamo="Arid";
+        };
+    };
+    class 91st_ARF_Camo_Lush: 91st_ARF_Camo_Base
+    {
+        class XtdGearInfo
+        {
+            model="ARFSuspenders";// The value of "Rank" is just the label used in the list
+            ARFCamo="Lush";
+        };
+    };
+    //Customs
+    class 91st_Visor_Arcanist_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Arcanist";
+        };
+    };
+    class 91st_Visor_Binns_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Binns";
+        };
+    };
+    class 91st_Visor_Frasier_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Frasier";
+        };
+    };
+    class 91st_Visor_Leer_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Leer";
+        };
+    };
+    class 91st_Visor_Perry_Glasses: 91st_Glasses_Base
+    {
+        class XtdGearInfo
+        {
+            model="Custom_NVG_Visors_Glasses";
+            Visor="Perry";
+        };
+    };
 };
+    

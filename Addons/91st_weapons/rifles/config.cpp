@@ -20,9 +20,9 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class Rilfes
+        class Rifle
         {
-            label="Rilfes";
+            label="Rifle";
             author="91st Aux Team";
             options[]={"Rifles"};
             class Rifles
@@ -30,12 +30,32 @@ class XtdGearModels
                 labels="Rifles";
                 values[]=
                 {
-                    "DC15a",
-                    "DC15aGL",
-                    "DC15c",
-                    "DC15cGL",
-                    "DC15s"
+                    "DC15A",
+                    "DC15AGL",
+                    "DC15C",
+                    "DC15CGL",
+                    "DC15S"
                 };
+                class DC15A
+                {
+                    label="DC15A";
+                };
+                class DC15AGL
+                {
+                    label="DC15AGL";
+                };
+                class DC15C
+                {
+                    label="DC15C";
+                };
+                class DC15CGL
+                {
+                    label="DC15CGL";
+                };
+                class DC15S
+                {
+                    label="DC15S";
+                };                
             };
         };
         class LMGS
@@ -73,7 +93,7 @@ class XtdGearModels
         };
         class MarksmenRilfes
         {
-            label="MarksmenRilfes";
+            label="Marksmen Rilfes";
             author="91st Aux Team";
             options[]={"Marksmen"};
             class Marksmen
@@ -84,7 +104,12 @@ class XtdGearModels
                     "DC15LE",
                     "DC15X",
                     "Firepuncher",
-                    "DW-31S"
+                    "773EBR",
+                    "DW-32S"
+                };
+                class DC15LE
+                {
+                    label="DC15LE";
                 };
             };
         };
@@ -92,15 +117,16 @@ class XtdGearModels
         {
             label="Westars";
             author="91st Aux Team";
-            options[]={"Variance"};
-            class Variance
+            options[]={"Variant"};
+            class Variant
             {
-                labels="Variance";
+                labels="Variant";
                 values[]=
                 {
                     "M5GL",
-                    "C",
-                    "S"
+                    "35C",
+                    "35S",
+                    "SPR"
                 };
             };
         };
@@ -108,7 +134,10 @@ class XtdGearModels
 };
 class CfgWeapons
 {
+    class 91st_Rifle_Base;
+    class 91st_Rifle_Base2;
     class 91st_DC15C_Base;
+    class 91st_LMG_Base;
     class aRifle_MX_Base_F;
     class 91st_DC15L_base;
     class Rifle_Base_F;
@@ -121,46 +150,47 @@ class CfgWeapons
     class JLTS_DP23;
     class JLTS_EPL2;
     class 3AS_Flamer_Base;
+    class k_773_rifle_base;
     
     //Rifles
-    class 91st_DC15A: aRifle_MX_Base_F
+    class 91st_DC15A: 91st_Rifle_Base
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15a";
+            model="Rifle";
+            Rifles="DC15A";
         };
     };
     class 91st_DC15A_GL: 91st_DC15A
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15aGL";
+            model="Rifle";
+            Rifles="DC15AGL";
         };
     };
     class 91st_DC15C: 91st_DC15C_Base
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15c";
+            model="Rifle";
+            Rifles="DC15C";
         };
     };
     class 91st_DC15C_GL: 91st_DC15C
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15cGL";
+            model="Rifle";
+            Rifles="DC15CGL";
         };
     };
     class 91st_DC15S: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
-            model="Rilfes";
-            Rifles="DC15s";
+            model="Rifle";
+            Rifles="DC15S";
         };
     };
 
@@ -181,7 +211,7 @@ class CfgWeapons
             LMG="Valken-38L";
         };
     };
-    class 91st_Z6: aRifle_MX_Base_F
+    class 91st_Z6: 91st_LMG_Base
     {
         class XtdGearInfo
         {
@@ -215,7 +245,7 @@ class CfgWeapons
             Specialist="Flamer";
         };
     };
-    class 91st_musket: aRifle_MX_Base_F
+    class 91st_musket: 91st_DC15C
     {
         class XtdGearInfo
         {
@@ -242,7 +272,7 @@ class CfgWeapons
             Marksmen="DC15X";
         };
     };
-    class 91st_DC15LE: Rifle_Base_F
+    class 91st_DC15ALE: 91st_DC15A
     {
         class XtdGearInfo
         {
@@ -250,24 +280,33 @@ class CfgWeapons
             Marksmen="DC15LE";
         };
     };
+    class 91_773_rifle_base: k_773_rifle_base
+    {
+        class XtdGearInfo
+        {
+            model="MarksmenRilfes";
+            Marksmen="773EBR";
+        };
+    };
     class 91st_DW32S: JLTS_DW32S
     {
         class XtdGearInfo
         {
             model="MarksmenRilfes";
-            Marksmen="DW-31S";
+            Marksmen="DW-32S";
         };
     };
 
     //Westars
     class 91st_WestarM5_Base_F;
     class 91st_westar_c_pre;
+    class LFP_rifle_base;
     class 91st_westar_gl:91st_WestarM5_Base_F
     {
         class XtdGearInfo
         {
             model="WestarRilfes";
-            Variance="M5GL";
+            Variant="M5GL";
         };
     };
     class 91st_westar35c: 91st_westar_c_pre
@@ -275,7 +314,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="WestarRilfes";
-            Variance="C";
+            Variant="35C";
         };
     };
     class 91st_Westar35S: 91st_westar_c_pre
@@ -283,7 +322,15 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="WestarRilfes";
-            Variance="S";
+            Variant="35S";
+        };
+    };
+    class 91st_WestarSPR: LFP_rifle_base
+    {
+        class XtdGearInfo
+        {
+            model="WestarRilfes";
+            Variant="SPR";
         };
     };
 };

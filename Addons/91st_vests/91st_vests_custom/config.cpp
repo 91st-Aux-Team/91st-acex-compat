@@ -33,11 +33,16 @@ class XtdGearModels
                     "Mav",
                     "Rat",
                     "Dex",
+                    "Doc",
+                    "Chopper",
                     "Corn",
+                    "Kuro",
+                    "Predator",
                     //ARC
                     "Arcanist",
                     "Nova",
-                    "Scorch"
+                    "Scorch",
+                    "Nylon"
                 };
                 class Mav
                 {
@@ -51,11 +56,22 @@ class XtdGearModels
                 {
                     label="Dex";
                 }; 
+                class Chopper
+                {
+                    label="Chopper";
+                };
                 class Corn
                 {
                     label="Corn";
                 };
-
+                class Kuro
+                {
+                    label="Kuro";
+                };
+                class Predator
+                {
+                    label = "Predator";
+                };
                 //ARC
                 class Arcanist
                 {
@@ -69,6 +85,10 @@ class XtdGearModels
                 {
                     label="Scorch";
                 };
+                class Nylon
+                {
+                    label="Nylon";
+                };
             };
         };
     };
@@ -77,6 +97,7 @@ class CfgWeapons
 {
     class V_RebreatherB;
     class 91st_Officer_Vest_Gray;
+    class 91st_Reverse_Officer_Gray;
     class 91st_Vest_ARC_Base;
     //Officer Vests
     class 91st_Officer_Vest_Mav: 91st_Officer_Vest_Gray
@@ -87,12 +108,20 @@ class CfgWeapons
             CustomVest="Mav";
         };
     };
-    class 91st_Officer_Vest_Rat: 91st_Officer_Vest_Gray
+    class 91st_Rat_Kama: 91st_Officer_Vest_Gray
     {
         class XtdGearInfo
         {
             model="CustomVests";
             CustomVest="Rat";
+        };
+    };
+    class 91st_Officer_Vest_Chopper: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Chopper";
         };
     };
     class 91st_Officer_Vest_Dex: 91st_Officer_Vest_Gray
@@ -103,12 +132,44 @@ class CfgWeapons
             CustomVest="Dex";
         };
     };
+    class 91st_Officer_Vest_Doc: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Doc";
+        };
+    };
     class 91st_Officer_Vest_Corn: 91st_Officer_Vest_Gray
     {
         class XtdGearInfo
         {
             model="CustomVests";
             CustomVest="Corn";
+        };
+    };
+    class 91st_Officer_Vest_Kuro: 91st_Reverse_Officer_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Kuro";
+        };
+    };
+    class 91st_Officer_Vest_Predator: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Predator";
+        };
+    };
+    class 91st_Officer_Vest_Nylon: 91st_Officer_Vest_Gray
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Nylon";
         };
     };
 
@@ -137,4 +198,5 @@ class CfgWeapons
             CustomVest="Nova";
         };
     };
+    
 };
