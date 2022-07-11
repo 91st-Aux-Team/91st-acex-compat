@@ -11,9 +11,7 @@ class CfgPatches
 			"aceax_gearinfo"
 		};
 		author="91st aux";
-		version="0.1.1.2";
-		versionStr="0.1.1.2";
-		versionAr[]={0,1,1,2};
+		version="0.1";
 	};
 };
 class XtdGearModels
@@ -31,63 +29,16 @@ class XtdGearModels
                 values[]=
                 {
                     "Mav",
-                    "Rat",
-                    "Dex",
                     "Doc",
                     "Chopper",
                     "Corn",
                     "Kuro",
                     "Predator",
+                    "Frasier",
+                    "Charred",
                     //ARC
                     "Arcanist",
-                    "Nova",
                     "Scorch",
-                    "Nylon"
-                };
-                class Mav
-                {
-                    label="Mav";
-                };
-                class Rat
-                {
-                    label="Rat";
-                }; 
-                class Dex
-                {
-                    label="Dex";
-                }; 
-                class Chopper
-                {
-                    label="Chopper";
-                };
-                class Corn
-                {
-                    label="Corn";
-                };
-                class Kuro
-                {
-                    label="Kuro";
-                };
-                class Predator
-                {
-                    label = "Predator";
-                };
-                //ARC
-                class Arcanist
-                {
-                    label="Arcanist";
-                };
-                class Nova
-                {
-                    label="Nova";
-                };
-                class Scorch
-                {
-                    label="Scorch";
-                };
-                class Nylon
-                {
-                    label="Nylon";
                 };
             };
         };
@@ -100,78 +51,23 @@ class CfgWeapons
     class 91st_Reverse_Officer_Gray;
     class 91st_Vest_ARC_Base;
     //Officer Vests
-    class 91st_Officer_Vest_Mav: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Mav";
-        };
+
+    #define Macro_91st_off_Vest_Compat(a) class 91st_Officer_Vest_##a## : 91st_Officer_Vest_Gray  {\
+        class XtdGearInfo\
+        {\
+            model="CustomVests";\
+            CustomVest=##a##;\
+        };\
     };
-    class 91st_Rat_Kama: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Rat";
-        };
-    };
-    class 91st_Officer_Vest_Chopper: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Chopper";
-        };
-    };
-    class 91st_Officer_Vest_Dex: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Dex";
-        };
-    };
-    class 91st_Officer_Vest_Doc: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Doc";
-        };
-    };
-    class 91st_Officer_Vest_Corn: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Corn";
-        };
-    };
-    class 91st_Officer_Vest_Kuro: 91st_Reverse_Officer_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Kuro";
-        };
-    };
-    class 91st_Officer_Vest_Predator: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Predator";
-        };
-    };
-    class 91st_Officer_Vest_Nylon: 91st_Officer_Vest_Gray
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Nylon";
-        };
-    };
+
+    Macro_91st_off_Vest_Compat(Mav);
+    Macro_91st_off_Vest_Compat(Chopper);
+    Macro_91st_off_Vest_Compat(Doc);
+    Macro_91st_off_Vest_Compat(Corn);
+    Macro_91st_off_Vest_Compat(Kuro);
+    Macro_91st_off_Vest_Compat(Predator);
+    Macro_91st_off_Vest_Compat(Charred);
+    Macro_91st_off_Vest_Compat(Frasier);
 
     //ARC
     class 91st_Vest_ARC_Arcanist: 91st_Vest_ARC_Base
@@ -188,14 +84,6 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Scorch";
-        };
-    };
-    class 91st_Vest_ARC_Nova: 91st_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Nova";
         };
     };
     
