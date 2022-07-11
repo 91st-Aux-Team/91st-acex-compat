@@ -102,7 +102,8 @@ class XtdGearModels
                     "Binns",
                     "Frasier",
                     "Leer",
-                    "Perry"
+                    "Perry",
+                    "Sound"
                 };
             };
         };
@@ -219,6 +220,7 @@ class CfgWeapons
     Macro_91st_Visor_Custom_Compat_NVG(Frasier);
     Macro_91st_Visor_Custom_Compat_NVG(Leer);
     Macro_91st_Visor_Custom_Compat_NVG(Perry);
+    Macro_91st_Visor_Custom_Compat_NVG(Sound);
 
     //chips
     class JLTS_NVG_droid_chip_1;
