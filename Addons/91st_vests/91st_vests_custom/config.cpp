@@ -34,6 +34,8 @@ class XtdGearModels
                     "Corn",
                     "Kuro",
                     "Predator",
+                    "Frasier",
+                    "Charred",
                     //ARC
                     "Arcanist",
                     "Scorch",
@@ -64,6 +66,8 @@ class CfgWeapons
     Macro_91st_off_Vest_Compat(Corn);
     Macro_91st_off_Vest_Compat(Kuro);
     Macro_91st_off_Vest_Compat(Predator);
+    Macro_91st_off_Vest_Compat(Charred);
+    Macro_91st_off_Vest_Compat(Frasier);
 
     //ARC
     class 91st_Vest_ARC_Arcanist: 91st_Vest_ARC_Base
