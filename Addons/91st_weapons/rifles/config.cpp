@@ -264,7 +264,7 @@ class CfgWeapons
             Marksmen="Firepuncher";
         };
     };
-    class 91st_JLTS_DC15X: JLTS_DC15X
+    class 91st_DC15X: JLTS_DC15X
     {
         class XtdGearInfo
         {
