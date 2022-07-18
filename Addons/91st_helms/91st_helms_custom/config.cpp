@@ -52,6 +52,7 @@ class XtdGearModels
                     "Fraiser",
                     "Freq",
                     "Golden",
+                    "Haze",
                     "Jughead",
                     "Laser",
                     "Leer",
@@ -209,7 +210,6 @@ class CfgWeapons
 	class 91st_ARC_Helmet;
 	class JLTS_CloneHelmetBARC;
     class JLTS_CloneHelmetARC_illum;
-    class 91st_BARC_Base_Helmet;
     
     //Infantry Custom Helmets
     #define Macro_91st_Inf_Custom_Compat_Helmet(a) class 91st_##a##_Helmet : 91st_Base_Helmet {\
@@ -424,19 +424,19 @@ class CfgWeapons
 
 
     //BARC Helms
-        class 91st_BARC_Base_Helmet: JLTS_CloneHelmetBARC
+    class 91st_BARC_Base_Helmet: JLTS_CloneHelmetBARC
+    {
+        class XtdGearInfo
         {
-            class XtdGearInfo
-            {
-                model="Barchelmets";
-                Barchelms="Base";
-            };
+            model="Barchelmets";
+            Barchelms="Base";
         };
-        #define Macro_91st_BARC_Compat_Helmet(a) class 91st_##a##_BARC_Helmet : 91st_BARC_Base_Helmet {\
+    };
+    #define Macro_91st_BARC_Compat_Helmet(a) class 91st_##a##_BARC_Helmet : 91st_BARC_Base_Helmet {\
         class XtdGearInfo\
         {\
-            model="ARFHelmets";\
-            ARFhelms=##a##;\
+            model="Barchelmets";\
+            Barchelms=##a##;\
         };\
     };
 

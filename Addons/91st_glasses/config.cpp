@@ -286,7 +286,32 @@ class XtdGearModels
                     "Binns",
                     "Frasier",
                     "Leer",
-                    "Perry"
+                    "Perry",
+                    "Sound"
+                };
+                class Arcanist
+                {
+                    label="Arcanist"
+                };
+                class Binns
+                {
+                    label="Binns"
+                };
+                class Frasier
+                {
+                    label="Frasier"
+                };
+                class Leer
+                {
+                    label="Leer"
+                };
+                class Perry
+                {
+                    label="Perry"
+                };
+                class Sound
+                {
+                    label="Sound"
                 };
             };
         };
@@ -480,36 +505,11 @@ class CfgGlasses
             Visors=##a##;\
         };\
     };
-    class 91st_Visor_Binns_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Binns";
-        };
-    };
-    class 91st_Visor_Frasier_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Frasier";
-        };
-    };
-    class 91st_Visor_Leer_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Leer";
-        };
-    };
-    class 91st_Visor_Perry_Glasses: 91st_Glasses_Base
-    {
-        class XtdGearInfo
-        {
-            model="Custom_NVG_Visors_Glasses";
-            Visor="Perry";
-        };
-    };
+
+    Macro_91st_Visor_Custom_Compat_Glasses(Binns)
+    Macro_91st_Visor_Custom_Compat_Glasses(Frasier)
+    Macro_91st_Visor_Custom_Compat_Glasses(Leer)
+    Macro_91st_Visor_Custom_Compat_Glasses(Perry)
+    Macro_91st_Visor_Custom_Compat_Glasses(Sound)
+    Macro_91st_Visor_Custom_Compat_Glasses(Arcanist)
 };
