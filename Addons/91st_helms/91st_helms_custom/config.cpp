@@ -209,6 +209,7 @@ class CfgWeapons
 	class 91st_ARC_Helmet;
 	class JLTS_CloneHelmetBARC;
     class JLTS_CloneHelmetARC_illum;
+    class 91st_BARC_Base_Helmet;
     
     //Infantry Custom Helmets
     #define Macro_91st_Inf_Custom_Compat_Helmet(a) class 91st_##a##_Helmet : 91st_Base_Helmet {\
@@ -431,7 +432,7 @@ class CfgWeapons
                 Barchelms="Base";
             };
         };
-        #define Macro_91st_BARC_Compat_Helmet(a) class 91st_##a##_ARF : 91st_ARF {\
+        #define Macro_91st_BARC_Compat_Helmet(a) class 91st_##a##_BARC_Helmet : 91st_BARC_Base_Helmet {\
         class XtdGearInfo\
         {\
             model="ARFHelmets";\
