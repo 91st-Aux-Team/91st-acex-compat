@@ -243,6 +243,7 @@ class CfgWeapons
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Golden);
 
+    Macro_91st_Inf_Custom_Compat_Helmet(Haze);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Jughead);
 	
