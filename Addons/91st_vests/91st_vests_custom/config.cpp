@@ -30,7 +30,6 @@ class XtdGearModels
                 {
                     "Mav",
                     "Doc",
-                    "Chopper",
                     "Corn",
                     "Kuro",
                     "Predator",
@@ -61,7 +60,6 @@ class CfgWeapons
     };
 
     Macro_91st_off_Vest_Compat(Mav);
-    Macro_91st_off_Vest_Compat(Chopper);
     Macro_91st_off_Vest_Compat(Doc);
     Macro_91st_off_Vest_Compat(Corn);
     Macro_91st_off_Vest_Compat(Kuro);

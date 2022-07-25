@@ -53,6 +53,7 @@ class XtdGearModels
                     "Freq",
                     "Golden",
                     "Haze",
+                    "Hallowed",
                     "Jughead",
                     "Laser",
                     "Leer",
@@ -63,6 +64,7 @@ class XtdGearModels
                     "Mauser",
                     "Mav",
                     "Misery",
+                    "Odin",
                     "Oni",
                     "Opossum",
                     "Perry",
@@ -73,12 +75,10 @@ class XtdGearModels
                     "Saga",
                     "Sappheron",
                     "Scorch",
-                    "Shields",
                     "Silver",
                     "Skit",
                     "Sound",
                     "Steak",
-                    "Strike",
                     "Sytha",
                     "Tarz",
                     "Tig",
@@ -127,7 +127,6 @@ class XtdGearModels
                 {
                     "Crew",
                     "Kuro",
-                    "Toxic",
                     "Sentinel",
                     "Samael",
                     "Crit"
@@ -173,8 +172,6 @@ class XtdGearModels
                     "Edge",
                     "Kappa",
                     "Shoto",
-                    "Sponks",
-                    "Postal"
                 };
             };
         };
@@ -245,6 +242,7 @@ class CfgWeapons
 	Macro_91st_Inf_Custom_Compat_Helmet(Golden);
 
     Macro_91st_Inf_Custom_Compat_Helmet(Haze);
+    Macro_91st_Inf_Custom_Compat_Helmet(Hallowed);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Jughead);
 	
@@ -259,6 +257,7 @@ class CfgWeapons
 	Macro_91st_Inf_Custom_Compat_Helmet(Mav);
     Macro_91st_Inf_Custom_Compat_Helmet(Misery);
 
+    Macro_91st_Inf_Custom_Compat_Helmet(Odin);
 	Macro_91st_Inf_Custom_Compat_Helmet(Opossum);
 	Macro_91st_Inf_Custom_Compat_Helmet(Oni);
 
@@ -273,12 +272,10 @@ class CfgWeapons
 	Macro_91st_Inf_Custom_Compat_Helmet(Saga);
 	Macro_91st_Inf_Custom_Compat_Helmet(Sappheron);
 	Macro_91st_Inf_Custom_Compat_Helmet(Scorch);
-	Macro_91st_Inf_Custom_Compat_Helmet(Shields);
 	Macro_91st_Inf_Custom_Compat_Helmet(Silver);
 	Macro_91st_Inf_Custom_Compat_Helmet(Skit);
 	Macro_91st_Inf_Custom_Compat_Helmet(Sound);
 	Macro_91st_Inf_Custom_Compat_Helmet(Steak);
-	Macro_91st_Inf_Custom_Compat_Helmet(Strike);
 	Macro_91st_Inf_Custom_Compat_Helmet(Sytha);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Tarz);
@@ -362,7 +359,6 @@ class CfgWeapons
     Macro_91st_Beskar_Custom_Compat_Helmet(Kuro);
 	Macro_91st_Beskar_Custom_Compat_Helmet(Samael);
 	Macro_91st_Beskar_Custom_Compat_Helmet(Sentinel);
-	Macro_91st_Beskar_Custom_Compat_Helmet(Toxic);
 	Macro_91st_Beskar_Custom_Compat_Helmet(Crit);
 
 
@@ -418,9 +414,7 @@ class CfgWeapons
 
     Macro_91st_ARF_Compat_Helmet(Edge);
 	Macro_91st_ARF_Compat_Helmet(Shoto);
-	Macro_91st_ARF_Compat_Helmet(Sponks);
 	Macro_91st_ARF_Compat_Helmet(Kappa);
-	Macro_91st_ARF_Compat_Helmet(Postal);
 
 
     //BARC Helms
