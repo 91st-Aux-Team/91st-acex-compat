@@ -84,6 +84,7 @@ class XtdGearModels
                     "Tig",
                     "Volx",
                     "Wagner",
+                    "Wedge",
                     "Widget",
                     "Xenophon",
                     "Xero",
@@ -285,6 +286,7 @@ class CfgWeapons
 	Macro_91st_Inf_Custom_Compat_Helmet(Volx);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Wagner);
+	Macro_91st_Inf_Custom_Compat_Helmet(Wedge);
 	Macro_91st_Inf_Custom_Compat_Helmet(Widget);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Xenophon);
