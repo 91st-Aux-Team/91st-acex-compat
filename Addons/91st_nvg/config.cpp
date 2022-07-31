@@ -103,7 +103,8 @@ class XtdGearModels
                     "Frasier",
                     "Leer",
                     "Perry",
-                    "Sound"
+                    "Sound",
+                    "Jericho"
                 };
             };
         };
@@ -221,6 +222,7 @@ class CfgWeapons
     Macro_91st_Visor_Custom_Compat_NVG(Leer);
     Macro_91st_Visor_Custom_Compat_NVG(Perry);
     Macro_91st_Visor_Custom_Compat_NVG(Sound);
+    Macro_91st_Visor_Custom_Compat_NVG(Jericho);
 
     //chips
     class JLTS_NVG_droid_chip_1;

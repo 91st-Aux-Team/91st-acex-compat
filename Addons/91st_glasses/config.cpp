@@ -287,7 +287,8 @@ class XtdGearModels
                     "Frasier",
                     "Leer",
                     "Perry",
-                    "Sound"
+                    "Sound",
+                    "Jericho"
                 };
                 class Arcanist
                 {
@@ -312,6 +313,10 @@ class XtdGearModels
                 class Sound
                 {
                     label="Sound"
+                };
+                class Jericho
+                {
+                    label="Jericho"
                 };
             };
         };
@@ -512,4 +517,5 @@ class CfgGlasses
     Macro_91st_Visor_Custom_Compat_Glasses(Perry)
     Macro_91st_Visor_Custom_Compat_Glasses(Sound)
     Macro_91st_Visor_Custom_Compat_Glasses(Arcanist)
+    Macro_91st_Visor_Custom_Compat_Glasses(Jericho)
 };
