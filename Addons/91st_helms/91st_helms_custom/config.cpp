@@ -34,6 +34,7 @@ class XtdGearModels
                     "Barr",
                     "Bart",
                     "Banana",
+                    "Bardok",
                     "Blanks",
                     "Charred",
                     "Chop",
@@ -105,7 +106,6 @@ class XtdGearModels
                 {
                     "Frog",
                     "Hex",
-                    "Chopper",
                     "Grady",
                     "Grizzly",
                     "Delta",
@@ -130,7 +130,8 @@ class XtdGearModels
                     "Kuro",
                     "Sentinel",
                     "Samael",
-                    "Crit"
+                    "Crit",
+                    "Woost"
                 };
             };
         };
@@ -221,6 +222,7 @@ class CfgWeapons
     Macro_91st_Inf_Custom_Compat_Helmet(Barr);
 	Macro_91st_Inf_Custom_Compat_Helmet(Bart);
 	Macro_91st_Inf_Custom_Compat_Helmet(Banana);
+	Macro_91st_Inf_Custom_Compat_Helmet(Bardok);
 	Macro_91st_Inf_Custom_Compat_Helmet(Blanks);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Charred);
@@ -281,7 +283,6 @@ class CfgWeapons
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Tarz);
 	Macro_91st_Inf_Custom_Compat_Helmet(Tig);
-	// Macro_91st_Inf_Custom_Compat_Helmet(Trill);
 
 	Macro_91st_Inf_Custom_Compat_Helmet(Volx);
 
@@ -330,7 +331,6 @@ class CfgWeapons
     };
 
     Macro_91st_Pilot_Custom_Compat_Helmet(Bensen);
-	// Macro_91st_Pilot_Custom_Compat_Helmet(Chopper);
 	Macro_91st_Pilot_Custom_Compat_Helmet(Delta);
 	Macro_91st_Pilot_Custom_Compat_Helmet(Frog);
 	Macro_91st_Pilot_Custom_Compat_Helmet(Grady);
@@ -362,7 +362,7 @@ class CfgWeapons
 	Macro_91st_Beskar_Custom_Compat_Helmet(Samael);
 	Macro_91st_Beskar_Custom_Compat_Helmet(Sentinel);
 	Macro_91st_Beskar_Custom_Compat_Helmet(Crit);
-
+    Macro_91st_Beskar_Custom_Compat_Helmet(Woost);
 
     //Arc helms
     class 91st_Roach_Helmet: JLTS_CloneHelmetARC_illum

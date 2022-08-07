@@ -192,7 +192,8 @@ class XtdGearModels
                     "Scorch",
                     "ScorchARC",
                     "Saint",
-                    "Penguin"
+                    "Penguin",
+                    "Hex"
                 };
             };
         };
@@ -383,4 +384,5 @@ class CfgWeapons
 	Macro_91st_Custom_Compat_Armor(Saint);
 	Macro_91st_Custom_Compat_Armor(Scorch);
     Macro_91st_Custom_Compat_Armor(ScorchARC);
+    Macro_91st_Custom_Compat_Armor(Hex);
 };

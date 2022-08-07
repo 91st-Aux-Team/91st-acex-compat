@@ -35,6 +35,7 @@ class XtdGearModels
                     "Predator",
                     "Frasier",
                     "Charred",
+                    "Hex",
                     //ARC
                     "Arcanist",
                     "Scorch",
@@ -66,6 +67,7 @@ class CfgWeapons
     Macro_91st_off_Vest_Compat(Predator);
     Macro_91st_off_Vest_Compat(Charred);
     Macro_91st_off_Vest_Compat(Frasier);
+    Macro_91st_off_Vest_Compat(Hex);
 
     //ARC
     class 91st_Vest_ARC_Arcanist: 91st_Vest_ARC_Base
