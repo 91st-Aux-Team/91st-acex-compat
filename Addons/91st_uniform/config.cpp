@@ -201,8 +201,8 @@ class XtdGearModels
         {
             label="91st OPFOR Armor";
             author="91st C-4 Team";
-            options[]={"B1", "B2", "BX", "Droideka", "MagnaGuard", "T-Series"};
-            class Custom
+            options[]={"B1"};
+            class B1
             {
                 labels="B1";
                 values[]=
@@ -215,37 +215,12 @@ class XtdGearModels
                     "Support",
                     "Officer",
                     "Black",
-                    "Dark Green",
+                    "DarkGreen",
                     "FireFighter",
                     "Grey",
                     "Purple",
                     "Swamp",
                     "White"
-                };
-                labels="B2";
-                values[]=
-                {
-                    
-                };
-                labels="BX";
-                values[]=
-                {
-                    
-                };
-                labels="Droideka";
-                values[]=
-                {
-                    
-                };
-                labels="MagnaGuard";
-                values[]=
-                {
-                    
-                };
-                labels="T-Series";
-                values[]=
-                {
-                    
                 };
             };
         };
@@ -438,5 +413,117 @@ class CfgWeapons
     Macro_91st_Custom_Compat_Armor(ScorchARC);
     Macro_91st_Custom_Compat_Armor(Hex);
     
-    class MRC_Opfor
+    class UniformItem;
+    class 91st_B1_Uniform: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="B1";
+        };
+    };
+    class 91st_B1_Uniform_AT: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="AT";
+        };
+    };
+    class 91st_B1_Uniform_AA: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="AA";
+        };
+    };
+    class 91st_B1_Uniform_Sniper: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="Sniper";
+        };
+    };
+    class 91st_B1_Uniform_Flamer: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="Flamer";
+        };
+    };
+    class 91st_B1_Uniform_Support: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="Support";
+        };
+    };
+    class 91st_B1_Uniform_Officer: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="Officer";
+        };
+    };
+    class MRC_B1_uniform_black: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="Black";
+        };
+    };
+    class MRC_B1_uniform_darkgreen: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="DarkGreen";
+        };
+    };
+    class MRC_B1_uniform_firefighter: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="FireFighter";
+        };
+    };
+    class MRC_B1_uniform_grey: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="Grey";
+        };
+    };
+    class MRC_B1_uniform_purple: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="Purple";
+        };
+    };
+    class MRC_B1_uniform_swamp: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="Swamp";
+        };
+    };
+    class MRC_B1_uniform_white: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="White";
+        };
+    };
 };
