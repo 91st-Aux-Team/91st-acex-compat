@@ -197,6 +197,58 @@ class XtdGearModels
                 };
             };
         };
+        class MRC_OPFOR
+        {
+            label="91st OPFOR Armor";
+            author="91st C-4 Team";
+            options[]={"B1", "B2", "BX", "Droideka", "MagnaGuard", "T-Series"};
+            class Custom
+            {
+                labels="B1";
+                values[]=
+                {
+                    "B1",
+                    "AT",
+                    "AA",
+                    "Sniper",
+                    "Flamer",
+                    "Support",
+                    "Officer",
+                    "Black",
+                    "Dark Green",
+                    "FireFighter",
+                    "Grey",
+                    "Purple",
+                    "Swamp",
+                    "White"
+                };
+                labels="B2";
+                values[]=
+                {
+                    
+                };
+                labels="BX";
+                values[]=
+                {
+                    
+                };
+                labels="Droideka";
+                values[]=
+                {
+                    
+                };
+                labels="MagnaGuard";
+                values[]=
+                {
+                    
+                };
+                labels="T-Series";
+                values[]=
+                {
+                    
+                };
+            };
+        };
     };
 };
 class CfgWeapons
@@ -385,4 +437,6 @@ class CfgWeapons
 	Macro_91st_Custom_Compat_Armor(Scorch);
     Macro_91st_Custom_Compat_Armor(ScorchARC);
     Macro_91st_Custom_Compat_Armor(Hex);
+    
+    class MRC_Opfor
 };

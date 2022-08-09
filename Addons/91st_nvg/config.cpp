@@ -162,7 +162,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="91stNvVisors";
-            NvVisor="CT";
+                ="CT";
             Type="Up";
         };
     };
