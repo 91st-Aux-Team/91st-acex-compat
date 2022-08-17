@@ -1,9 +1,9 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_NVG
+	class MRC_ACEAX_compat_NVG
 	{
-		addonRootClass="91st_ACEAX_compat"
-        name="91st_ACEAX_compat_NVG";
+		addonRootClass="MRC_ACEAX_compat"
+        name="MRC_ACEAX_compat_NVG";
 		units[]={};
 		weapons[]={};
 		requiredAddons[]=
@@ -17,7 +17,7 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 91st_Rangefinders
+        class MRC_Rangefinders
         {
             label="Rangefinders";
             author="91st Aux Team";
@@ -130,34 +130,34 @@ class XtdGearModels
 class CfgWeapons
 {
     class JLTS_CloneNVGRange;
-    class 91st_Visor_Base;
-    class 91st_Visor_Down_Base;
+    class MRC_Visor_Base;
+    class MRC_Visor_Down_Base;
 
     //Arc Rangfinders
-    #define Macro_91st_Copmat_Rangefinders(a,b) class 91st_Rangefinder_##a##_##b## : JLTS_CloneNVGRange {\
+    #define Macro_MRC_Copmat_Rangefinders(a,b) class MRC_Rangefinder_##a##_##b## : JLTS_CloneNVGRange {\
         class XtdGearInfo\
         {\
-            model="91st_Rangefinders";\
+            model="MRC_Rangefinders";\
             RFType=##a##;\
             RFThermal=##b##;\
         };\
     };
 
-    Macro_91st_Copmat_Rangefinders(Red,BW);
-    Macro_91st_Copmat_Rangefinders(Red,BG);
-    Macro_91st_Copmat_Rangefinders(Red,BO);
-    Macro_91st_Copmat_Rangefinders(Grey,BW);
-    Macro_91st_Copmat_Rangefinders(Grey,BG);
-    Macro_91st_Copmat_Rangefinders(Grey,BO);
-    Macro_91st_Copmat_Rangefinders(Black,BW);
-    Macro_91st_Copmat_Rangefinders(Black,BG);
-    Macro_91st_Copmat_Rangefinders(Black,BO);
-    Macro_91st_Copmat_Rangefinders(ARF,BW);
-    Macro_91st_Copmat_Rangefinders(ARF,BG);
-    Macro_91st_Copmat_Rangefinders(ARF,BO);
+    Macro_MRC_Copmat_Rangefinders(Red,BW);
+    Macro_MRC_Copmat_Rangefinders(Red,BG);
+    Macro_MRC_Copmat_Rangefinders(Red,BO);
+    Macro_MRC_Copmat_Rangefinders(Grey,BW);
+    Macro_MRC_Copmat_Rangefinders(Grey,BG);
+    Macro_MRC_Copmat_Rangefinders(Grey,BO);
+    Macro_MRC_Copmat_Rangefinders(Black,BW);
+    Macro_MRC_Copmat_Rangefinders(Black,BG);
+    Macro_MRC_Copmat_Rangefinders(Black,BO);
+    Macro_MRC_Copmat_Rangefinders(ARF,BW);
+    Macro_MRC_Copmat_Rangefinders(ARF,BG);
+    Macro_MRC_Copmat_Rangefinders(ARF,BO);
 
     //Visors
-    class 91st_Visor : 91st_Visor_Base
+    class MRC_Visor : MRC_Visor_Base
     {
         class XtdGearInfo
         {
@@ -167,7 +167,7 @@ class CfgWeapons
         };
     };
 
-    #define Macro_91st_Copmat_Visors(a) class 91st_Visor_##a## : 91st_Visor_Base {\
+    #define Macro_MRC_Copmat_Visors(a) class MRC_Visor_##a## : MRC_Visor_Base {\
         class XtdGearInfo\
         {\
             model="91stNvVisors";\
@@ -176,13 +176,13 @@ class CfgWeapons
         };\
     };
 
-	Macro_91st_Copmat_Visors(SCT);
-	Macro_91st_Copmat_Visors(VCT);
-	Macro_91st_Copmat_Visors(CSP);
-	Macro_91st_Copmat_Visors(WO4);
-	Macro_91st_Copmat_Visors(CSS);
+	Macro_MRC_Copmat_Visors(SCT);
+	Macro_MRC_Copmat_Visors(VCT);
+	Macro_MRC_Copmat_Visors(CSP);
+	Macro_MRC_Copmat_Visors(WO4);
+	Macro_MRC_Copmat_Visors(CSS);
 
-    class 91st_Visor_Down: 91st_Visor_Down_Base
+    class MRC_Visor_Down: MRC_Visor_Down_Base
     {
         class XtdGearInfo
         {
@@ -192,7 +192,7 @@ class CfgWeapons
         };
     };
 
-    #define Macro_91st_Copmat_Visors_Down(a) class 91st_Visor_##a##_Down: 91st_Visor_Down_Base {\
+    #define Macro_MRC_Copmat_Visors_Down(a) class MRC_Visor_##a##_Down: MRC_Visor_Down_Base {\
         class XtdGearInfo\
         {\
             model="91stNvVisors";\
@@ -201,14 +201,14 @@ class CfgWeapons
         };\
     };
 
-	Macro_91st_Copmat_Visors_Down(SCT);
-	Macro_91st_Copmat_Visors_Down(VCT);
-	Macro_91st_Copmat_Visors_Down(CSP);
-	Macro_91st_Copmat_Visors_Down(WO4);
-	Macro_91st_Copmat_Visors_Down(CSS);
+	Macro_MRC_Copmat_Visors_Down(SCT);
+	Macro_MRC_Copmat_Visors_Down(VCT);
+	Macro_MRC_Copmat_Visors_Down(CSP);
+	Macro_MRC_Copmat_Visors_Down(WO4);
+	Macro_MRC_Copmat_Visors_Down(CSS);
 
     //custom
-    #define Macro_91st_Visor_Custom_Compat_NVG(a) class 91st_Visor_##a## : 91st_Visor_Base  {\
+    #define Macro_MRC_Visor_Custom_Compat_NVG(a) class MRC_Visor_##a## : MRC_Visor_Base  {\
         class XtdGearInfo\
         {\
             model="91stNvVisorsCustom";\
@@ -216,17 +216,17 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Visor_Custom_Compat_NVG(Arcanist);
-    Macro_91st_Visor_Custom_Compat_NVG(Binns);
-    Macro_91st_Visor_Custom_Compat_NVG(Frasier);
-    Macro_91st_Visor_Custom_Compat_NVG(Leer);
-    Macro_91st_Visor_Custom_Compat_NVG(Perry);
-    Macro_91st_Visor_Custom_Compat_NVG(Sound);
-    Macro_91st_Visor_Custom_Compat_NVG(Jericho);
+    Macro_MRC_Visor_Custom_Compat_NVG(Arcanist);
+    Macro_MRC_Visor_Custom_Compat_NVG(Binns);
+    Macro_MRC_Visor_Custom_Compat_NVG(Frasier);
+    Macro_MRC_Visor_Custom_Compat_NVG(Leer);
+    Macro_MRC_Visor_Custom_Compat_NVG(Perry);
+    Macro_MRC_Visor_Custom_Compat_NVG(Sound);
+    Macro_MRC_Visor_Custom_Compat_NVG(Jericho);
 
     //chips
     class JLTS_NVG_droid_chip_1;
-    class 91st_NVG_Chip : JLTS_NVG_droid_chip_1 
+    class MRC_NVG_Chip : JLTS_NVG_droid_chip_1 
     {
         class XtdGearInfo
         {
@@ -234,7 +234,7 @@ class CfgWeapons
             NVGChips="NVG";
         };
     };
-    #define Macro_91st_Chips_Compat_NVG(a) class 91st_##a##_NVG_Chip : JLTS_NVG_droid_chip_1  {\
+    #define Macro_MRC_Chips_Compat_NVG(a) class MRC_##a##_NVG_Chip : JLTS_NVG_droid_chip_1  {\
         class XtdGearInfo\
         {\
             model="NF_Chips";\
@@ -242,8 +242,8 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Chips_Compat_NVG(White);
-    Macro_91st_Chips_Compat_NVG(Green);
-    Macro_91st_Chips_Compat_NVG(Orange);
+    Macro_MRC_Chips_Compat_NVG(White);
+    Macro_MRC_Chips_Compat_NVG(Green);
+    Macro_MRC_Chips_Compat_NVG(Orange);
 
 };

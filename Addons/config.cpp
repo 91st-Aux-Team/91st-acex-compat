@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat
+	class MRC_ACEAX_compat
 	{
-		name="91st_ACEAX_compat";
+		name="MRC_ACEAX_compat";
 		units[]={};
 		weapons[]={};
 		requiredAddons[]=

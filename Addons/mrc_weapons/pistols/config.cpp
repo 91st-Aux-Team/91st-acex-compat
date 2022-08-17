@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_helms
+	class MRC_ACEAX_compat_helms
 	{
-		addonRootClass="91st_ACEAX_compat"
+		addonRootClass="MRC_ACEAX_compat"
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -48,19 +48,19 @@ class XtdGearModels
 				label = "Onyx DC-17A's";
 				values[] = {"Single","Dual"};
 				changeingame = 1;
-				icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\logo_ca.paa";
+				icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\logo_ca.paa";
                 class Single
 				{
 					label = "Single";
 					description = "Holster Left";
-					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
+					icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
 					actionlabel = "Single";
 				};
 				class Dual
 				{
 					label = "Pair";
 					description = "Pull Left";
-					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\OnyxDC17As_ui_ca.paa";
+					icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\OnyxDC17As_ui_ca.paa";
 					actionlabel = "Dual";
 				};
         	};
@@ -75,19 +75,19 @@ class XtdGearModels
 				label = "Jade DC-17A";
 				values[] = {"Standard","Modified"};
 				changeingame = 1;
-				icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\logo_ca.paa";
+				icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\logo_ca.paa";
 				class Standard
 				{
 					label = "Standard";
 					description = "Standard ARC Pistol";
-					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
+					icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
 					actionlabel = "Remove Amplifier";
 				};
 				class Modified
 				{
 					label = "Modified";
 					description = "Blast Amplified ARC Pistol";
-					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
+					icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
 					actionlabel = "Attach Amplifier";
 				};
 			};
@@ -96,19 +96,19 @@ class XtdGearModels
 				label = "Jade DC-17As";
 				values[] = {"Single","Dual"};
 				changeingame = 1;
-				icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\logo_ca.paa";
+				icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\logo_ca.paa";
 				class Single
 				{
 					label = "Single";
 					description = "Holster Left";
-					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
+					icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\OnyxDC17A_ui_ca.paa";
 					actionlabel = "Single";
 				};
 				class Dual
 				{
 					label = "Pair";
 					description = "Pull Left";
-					icon = "\91st-acex-compat\Addons\91st_weapons\pistols\ui\OnyxDC17As_ui_ca.paa";
+					icon = "\91st-acex-compat\Addons\MRC_weapons\pistols\ui\OnyxDC17As_ui_ca.paa";
 					actionlabel = "Dual";
 				};
 			};
@@ -126,7 +126,7 @@ class CfgWeapons
     class 327th_buddy1911;
     
     //Pistols
-    class 91st_DC17: hgun_P07_F
+    class MRC_DC17: hgun_P07_F
     {
         class XtdGearInfo
         {
@@ -134,7 +134,7 @@ class CfgWeapons
             Pistols="DC17";
         };
     };
-   class 91st_DC17A: 91st_DC17
+   class MRC_DC17A: MRC_DC17
     {
         class XtdGearInfo
         {
@@ -142,7 +142,7 @@ class CfgWeapons
             Pistols="DC17A";
         };
     };
-    class 91st_DC17_Dual: sPistol_Base_F
+    class MRC_DC17_Dual: sPistol_Base_F
     {
         class XtdGearInfo
         {
@@ -150,7 +150,7 @@ class CfgWeapons
             Pistols="DC17Dual";
         };
     };
-    class 91st_DC15Razor: Pistol_Base_F
+    class MRC_DC15Razor: Pistol_Base_F
     {
         class XtdGearInfo
         {
@@ -158,7 +158,7 @@ class CfgWeapons
             Pistols="DC15Razor";
         };
     };
-    class 91st_1911SW: 327th_buddy1911
+    class MRC_1911SW: 327th_buddy1911
     {
         class XtdGearInfo
         {

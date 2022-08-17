@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_helms
+	class MRC_ACEAX_compat_helms
 	{
-		addonRootClass="91st_ACEAX_compat"
+		addonRootClass="MRC_ACEAX_compat"
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -145,9 +145,9 @@ class XtdGearModels
 };
 class CfgWeapons
 {
-    class 91st_Pilot_Infantry_Helmet;
-    class 91st_Beskar_Infantry_Helmet;
-    class 91st_Pilot_Helmet;
+    class MRC_Pilot_Infantry_Helmet;
+    class MRC_Beskar_Infantry_Helmet;
+    class MRC_Pilot_Helmet;
 	class Uniform_Base;
 	class H_HelmetSpecB;
 	class JLTS_CloneHelmetP2;
@@ -155,10 +155,10 @@ class CfgWeapons
 	class JLTS_CloneHelmetARC;
 	class JLTS_CloneHelmetBARC;
     class JLTS_CloneHelmetARC_illum;
-    class 91st_Base_Helmet;
+    class MRC_Base_Helmet;
     //Inf Ranks
 
-    #define Macro_91st_Inf_Rank_Compat_Helmet(a) class 91st_##a##_Helmet : 91st_Base_Helmet {\
+    #define Macro_MRC_Inf_Rank_Compat_Helmet(a) class MRC_##a##_Helmet : MRC_Base_Helmet {\
         class XtdGearInfo\
         {\
             model="Infrnakhelms";\
@@ -166,29 +166,29 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Inf_Rank_Compat_Helmet(CR);
-	Macro_91st_Inf_Rank_Compat_Helmet(CRC);
-	Macro_91st_Inf_Rank_Compat_Helmet(CT);
-	Macro_91st_Inf_Rank_Compat_Helmet(SCT);
-	Macro_91st_Inf_Rank_Compat_Helmet(VCT);
-	Macro_91st_Inf_Rank_Compat_Helmet(CSP);
+    Macro_MRC_Inf_Rank_Compat_Helmet(CR);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CRC);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CT);
+	Macro_MRC_Inf_Rank_Compat_Helmet(SCT);
+	Macro_MRC_Inf_Rank_Compat_Helmet(VCT);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CSP);
 
-	Macro_91st_Inf_Rank_Compat_Helmet(WO1);
-	Macro_91st_Inf_Rank_Compat_Helmet(WO2);
-	Macro_91st_Inf_Rank_Compat_Helmet(WO3);
-	Macro_91st_Inf_Rank_Compat_Helmet(WO4);
-	Macro_91st_Inf_Rank_Compat_Helmet(WO5);
+	Macro_MRC_Inf_Rank_Compat_Helmet(WO1);
+	Macro_MRC_Inf_Rank_Compat_Helmet(WO2);
+	Macro_MRC_Inf_Rank_Compat_Helmet(WO3);
+	Macro_MRC_Inf_Rank_Compat_Helmet(WO4);
+	Macro_MRC_Inf_Rank_Compat_Helmet(WO5);
 
-	Macro_91st_Inf_Rank_Compat_Helmet(CLC);
-	Macro_91st_Inf_Rank_Compat_Helmet(CP);
-	Macro_91st_Inf_Rank_Compat_Helmet(CS);
-	Macro_91st_Inf_Rank_Compat_Helmet(CSS);
-	Macro_91st_Inf_Rank_Compat_Helmet(CFS);
-	Macro_91st_Inf_Rank_Compat_Helmet(CSM);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CLC);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CP);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CS);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CSS);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CFS);
+	Macro_MRC_Inf_Rank_Compat_Helmet(CSM);
     
 
     //Pilot Ranks
-    #define Macro_91st_Pilot_Inf_Rank_Compat_Helmet(a) class 91st_##a##_Helmet : 91st_Pilot_Infantry_Helmet  {\
+    #define Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(a) class MRC_##a##_Helmet : MRC_Pilot_Infantry_Helmet  {\
         class XtdGearInfo\
         {\
             model="Pilotrankshelmets";\
@@ -196,22 +196,22 @@ class CfgWeapons
             Pilotranks=##a##;\
         };\
     };
-    Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CXC);
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CX);
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CXX);
+    Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CXC);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CX);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CXX);
 
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CX1);
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CX2);
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CX3);
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CX4);
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CX5);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CX1);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CX2);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CX3);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CX4);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CX5);
 
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CXP);
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CXS);
-	Macro_91st_Pilot_Inf_Rank_Compat_Helmet(CXSS);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CXP);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CXS);
+	Macro_MRC_Pilot_Inf_Rank_Compat_Helmet(CXSS);
 
 
-    class 91st_Crew_Pilot_Helmet : 91st_Pilot_Infantry_Helmet
+    class MRC_Crew_Pilot_Helmet : MRC_Pilot_Infantry_Helmet
     {
         class XtdGearInfo
         {
@@ -220,7 +220,7 @@ class CfgWeapons
             Pilotranks="Crew";
         };
     };
-    #define Macro_91st_Pilot_Rank_Compat_Helmet(a) class 91st_##a##_Pilot_Helmet : 91st_Pilot_Helmet     {\
+    #define Macro_MRC_Pilot_Rank_Compat_Helmet(a) class MRC_##a##_Pilot_Helmet : MRC_Pilot_Helmet     {\
         class XtdGearInfo\
         {\
             model="Pilotrankshelmets";\
@@ -229,14 +229,14 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Pilot_Rank_Compat_Helmet(CXC);
-	Macro_91st_Pilot_Rank_Compat_Helmet(CX);
-	Macro_91st_Pilot_Rank_Compat_Helmet(CXX);
-	Macro_91st_Pilot_Rank_Compat_Helmet(CXW);
-	Macro_91st_Pilot_Rank_Compat_Helmet(CXP);
-	Macro_91st_Pilot_Rank_Compat_Helmet(CXS);
+    Macro_MRC_Pilot_Rank_Compat_Helmet(CXC);
+	Macro_MRC_Pilot_Rank_Compat_Helmet(CX);
+	Macro_MRC_Pilot_Rank_Compat_Helmet(CXX);
+	Macro_MRC_Pilot_Rank_Compat_Helmet(CXW);
+	Macro_MRC_Pilot_Rank_Compat_Helmet(CXP);
+	Macro_MRC_Pilot_Rank_Compat_Helmet(CXS);
 
-    /*class 91st_CXS_Pilot_Helmet: 91st_Pilot_Helmet
+    /*class MRC_CXS_Pilot_Helmet: MRC_Pilot_Helmet
     {
         class XtdGearInfo
         {
@@ -247,7 +247,7 @@ class CfgWeapons
     };
 
    //Pilot Infantry
-    class 91st_Crew_Pilot_Helmet: 91st_Pilot_Infantry_Helmet
+    class MRC_Crew_Pilot_Helmet: MRC_Pilot_Infantry_Helmet
     {
         class XtdGearInfo
         {
@@ -257,7 +257,7 @@ class CfgWeapons
         };
     };
     //Beskar
-    class 91st_Beskar_CT_Helmet: 91st_Beskar_Infantry_Helmet
+    class MRC_Beskar_CT_Helmet: MRC_Beskar_Infantry_Helmet
     {
         class XtdGearInfo
         {
@@ -266,7 +266,7 @@ class CfgWeapons
         };
     };*/
 
-    #define Macro_91st_Beskar_Inf_Rank_Compat_Helmet(a) class 91st_Beskar_##a##_Helmet : 91st_Beskar_Infantry_Helmet     {\
+    #define Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(a) class MRC_Beskar_##a##_Helmet : MRC_Beskar_Infantry_Helmet     {\
         class XtdGearInfo\
         {\
             model="Beskarhelmets";\
@@ -274,26 +274,26 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Beskar_Inf_Rank_Compat_Helmet(CT);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(SCT);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(VCT);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(CSP);
+    Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(CT);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(SCT);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(VCT);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(CSP);
 
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(WO1);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(WO2);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(WO3);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(WO4);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(WO1);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(WO2);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(WO3);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(WO4);
 
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(CLC);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(CP);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(CS);
-	Macro_91st_Beskar_Inf_Rank_Compat_Helmet(CSS);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(CLC);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(CP);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(CS);
+	Macro_MRC_Beskar_Inf_Rank_Compat_Helmet(CSS);
 
 
 
 
     // Campaign
-    class 91st_Campaign_Helmet: JLTS_CloneHelmetP2
+    class MRC_Campaign_Helmet: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
         {
@@ -301,7 +301,7 @@ class CfgWeapons
             Campaignhelms="CampaignStandard";
         };
     };
-    class 91st_Campaign_Medic_Helmet: JLTS_CloneHelmetP2
+    class MRC_Campaign_Medic_Helmet: JLTS_CloneHelmetP2
     {
         class XtdGearInfo
         {
@@ -309,7 +309,7 @@ class CfgWeapons
             Campaignhelms="CampaignMedic";
         };
     };
-    class 91st_Campaign_BARC_Helmet: JLTS_CloneHelmetBARC
+    class MRC_Campaign_BARC_Helmet: JLTS_CloneHelmetBARC
     {
         class XtdGearInfo
         {
@@ -317,7 +317,7 @@ class CfgWeapons
             Campaignhelms="CampaignBARC";
         };
     };
-    class 91st_Campaign_BARC_Medic_Helmet: JLTS_CloneHelmetBARC
+    class MRC_Campaign_BARC_Medic_Helmet: JLTS_CloneHelmetBARC
     {
         class XtdGearInfo
         {

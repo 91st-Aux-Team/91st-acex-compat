@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_helmcustom
+	class MRC_ACEAX_compat_helmcustom
 	{
-		addonRootClass="91st_ACEAX_compat"
+		addonRootClass="MRC_ACEAX_compat"
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -200,18 +200,18 @@ class XtdGearModels
 class CfgWeapons
 {
 	class 212th_AB_Helmet;
-	class 91st_Pilot_Helmet;
+	class MRC_Pilot_Helmet;
     class 3as_ATRT_helmet;
-    class 91st_Base_Helmet;
+    class MRC_Base_Helmet;
 	class Uniform_Base;
 	class H_HelmetSpecB;
 	class JLTS_CloneHelmetP2_illum;
-	class 91st_ARC_Helmet;
+	class MRC_ARC_Helmet;
 	class JLTS_CloneHelmetBARC;
     class JLTS_CloneHelmetARC_illum;
     
     //Infantry Custom Helmets
-    #define Macro_91st_Inf_Custom_Compat_Helmet(a) class 91st_##a##_Helmet : 91st_Base_Helmet {\
+    #define Macro_MRC_Inf_Custom_Compat_Helmet(a) class MRC_##a##_Helmet : MRC_Base_Helmet {\
         class XtdGearInfo\
         {\
             model="InfantryCustomHelms";\
@@ -219,83 +219,83 @@ class CfgWeapons
         };\
     };
     
-    Macro_91st_Inf_Custom_Compat_Helmet(Barr);
-	Macro_91st_Inf_Custom_Compat_Helmet(Bart);
-	Macro_91st_Inf_Custom_Compat_Helmet(Banana);
-	Macro_91st_Inf_Custom_Compat_Helmet(Bardok);
-	Macro_91st_Inf_Custom_Compat_Helmet(Blanks);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Barr);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Bart);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Banana);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Bardok);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Blanks);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Charred);
-	Macro_91st_Inf_Custom_Compat_Helmet(Chop);
-	Macro_91st_Inf_Custom_Compat_Helmet(Con);
-	Macro_91st_Inf_Custom_Compat_Helmet(Cryptic);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Charred);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Chop);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Con);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Cryptic);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Dante);
-	Macro_91st_Inf_Custom_Compat_Helmet(Dark);
-	Macro_91st_Inf_Custom_Compat_Helmet(Dev);
-	Macro_91st_Inf_Custom_Compat_Helmet(Dex);
-	Macro_91st_Inf_Custom_Compat_Helmet(Dumajin);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Dante);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Dark);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Dev);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Dex);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Dumajin);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Fallon);
-	Macro_91st_Inf_Custom_Compat_Helmet(Foxtrot);
-	Macro_91st_Inf_Custom_Compat_Helmet(Fraeyr);
-	Macro_91st_Inf_Custom_Compat_Helmet(Fraiser);
-	Macro_91st_Inf_Custom_Compat_Helmet(Freq);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Fallon);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Foxtrot);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Fraeyr);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Fraiser);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Freq);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Golden);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Golden);
 
-    Macro_91st_Inf_Custom_Compat_Helmet(Haze);
-    Macro_91st_Inf_Custom_Compat_Helmet(Hallowed);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Haze);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Hallowed);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Jughead);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Jughead);
 	
-	Macro_91st_Inf_Custom_Compat_Helmet(Laser);
-	Macro_91st_Inf_Custom_Compat_Helmet(Leer);
-	Macro_91st_Inf_Custom_Compat_Helmet(Loki);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Laser);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Leer);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Loki);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Magic);
-	Macro_91st_Inf_Custom_Compat_Helmet(Main);
-	Macro_91st_Inf_Custom_Compat_Helmet(Marf);
-	Macro_91st_Inf_Custom_Compat_Helmet(Mauser);
-	Macro_91st_Inf_Custom_Compat_Helmet(Mav);
-    Macro_91st_Inf_Custom_Compat_Helmet(Misery);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Magic);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Main);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Marf);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Mauser);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Mav);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Misery);
 
-    Macro_91st_Inf_Custom_Compat_Helmet(Odin);
-	Macro_91st_Inf_Custom_Compat_Helmet(Opossum);
-	Macro_91st_Inf_Custom_Compat_Helmet(Oni);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Odin);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Opossum);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Oni);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Perry);
-	Macro_91st_Inf_Custom_Compat_Helmet(Praetorian);
-	Macro_91st_Inf_Custom_Compat_Helmet(Predator);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Perry);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Praetorian);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Predator);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Qal);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Qal);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Romeo);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Romeo);
 	
-	Macro_91st_Inf_Custom_Compat_Helmet(Saga);
-	Macro_91st_Inf_Custom_Compat_Helmet(Sappheron);
-	Macro_91st_Inf_Custom_Compat_Helmet(Scorch);
-	Macro_91st_Inf_Custom_Compat_Helmet(Silver);
-	Macro_91st_Inf_Custom_Compat_Helmet(Skit);
-	Macro_91st_Inf_Custom_Compat_Helmet(Sound);
-	Macro_91st_Inf_Custom_Compat_Helmet(Steak);
-	Macro_91st_Inf_Custom_Compat_Helmet(Sytha);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Saga);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Sappheron);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Scorch);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Silver);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Steak);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Sytha);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Tarz);
-	Macro_91st_Inf_Custom_Compat_Helmet(Tig);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Tarz);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Tig);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Volx);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Volx);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Wagner);
-	Macro_91st_Inf_Custom_Compat_Helmet(Wedge);
-	Macro_91st_Inf_Custom_Compat_Helmet(Widget);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Wagner);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Wedge);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Widget);
 
-	Macro_91st_Inf_Custom_Compat_Helmet(Xenophon);
-	Macro_91st_Inf_Custom_Compat_Helmet(Xetor);
-	Macro_91st_Inf_Custom_Compat_Helmet(Xero);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Xenophon);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Xetor);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Xero);
 
 
-    class 91st_Axer_Helmet: JLTS_CloneHelmetP2_illum
+    class MRC_Axer_Helmet: JLTS_CloneHelmetP2_illum
     {
         class XtdGearInfo
         {
@@ -303,7 +303,7 @@ class CfgWeapons
             InfantryCustoms="Axer";
         };
     };
-    class 91st_Corpse_Helmet: JLTS_CloneHelmetP2_illum
+    class MRC_Corpse_Helmet: JLTS_CloneHelmetP2_illum
     {
         class XtdGearInfo
         {
@@ -311,7 +311,7 @@ class CfgWeapons
             InfantryCustoms="Corpse";
         };
     };
-    class 91st_Cross_Helmet: JLTS_CloneHelmetP2_illum
+    class MRC_Cross_Helmet: JLTS_CloneHelmetP2_illum
     {
         class XtdGearInfo
         {
@@ -322,7 +322,7 @@ class CfgWeapons
     
     
     //Pilot customs
-    #define Macro_91st_Pilot_Custom_Compat_Helmet(a) class 91st_##a##_Helmet : 91st_Pilot_Helmet  {\
+    #define Macro_MRC_Pilot_Custom_Compat_Helmet(a) class MRC_##a##_Helmet : MRC_Pilot_Helmet  {\
         class XtdGearInfo\
         {\
             model="PilotCustomshelmets";\
@@ -330,18 +330,18 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Pilot_Custom_Compat_Helmet(Bensen);
-	Macro_91st_Pilot_Custom_Compat_Helmet(Delta);
-	Macro_91st_Pilot_Custom_Compat_Helmet(Frog);
-	Macro_91st_Pilot_Custom_Compat_Helmet(Grady);
-	Macro_91st_Pilot_Custom_Compat_Helmet(Grizzly);
-	Macro_91st_Pilot_Custom_Compat_Helmet(Hex);
-	Macro_91st_Pilot_Custom_Compat_Helmet(Oxide);
-	Macro_91st_Pilot_Custom_Compat_Helmet(Squids);
-    Macro_91st_Pilot_Custom_Compat_Helmet(Winter);
+    Macro_MRC_Pilot_Custom_Compat_Helmet(Bensen);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Delta);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Frog);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Grady);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Grizzly);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Hex);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Oxide);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Squids);
+    Macro_MRC_Pilot_Custom_Compat_Helmet(Winter);
 
     //Beskar Helms
-    class 91st_Beskar_Helmet: 3as_ATRT_helmet
+    class MRC_Beskar_Helmet: 3as_ATRT_helmet
     {
         class XtdGearInfo
         {
@@ -350,7 +350,7 @@ class CfgWeapons
         };
     };
 
-    #define Macro_91st_Beskar_Custom_Compat_Helmet(a) class 91st_Beskar_##a##_Helmet: 91st_Beskar_Helmet {\
+    #define Macro_MRC_Beskar_Custom_Compat_Helmet(a) class MRC_Beskar_##a##_Helmet: MRC_Beskar_Helmet {\
         class XtdGearInfo\
         {\
             model="BeskarCustomhelmets";\
@@ -358,14 +358,14 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_Beskar_Custom_Compat_Helmet(Kuro);
-	Macro_91st_Beskar_Custom_Compat_Helmet(Samael);
-	Macro_91st_Beskar_Custom_Compat_Helmet(Sentinel);
-	Macro_91st_Beskar_Custom_Compat_Helmet(Crit);
-    Macro_91st_Beskar_Custom_Compat_Helmet(Woost);
+    Macro_MRC_Beskar_Custom_Compat_Helmet(Kuro);
+	Macro_MRC_Beskar_Custom_Compat_Helmet(Samael);
+	Macro_MRC_Beskar_Custom_Compat_Helmet(Sentinel);
+	Macro_MRC_Beskar_Custom_Compat_Helmet(Crit);
+    Macro_MRC_Beskar_Custom_Compat_Helmet(Woost);
 
     //Arc helms
-    class 91st_Roach_Helmet: JLTS_CloneHelmetARC_illum
+    class MRC_Roach_Helmet: JLTS_CloneHelmetARC_illum
     {
         class XtdGearInfo
         {
@@ -374,7 +374,7 @@ class CfgWeapons
         };
     };
 
-    #define Macro_91st_ARC_Compat_Helmet(a) class 91st_##a##_ARC_Helmet : 91st_ARC_Helmet {\
+    #define Macro_MRC_ARC_Compat_Helmet(a) class MRC_##a##_ARC_Helmet : MRC_ARC_Helmet {\
         class XtdGearInfo\
         {\
             model="Archelmets";\
@@ -382,22 +382,22 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_ARC_Compat_Helmet(Corn);
-	Macro_91st_ARC_Compat_Helmet(Talleyrand);
-	Macro_91st_ARC_Compat_Helmet(Bacon);
-	Macro_91st_ARC_Compat_Helmet(Cabur);
-	Macro_91st_ARC_Compat_Helmet(Skittles);
-	Macro_91st_ARC_Compat_Helmet(Scorch);
-	Macro_91st_ARC_Compat_Helmet(Arcanist);
-	Macro_91st_ARC_Compat_Helmet(Loken);
-	Macro_91st_ARC_Compat_Helmet(Oddball);
-	Macro_91st_ARC_Compat_Helmet(Trauma);
-	Macro_91st_ARC_Compat_Helmet(Jericho);
+    Macro_MRC_ARC_Compat_Helmet(Corn);
+	Macro_MRC_ARC_Compat_Helmet(Talleyrand);
+	Macro_MRC_ARC_Compat_Helmet(Bacon);
+	Macro_MRC_ARC_Compat_Helmet(Cabur);
+	Macro_MRC_ARC_Compat_Helmet(Skittles);
+	Macro_MRC_ARC_Compat_Helmet(Scorch);
+	Macro_MRC_ARC_Compat_Helmet(Arcanist);
+	Macro_MRC_ARC_Compat_Helmet(Loken);
+	Macro_MRC_ARC_Compat_Helmet(Oddball);
+	Macro_MRC_ARC_Compat_Helmet(Trauma);
+	Macro_MRC_ARC_Compat_Helmet(Jericho);
 
 
     //ARF
     class 327th_ARF;
-    class 91st_ARF: 327th_ARF
+    class MRC_ARF: 327th_ARF
     {
         class XtdGearInfo
         {
@@ -406,7 +406,7 @@ class CfgWeapons
         };
     };
 
-    #define Macro_91st_ARF_Compat_Helmet(a) class 91st_##a##_ARF : 91st_ARF {\
+    #define Macro_MRC_ARF_Compat_Helmet(a) class MRC_##a##_ARF : MRC_ARF {\
         class XtdGearInfo\
         {\
             model="ARFHelmets";\
@@ -414,13 +414,13 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_ARF_Compat_Helmet(Edge);
-	Macro_91st_ARF_Compat_Helmet(Shoto);
-	Macro_91st_ARF_Compat_Helmet(Kappa);
+    Macro_MRC_ARF_Compat_Helmet(Edge);
+	Macro_MRC_ARF_Compat_Helmet(Shoto);
+	Macro_MRC_ARF_Compat_Helmet(Kappa);
 
 
     //BARC Helms
-    class 91st_BARC_Base_Helmet: JLTS_CloneHelmetBARC
+    class MRC_BARC_Base_Helmet: JLTS_CloneHelmetBARC
     {
         class XtdGearInfo
         {
@@ -428,7 +428,7 @@ class CfgWeapons
             Barchelms="Base";
         };
     };
-    #define Macro_91st_BARC_Compat_Helmet(a) class 91st_##a##_BARC_Helmet : 91st_BARC_Base_Helmet {\
+    #define Macro_MRC_BARC_Compat_Helmet(a) class MRC_##a##_BARC_Helmet : MRC_BARC_Base_Helmet {\
         class XtdGearInfo\
         {\
             model="Barchelmets";\
@@ -436,8 +436,8 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_BARC_Compat_Helmet(Medic);
-    Macro_91st_BARC_Compat_Helmet(Mav);
-    Macro_91st_BARC_Compat_Helmet(Trill);
-    Macro_91st_BARC_Compat_Helmet(Binns);
+    Macro_MRC_BARC_Compat_Helmet(Medic);
+    Macro_MRC_BARC_Compat_Helmet(Mav);
+    Macro_MRC_BARC_Compat_Helmet(Trill);
+    Macro_MRC_BARC_Compat_Helmet(Binns);
 };

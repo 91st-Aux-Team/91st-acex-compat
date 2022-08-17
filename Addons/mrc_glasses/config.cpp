@@ -1,9 +1,9 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_glasses
+	class MRC_ACEAX_compat_glasses
 	{
-		addonRootClass="91st_ACEAX_compat"
-        name="91st_ACEAX_compat_glasses";
+		addonRootClass="MRC_ACEAX_compat"
+        name="MRC_ACEAX_compat_glasses";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -19,7 +19,7 @@ class XtdGearModels
 {
     class CfgGlasses 
     {
-		class 91st_Visors_Glasses
+		class MRC_Visors_Glasses
         { 
             label="91st Visor";
             author="91st Aux Team";
@@ -63,7 +63,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91st_medic 
+        class MRC_medic 
         {
             label="91st Medical Vests";
             author="91st Aux Team";
@@ -113,7 +113,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91st_monkeys 
+        class MRC_monkeys 
         {
             label="91st Jumptrooper Vests";
             author="91st Aux Team";
@@ -325,37 +325,37 @@ class XtdGearModels
 class CfgGlasses
 {
     //This class is the EXACT same as the aux mod
-    class 91st_Glasses_Base;
-    class 91st_ARF_Camo_Base;
+    class MRC_Glasses_Base;
+    class MRC_ARF_Camo_Base;
     
-    class 91st_Visor_Glasses: 91st_Glasses_Base
+    class MRC_Visor_Glasses: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
             // model is the class name of the "lists" in CfgWeapons
-            model="91st_Visors_Glasses";
+            model="MRC_Visors_Glasses";
             // "Rank" is the class name of the value list
             // The value of "Rank" is just the label used in the list
             Visor="CT";
         };
     };
 
-    #define Macro_91st_Visors_Compat(a) class 91st_Visor_##a##_Glasses : 91st_Glasses_Base  {\
+    #define Macro_MRC_Visors_Compat(a) class MRC_Visor_##a##_Glasses : MRC_Glasses_Base  {\
         class XtdGearInfo\
         {\
-            model="91st_Visors_Glasses";\
+            model="MRC_Visors_Glasses";\
             Visor=##a##;\
         };\
     };
 
-    Macro_91st_Visors_Compat(SCT);
-    Macro_91st_Visors_Compat(VCT);
-    Macro_91st_Visors_Compat(CSP);
-    Macro_91st_Visors_Compat(WO4);
-    Macro_91st_Visors_Compat(CSS);
+    Macro_MRC_Visors_Compat(SCT);
+    Macro_MRC_Visors_Compat(VCT);
+    Macro_MRC_Visors_Compat(CSP);
+    Macro_MRC_Visors_Compat(WO4);
+    Macro_MRC_Visors_Compat(CSS);
 
     //Standards
-	class 91st_Vest: 91st_Glasses_Base
+	class MRC_Vest: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -364,7 +364,7 @@ class CfgGlasses
         };
     };
 
-    #define Macro_91st_Vests_Glasses_Compat(a) class 91st_Vest_##a## : 91st_Glasses_Base  {\
+    #define Macro_MRC_Vests_Glasses_Compat(a) class MRC_Vest_##a## : MRC_Glasses_Base  {\
         class XtdGearInfo\
         {\
             model="StandardVests";\
@@ -372,71 +372,71 @@ class CfgGlasses
         };\
     };
 
-    Macro_91st_Vests_Glasses_Compat(WO1);
-    Macro_91st_Vests_Glasses_Compat(WO3);
-    Macro_91st_Vests_Glasses_Compat(NCO);
-    Macro_91st_Vests_Glasses_Compat(TeamLead);
-    Macro_91st_Vests_Glasses_Compat(SquadLead);
+    Macro_MRC_Vests_Glasses_Compat(WO1);
+    Macro_MRC_Vests_Glasses_Compat(WO3);
+    Macro_MRC_Vests_Glasses_Compat(NCO);
+    Macro_MRC_Vests_Glasses_Compat(TeamLead);
+    Macro_MRC_Vests_Glasses_Compat(SquadLead);
 
     //Medic
     
-	class 91st_Medic_Vest: 91st_Glasses_Base
+	class MRC_Medic_Vest: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
-            model="91st_medic";// The value of "Rank" is just the label used in the list
+            model="MRC_medic";// The value of "Rank" is just the label used in the list
             Medic="Squad";
         };
     };
-    #define Macro_91st_Medic_Vests_Compat(a) class 91st_Medic_Vest_##a## : 91st_Glasses_Base  {\
+    #define Macro_MRC_Medic_Vests_Compat(a) class MRC_Medic_Vest_##a## : MRC_Glasses_Base  {\
         class XtdGearInfo\
         {\
-            model="91st_medic";\
+            model="MRC_medic";\
             Medic=##a##;\
         };\
     };
 
-    Macro_91st_Medic_Vests_Compat(Platoon);
-    Macro_91st_Medic_Vests_Compat(Company);
-    Macro_91st_Medic_Vests_Compat(Fallon);
-    Macro_91st_Medic_Vests_Compat(Trill);
+    Macro_MRC_Medic_Vests_Compat(Platoon);
+    Macro_MRC_Medic_Vests_Compat(Company);
+    Macro_MRC_Medic_Vests_Compat(Fallon);
+    Macro_MRC_Medic_Vests_Compat(Trill);
 
     //monkies
-	class 91st_archangel_vest: 91st_Glasses_Base
+	class MRC_archangel_vest: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
-            model="91st_monkeys";// The value of "Rank" is just the label used in the list
+            model="MRC_monkeys";// The value of "Rank" is just the label used in the list
             Monkey="Medic";
         };
     };
-	class 91st_Jumptrooper_Vest: 91st_Glasses_Base
+	class MRC_Jumptrooper_Vest: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
-            model="91st_monkeys";// The value of "Rank" is just the label used in the list
+            model="MRC_monkeys";// The value of "Rank" is just the label used in the list
             Monkey="Trooper";
         };
     };
-	class 91st_Jumptrooper_Vest_Veteran: 91st_Glasses_Base
+	class MRC_Jumptrooper_Vest_Veteran: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
-            model="91st_monkeys";// The value of "Rank" is just the label used in the list
+            model="MRC_monkeys";// The value of "Rank" is just the label used in the list
             Monkey="Veteran";
         };
     };
-	class 91st_Jumptrooper_Vest_Teamlead: 91st_Glasses_Base
+	class MRC_Jumptrooper_Vest_Teamlead: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
-            model="91st_monkeys";// The value of "Rank" is just the label used in the list
+            model="MRC_monkeys";// The value of "Rank" is just the label used in the list
             Monkey="Teamleader";
         };
     };
 
     //RANGEFINDER
-    class 91st_Rangefinder_Glasses: 91st_Glasses_Base
+    class MRC_Rangefinder_Glasses: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -444,7 +444,7 @@ class CfgGlasses
             Rangefinder_glass="Red";
         };
     };
-	class 91st_Rangefinder_Grey_Glasses: 91st_Glasses_Base
+	class MRC_Rangefinder_Grey_Glasses: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -452,7 +452,7 @@ class CfgGlasses
             Rangefinder_glass="Grey";
         };
     };
-	class 91st_Rangefinder_Black_Glasses: 91st_Glasses_Base
+	class MRC_Rangefinder_Black_Glasses: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -462,7 +462,7 @@ class CfgGlasses
     };
 
     // ARF Suspenders
-	class 91st_Suspenders: 91st_Glasses_Base
+	class MRC_Suspenders: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -470,7 +470,7 @@ class CfgGlasses
             ARFCamo="NoCamo";
         };
     };
-    class 91st_ARF_Camo_SemiArid: 91st_ARF_Camo_Base
+    class MRC_ARF_Camo_SemiArid: MRC_ARF_Camo_Base
     {
         class XtdGearInfo
         {
@@ -478,7 +478,7 @@ class CfgGlasses
             ARFCamo="SemiArid";
         };
     };
-    class 91st_ARF_Camo_Arid: 91st_ARF_Camo_Base
+    class MRC_ARF_Camo_Arid: MRC_ARF_Camo_Base
     {
         class XtdGearInfo
         {
@@ -486,7 +486,7 @@ class CfgGlasses
             ARFCamo="Arid";
         };
     };
-    class 91st_ARF_Camo_Lush: 91st_ARF_Camo_Base
+    class MRC_ARF_Camo_Lush: MRC_ARF_Camo_Base
     {
         class XtdGearInfo
         {
@@ -494,7 +494,7 @@ class CfgGlasses
             ARFCamo="Lush";
         };
     };
-    class 91st_Kappa_Vest_Glasses: 91st_Glasses_Base
+    class MRC_Kappa_Vest_Glasses: MRC_Glasses_Base
     {
         class XtdGearInfo
         {
@@ -503,7 +503,7 @@ class CfgGlasses
         };
     };
     //Customs
-    #define Macro_91st_Visor_Custom_Compat_Glasses(a) class 91st_Visor_##a##_Glasses : 91st_Glasses_Base  {\
+    #define Macro_MRC_Visor_Custom_Compat_Glasses(a) class MRC_Visor_##a##_Glasses : MRC_Glasses_Base  {\
         class XtdGearInfo\
         {\
             model="Custom_NVG_Visors_Glasses";\
@@ -511,11 +511,11 @@ class CfgGlasses
         };\
     };
 
-    Macro_91st_Visor_Custom_Compat_Glasses(Binns)
-    Macro_91st_Visor_Custom_Compat_Glasses(Frasier)
-    Macro_91st_Visor_Custom_Compat_Glasses(Leer)
-    Macro_91st_Visor_Custom_Compat_Glasses(Perry)
-    Macro_91st_Visor_Custom_Compat_Glasses(Sound)
-    Macro_91st_Visor_Custom_Compat_Glasses(Arcanist)
-    Macro_91st_Visor_Custom_Compat_Glasses(Jericho)
+    Macro_MRC_Visor_Custom_Compat_Glasses(Binns)
+    Macro_MRC_Visor_Custom_Compat_Glasses(Frasier)
+    Macro_MRC_Visor_Custom_Compat_Glasses(Leer)
+    Macro_MRC_Visor_Custom_Compat_Glasses(Perry)
+    Macro_MRC_Visor_Custom_Compat_Glasses(Sound)
+    Macro_MRC_Visor_Custom_Compat_Glasses(Arcanist)
+    Macro_MRC_Visor_Custom_Compat_Glasses(Jericho)
 };

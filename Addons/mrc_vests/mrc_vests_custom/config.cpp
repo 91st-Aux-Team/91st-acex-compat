@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_helmcustom
+	class MRC_ACEAX_compat_helmcustom
 	{
-		addonRootClass="91st_ACEAX_compat"
+		addonRootClass="MRC_ACEAX_compat"
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -47,12 +47,12 @@ class XtdGearModels
 class CfgWeapons
 {
     class V_RebreatherB;
-    class 91st_Officer_Vest_Gray;
-    class 91st_Reverse_Officer_Gray;
-    class 91st_Vest_ARC_Base;
+    class MRC_Officer_Vest_Gray;
+    class MRC_Reverse_Officer_Gray;
+    class MRC_Vest_ARC_Base;
     //Officer Vests
 
-    #define Macro_91st_off_Vest_Compat(a) class 91st_Officer_Vest_##a## : 91st_Officer_Vest_Gray  {\
+    #define Macro_MRC_off_Vest_Compat(a) class MRC_Officer_Vest_##a## : MRC_Officer_Vest_Gray  {\
         class XtdGearInfo\
         {\
             model="CustomVests";\
@@ -60,17 +60,17 @@ class CfgWeapons
         };\
     };
 
-    Macro_91st_off_Vest_Compat(Mav);
-    Macro_91st_off_Vest_Compat(Doc);
-    Macro_91st_off_Vest_Compat(Corn);
-    Macro_91st_off_Vest_Compat(Kuro);
-    Macro_91st_off_Vest_Compat(Predator);
-    Macro_91st_off_Vest_Compat(Charred);
-    Macro_91st_off_Vest_Compat(Frasier);
-    Macro_91st_off_Vest_Compat(Hex);
+    Macro_MRC_off_Vest_Compat(Mav);
+    Macro_MRC_off_Vest_Compat(Doc);
+    Macro_MRC_off_Vest_Compat(Corn);
+    Macro_MRC_off_Vest_Compat(Kuro);
+    Macro_MRC_off_Vest_Compat(Predator);
+    Macro_MRC_off_Vest_Compat(Charred);
+    Macro_MRC_off_Vest_Compat(Frasier);
+    Macro_MRC_off_Vest_Compat(Hex);
 
     //ARC
-    class 91st_Vest_ARC_Arcanist: 91st_Vest_ARC_Base
+    class MRC_Vest_ARC_Arcanist: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
         {
@@ -78,7 +78,7 @@ class CfgWeapons
             CustomVest="Arcanist";
         };
     };
-    class 91st_Vest_ARC_Scorch: 91st_Vest_ARC_Base
+    class MRC_Vest_ARC_Scorch: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
         {

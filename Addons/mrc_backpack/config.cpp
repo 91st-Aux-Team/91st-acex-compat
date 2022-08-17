@@ -1,9 +1,9 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_backpack
+	class MRC_ACEAX_compat_backpack
 	{
-        addonRootClass="91st_ACEAX_compat";
-        name="91st_ACEAX_compat_vests";
+        addonRootClass="MRC_ACEAX_compat";
+        name="MRC_ACEAX_compat_vests";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -155,13 +155,13 @@ class XtdGearModels
 };
 class CfgVehicles
 {
-    class 91st_Base_Backpack;
-    class 91st_Base_Straps_Backpack;
-    class 91st_LR_Base;
+    class MRC_Base_Backpack;
+    class MRC_Base_Straps_Backpack;
+    class MRC_LR_Base;
     class JLTS_Clone_jumppack_JT12;
-    class 91st_Base_MC_JP;
+    class MRC_Base_MC_JP;
 
-    #define Macro_91st_Compat_Backpack(a) class 91st_##a##_Backpack : 91st_Base_Backpack {\
+    #define Macro_MRC_Compat_Backpack(a) class MRC_##a##_Backpack : MRC_Base_Backpack {\
 		class XtdGearInfo\
         {\
             model="91stBackpacks";\
@@ -170,7 +170,7 @@ class CfgVehicles
         };\
 	};
 
-	#define Macro_91st_Compat_Straps_Backpack(a) class 91st_##a##_Straps_Backpack : 91st_Base_Straps_Backpack {\
+	#define Macro_MRC_Compat_Straps_Backpack(a) class MRC_##a##_Straps_Backpack : MRC_Base_Straps_Backpack {\
 		class XtdGearInfo\
         {\
             model="91stBackpacks";\
@@ -179,19 +179,19 @@ class CfgVehicles
         };\
 	};
 
-    Macro_91st_Compat_Backpack(GAR);
-	Macro_91st_Compat_Backpack(Kyber);
-	Macro_91st_Compat_Backpack(Nova);
-	Macro_91st_Compat_Backpack(Beskar);
-	Macro_91st_Compat_Backpack(Medic);
+    Macro_MRC_Compat_Backpack(GAR);
+	Macro_MRC_Compat_Backpack(Kyber);
+	Macro_MRC_Compat_Backpack(Nova);
+	Macro_MRC_Compat_Backpack(Beskar);
+	Macro_MRC_Compat_Backpack(Medic);
 
-	Macro_91st_Compat_Straps_Backpack(GAR);
-	Macro_91st_Compat_Straps_Backpack(Kyber);
-	Macro_91st_Compat_Straps_Backpack(Nova);
-	Macro_91st_Compat_Straps_Backpack(Beskar);
-	Macro_91st_Compat_Straps_Backpack(Medic);
+	Macro_MRC_Compat_Straps_Backpack(GAR);
+	Macro_MRC_Compat_Straps_Backpack(Kyber);
+	Macro_MRC_Compat_Straps_Backpack(Nova);
+	Macro_MRC_Compat_Straps_Backpack(Beskar);
+	Macro_MRC_Compat_Straps_Backpack(Medic);
 
-    #define Macro_91st_Compat_RTO_Backpack(a) class 91st_##a##_RTO_Backpack : 91st_Base_Backpack {\
+    #define Macro_MRC_Compat_RTO_Backpack(a) class MRC_##a##_RTO_Backpack : MRC_Base_Backpack {\
 		class XtdGearInfo\
         {\
             model="91stRTOBackpacks";\
@@ -199,7 +199,7 @@ class CfgVehicles
             Type="Standard";\
         };\
 	};
-    #define Macro_91st_Compat_RTO_Straps_Backpack(a) class 91st_##a##_RTO_Straps_Backpack : 91st_Base_Straps_Backpack {\
+    #define Macro_MRC_Compat_RTO_Straps_Backpack(a) class MRC_##a##_RTO_Straps_Backpack : MRC_Base_Straps_Backpack {\
 		class XtdGearInfo\
         {\
             model="91stRTOBackpacks";\
@@ -208,20 +208,20 @@ class CfgVehicles
         };\
 	};
 
-    Macro_91st_Compat_RTO_Backpack(GAR);
-	Macro_91st_Compat_RTO_Backpack(Kyber);
-	Macro_91st_Compat_RTO_Backpack(Nova);
-	Macro_91st_Compat_RTO_Backpack(Beskar);
-	Macro_91st_Compat_RTO_Backpack(Medic);
+    Macro_MRC_Compat_RTO_Backpack(GAR);
+	Macro_MRC_Compat_RTO_Backpack(Kyber);
+	Macro_MRC_Compat_RTO_Backpack(Nova);
+	Macro_MRC_Compat_RTO_Backpack(Beskar);
+	Macro_MRC_Compat_RTO_Backpack(Medic);
 
-	Macro_91st_Compat_RTO_Straps_Backpack(GAR);
-	Macro_91st_Compat_RTO_Straps_Backpack(Kyber);
-	Macro_91st_Compat_RTO_Straps_Backpack(Nova);
-	Macro_91st_Compat_RTO_Straps_Backpack(Beskar);
-	Macro_91st_Compat_RTO_Straps_Backpack(Medic);
+	Macro_MRC_Compat_RTO_Straps_Backpack(GAR);
+	Macro_MRC_Compat_RTO_Straps_Backpack(Kyber);
+	Macro_MRC_Compat_RTO_Straps_Backpack(Nova);
+	Macro_MRC_Compat_RTO_Straps_Backpack(Beskar);
+	Macro_MRC_Compat_RTO_Straps_Backpack(Medic);
 
     //Long Ranges
-    class 91st_mini_LR_attachment_arrow: 91st_LR_Base
+    class MRC_mini_LR_attachment_arrow: MRC_LR_Base
     {
         class XtdGearInfo
         {
@@ -229,7 +229,7 @@ class CfgVehicles
             LRs="MiniSmall";
         };
     };
-    class 91st_mini_LR_pack_arrow: 91st_LR_Base
+    class MRC_mini_LR_pack_arrow: MRC_LR_Base
     {
         class XtdGearInfo
         {
@@ -240,7 +240,7 @@ class CfgVehicles
 
     //Jumppacks
     // JT12
-    class 91st_jumpack_JT12: JLTS_Clone_jumppack_JT12
+    class MRC_jumpack_JT12: JLTS_Clone_jumppack_JT12
     {
         class XtdGearInfo
         {
@@ -248,7 +248,7 @@ class CfgVehicles
             Jumpack="Trooper";
         };
     };
-    class 91st_empty_JT12: 91st_jumpack_JT12
+    class MRC_empty_JT12: MRC_jumpack_JT12
     {
         class XtdGearInfo
         {
@@ -256,7 +256,7 @@ class CfgVehicles
             Jumpack="Empty";
         };
     };
-    class 91st_veteran_jumpack_JT12: 91st_jumpack_JT12
+    class MRC_veteran_jumpack_JT12: MRC_jumpack_JT12
     {
         class XtdGearInfo
         {
@@ -264,7 +264,7 @@ class CfgVehicles
             Jumpack="Veteran";
         };
     };
-    class 91st_TL_jumpack_JT12: 91st_jumpack_JT12
+    class MRC_TL_jumpack_JT12: MRC_jumpack_JT12
     {
         class XtdGearInfo
         {
@@ -273,7 +273,7 @@ class CfgVehicles
         };
     };
     // CDV
-    class 91st_AA_jumpack_archangel: 91st_Base_MC_JP
+    class MRC_AA_jumpack_archangel: MRC_Base_MC_JP
     {
         class XtdGearInfo
         {
@@ -281,7 +281,7 @@ class CfgVehicles
             CDV="MedicCDV";
         };
     };
-    #define Macro_91st_Compat_Jumppack_MC_Backpack(a) class 91st_jumppack_mc_##a## : 91st_Base_MC_JP {\
+    #define Macro_MRC_Compat_Jumppack_MC_Backpack(a) class MRC_jumppack_mc_##a## : MRC_Base_MC_JP {\
 		class XtdGearInfo\
         {\
             model="91stCDVJumppack";\
@@ -289,11 +289,11 @@ class CfgVehicles
         };\
 	};
 
-    Macro_91st_Compat_Jumppack_MC_Backpack(Jade);
-    Macro_91st_Compat_Jumppack_MC_Backpack(Kyber);
-    Macro_91st_Compat_Jumppack_MC_Backpack(Nova);
-    Macro_91st_Compat_Jumppack_MC_Backpack(Beskar);
-    Macro_91st_Compat_Jumppack_MC_Backpack(munka);
-    Macro_91st_Compat_Jumppack_MC_Backpack(Medic);
-    Macro_91st_Compat_Jumppack_MC_Backpack(Scorch);
+    Macro_MRC_Compat_Jumppack_MC_Backpack(Jade);
+    Macro_MRC_Compat_Jumppack_MC_Backpack(Kyber);
+    Macro_MRC_Compat_Jumppack_MC_Backpack(Nova);
+    Macro_MRC_Compat_Jumppack_MC_Backpack(Beskar);
+    Macro_MRC_Compat_Jumppack_MC_Backpack(munka);
+    Macro_MRC_Compat_Jumppack_MC_Backpack(Medic);
+    Macro_MRC_Compat_Jumppack_MC_Backpack(Scorch);
 };

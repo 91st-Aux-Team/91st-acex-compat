@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_helms
+	class MRC_ACEAX_compat_helms
 	{
-		addonRootClass="91st_ACEAX_compat"
+		addonRootClass="MRC_ACEAX_compat"
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -134,12 +134,12 @@ class XtdGearModels
 };
 class CfgWeapons
 {
-    class 91st_Rifle_Base;
-    class 91st_Rifle_Base2;
-    class 91st_DC15C_Base;
-    class 91st_LMG_Base;
+    class MRC_Rifle_Base;
+    class MRC_Rifle_Base2;
+    class MRC_DC15C_Base;
+    class MRC_LMG_Base;
     class aRifle_MX_Base_F;
-    class 91st_DC15L_base;
+    class MRC_DC15L_base;
     class Rifle_Base_F;
     class JLTS_DC15X;
     class 327th_dc15le;
@@ -153,7 +153,7 @@ class CfgWeapons
     class k_773_rifle_base;
     
     //Rifles
-    class 91st_DC15A: 91st_Rifle_Base
+    class MRC_DC15A: MRC_Rifle_Base
     {
         class XtdGearInfo
         {
@@ -161,7 +161,7 @@ class CfgWeapons
             Rifles="DC15A";
         };
     };
-    class 91st_DC15A_GL: 91st_DC15A
+    class MRC_DC15A_GL: MRC_DC15A
     {
         class XtdGearInfo
         {
@@ -169,7 +169,7 @@ class CfgWeapons
             Rifles="DC15AGL";
         };
     };
-    class 91st_DC15C: 91st_DC15C_Base
+    class MRC_DC15C: MRC_DC15C_Base
     {
         class XtdGearInfo
         {
@@ -177,7 +177,7 @@ class CfgWeapons
             Rifles="DC15C";
         };
     };
-    class 91st_DC15C_GL: 91st_DC15C
+    class MRC_DC15C_GL: MRC_DC15C
     {
         class XtdGearInfo
         {
@@ -185,7 +185,7 @@ class CfgWeapons
             Rifles="DC15CGL";
         };
     };
-    class 91st_DC15S: aRifle_MX_Base_F
+    class MRC_DC15S: aRifle_MX_Base_F
     {
         class XtdGearInfo
         {
@@ -195,7 +195,7 @@ class CfgWeapons
     };
 
     //LMG's
-    class 91st_DC15L: 91st_DC15L_base
+    class MRC_DC15L: MRC_DC15L_base
     {
         class XtdGearInfo
         {
@@ -203,7 +203,7 @@ class CfgWeapons
             LMG="DC15L";
         };
     };
-    class 91st_Valken_SAW: 91st_DC15L
+    class MRC_Valken_SAW: MRC_DC15L
     {
         class XtdGearInfo
         {
@@ -211,7 +211,7 @@ class CfgWeapons
             LMG="Valken-38L";
         };
     };
-    class 91st_Z6: 91st_LMG_Base
+    class MRC_Z6: MRC_LMG_Base
     {
         class XtdGearInfo
         {
@@ -221,7 +221,7 @@ class CfgWeapons
     };
 
     //specialist
-    class 91st_DP23: JLTS_DP23
+    class MRC_DP23: JLTS_DP23
     {
         class XtdGearInfo
         {
@@ -229,7 +229,7 @@ class CfgWeapons
             Specialist="DP-23";
         };
     };
-    class 91st_EPL2: JLTS_EPL2
+    class MRC_EPL2: JLTS_EPL2
     {
         class XtdGearInfo
         {
@@ -237,7 +237,7 @@ class CfgWeapons
             Specialist="EPL-2";
         };
     };
-    class 91st_Flamer: 3AS_Flamer_Base
+    class MRC_Flamer: 3AS_Flamer_Base
     {
         class XtdGearInfo
         {
@@ -245,7 +245,7 @@ class CfgWeapons
             Specialist="Flamer";
         };
     };
-    class 91st_musket: 91st_DC15C
+    class MRC_musket: MRC_DC15C
     {
         class XtdGearInfo
         {
@@ -256,7 +256,7 @@ class CfgWeapons
 
 
     //marksmen
-    class 91st_firepuncher_rifle: 327th_firepuncher_rifle
+    class MRC_firepuncher_rifle: 327th_firepuncher_rifle
     {
         class XtdGearInfo
         {
@@ -264,7 +264,7 @@ class CfgWeapons
             Marksmen="Firepuncher";
         };
     };
-    class 91st_DC15X: JLTS_DC15X
+    class MRC_DC15X: JLTS_DC15X
     {
         class XtdGearInfo
         {
@@ -272,7 +272,7 @@ class CfgWeapons
             Marksmen="DC15X";
         };
     };
-    class 91st_DC15ALE: 91st_DC15A
+    class MRC_DC15ALE: MRC_DC15A
     {
         class XtdGearInfo
         {
@@ -288,7 +288,7 @@ class CfgWeapons
             Marksmen="773EBR";
         };
     };
-    class 91st_DW32S: JLTS_DW32S
+    class MRC_DW32S: JLTS_DW32S
     {
         class XtdGearInfo
         {
@@ -298,10 +298,10 @@ class CfgWeapons
     };
 
     //Westars
-    class 91st_WestarM5_Base_F;
-    class 91st_westar_c_pre;
+    class MRC_WestarM5_Base_F;
+    class MRC_westar_c_pre;
     class LFP_rifle_base;
-    class 91st_westar_gl:91st_WestarM5_Base_F
+    class MRC_westar_gl:MRC_WestarM5_Base_F
     {
         class XtdGearInfo
         {
@@ -309,7 +309,7 @@ class CfgWeapons
             Variant="M5GL";
         };
     };
-    class 91st_westar35c: 91st_westar_c_pre
+    class MRC_westar35c: MRC_westar_c_pre
     {
         class XtdGearInfo
         {
@@ -317,7 +317,7 @@ class CfgWeapons
             Variant="35C";
         };
     };
-    class 91st_Westar35S: 91st_westar_c_pre
+    class MRC_Westar35S: MRC_westar_c_pre
     {
         class XtdGearInfo
         {
@@ -325,7 +325,7 @@ class CfgWeapons
             Variant="35S";
         };
     };
-    class 91st_WestarSPR: LFP_rifle_base
+    class MRC_WestarSPR: LFP_rifle_base
     {
         class XtdGearInfo
         {

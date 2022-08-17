@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class 91st_ACEAX_compat_vests
+	class MRC_ACEAX_compat_vests
 	{
-		name="91st_ACEAX_compat_vests";
+		name="MRC_ACEAX_compat_vests";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -231,9 +231,9 @@ class XtdGearModels
 class CfgWeapons
 {
     class V_RebreatherB;
-    class 91st_Vest_ARC_Base;
+    class MRC_Vest_ARC_Base;
     //Officer Vests
-    class 91st_Officer_Vest_Gray: V_RebreatherB
+    class MRC_Officer_Vest_Gray: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -241,7 +241,7 @@ class CfgWeapons
             Officervest="Grey";
         };
     };
-    class 91st_Reverse_Officer_Gray: V_RebreatherB
+    class MRC_Reverse_Officer_Gray: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -249,7 +249,7 @@ class CfgWeapons
             Officervest="ReversedGrey";
         };
     };
-    class 91st_Officer_Vest_RedGray: 91st_Officer_Vest_gray
+    class MRC_Officer_Vest_RedGray: MRC_Officer_Vest_gray
     {
         class XtdGearInfo
         {
@@ -257,7 +257,7 @@ class CfgWeapons
             Officervest="Red_Grey";
         };
     };
-    class 91st_Officer_Vest_Red: 91st_Officer_Vest_gray
+    class MRC_Officer_Vest_Red: MRC_Officer_Vest_gray
     {
         class XtdGearInfo
         {
@@ -265,7 +265,7 @@ class CfgWeapons
             Officervest="Red";
         };
     };
-    class 91st_Reverse_Officer_RedGray: 91st_Reverse_Officer_Gray
+    class MRC_Reverse_Officer_RedGray: MRC_Reverse_Officer_Gray
     {
         class XtdGearInfo
         {
@@ -273,7 +273,7 @@ class CfgWeapons
             Officervest="Rev_Red_Grey";
         };
     };
-    class 91st_Reverse_Officer_Red: 91st_Reverse_Officer_Gray
+    class MRC_Reverse_Officer_Red: MRC_Reverse_Officer_Gray
     {
         class XtdGearInfo
         {
@@ -281,7 +281,7 @@ class CfgWeapons
             Officervest="ReversedRed";
         };
     };
-    class 91st_Commander_Vest: V_RebreatherB
+    class MRC_Commander_Vest: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -289,7 +289,7 @@ class CfgWeapons
             Officervest="Commander";
         };
     };
-    class 91st_Commander_CSM: 91st_Commander_Vest 
+    class MRC_Commander_CSM: MRC_Commander_Vest 
     {
        class XtdGearInfo
         {
@@ -299,7 +299,7 @@ class CfgWeapons
     };
 
     // Officer Pauldrons
-    class 91st_Officer_pauldron_Gray: V_RebreatherB
+    class MRC_Officer_pauldron_Gray: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -307,7 +307,7 @@ class CfgWeapons
             Officerpauldron="Grey";
         };
     };
-    class 91st_Officer_pauldron_Red: 91st_Officer_Pauldron_Gray
+    class MRC_Officer_pauldron_Red: MRC_Officer_Pauldron_Gray
     {
         class XtdGearInfo
         {
@@ -315,7 +315,7 @@ class CfgWeapons
             Officerpauldron="Red";
         };
     };
-    class 91st_Officer_pauldron_RedGray: 91st_Officer_Pauldron_Gray
+    class MRC_Officer_pauldron_RedGray: MRC_Officer_Pauldron_Gray
     {
         class XtdGearInfo
         {
@@ -325,7 +325,7 @@ class CfgWeapons
     };
 
     // ARC Vests
-    class 91st_Vest_ARC_Cadet: V_RebreatherB
+    class MRC_Vest_ARC_Cadet: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -333,7 +333,7 @@ class CfgWeapons
             Arcvests="Cadet";
         };
     };
-    class 91st_Vest_ARC_Trooper: 91st_Vest_ARC_Base
+    class MRC_Vest_ARC_Trooper: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
         {
@@ -341,7 +341,7 @@ class CfgWeapons
             Arcvests="Trooper";
         };
     };
-    class 91st_Vest_ARC_veteran: 91st_Vest_ARC_Base
+    class MRC_Vest_ARC_veteran: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
         {
@@ -349,7 +349,7 @@ class CfgWeapons
             Arcvests="Veteran";
         };
     };
-    class 91st_Vest_ARC_TL: 91st_Vest_ARC_Base
+    class MRC_Vest_ARC_TL: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
         {
@@ -357,7 +357,7 @@ class CfgWeapons
             Arcvests="Teamlead";
         };
     };
-    class 91st_Vest_ARC_NCOIC: 91st_Vest_ARC_Base
+    class MRC_Vest_ARC_NCOIC: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
         {
@@ -365,7 +365,7 @@ class CfgWeapons
             Arcvests="NCOIC";
         };
     };
-    class 91st_Vest_ARC_XO: 91st_Vest_ARC_Base
+    class MRC_Vest_ARC_XO: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
         {
@@ -373,7 +373,7 @@ class CfgWeapons
             Arcvests="XO";
         };
     };
-    class 91st_Vest_ARC_CO: 91st_Vest_ARC_Base
+    class MRC_Vest_ARC_CO: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
         {
@@ -383,7 +383,7 @@ class CfgWeapons
     };
 
     //Holsters
-    class 91st_SCT_Holster: V_RebreatherB
+    class MRC_SCT_Holster: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -391,7 +391,7 @@ class CfgWeapons
             Holsters="Senior";
         };
     };
-    class 91st_VCT_Holster: 91st_SCT_Holster
+    class MRC_VCT_Holster: MRC_SCT_Holster
     {
         class XtdGearInfo
         {
@@ -399,7 +399,7 @@ class CfgWeapons
             Holsters="Veterans";
         };
     };
-    class 91st_CSP_Holster: 91st_SCT_Holster
+    class MRC_CSP_Holster: MRC_SCT_Holster
     {
         class XtdGearInfo
         {
@@ -407,7 +407,7 @@ class CfgWeapons
             Holsters="Specialist";
         };
     };
-    class 91st_WO_Holster: 91st_SCT_Holster
+    class MRC_WO_Holster: MRC_SCT_Holster
     {
         class XtdGearInfo
         {
@@ -415,7 +415,7 @@ class CfgWeapons
             Holsters="WarrantOfficer";
         };
     };
-    class 91st_NCO_Holster: 91st_SCT_Holster
+    class MRC_NCO_Holster: MRC_SCT_Holster
     {
         class XtdGearInfo
         {
@@ -425,7 +425,7 @@ class CfgWeapons
     };
 
     //Standard vests and recons
-    class 91st_Trooper_Vest: V_RebreatherB
+    class MRC_Trooper_Vest: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -433,7 +433,7 @@ class CfgWeapons
             StandardVests="Trooper";
         };
     };
-    class 91st_Recon_Vest: V_RebreatherB
+    class MRC_Recon_Vest: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -441,7 +441,7 @@ class CfgWeapons
             StandardVests="TrooperRecon";
         };
     };
-    class 91st_WO4_Vest: V_RebreatherB
+    class MRC_WO4_Vest: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -449,7 +449,7 @@ class CfgWeapons
             StandardVests="WO4";
         };
     };
-    class 91st_Recon_NCO_Vest: V_RebreatherB
+    class MRC_Recon_NCO_Vest: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -457,7 +457,7 @@ class CfgWeapons
             StandardVests="NCORecon";
         };
     };
-    class 91st_Corporal_Vest: V_RebreatherB
+    class MRC_Corporal_Vest: V_RebreatherB
     {
         class XtdGearInfo
         {
@@ -465,7 +465,7 @@ class CfgWeapons
             StandardVests="Corporal";
         };
     };
-    class 91st_Sergeant_Vest: V_RebreatherB
+    class MRC_Sergeant_Vest: V_RebreatherB
     {
         class XtdGearInfo
         {
