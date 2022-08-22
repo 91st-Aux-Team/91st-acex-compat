@@ -104,7 +104,10 @@ class XtdGearModels
                     "Leer",
                     "Perry",
                     "Sound",
-                    "Jericho"
+                    "Jericho",
+                    "Avalanche",
+                    "Odin",
+                    "Trill"
                 };
             };
         };
@@ -223,6 +226,9 @@ class CfgWeapons
     Macro_MRC_Visor_Custom_Compat_NVG(Perry);
     Macro_MRC_Visor_Custom_Compat_NVG(Sound);
     Macro_MRC_Visor_Custom_Compat_NVG(Jericho);
+    Macro_MRC_Visor_Custom_Compat_NVG(Avalanche);
+    Macro_MRC_Visor_Custom_Compat_NVG(Odin);
+    Macro_MRC_Visor_Custom_Compat_NVG(Trill);
 
     //chips
     class JLTS_NVG_droid_chip_1;

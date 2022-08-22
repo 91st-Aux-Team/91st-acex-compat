@@ -39,6 +39,7 @@ class XtdGearModels
                     //ARC
                     "Arcanist",
                     "Scorch",
+                    "Trauma"
                 };
             };
         };
@@ -84,6 +85,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Scorch";
+        };
+    };
+    class MRC_Vest_ARC_Trauma: MRC_Vest_ARC_Base
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Trauma";
         };
     };
     

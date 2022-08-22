@@ -33,7 +33,6 @@ class XtdGearModels
                     "Axer",
                     "Barr",
                     "Bart",
-                    "Banana",
                     "Bardok",
                     "Blanks",
                     "Charred",
@@ -43,12 +42,10 @@ class XtdGearModels
                     "Cross",
                     "Cryptic",
                     "Dante",
-                    "Dark",
                     "Dev",
                     "Dex",
                     "Dumajin",
                     "Fallon",
-                    "Foxtrot",
                     "Fraeyr",
                     "Fraiser",
                     "Freq",
@@ -57,6 +54,7 @@ class XtdGearModels
                     "Hallowed",
                     "Jughead",
                     "Laser",
+                    "Larkkit",
                     "Leer",
                     "Loki",
                     "Magic",
@@ -65,8 +63,8 @@ class XtdGearModels
                     "Mauser",
                     "Mav",
                     "Misery",
+                    "Nuclear",
                     "Odin",
-                    "Oni",
                     "Opossum",
                     "Perry",
                     "Praetorian",
@@ -110,7 +108,6 @@ class XtdGearModels
                     "Grizzly",
                     "Delta",
                     "Bensen",
-                    "Squids",
                     "Oxide",
                     "Winter"
                 };
@@ -191,7 +188,10 @@ class XtdGearModels
                     "Medic",
                     "Binns",
                     "Mav",
-                    "Trill"
+                    "Trill",
+                    "Oni",
+                    "Avalanche",
+                    "Fire"
                 };
             };
         };
@@ -237,7 +237,6 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Dumajin);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Fallon);
-	Macro_MRC_Inf_Custom_Compat_Helmet(Foxtrot);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Fraeyr);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Fraiser);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Freq);
@@ -250,6 +249,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Jughead);
 	
 	Macro_MRC_Inf_Custom_Compat_Helmet(Laser);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Larkkit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Leer);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Loki);
 
@@ -259,6 +259,8 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Mauser);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Mav);
     Macro_MRC_Inf_Custom_Compat_Helmet(Misery);
+    
+    Macro_MRC_Inf_Custom_Compat_Helmet(Nuclear);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Odin);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Opossum);
@@ -337,7 +339,6 @@ class CfgWeapons
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Grizzly);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Hex);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Oxide);
-	Macro_MRC_Pilot_Custom_Compat_Helmet(Squids);
     Macro_MRC_Pilot_Custom_Compat_Helmet(Winter);
 
     //Beskar Helms
@@ -440,4 +441,7 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Mav);
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Binns);
+    Macro_MRC_BARC_Compat_Helmet(Avalanche);
+    Macro_MRC_BARC_Compat_Helmet(Fire);
+    Macro_MRC_BARC_Compat_Helmet(Oni);
 };

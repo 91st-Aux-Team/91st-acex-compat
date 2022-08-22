@@ -18,7 +18,7 @@ class XtdGearModels
 {
     class CfgVehicles
     {
-        class 91stBackpacks
+        class MRCBackpacks
         {
             label="91st Backpacks";
             author="91st Aux Team";
@@ -45,7 +45,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91stRTOBackpacks
+        class MRCRTOBackpacks
         {
             label="91st RTO Backpacks";
             author="91st Aux Team";
@@ -71,7 +71,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91stLRs
+        class MRCLRs
         {
             label="91st Long Ranges";
             author="91st Aux Team";
@@ -86,7 +86,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91stJT12Jumppack
+        class MRCJT12Jumppack
         {
             label="Jumppacks";
             author="91st Aux Team";
@@ -103,7 +103,7 @@ class XtdGearModels
                 };
             };
         };
-        class 91stCDVJumppack
+        class MRCCDVJumppack
         {
             label="Jumppacks";
             author="91st Aux Team";
@@ -151,6 +151,58 @@ class XtdGearModels
                 };
             };
         };
+        class MRCB1Backpacks
+        {
+            label="B1 Backpacks";
+            author="91st Aux Team";
+            options[]={"B1Backpack"};
+            class B1Backpack
+            {
+                labels="B1 Backpacks";
+                values[]=
+                {
+                    "Normal",
+                    "White",
+                    "Black",
+                    "Darkgreen",
+                    "Firefighter",
+                    "Grey",
+                    "Swampcolour",
+                    "Flamer",
+                    "Support",
+                    "Marksman",
+                    "Officer",
+                    "AT",
+                    "AA"
+                };
+            };
+        };
+        class MRCB1Antennas
+        {
+            label="B1 Antenna";
+            author="91st Aux Team";
+            options[]={"B1Antenna"};
+            class B1Antenna
+            {
+                labels="B1 Antenna";
+                values[]=
+                {
+                    "Normal",
+                    "White",
+                    "Black",
+                    "Darkgreen",
+                    "Firefighter",
+                    "Grey",
+                    "Swampcolour",
+                    "Flamer",
+                    "Support",
+                    "Marksman",
+                    "Officer",
+                    "AT",
+                    "AA"
+                };
+            };
+        };
     };
 };
 class CfgVehicles
@@ -194,7 +246,7 @@ class CfgVehicles
     #define Macro_MRC_Compat_RTO_Backpack(a) class MRC_##a##_RTO_Backpack : MRC_Base_Backpack {\
 		class XtdGearInfo\
         {\
-            model="91stRTOBackpacks";\
+            model="MRCRTOBackpacks";\
             RTOBackpacks=##a##;\
             Type="Standard";\
         };\
@@ -202,7 +254,7 @@ class CfgVehicles
     #define Macro_MRC_Compat_RTO_Straps_Backpack(a) class MRC_##a##_RTO_Straps_Backpack : MRC_Base_Straps_Backpack {\
 		class XtdGearInfo\
         {\
-            model="91stRTOBackpacks";\
+            model="MRCRTOBackpacks";\
             RTOBackpacks=##a##;\
             Type="Strap";\
         };\
@@ -225,7 +277,7 @@ class CfgVehicles
     {
         class XtdGearInfo
         {
-            model="91stLRs";
+            model="MRCLRs";
             LRs="MiniSmall";
         };
     };
@@ -233,7 +285,7 @@ class CfgVehicles
     {
         class XtdGearInfo
         {
-            model="91stLRs";
+            model="MRCLRs";
             LRs="MiniBig";
         };
     };
@@ -244,7 +296,7 @@ class CfgVehicles
     {
         class XtdGearInfo
         {
-            model="91stJT12Jumppack";
+            model="MRCJT12Jumppack";
             Jumpack="Trooper";
         };
     };
@@ -252,7 +304,7 @@ class CfgVehicles
     {
         class XtdGearInfo
         {
-            model="91stJT12Jumppack";
+            model="MRCJT12Jumppack";
             Jumpack="Empty";
         };
     };
@@ -260,7 +312,7 @@ class CfgVehicles
     {
         class XtdGearInfo
         {
-            model="91stJT12Jumppack";
+            model="MRCJT12Jumppack";
             Jumpack="Veteran";
         };
     };
@@ -268,7 +320,7 @@ class CfgVehicles
     {
         class XtdGearInfo
         {
-            model="91stJT12Jumppack";
+            model="MRCJT12Jumppack";
             Jumpack="Teamlead";
         };
     };
@@ -277,14 +329,14 @@ class CfgVehicles
     {
         class XtdGearInfo
         {
-            model="91stCDVJumppack";
+            model="MRCCDVJumppack";
             CDV="MedicCDV";
         };
     };
     #define Macro_MRC_Compat_Jumppack_MC_Backpack(a) class MRC_jumppack_mc_##a## : MRC_Base_MC_JP {\
 		class XtdGearInfo\
         {\
-            model="91stCDVJumppack";\
+            model="MRCCDVJumppack";\
             CDV=##a##CDV;\
         };\
 	};
@@ -296,4 +348,65 @@ class CfgVehicles
     Macro_MRC_Compat_Jumppack_MC_Backpack(munka);
     Macro_MRC_Compat_Jumppack_MC_Backpack(Medic);
     Macro_MRC_Compat_Jumppack_MC_Backpack(Scorch);
+
+    // B1 Backpack
+    class JLTS_B1_backpack;
+    class MRC_B1_Backpack: JLTS_B1_backpack
+    {
+        class XtdGearInfo
+        {
+            model="MRCB1Backpacks";
+            B1Backpack="Normal";
+        };
+    };
+    #define Macro_MRC_Compat_B1_Backpack(a) class MRC_B1_##a##_Backpack : MRC_B1_Backpack {\
+		class XtdGearInfo\
+        {\
+            model="MRCB1Backpacks";\
+            B1Backpack=##a##;\
+        };\
+	};
+
+    Macro_MRC_Compat_B1_Backpack(White);
+    Macro_MRC_Compat_B1_Backpack(Black);
+    Macro_MRC_Compat_B1_Backpack(Darkgreen);
+    Macro_MRC_Compat_B1_Backpack(Firefighter);
+    Macro_MRC_Compat_B1_Backpack(Grey);
+    Macro_MRC_Compat_B1_Backpack(Swampcolour);
+	Macro_MRC_Compat_B1_Backpack(Flamer);
+	Macro_MRC_Compat_B1_Backpack(Support);
+	Macro_MRC_Compat_B1_Backpack(Marksman);
+	Macro_MRC_Compat_B1_Backpack(Officer);
+	Macro_MRC_Compat_B1_Backpack(AT);
+	Macro_MRC_Compat_B1_Backpack(AA);
+
+    class JLTS_B1_antenna;
+    class MRC_B1_Antenna_Base: JLTS_B1_antenna
+    {
+        class XtdGearInfo
+        {
+            model="MRCB1Antennas";
+            B1Antenna="Normal";
+        };
+    };
+    #define Macro_MRC_Compat_B1_Antenna(a) class MRC_B1_##a##_Antenna : MRC_B1_Antenna_Base {\
+		class XtdGearInfo\
+        {\
+            model="MRCB1Antennas";\
+            B1Antenna=##a##;\
+        };\
+	};
+
+    Macro_MRC_Compat_B1_Antenna(White);
+    Macro_MRC_Compat_B1_Antenna(Black);
+    Macro_MRC_Compat_B1_Antenna(Darkgreen);
+    Macro_MRC_Compat_B1_Antenna(Firefighter);
+    Macro_MRC_Compat_B1_Antenna(Grey);
+    Macro_MRC_Compat_B1_Antenna(Swampcolour);
+	Macro_MRC_Compat_B1_Antenna(Flamer);
+	Macro_MRC_Compat_B1_Antenna(Support);
+	Macro_MRC_Compat_B1_Antenna(Marksman);
+	Macro_MRC_Compat_B1_Antenna(Officer);
+	Macro_MRC_Compat_B1_Antenna(AT);
+	Macro_MRC_Compat_B1_Antenna(AA);
 };

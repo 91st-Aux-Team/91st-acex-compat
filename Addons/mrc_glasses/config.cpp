@@ -288,7 +288,10 @@ class XtdGearModels
                     "Leer",
                     "Perry",
                     "Sound",
-                    "Jericho"
+                    "Jericho",
+                    "Avalanche",
+                    "Odin",
+                    "Trill"
                 };
                 class Arcanist
                 {
@@ -317,6 +320,18 @@ class XtdGearModels
                 class Jericho
                 {
                     label="Jericho"
+                };
+                class Avalanche
+                {
+                    label="Avalanche"
+                };
+                class Odin
+                {
+                    label="Odin"
+                };
+                class Trill
+                {
+                    label="Trill"
                 };
             };
         };
@@ -511,11 +526,14 @@ class CfgGlasses
         };\
     };
 
-    Macro_MRC_Visor_Custom_Compat_Glasses(Binns)
-    Macro_MRC_Visor_Custom_Compat_Glasses(Frasier)
-    Macro_MRC_Visor_Custom_Compat_Glasses(Leer)
-    Macro_MRC_Visor_Custom_Compat_Glasses(Perry)
-    Macro_MRC_Visor_Custom_Compat_Glasses(Sound)
-    Macro_MRC_Visor_Custom_Compat_Glasses(Arcanist)
-    Macro_MRC_Visor_Custom_Compat_Glasses(Jericho)
+    Macro_MRC_Visor_Custom_Compat_Glasses(Binns);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Frasier);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Leer);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Perry);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Sound);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Arcanist);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Jericho);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Avalanche);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Odin);
+    Macro_MRC_Visor_Custom_Compat_Glasses(Trill);
 };

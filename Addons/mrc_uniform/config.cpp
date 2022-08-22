@@ -184,7 +184,6 @@ class XtdGearModels
                     "Charred",
                     "Corpse",
                     "Cross",
-                    "Dex",
                     "Frog",
                     "Kuro",
                     "Mav",
@@ -218,7 +217,6 @@ class XtdGearModels
                     "DarkGreen",
                     "FireFighter",
                     "Grey",
-                    "Purple",
                     "Swamp",
                     "White"
                 };
@@ -401,7 +399,6 @@ class CfgWeapons
     Macro_MRC_Custom_Compat_Armor(Charred);
 	Macro_MRC_Custom_Compat_Armor(Corpse);
 	Macro_MRC_Custom_Compat_Armor(Cross);
-	Macro_MRC_Custom_Compat_Armor(Dex);
 	Macro_MRC_Custom_Compat_Armor(Frog);
 	Macro_MRC_Custom_Compat_Armor(Kuro);
 	Macro_MRC_Custom_Compat_Armor(Mav);
@@ -510,7 +507,7 @@ class CfgWeapons
             B1="Purple";
         };
     };
-    class MRC_B1_uniform_swamp: UniformItem
+    class MRC_B1_uniform_Swampcolour: UniformItem
     {
         class XtdGearInfo
         {
