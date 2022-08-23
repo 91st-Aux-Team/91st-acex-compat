@@ -216,7 +216,7 @@ class CfgVehicles
     #define Macro_MRC_Compat_Backpack(a) class MRC_##a##_Backpack : MRC_Base_Backpack {\
 		class XtdGearInfo\
         {\
-            model="91stBackpacks";\
+            model="MRCBackpacks";\
             Backpacks=##a##;\
             Type="Standard";\
         };\
@@ -225,7 +225,7 @@ class CfgVehicles
 	#define Macro_MRC_Compat_Straps_Backpack(a) class MRC_##a##_Straps_Backpack : MRC_Base_Straps_Backpack {\
 		class XtdGearInfo\
         {\
-            model="91stBackpacks";\
+            model="MRCBackpacks";\
             Backpacks=##a##;\
             Type="Strap";\
         };\
