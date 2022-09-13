@@ -75,7 +75,8 @@ class XtdGearModels
                     "VCT",
                     "CSP",
                     "WO4",
-                    "CSS"
+                    "CSS",
+                    "Medical"
                 };
             };
             class Type
@@ -137,7 +138,7 @@ class CfgWeapons
     class MRC_Visor_Down_Base;
 
     //Arc Rangfinders
-    #define Macro_MRC_Copmat_Rangefinders(a,b) class MRC_Rangefinder_##a##_##b## : JLTS_CloneNVGRange {\
+    #define Macro_MRC_Compat_Rangefinders(a,b) class MRC_Rangefinder_##a##_##b## : JLTS_CloneNVGRange {\
         class XtdGearInfo\
         {\
             model="MRC_Rangefinders";\
@@ -146,18 +147,18 @@ class CfgWeapons
         };\
     };
 
-    Macro_MRC_Copmat_Rangefinders(Red,BW);
-    Macro_MRC_Copmat_Rangefinders(Red,BG);
-    Macro_MRC_Copmat_Rangefinders(Red,BO);
-    Macro_MRC_Copmat_Rangefinders(Grey,BW);
-    Macro_MRC_Copmat_Rangefinders(Grey,BG);
-    Macro_MRC_Copmat_Rangefinders(Grey,BO);
-    Macro_MRC_Copmat_Rangefinders(Black,BW);
-    Macro_MRC_Copmat_Rangefinders(Black,BG);
-    Macro_MRC_Copmat_Rangefinders(Black,BO);
-    Macro_MRC_Copmat_Rangefinders(ARF,BW);
-    Macro_MRC_Copmat_Rangefinders(ARF,BG);
-    Macro_MRC_Copmat_Rangefinders(ARF,BO);
+    Macro_MRC_Compat_Rangefinders(Red,BW);
+    Macro_MRC_Compat_Rangefinders(Red,BG);
+    Macro_MRC_Compat_Rangefinders(Red,BO);
+    Macro_MRC_Compat_Rangefinders(Grey,BW);
+    Macro_MRC_Compat_Rangefinders(Grey,BG);
+    Macro_MRC_Compat_Rangefinders(Grey,BO);
+    Macro_MRC_Compat_Rangefinders(Black,BW);
+    Macro_MRC_Compat_Rangefinders(Black,BG);
+    Macro_MRC_Compat_Rangefinders(Black,BO);
+    Macro_MRC_Compat_Rangefinders(ARF,BW);
+    Macro_MRC_Compat_Rangefinders(ARF,BG);
+    Macro_MRC_Compat_Rangefinders(ARF,BO);
 
     //Visors
     class MRC_Visor : MRC_Visor_Base
@@ -170,7 +171,7 @@ class CfgWeapons
         };
     };
 
-    #define Macro_MRC_Copmat_Visors(a) class MRC_Visor_##a## : MRC_Visor_Base {\
+    #define Macro_MRC_Compat_Visors(a) class MRC_Visor_##a## : MRC_Visor_Base {\
         class XtdGearInfo\
         {\
             model="91stNvVisors";\
@@ -179,11 +180,12 @@ class CfgWeapons
         };\
     };
 
-	Macro_MRC_Copmat_Visors(SCT);
-	Macro_MRC_Copmat_Visors(VCT);
-	Macro_MRC_Copmat_Visors(CSP);
-	Macro_MRC_Copmat_Visors(WO4);
-	Macro_MRC_Copmat_Visors(CSS);
+	Macro_MRC_Compat_Visors(SCT);
+	Macro_MRC_Compat_Visors(VCT);
+	Macro_MRC_Compat_Visors(CSP);
+	Macro_MRC_Compat_Visors(WO4);
+	Macro_MRC_Compat_Visors(CSS);
+    Macro_MRC_Compat_Visors(Medical);
 
     class MRC_Visor_Down: MRC_Visor_Down_Base
     {
@@ -195,7 +197,7 @@ class CfgWeapons
         };
     };
 
-    #define Macro_MRC_Copmat_Visors_Down(a) class MRC_Visor_##a##_Down: MRC_Visor_Down_Base {\
+    #define Macro_MRC_Compat_Visors_Down(a) class MRC_Visor_##a##_Down: MRC_Visor_Down_Base {\
         class XtdGearInfo\
         {\
             model="91stNvVisors";\
@@ -204,11 +206,11 @@ class CfgWeapons
         };\
     };
 
-	Macro_MRC_Copmat_Visors_Down(SCT);
-	Macro_MRC_Copmat_Visors_Down(VCT);
-	Macro_MRC_Copmat_Visors_Down(CSP);
-	Macro_MRC_Copmat_Visors_Down(WO4);
-	Macro_MRC_Copmat_Visors_Down(CSS);
+	Macro_MRC_Compat_Visors_Down(SCT);
+	Macro_MRC_Compat_Visors_Down(VCT);
+	Macro_MRC_Compat_Visors_Down(CSP);
+	Macro_MRC_Compat_Visors_Down(WO4);
+	Macro_MRC_Compat_Visors_Down(CSS);
 
     //custom
     #define Macro_MRC_Visor_Custom_Compat_NVG(a) class MRC_Visor_##a## : MRC_Visor_Base  {\
