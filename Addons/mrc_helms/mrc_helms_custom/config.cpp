@@ -65,11 +65,12 @@ class XtdGearModels
                     "Misery",
                     "Nuclear",
                     "Odin",
+                    "Orange",
                     "Opossum",
+                    "Ozzy",
                     "Perry",
                     "Praetorian",
                     "Predator",
-                    "Qal",
                     "Romeo",
                     "Saga",
                     "Sappheron",
@@ -191,7 +192,8 @@ class XtdGearModels
                     "Trill",
                     "Oni",
                     "Avalanche",
-                    "Fire"
+                    "Fire",
+                    "Qal"
                 };
             };
         };
@@ -263,14 +265,13 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Nuclear);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Odin);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Orange);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Opossum);
-	Macro_MRC_Inf_Custom_Compat_Helmet(Oni);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Ozzy);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Perry);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Praetorian);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Predator);
-
-	Macro_MRC_Inf_Custom_Compat_Helmet(Qal);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Romeo);
 	
@@ -444,4 +445,5 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Avalanche);
     Macro_MRC_BARC_Compat_Helmet(Fire);
     Macro_MRC_BARC_Compat_Helmet(Oni);
+    Macro_MRC_BARC_Compat_Helmet(Qal);
 };
