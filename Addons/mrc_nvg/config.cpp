@@ -110,7 +110,6 @@ class XtdGearModels
                     "Odin",
                     "Trill",
                     "Xetor",
-                    "Mia"
                 };
             };
         };
@@ -234,7 +233,6 @@ class CfgWeapons
     Macro_MRC_Visor_Custom_Compat_NVG(Odin);
     Macro_MRC_Visor_Custom_Compat_NVG(Trill);
     Macro_MRC_Visor_Custom_Compat_NVG(Xetor);
-    Macro_MRC_Visor_Custom_Compat_NVG(Mia);
 
     //chips
     class JLTS_NVG_droid_chip_1;
