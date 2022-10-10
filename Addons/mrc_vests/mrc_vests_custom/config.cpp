@@ -36,11 +36,12 @@ class XtdGearModels
                     "Frasier",
                     "Charred",
                     "Hex",
-                    "Mauser",
+                    // "Mauser",
                     //ARC
                     "Arcanist",
                     "Scorch",
-                    "Trauma"
+                    "Trauma",
+                    "Main"
                 };
             };
         };
@@ -70,7 +71,8 @@ class CfgWeapons
     Macro_MRC_off_Vest_Compat(Charred);
     Macro_MRC_off_Vest_Compat(Frasier);
     Macro_MRC_off_Vest_Compat(Hex);
-    Macro_MRC_off_Vest_Compat(Mauser);
+    // Macro_MRC_off_Vest_Compat(Mauser);
+    Macro_MRC_off_Vest_Compat(Main);
 
     //ARC
     class MRC_Vest_ARC_Arcanist: MRC_Vest_ARC_Base
