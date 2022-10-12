@@ -93,13 +93,14 @@ class XtdGearModels
         {
             label="NV Visor Custom";
             author="91st Aux Team";
-            options[]={"NvVisorCust"};
+            options[]={"NvVisorCust", "Type"};
             class NvVisorCust
             {
                 labels="Visors";
                 values[]=
                 {
                     "Arcanist",
+                    "Baker",
                     "Binns",
                     "Frasier",
                     "Leer",
@@ -110,6 +111,15 @@ class XtdGearModels
                     "Odin",
                     "Trill",
                     "Xetor",
+                };
+            };
+            class Type
+            {
+                labels="Up or Down";
+                values[]=
+                {
+                    "Up",
+                    "Down"
                 };
             };
         };
@@ -162,15 +172,7 @@ class CfgWeapons
     Macro_MRC_Compat_Rangefinders(ARF,BO);
 
     //Visors
-    class MRC_Visor : MRC_Visor_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-                ="CT";
-            Type="Up";
-        };
-    };
+   
 
     #define Macro_MRC_Compat_Visors(a) class MRC_Visor_##a## : MRC_Visor_Base {\
         class XtdGearInfo\
@@ -180,23 +182,13 @@ class CfgWeapons
             Type="Up";\
         };\
     };
-
+    Macro_MRC_Compat_Visors(CT);
 	Macro_MRC_Compat_Visors(SCT);
 	Macro_MRC_Compat_Visors(VCT);
 	Macro_MRC_Compat_Visors(CSP);
 	Macro_MRC_Compat_Visors(WO4);
 	Macro_MRC_Compat_Visors(CSS);
     Macro_MRC_Compat_Visors(Medical);
-
-    class MRC_Visor_Down: MRC_Visor_Down_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stNvVisors";
-            NvVisor="CT";
-            Type="Down";
-        };
-    };
 
     #define Macro_MRC_Compat_Visors_Down(a) class MRC_Visor_##a##_Down: MRC_Visor_Down_Base {\
         class XtdGearInfo\
@@ -206,12 +198,13 @@ class CfgWeapons
             Type="Down";\
         };\
     };
-
+    Macro_MRC_Compat_Visors_Down(CT);
 	Macro_MRC_Compat_Visors_Down(SCT);
 	Macro_MRC_Compat_Visors_Down(VCT);
 	Macro_MRC_Compat_Visors_Down(CSP);
 	Macro_MRC_Compat_Visors_Down(WO4);
 	Macro_MRC_Compat_Visors_Down(CSS);
+    Macro_MRC_Compat_Visors_Down(Medical);
 
     //custom
     #define Macro_MRC_Visor_Custom_Compat_NVG(a) class MRC_Visor_##a## : MRC_Visor_Base  {\
@@ -219,10 +212,21 @@ class CfgWeapons
         {\
             model="91stNvVisorsCustom";\
             NvVisorCust=##a##;\
+            Type = "Up"; \
         };\
-    };
+    }; \
+        class MRC_Visor_##a##_Down : MRC_Visor_Down_Base  {\
+            class XtdGearInfo\
+            {\
+                model="91stNvVisorsCustom";\
+                NvVisorCust=##a##;\
+                Type = "Down"; \
+            };\
+        };
+
 
     Macro_MRC_Visor_Custom_Compat_NVG(Arcanist);
+    Macro_MRC_Visor_Custom_Compat_NVG(Baker);
     Macro_MRC_Visor_Custom_Compat_NVG(Binns);
     Macro_MRC_Visor_Custom_Compat_NVG(Frasier);
     Macro_MRC_Visor_Custom_Compat_NVG(Leer);
