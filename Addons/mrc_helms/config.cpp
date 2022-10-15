@@ -108,39 +108,37 @@ class XtdGearModels
             };
         };
 
-        class CampaignHelmets
-        {
-            label="Campaign Helmets";
-            author="91st Aux Team";
-            options[]={"Campaignhelms"};
-            class Campaignhelms
-            {
-                labels="Campaign Helmets";
-                values[]=
-                {
-                    "CampaignStandard",
-                    "CampaignMedic",
-                    "CampaignBARC",
-                    "CampaignBARCMedic"
-                };
-                class CampaignStandard
-                {
-                    label="Standard";
-                };
-                class CampaignMedic
-                {
-                    label="Medic";
-                };
-                class CampaignBARC
-                {
-                    label="BARC";
-                };
-                class CampaignBARCMedic
-                {
-                    label="BARC Medic";
-                };
-            };
-        };
+        // class CampaignHelmets
+        // {
+        //     label="Campaign Helmets";
+        //     author="91st Aux Team";
+        //     options[]={"Campaignhelms"};
+        //     class Campaignhelms
+        //     {
+        //         labels="Campaign Helmets";
+        //         values[]=
+        //         {
+        //             "CampaignBARC",
+        //             "CampaignBARCMedic"
+        //         };
+        //         class CampaignStandard
+        //         {
+        //             label="Standard";
+        //         };
+        //         class CampaignMedic
+        //         {
+        //             label="Medic";
+        //         };
+        //         class CampaignBARC
+        //         {
+        //             label="BARC";
+        //         };
+        //         class CampaignBARCMedic
+        //         {
+        //             label="BARC Medic";
+        //         };
+        //     };
+        // };
     };
 };
 class CfgWeapons

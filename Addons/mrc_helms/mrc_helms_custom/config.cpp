@@ -30,6 +30,7 @@ class XtdGearModels
                 labels="Infantry Custom Helmets";
                 values[]=
                 {
+                    "Baker",
                     "Barr",
                     "Bart",
                     "Bardok",
@@ -42,10 +43,10 @@ class XtdGearModels
                     "Dante",
                     "Dev",
                     "Dumajin",
-                    "Fallon",
                     "Fraiser",
                     "Freq",
                     "Hallowed",
+                    "Joker",
                     "Jughead",
                     "Laser",
                     "Larkkit",
@@ -55,6 +56,7 @@ class XtdGearModels
                     "Main",
                     "Marf",
                     "Misery",
+                    "Mountain",
                     "Nuclear",
                     "Odin",
                     "Opossum",
@@ -205,6 +207,7 @@ class CfgWeapons
         };\
     };
     
+    Macro_MRC_Inf_Custom_Compat_Helmet(Baker);
     Macro_MRC_Inf_Custom_Compat_Helmet(Barr);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Bart);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Banana);
@@ -227,6 +230,7 @@ class CfgWeapons
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Hallowed);
 
+    Macro_MRC_Inf_Custom_Compat_Helmet(Joker);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Jughead);
 	
 	Macro_MRC_Inf_Custom_Compat_Helmet(Laser);
@@ -237,6 +241,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Magic);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Main);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Marf);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Mountain);
     Macro_MRC_Inf_Custom_Compat_Helmet(Misery);
     
     Macro_MRC_Inf_Custom_Compat_Helmet(Nuclear);

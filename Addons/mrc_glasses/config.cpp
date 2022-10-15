@@ -283,6 +283,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Arcanist",
+                    "Baker",
                     "Binns",
                     "Frasier",
                     "Leer",
@@ -296,6 +297,10 @@ class XtdGearModels
                 class Arcanist
                 {
                     label="Arcanist"
+                };
+                class Baker
+                {
+                    label="Baker"
                 };
                 class Binns
                 {
@@ -526,6 +531,7 @@ class CfgGlasses
         };\
     };
 
+    Macro_MRC_Visor_Custom_Compat_Glasses(Baker);
     Macro_MRC_Visor_Custom_Compat_Glasses(Binns);
     Macro_MRC_Visor_Custom_Compat_Glasses(Frasier);
     Macro_MRC_Visor_Custom_Compat_Glasses(Leer);
