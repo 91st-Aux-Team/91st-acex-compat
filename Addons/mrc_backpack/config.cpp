@@ -98,6 +98,7 @@ class XtdGearModels
                 {
                     "Empty",
                     "Trooper",
+                    "Medic",
                     "Veteran",
                     "Teamlead"
                 };
@@ -306,6 +307,14 @@ class CfgVehicles
         {
             model="MRCJT12Jumppack";
             Jumpack="Empty";
+        };
+    };
+    class MRC_medic_jumppack_JT12: MRC_jumpack_JT12
+    {
+        class XtdGearInfo
+        {
+            model="MRCJT12Jumppack";
+            Jumpack="Medic";
         };
     };
     class MRC_veteran_jumpack_JT12: MRC_jumpack_JT12

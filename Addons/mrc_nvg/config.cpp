@@ -101,7 +101,6 @@ class XtdGearModels
                 {
                     "Arcanist",
                     "Baker",
-                    "Binns",
                     "Frasier",
                     "Leer",
                     "Perry",
@@ -227,7 +226,6 @@ class CfgWeapons
 
     Macro_MRC_Visor_Custom_Compat_NVG(Arcanist);
     Macro_MRC_Visor_Custom_Compat_NVG(Baker);
-    Macro_MRC_Visor_Custom_Compat_NVG(Binns);
     Macro_MRC_Visor_Custom_Compat_NVG(Frasier);
     Macro_MRC_Visor_Custom_Compat_NVG(Leer);
     Macro_MRC_Visor_Custom_Compat_NVG(Perry);

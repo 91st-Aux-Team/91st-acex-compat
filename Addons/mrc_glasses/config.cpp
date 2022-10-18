@@ -77,7 +77,6 @@ class XtdGearModels
                     "Squad",
                     "Platoon",
                     "Company",
-                    "Fallon",
                     "Trill"
                 };
                 // Class used for defining in the shit below
@@ -100,11 +99,6 @@ class XtdGearModels
                 {
                     // Labels just a display name
                     label="Munka";
-                };
-                class Fallon
-                {
-                    // Labels just a display name
-                    label="Fallon";
                 };
                 class Trill
                 {
@@ -284,7 +278,6 @@ class XtdGearModels
                 {
                     "Arcanist",
                     "Baker",
-                    "Binns",
                     "Frasier",
                     "Leer",
                     "Perry",
@@ -301,10 +294,6 @@ class XtdGearModels
                 class Baker
                 {
                     label="Baker"
-                };
-                class Binns
-                {
-                    label="Binns"
                 };
                 class Frasier
                 {
@@ -418,7 +407,6 @@ class CfgGlasses
 
     Macro_MRC_Medic_Vests_Compat(Platoon);
     Macro_MRC_Medic_Vests_Compat(Company);
-    Macro_MRC_Medic_Vests_Compat(Fallon);
     Macro_MRC_Medic_Vests_Compat(Trill);
 
     //monkies
@@ -532,7 +520,6 @@ class CfgGlasses
     };
 
     Macro_MRC_Visor_Custom_Compat_Glasses(Baker);
-    Macro_MRC_Visor_Custom_Compat_Glasses(Binns);
     Macro_MRC_Visor_Custom_Compat_Glasses(Frasier);
     Macro_MRC_Visor_Custom_Compat_Glasses(Leer);
     Macro_MRC_Visor_Custom_Compat_Glasses(Perry);
