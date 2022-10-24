@@ -86,6 +86,22 @@ class XtdGearModels
                 };
             };
         };
+        class MRCBelt
+        {
+            label="Belt Bags";
+            author="91st Aux Team";
+            options[]={"Belt"};
+            class Belt
+            {
+                labels="Belt Bags";
+                values[]=
+                {
+                    "Standard",
+                    "Medic",
+                    "Medic LR",
+                };
+            };
+        };
         class MRCJT12Jumppack
         {
             label="Jumppacks";
@@ -97,6 +113,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Empty",
+                    "Ghost",
                     "Trooper",
                     "Medic",
                     "Veteran",
@@ -213,6 +230,7 @@ class CfgVehicles
     class MRC_LR_Base;
     class JLTS_Clone_jumppack_JT12;
     class MRC_Base_MC_JP;
+    class JLTS_Clone_belt_bag;
 
     #define Macro_MRC_Compat_Backpack(a) class MRC_##a##_Backpack : MRC_Base_Backpack {\
 		class XtdGearInfo\
@@ -290,6 +308,32 @@ class CfgVehicles
             LRs="MiniBig";
         };
     };
+    // Belt Bags
+    class MRC_Belt_Bag: JLTS_Clone_belt_bag 
+    {
+        class XtdGearInfo
+        {
+            model="MRCBelt";
+            Belt="Standard";
+        };
+    };
+    class MRC_Medic_Belt_Backpack: JLTS_Clone_belt_bag 
+    {
+        class XtdGearInfo
+        {
+            model="MRCBelt";
+            Belt="Medic";
+        };
+    };
+    class MRC_Medic_Belt_LR_Backpack: MRC_Medic_Belt_Backpack 
+    {
+        class XtdGearInfo
+        {
+            model="MRCBelt";
+            Belt="Medic LR";
+        };
+    };
+
 
     //Jumppacks
     // JT12
@@ -299,6 +343,13 @@ class CfgVehicles
         {
             model="MRCJT12Jumppack";
             Jumpack="Trooper";
+        };
+    };
+    class MRC_Ghost_jumpack_JT12: JLTS_Clone_jumppack_JT12 {
+        class XtdGearInfo
+        {
+            model="MRCJT12Jumppack";
+            Jumpack="Ghost";
         };
     };
     class MRC_empty_JT12: MRC_jumpack_JT12
