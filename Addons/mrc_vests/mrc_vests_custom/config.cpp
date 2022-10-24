@@ -25,7 +25,7 @@ class XtdGearModels
             options[]={"CustomVest"};
             class CustomVest
             {
-                labels="Infantry Custom Helmets";
+                labels="Infantry Custom Vests";
                 values[]=
                 {
                     "Mav",
@@ -38,10 +38,11 @@ class XtdGearModels
                     "Hex",
                     // "Mauser",
                     //ARC
-                    "Arcanist",
                     "Scorch",
                     "Trauma",
-                    "Main"
+                    "Main",
+                    "Skit",
+                    "Mauser"
                 };
             };
         };
@@ -53,6 +54,7 @@ class CfgWeapons
     class MRC_Officer_Vest_Gray;
     class MRC_Reverse_Officer_Gray;
     class MRC_Vest_ARC_Base;
+    class MRC_Sergeant_Vest;
     //Officer Vests
 
     #define Macro_MRC_off_Vest_Compat(a) class MRC_Officer_Vest_##a## : MRC_Officer_Vest_Gray  {\
@@ -71,18 +73,10 @@ class CfgWeapons
     Macro_MRC_off_Vest_Compat(Charred);
     Macro_MRC_off_Vest_Compat(Frasier);
     Macro_MRC_off_Vest_Compat(Hex);
-    // Macro_MRC_off_Vest_Compat(Mauser);
+    Macro_MRC_off_Vest_Compat(Mauser);
     Macro_MRC_off_Vest_Compat(Main);
 
     //ARC
-    class MRC_Vest_ARC_Arcanist: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Arcanist";
-        };
-    };
     class MRC_Vest_ARC_Scorch: MRC_Vest_ARC_Base
     {
         class XtdGearInfo
@@ -97,6 +91,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Trauma";
+        };
+    };
+    class MRC_Skit_Vest: MRC_Sergeant_Vest
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Skit"
         };
     };
     

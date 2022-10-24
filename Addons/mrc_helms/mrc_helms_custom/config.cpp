@@ -36,6 +36,7 @@ class XtdGearModels
                     "Blanks",
                     "Charred",
                     "Chop",
+                    "Chubs",
                     "Con",
                     "Cross",
                     "Cryptic",
@@ -53,6 +54,7 @@ class XtdGearModels
                     "Magic",
                     "Main",
                     "Marf",
+                    "Mauser",
                     "Miller",
                     "Misery",
                     "Mountain",
@@ -72,7 +74,6 @@ class XtdGearModels
                     "Steak",
                     "Tarz",
                     "Volx",
-                    "Wagner",
                     "Wedge",
                     "Widget",
                     "Xero",
@@ -112,6 +113,7 @@ class XtdGearModels
                     "Crew",
                     "Kuro",
                     "Crit",
+                    "Larkkit",
                     "Woost"
                 };
             };
@@ -131,7 +133,6 @@ class XtdGearModels
                     "Roach",
                     "Bacon",
                     "Skittles",
-                    "Arcanist",
                     "Loken",
                     "Scorch",
                     "Trauma",
@@ -171,7 +172,8 @@ class XtdGearModels
                     "Trill",
                     "Avalanche",
                     "Fire",
-                    "Qal"
+                    "Qal",
+                    "Wagner"
                 };
             };
         };
@@ -206,6 +208,7 @@ class CfgWeapons
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Charred);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Chop);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Chubs);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Con);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Cryptic);
 
@@ -229,6 +232,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Magic);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Main);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Marf);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Mauser);
     Macro_MRC_Inf_Custom_Compat_Helmet(Mountain);
     Macro_MRC_Inf_Custom_Compat_Helmet(Miller);
     Macro_MRC_Inf_Custom_Compat_Helmet(Misery);
@@ -256,7 +260,6 @@ class CfgWeapons
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Volx);
 
-	Macro_MRC_Inf_Custom_Compat_Helmet(Wagner);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Wedge);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Widget);
 
@@ -310,6 +313,7 @@ class CfgWeapons
     Macro_MRC_Beskar_Custom_Compat_Helmet(Kuro);
 	Macro_MRC_Beskar_Custom_Compat_Helmet(Crit);
     Macro_MRC_Beskar_Custom_Compat_Helmet(Woost);
+    Macro_MRC_Beskar_Custom_Compat_Helmet(Larkkit);
 
     //Arc helms
     class MRC_Roach_Helmet: JLTS_CloneHelmetARC_illum
@@ -334,7 +338,6 @@ class CfgWeapons
 	Macro_MRC_ARC_Compat_Helmet(Bacon);
 	Macro_MRC_ARC_Compat_Helmet(Skittles);
 	Macro_MRC_ARC_Compat_Helmet(Scorch);
-	Macro_MRC_ARC_Compat_Helmet(Arcanist);
 	Macro_MRC_ARC_Compat_Helmet(Loken);
 	Macro_MRC_ARC_Compat_Helmet(Oddball);
 	Macro_MRC_ARC_Compat_Helmet(Trauma);
@@ -387,4 +390,5 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Avalanche);
     Macro_MRC_BARC_Compat_Helmet(Fire);
     Macro_MRC_BARC_Compat_Helmet(Qal);
+    Macro_MRC_BARC_Compat_Helmet(Wagner);
 };
