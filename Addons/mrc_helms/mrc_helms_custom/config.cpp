@@ -42,6 +42,7 @@ class XtdGearModels
                     "Cryptic",
                     "Dante",
                     "Dev",
+                    "Doc",
                     "Fraiser",
                     "Freq",
                     "Hallowed",
@@ -69,7 +70,6 @@ class XtdGearModels
                     "Scorch",
                     "Silver",
                     "Skit",
-                    "Snapper",
                     "Sound",
                     "Steak",
                     "Tarz",
@@ -135,7 +135,6 @@ class XtdGearModels
                     "Skittles",
                     "Loken",
                     "Scorch",
-                    "Trauma",
                     "Jericho",
                     "Oddball"
                 };                
@@ -173,7 +172,8 @@ class XtdGearModels
                     "Avalanche",
                     "Fire",
                     "Qal",
-                    "Wagner"
+                    "Wagner",
+                    "Snapper"
                 };
             };
         };
@@ -215,6 +215,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Dante);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Dark);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Dev);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Doc);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Fraiser);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Freq);
@@ -252,7 +253,6 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Scorch);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Silver);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
-    Macro_MRC_Inf_Custom_Compat_Helmet(Snapper);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Steak);
 
@@ -340,7 +340,6 @@ class CfgWeapons
 	Macro_MRC_ARC_Compat_Helmet(Scorch);
 	Macro_MRC_ARC_Compat_Helmet(Loken);
 	Macro_MRC_ARC_Compat_Helmet(Oddball);
-	Macro_MRC_ARC_Compat_Helmet(Trauma);
 	Macro_MRC_ARC_Compat_Helmet(Jericho);
 
 
@@ -391,4 +390,6 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Fire);
     Macro_MRC_BARC_Compat_Helmet(Qal);
     Macro_MRC_BARC_Compat_Helmet(Wagner);
+    Macro_MRC_BARC_Compat_Helmet(Snapper);
+
 };

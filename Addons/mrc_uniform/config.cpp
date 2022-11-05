@@ -182,6 +182,7 @@ class XtdGearModels
                 {
                     "Charred",
                     "Cross",
+                    "Doc",
                     "Frog",
                     "Frasier",
                     "Kuro",
@@ -217,7 +218,8 @@ class XtdGearModels
                     "FireFighter",
                     "Grey",
                     "Swamp",
-                    "White"
+                    "White",
+                    "MrBones"
                 };
             };
         };
@@ -396,6 +398,7 @@ class CfgWeapons
 
     Macro_MRC_Custom_Compat_Armor(Charred);
 	Macro_MRC_Custom_Compat_Armor(Cross);
+    Macro_MRC_Custom_Compat_Armor(Doc);
 	Macro_MRC_Custom_Compat_Armor(Frog);
     Macro_MRC_Custom_Compat_Armor(Frasier);
 	Macro_MRC_Custom_Compat_Armor(Kuro);
@@ -518,6 +521,15 @@ class CfgWeapons
         {
             model="MRC_OPFOR";
             B1="White";
+        };
+    };
+
+    class MRC_B1_MrBones: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="MrBones";
         };
     };
 };

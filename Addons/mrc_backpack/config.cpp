@@ -191,7 +191,8 @@ class XtdGearModels
                     "Marksman",
                     "Officer",
                     "AT",
-                    "AA"
+                    "AA",
+                    "MrBones"
                 };
             };
         };
@@ -217,7 +218,8 @@ class XtdGearModels
                     "Marksman",
                     "Officer",
                     "AT",
-                    "AA"
+                    "AA",
+                    "MrBones"
                 };
             };
         };
@@ -439,6 +441,9 @@ class CfgVehicles
 	Macro_MRC_Compat_B1_Backpack(Officer);
 	Macro_MRC_Compat_B1_Backpack(AT);
 	Macro_MRC_Compat_B1_Backpack(AA);
+    Macro_MRC_Compat_B1_Backpack(MrBones)
+
+
 
     class JLTS_B1_antenna;
     class MRC_B1_Antenna_Base: JLTS_B1_antenna
@@ -469,4 +474,5 @@ class CfgVehicles
 	Macro_MRC_Compat_B1_Antenna(Officer);
 	Macro_MRC_Compat_B1_Antenna(AT);
 	Macro_MRC_Compat_B1_Antenna(AA);
+    Macro_MRC_Compat_B1_Antenna(MrBones)
 };
