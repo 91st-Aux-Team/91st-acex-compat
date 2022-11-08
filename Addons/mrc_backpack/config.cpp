@@ -227,14 +227,15 @@ class XtdGearModels
 };
 class CfgVehicles
 {
-    class MRC_Base_Backpack;
-    class MRC_Base_Straps_Backpack;
-    class MRC_LR_Base;
+    class MRC_Backpack_base;
+    class MRC_Backpack_base_straps;
+    class MRC_Backpack_base_LR;
     class JLTS_Clone_jumppack_JT12;
-    class MRC_Base_MC_JP;
+    class MRC_CDV_base;
     class JLTS_Clone_belt_bag;
+    class MRC_Jumppack_base;
 
-    #define Macro_MRC_Compat_Backpack(a) class MRC_##a##_Backpack : MRC_Base_Backpack {\
+    #define Macro_MRC_Compat_Backpack(a) class MRC_##a##_Backpack : MRC_Backpack_base {\
 		class XtdGearInfo\
         {\
             model="MRCBackpacks";\
@@ -243,7 +244,7 @@ class CfgVehicles
         };\
 	};
 
-	#define Macro_MRC_Compat_Straps_Backpack(a) class MRC_##a##_Straps_Backpack : MRC_Base_Straps_Backpack {\
+	#define Macro_MRC_Compat_Straps_Backpack(a) class MRC_##a##_Straps_Backpack : MRC_Backpack_base_straps {\
 		class XtdGearInfo\
         {\
             model="MRCBackpacks";\
@@ -294,7 +295,7 @@ class CfgVehicles
 	Macro_MRC_Compat_RTO_Straps_Backpack(Medic);
 
     //Long Ranges
-    class MRC_mini_LR_attachment_arrow: MRC_LR_Base
+    class MRC_mini_LR_attachment_arrow: MRC_Backpack_base_LR
     {
         class XtdGearInfo
         {
@@ -302,7 +303,7 @@ class CfgVehicles
             LRs="MiniSmall";
         };
     };
-    class MRC_mini_LR_pack_arrow: MRC_LR_Base
+    class MRC_mini_LR_pack_arrow: MRC_Backpack_base_LR
     {
         class XtdGearInfo
         {
@@ -339,63 +340,23 @@ class CfgVehicles
 
     //Jumppacks
     // JT12
-    class MRC_jumpack_JT12: JLTS_Clone_jumppack_JT12
-    {
-        class XtdGearInfo
-        {
-            model="MRCJT12Jumppack";
-            Jumpack="Trooper";
-        };
-    };
-    class MRC_Ghost_jumpack_JT12: JLTS_Clone_jumppack_JT12 {
-        class XtdGearInfo
-        {
-            model="MRCJT12Jumppack";
-            Jumpack="Ghost";
-        };
-    };
-    class MRC_empty_JT12: MRC_jumpack_JT12
-    {
-        class XtdGearInfo
-        {
-            model="MRCJT12Jumppack";
-            Jumpack="Empty";
-        };
-    };
-    class MRC_medic_jumppack_JT12: MRC_jumpack_JT12
-    {
-        class XtdGearInfo
-        {
-            model="MRCJT12Jumppack";
-            Jumpack="Medic";
-        };
-    };
-    class MRC_veteran_jumpack_JT12: MRC_jumpack_JT12
-    {
-        class XtdGearInfo
-        {
-            model="MRCJT12Jumppack";
-            Jumpack="Veteran";
-        };
-    };
-    class MRC_TL_jumpack_JT12: MRC_jumpack_JT12
-    {
-        class XtdGearInfo
-        {
-            model="MRCJT12Jumppack";
-            Jumpack="Teamlead";
-        };
-    };
+    #define Macro_MRC_Compat_JT12_Jumppack(a) class MRC_jumppack_##a##: MRC_Jumppack_base { \
+        class XtdGearInfo\
+        {\
+            model="MRCJT12Jumppack";\
+            Jumpack=##a##;
+        };\
+    }; 
+
+    Macro_MRC_Compat_JT12_Jumppack(Empty);
+    Macro_MRC_Compat_JT12_Jumppack(Trooper);
+    Macro_MRC_Compat_JT12_Jumppack(Teamleader);
+    Macro_MRC_Compat_JT12_Jumppack(Veteran);
+    Macro_MRC_Compat_JT12_Jumppack(Medic);
+
     // CDV
-    class MRC_AA_jumpack_archangel: MRC_Base_MC_JP
-    {
-        class XtdGearInfo
-        {
-            model="MRCCDVJumppack";
-            CDV="MedicCDV";
-        };
-    };
-    #define Macro_MRC_Compat_Jumppack_MC_Backpack(a) class MRC_jumppack_mc_##a## : MRC_Base_MC_JP {\
+    
+    #define Macro_MRC_Compat_CDV_Jumppack(a) class MRC_jumppack_mc_##a## : MRC_CDV_base {\
 		class XtdGearInfo\
         {\
             model="MRCCDVJumppack";\
@@ -407,7 +368,7 @@ class CfgVehicles
     Macro_MRC_Compat_Jumppack_MC_Backpack(Kyber);
     Macro_MRC_Compat_Jumppack_MC_Backpack(Nova);
     Macro_MRC_Compat_Jumppack_MC_Backpack(Beskar);
-    Macro_MRC_Compat_Jumppack_MC_Backpack(munka);
+    Macro_MRC_Compat_Jumppack_MC_Backpack(Munka);
     Macro_MRC_Compat_Jumppack_MC_Backpack(Medic);
     Macro_MRC_Compat_Jumppack_MC_Backpack(Scorch);
 
