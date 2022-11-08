@@ -36,10 +36,8 @@ class XtdGearModels
                     "Frasier",
                     "Charred",
                     "Hex",
-                    // "Mauser",
                     //ARC
                     "Scorch",
-                    "Trauma",
                     "Main",
                     "Skit",
                     "Mauser"
@@ -83,14 +81,6 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Scorch";
-        };
-    };
-    class MRC_Vest_ARC_Trauma: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Trauma";
         };
     };
     class MRC_Skit_Vest: MRC_Sergeant_Vest

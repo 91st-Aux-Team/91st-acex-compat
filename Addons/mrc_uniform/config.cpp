@@ -524,7 +524,7 @@ class CfgWeapons
         };
     };
 
-    class MRC_B1_MrBones: UniformItem
+    class MRC_B1_uniform_MrBones: UniformItem
     {
         class XtdGearInfo
         {
