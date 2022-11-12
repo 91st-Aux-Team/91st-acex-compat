@@ -45,6 +45,7 @@ class XtdGearModels
                     "Doc",
                     "Fraiser",
                     "Freq",
+                    "Gibby",
                     "Hallowed",
                     "Joker",
                     "Jughead",
@@ -72,6 +73,7 @@ class XtdGearModels
                     "Skit",
                     "Sound",
                     "Steak",
+                    "Sunday",
                     "Tarz",
                     "Volx",
                     "Wedge",
@@ -128,6 +130,7 @@ class XtdGearModels
                 labels="ARC Helmets";
                 values[]=
                 {
+                    "Cannon",
                     "Talleyrand",
                     "Corn",
                     "Roach",
@@ -167,13 +170,16 @@ class XtdGearModels
                 {
                     "Base",
                     "Medic",
-                    "Mav",
-                    "Trill",
+
                     "Avalanche",
                     "Fire",
+                    "Jimmy",
+                    "Mav",
                     "Qal",
-                    "Wagner",
-                    "Snapper"
+                    "Trill",
+                    "Snapper",
+                    "Wagner"
+                    
                 };
             };
         };
@@ -220,6 +226,8 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Fraiser);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Freq);
 
+    Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
+
     Macro_MRC_Inf_Custom_Compat_Helmet(Hallowed);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Joker);
@@ -255,6 +263,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Steak);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Sunday);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Tarz);
 
@@ -333,6 +342,7 @@ class CfgWeapons
         };\
     };
 
+    Macro_MRC_ARC_Compat_Helmet(Cannon);
     Macro_MRC_ARC_Compat_Helmet(Corn);
 	Macro_MRC_ARC_Compat_Helmet(Talleyrand);
 	Macro_MRC_ARC_Compat_Helmet(Bacon);
@@ -384,12 +394,12 @@ class CfgWeapons
     };
 
     Macro_MRC_BARC_Compat_Helmet(Medic);
-    Macro_MRC_BARC_Compat_Helmet(Mav);
-    Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Avalanche);
     Macro_MRC_BARC_Compat_Helmet(Fire);
+    Macro_MRC_BARC_Compat_Helmet(Jimmy);
+    Macro_MRC_BARC_Compat_Helmet(Mav);
     Macro_MRC_BARC_Compat_Helmet(Qal);
-    Macro_MRC_BARC_Compat_Helmet(Wagner);
+    Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
-
+    Macro_MRC_BARC_Compat_Helmet(Wagner);
 };

@@ -192,6 +192,7 @@ class XtdGearModels
                     "ScorchARC",
                     "Saint",
                     "Penguin",
+                    "Trill",
                     "Hex"
                 };
             };
@@ -408,6 +409,7 @@ class CfgWeapons
 	Macro_MRC_Custom_Compat_Armor(Saint);
 	Macro_MRC_Custom_Compat_Armor(Scorch);
     Macro_MRC_Custom_Compat_Armor(ScorchARC);
+    Macro_MRC_Custom_Compat_Armor(Trill);
     Macro_MRC_Custom_Compat_Armor(Hex);
     
     class UniformItem;

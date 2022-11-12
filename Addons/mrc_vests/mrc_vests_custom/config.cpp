@@ -36,6 +36,7 @@ class XtdGearModels
                     "Frasier",
                     "Charred",
                     "Hex",
+                    "Trill",
                     //ARC
                     "Scorch",
                     "Main",
@@ -73,6 +74,7 @@ class CfgWeapons
     Macro_MRC_off_Vest_Compat(Hex);
     Macro_MRC_off_Vest_Compat(Mauser);
     Macro_MRC_off_Vest_Compat(Main);
+    Macro_MRC_off_Vest_Compat(Trill);
 
     //ARC
     class MRC_Vest_ARC_Scorch: MRC_Vest_ARC_Base
