@@ -99,8 +99,6 @@ class XtdGearModels
                 labels="Visors";
                 values[]=
                 {
-                    "Arcanist",
-                    "Baker",
                     "Frasier",
                     "Leer",
                     "Perry",
@@ -171,7 +169,6 @@ class CfgWeapons
     Macro_MRC_Compat_Rangefinders(ARF,BO);
 
     //Visors
-   
 
     #define Macro_MRC_Compat_Visors(a) class MRC_Visor_##a## : MRC_Visor_Base {\
         class XtdGearInfo\
@@ -224,8 +221,6 @@ class CfgWeapons
         };
 
 
-    Macro_MRC_Visor_Custom_Compat_NVG(Arcanist);
-    Macro_MRC_Visor_Custom_Compat_NVG(Baker);
     Macro_MRC_Visor_Custom_Compat_NVG(Frasier);
     Macro_MRC_Visor_Custom_Compat_NVG(Leer);
     Macro_MRC_Visor_Custom_Compat_NVG(Perry);

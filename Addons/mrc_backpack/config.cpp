@@ -99,6 +99,7 @@ class XtdGearModels
                     "Standard",
                     "Medic",
                     "Medic LR",
+                    "Standard LR"
                 };
             };
         };
@@ -116,7 +117,7 @@ class XtdGearModels
                     "Trooper",
                     "Medic",
                     "Veteran",
-                    "Teamlead"
+                    "Teamleader"
                 };
             };
         };
@@ -283,7 +284,10 @@ class CfgVehicles
         };
     };
     // Belt Bags
-    class MRC_Belt_Bag: JLTS_Clone_belt_bag 
+    class MRC_Backpack_belt_base;
+
+
+    class MRC_Backpack_belt_standard: MRC_Backpack_belt_base
     {
         class XtdGearInfo
         {
@@ -291,22 +295,33 @@ class CfgVehicles
             Belt="Standard";
         };
     };
-    class MRC_Medic_Belt_Backpack: JLTS_Clone_belt_bag 
+    class MRC_Backpack_belt_LR: MRC_Backpack_belt_base
     {
         class XtdGearInfo
         {
             model="MRCBelt";
-            Belt="Medic";
+            Belt="Standard LR";
         };
     };
-    class MRC_Medic_Belt_LR_Backpack: MRC_Medic_Belt_Backpack 
-    {
-        class XtdGearInfo
-        {
-            model="MRCBelt";
-            Belt="Medic LR";
-        };
+    
+    #define Macro_MRC_Compat_Backpack_belt(a) class MRC_Backpack_belt_##a##: MRC_Backpack_belt_base { \
+        class XtdGearInfo\
+        {\
+            model="MRCBelt";\
+            Belt=##a##;\
+        };\
     };
+    #define Macro_MRC_Compat_Backpack_belt_LR(a) class MRC_Backpack_belt_LR_##a##: MRC_Backpack_belt_base { \
+        class XtdGearInfo\
+        {\
+            model="MRCBelt";\
+            Belt=##a## LR;\
+        };\
+	};
+
+    Macro_MRC_Compat_Backpack_belt(Medic);
+
+    Macro_MRC_Compat_Backpack_belt_LR(Medic);
 
 
     //Jumppacks

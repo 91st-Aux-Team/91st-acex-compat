@@ -46,7 +46,6 @@ class XtdGearModels
                     "Fraiser",
                     "Freq",
                     "Gibby",
-                    "Hallowed",
                     "Joker",
                     "Jughead",
                     "Laser",
@@ -136,7 +135,6 @@ class XtdGearModels
                     "Roach",
                     "Bacon",
                     "Skittles",
-                    "Loken",
                     "Scorch",
                     "Jericho",
                     "Oddball"
@@ -170,7 +168,6 @@ class XtdGearModels
                 {
                     "Base",
                     "Medic",
-
                     "Avalanche",
                     "Fire",
                     "Jimmy",
@@ -206,7 +203,6 @@ class CfgWeapons
         };\
     };
     
-    Macro_MRC_Inf_Custom_Compat_Helmet(Baker);
     Macro_MRC_Inf_Custom_Compat_Helmet(Barr);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Banana);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Bardok);
@@ -228,13 +224,10 @@ class CfgWeapons
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
 
-    Macro_MRC_Inf_Custom_Compat_Helmet(Hallowed);
-
     Macro_MRC_Inf_Custom_Compat_Helmet(Joker);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Jughead);
 	
 	Macro_MRC_Inf_Custom_Compat_Helmet(Laser);
-	Macro_MRC_Inf_Custom_Compat_Helmet(Larkkit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Leer);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Loki);
 
@@ -348,7 +341,6 @@ class CfgWeapons
 	Macro_MRC_ARC_Compat_Helmet(Bacon);
 	Macro_MRC_ARC_Compat_Helmet(Skittles);
 	Macro_MRC_ARC_Compat_Helmet(Scorch);
-	Macro_MRC_ARC_Compat_Helmet(Loken);
 	Macro_MRC_ARC_Compat_Helmet(Oddball);
 	Macro_MRC_ARC_Compat_Helmet(Jericho);
 
