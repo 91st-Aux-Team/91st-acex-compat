@@ -108,6 +108,9 @@ class XtdGearModels
                     "Odin",
                     "Trill",
                     "Xetor",
+                    "Bardok",
+                    "Miller",
+                    "Snapper"
                 };
             };
             class Type
@@ -222,14 +225,17 @@ class CfgWeapons
 
 
     Macro_MRC_Visor_Custom_Compat_NVG(Frasier);
+    Macro_MRC_Visor_Custom_Compat_NVG(Bardok);
     Macro_MRC_Visor_Custom_Compat_NVG(Leer);
     Macro_MRC_Visor_Custom_Compat_NVG(Perry);
     Macro_MRC_Visor_Custom_Compat_NVG(Sound);
+    Macro_MRC_Visor_Custom_Compat_NVG(Snapper);
     Macro_MRC_Visor_Custom_Compat_NVG(Jericho);
     Macro_MRC_Visor_Custom_Compat_NVG(Avalanche);
     Macro_MRC_Visor_Custom_Compat_NVG(Odin);
     Macro_MRC_Visor_Custom_Compat_NVG(Trill);
     Macro_MRC_Visor_Custom_Compat_NVG(Xetor);
+    Macro_MRC_Visor_Custom_Compat_NVG(Miller);
 
     //chips
     class JLTS_NVG_droid_chip_1;

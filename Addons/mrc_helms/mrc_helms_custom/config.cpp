@@ -30,7 +30,6 @@ class XtdGearModels
                 labels="Infantry Custom Helmets";
                 values[]=
                 {
-                    "Baker",
                     "Barr",
                     "Bardok",
                     "Blanks",
@@ -49,7 +48,6 @@ class XtdGearModels
                     "Joker",
                     "Jughead",
                     "Laser",
-                    "Larkkit",
                     "Leer",
                     "Loki",
                     "Magic",
