@@ -35,6 +35,7 @@ class XtdGearModels
                     "Blanks",
                     "Charred",
                     "Chop",
+                    "Christmas",
                     "Chubs",
                     "Con",
                     "Cross",
@@ -47,6 +48,7 @@ class XtdGearModels
                     "Gibby",
                     "Joker",
                     "Jughead",
+                    "Larkkit",
                     "Laser",
                     "Leer",
                     "Loki",
@@ -80,7 +82,6 @@ class XtdGearModels
                 };
             };
         };
-        
         class PilotCustomshelmets
         {
             label="Pilot Custom Helmets";
@@ -112,7 +113,6 @@ class XtdGearModels
                     "Crew",
                     "Kuro",
                     "Crit",
-                    "Larkkit",
                     "Woost"
                 };
             };
@@ -208,6 +208,7 @@ class CfgWeapons
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Charred);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Chop);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Christmas);
     Macro_MRC_Inf_Custom_Compat_Helmet(Chubs);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Con);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Cryptic);
@@ -225,6 +226,7 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Joker);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Jughead);
 	
+    Macro_MRC_Inf_Custom_Compat_Helmet(Larkkit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Laser);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Leer);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Loki);
@@ -291,6 +293,7 @@ class CfgWeapons
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Grizzly);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Hex);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Oxide);
+    Macro_MRC_Pilot_Custom_Compat_Helmet(Tiny);
 
     //Beskar Helms
     class MRC_Beskar_Helmet: 3as_ATRT_helmet
@@ -313,7 +316,6 @@ class CfgWeapons
     Macro_MRC_Beskar_Custom_Compat_Helmet(Kuro);
 	Macro_MRC_Beskar_Custom_Compat_Helmet(Crit);
     Macro_MRC_Beskar_Custom_Compat_Helmet(Woost);
-    Macro_MRC_Beskar_Custom_Compat_Helmet(Larkkit);
 
     //Arc helms
     class MRC_Roach_Helmet: JLTS_CloneHelmetARC_illum
