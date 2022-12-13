@@ -97,6 +97,7 @@ class XtdGearModels
                     "Grizzly",
                     "Bensen",
                     "Oxide",
+                    "Tiny"
                 };
             };            
         };
