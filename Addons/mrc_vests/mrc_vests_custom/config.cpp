@@ -41,7 +41,8 @@ class XtdGearModels
                     "Scorch",
                     "Main",
                     "Skit",
-                    "Mauser"
+                    "Mauser",
+                    "Roach"
                 };
             };
         };
@@ -91,6 +92,14 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Skit"
+        };
+    };
+        class MRC_Vest_ARC_Roach: MRC_Vest_ARC_Base
+    {
+        class XtdGearInfo
+        {
+            model="CustomVests";
+            CustomVest="Roach";
         };
     };
     
