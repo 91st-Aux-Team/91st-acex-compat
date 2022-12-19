@@ -36,10 +36,9 @@ class XtdGearModels
                     "Frasier",
                     "Charred",
                     "Hex",
-                    // "Mauser",
+                    "Trill",
                     //ARC
                     "Scorch",
-                    "Trauma",
                     "Main",
                     "Skit",
                     "Mauser"
@@ -75,6 +74,7 @@ class CfgWeapons
     Macro_MRC_off_Vest_Compat(Hex);
     Macro_MRC_off_Vest_Compat(Mauser);
     Macro_MRC_off_Vest_Compat(Main);
+    Macro_MRC_off_Vest_Compat(Trill);
 
     //ARC
     class MRC_Vest_ARC_Scorch: MRC_Vest_ARC_Base
@@ -83,14 +83,6 @@ class CfgWeapons
         {
             model="CustomVests";
             CustomVest="Scorch";
-        };
-    };
-    class MRC_Vest_ARC_Trauma: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="CustomVests";
-            CustomVest="Trauma";
         };
     };
     class MRC_Skit_Vest: MRC_Sergeant_Vest

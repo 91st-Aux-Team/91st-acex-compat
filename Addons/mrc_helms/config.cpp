@@ -291,36 +291,36 @@ class CfgWeapons
 
 
     // Campaign
-    class MRC_Campaign_Helmet: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="CampaignHelmets";
-            Campaignhelms="CampaignStandard";
-        };
-    };
-    class MRC_Campaign_Medic_Helmet: JLTS_CloneHelmetP2
-    {
-        class XtdGearInfo
-        {
-            model="CampaignHelmets";
-            Campaignhelms="CampaignMedic";
-        };
-    };
-    class MRC_Campaign_BARC_Helmet: JLTS_CloneHelmetBARC
-    {
-        class XtdGearInfo
-        {
-            model="CampaignHelmets";
-            Campaignhelms="CampaignBARC";
-        };
-    };
-    class MRC_Campaign_BARC_Medic_Helmet: JLTS_CloneHelmetBARC
-    {
-        class XtdGearInfo
-        {
-            model="CampaignHelmets";
-            Campaignhelms="CampaignBARCMedic";
-        };
-    };
+    // class MRC_Campaign_Helmet: JLTS_CloneHelmetP2
+    // {
+    //     class XtdGearInfo
+    //     {
+    //         model="CampaignHelmets";
+    //         Campaignhelms="CampaignStandard";
+    //     };
+    // };
+    // class MRC_Campaign_Medic_Helmet: JLTS_CloneHelmetP2
+    // {
+    //     class XtdGearInfo
+    //     {
+    //         model="CampaignHelmets";
+    //         Campaignhelms="CampaignMedic";
+    //     };
+    // };
+    // class MRC_Campaign_BARC_Helmet: JLTS_CloneHelmetBARC
+    // {
+    //     class XtdGearInfo
+    //     {
+    //         model="CampaignHelmets";
+    //         Campaignhelms="CampaignBARC";
+    //     };
+    // };
+    // class MRC_Campaign_BARC_Medic_Helmet: JLTS_CloneHelmetBARC
+    // {
+    //     class XtdGearInfo
+    //     {
+    //         model="CampaignHelmets";
+    //         Campaignhelms="CampaignBARCMedic";
+    //     };
+    // };
 };
