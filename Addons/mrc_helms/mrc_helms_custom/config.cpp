@@ -35,7 +35,6 @@ class XtdGearModels
                     "Blanks",
                     "Charred",
                     "Chop",
-                    "Christmas",
                     "Chubs",
                     "Con",
                     "Cross",
