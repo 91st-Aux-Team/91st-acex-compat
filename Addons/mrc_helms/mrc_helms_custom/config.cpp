@@ -209,7 +209,6 @@ class CfgWeapons
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Charred);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Chop);
-    Macro_MRC_Inf_Custom_Compat_Helmet(Christmas);
     Macro_MRC_Inf_Custom_Compat_Helmet(Chubs);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Con);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Cryptic);

@@ -224,22 +224,6 @@ class XtdGearModels
                 };
             };
         };
-        class MRC_Christmas
-        {
-            label="91st Christmas Armor";
-            author="91st C-4 Team";
-            options[]={"Christmas"};
-            class Christmas
-            {
-                labels="Christmas";
-                values[]=
-                {
-                    "Christmas1",
-                    "Christmas2",
-                    "Christmas3"
-                };
-            }; 
-        };
     };
 };
 class CfgWeapons
@@ -249,16 +233,6 @@ class CfgWeapons
     class MRC_Armor_Base;
 
     // christmas armor
-    #define Macro_MRC_Christmas_Compat_Armor(a) class MRC_Infantry_##a##_Armor : MRC_Armor_Base {\
-        class XtdGearInfo\
-        {\
-            model="MRC_Christmas";\
-            Christmas=##a##;\
-        };\
-    };
-    Macro_MRC_Christmas_Compat_Armor(Christmas1);
-    Macro_MRC_Christmas_Compat_Armor(Christmas2);
-    Macro_MRC_Christmas_Compat_Armor(Christmas3);
 
     //Rank Armor
 
