@@ -180,11 +180,11 @@ class XtdGearModels
                 labels="Customs";
                 values[]=
                 {
-                    "Axer",
                     "Charred",
-                    "Corpse",
                     "Cross",
+                    "Doc",
                     "Frog",
+                    "Frasier",
                     "Kuro",
                     "Mav",
                     "Roach",
@@ -192,6 +192,7 @@ class XtdGearModels
                     "ScorchARC",
                     "Saint",
                     "Penguin",
+                    "Trill",
                     "Hex"
                 };
             };
@@ -218,7 +219,8 @@ class XtdGearModels
                     "FireFighter",
                     "Grey",
                     "Swamp",
-                    "White"
+                    "White",
+                    "MrBones"
                 };
             };
         };
@@ -229,6 +231,9 @@ class CfgWeapons
     class Uniform_Base;
     class JLTS_Clone_P2_recon;
     class MRC_Armor_Base;
+
+    // christmas armor
+
     //Rank Armor
 
     #define Macro_MRC_Infantry_Compat_Armor(a) class MRC_Infantry_##a##_Armor : MRC_Armor_Base {\
@@ -395,19 +400,19 @@ class CfgWeapons
         };\
     };
 
-    Macro_MRC_Custom_Compat_Armor(Axer);
     Macro_MRC_Custom_Compat_Armor(Charred);
-	Macro_MRC_Custom_Compat_Armor(Corpse);
 	Macro_MRC_Custom_Compat_Armor(Cross);
+    Macro_MRC_Custom_Compat_Armor(Doc);
 	Macro_MRC_Custom_Compat_Armor(Frog);
+    Macro_MRC_Custom_Compat_Armor(Frasier);
 	Macro_MRC_Custom_Compat_Armor(Kuro);
 	Macro_MRC_Custom_Compat_Armor(Mav);
-	Macro_MRC_Custom_Compat_Armor(Nova);
 	Macro_MRC_Custom_Compat_Armor(Penguin);
 	Macro_MRC_Custom_Compat_Armor(Roach);
 	Macro_MRC_Custom_Compat_Armor(Saint);
 	Macro_MRC_Custom_Compat_Armor(Scorch);
     Macro_MRC_Custom_Compat_Armor(ScorchARC);
+    Macro_MRC_Custom_Compat_Armor(Trill);
     Macro_MRC_Custom_Compat_Armor(Hex);
     
     class UniformItem;
@@ -521,6 +526,15 @@ class CfgWeapons
         {
             model="MRC_OPFOR";
             B1="White";
+        };
+    };
+
+    class MRC_B1_uniform_MrBones: UniformItem
+    {
+        class XtdGearInfo
+        {
+            model="MRC_OPFOR";
+            B1="MrBones";
         };
     };
 };

@@ -86,6 +86,23 @@ class XtdGearModels
                 };
             };
         };
+        class MRCBelt
+        {
+            label="Belt Bags";
+            author="91st Aux Team";
+            options[]={"Belt"};
+            class Belt
+            {
+                labels="Belt Bags";
+                values[]=
+                {
+                    "Standard",
+                    "Medic",
+                    "Medic LR",
+                    "Standard LR"
+                };
+            };
+        };
         class MRCJT12Jumppack
         {
             label="Jumppacks";
@@ -98,8 +115,9 @@ class XtdGearModels
                 {
                     "Empty",
                     "Trooper",
+                    "Medic",
                     "Veteran",
-                    "Teamlead"
+                    "Teamleader"
                 };
             };
         };
@@ -110,44 +128,16 @@ class XtdGearModels
             options[]={"CDV"};
             class CDV
             {
-                labels="Jumpack";
+                labels="CDV";
                 values[]=
                 {
-                    "KyberCDV",
-                    "BeskarCDV",
-                    "NovaCDV",
-                    "JadeCDV",
-                    "MedicCDV",
-                    "ScorchCDV",
-                    "munkaCDV"
-                };
-                class KyberCDV
-                {
-                    label="Kyber";
-                };
-                class BeskarCDV
-                {
-                    label="Beskar";
-                };
-                class NovaCDV
-                {
-                    label="Nova";
-                };
-                class JadeCDV
-                {
-                    label="Jade";
-                };
-                class MedicCDV
-                {
-                    label="Medic";
-                };
-                class ScorchCDV
-                {
-                    label="Scorch";
-                };
-                class munkaCDV
-                {
-                    label="Munka";
+                    "Kyber",
+                    "Beskar",
+                    "Nova",
+                    "Jade",
+                    "Medic",
+                    "Scorch",
+                    "Munka"
                 };
             };
         };
@@ -173,7 +163,8 @@ class XtdGearModels
                     "Marksman",
                     "Officer",
                     "AT",
-                    "AA"
+                    "AA",
+                    "MrBones"
                 };
             };
         };
@@ -199,7 +190,8 @@ class XtdGearModels
                     "Marksman",
                     "Officer",
                     "AT",
-                    "AA"
+                    "AA",
+                    "MrBones"
                 };
             };
         };
@@ -207,13 +199,15 @@ class XtdGearModels
 };
 class CfgVehicles
 {
-    class MRC_Base_Backpack;
-    class MRC_Base_Straps_Backpack;
-    class MRC_LR_Base;
+    class MRC_Backpack_base;
+    class MRC_Backpack_base_straps;
+    class MRC_Backpack_base_LR;
     class JLTS_Clone_jumppack_JT12;
-    class MRC_Base_MC_JP;
+    class MRC_CDV_base;
+    class JLTS_Clone_belt_bag;
+    class MRC_Jumppack_base;
 
-    #define Macro_MRC_Compat_Backpack(a) class MRC_##a##_Backpack : MRC_Base_Backpack {\
+    #define Macro_MRC_Compat_Backpack(a) class MRC_##a##_Backpack : MRC_Backpack_base {\
 		class XtdGearInfo\
         {\
             model="MRCBackpacks";\
@@ -222,7 +216,7 @@ class CfgVehicles
         };\
 	};
 
-	#define Macro_MRC_Compat_Straps_Backpack(a) class MRC_##a##_Straps_Backpack : MRC_Base_Straps_Backpack {\
+	#define Macro_MRC_Compat_Straps_Backpack(a) class MRC_##a##_Straps_Backpack : MRC_Backpack_base_straps {\
 		class XtdGearInfo\
         {\
             model="MRCBackpacks";\
@@ -243,7 +237,7 @@ class CfgVehicles
 	Macro_MRC_Compat_Straps_Backpack(Beskar);
 	Macro_MRC_Compat_Straps_Backpack(Medic);
 
-    #define Macro_MRC_Compat_RTO_Backpack(a) class MRC_##a##_RTO_Backpack : MRC_Base_Backpack {\
+    #define Macro_MRC_Compat_RTO_Backpack(a) class MRC_##a##_RTO_Backpack : MRC_Backpack_base_LR {\
 		class XtdGearInfo\
         {\
             model="MRCRTOBackpacks";\
@@ -251,7 +245,7 @@ class CfgVehicles
             Type="Standard";\
         };\
 	};
-    #define Macro_MRC_Compat_RTO_Straps_Backpack(a) class MRC_##a##_RTO_Straps_Backpack : MRC_Base_Straps_Backpack {\
+    #define Macro_MRC_Compat_RTO_Straps_Backpack(a) class MRC_##a##_RTO_Straps_Backpack : MRC_Backpack_base_LR {\
 		class XtdGearInfo\
         {\
             model="MRCRTOBackpacks";\
@@ -273,7 +267,7 @@ class CfgVehicles
 	Macro_MRC_Compat_RTO_Straps_Backpack(Medic);
 
     //Long Ranges
-    class MRC_mini_LR_attachment_arrow: MRC_LR_Base
+    class MRC_mini_LR_attachment_arrow: MRC_Backpack_base_LR
     {
         class XtdGearInfo
         {
@@ -281,7 +275,7 @@ class CfgVehicles
             LRs="MiniSmall";
         };
     };
-    class MRC_mini_LR_pack_arrow: MRC_LR_Base
+    class MRC_mini_LR_pack_arrow: MRC_Backpack_base_LR
     {
         class XtdGearInfo
         {
@@ -289,65 +283,79 @@ class CfgVehicles
             LRs="MiniBig";
         };
     };
+    // Belt Bags
+    class MRC_Backpack_belt_base;
 
-    //Jumppacks
-    // JT12
-    class MRC_jumpack_JT12: JLTS_Clone_jumppack_JT12
+
+    class MRC_Backpack_belt_standard: MRC_Backpack_belt_base
     {
         class XtdGearInfo
         {
-            model="MRCJT12Jumppack";
-            Jumpack="Trooper";
+            model="MRCBelt";
+            Belt="Standard";
         };
     };
-    class MRC_empty_JT12: MRC_jumpack_JT12
+    class MRC_Backpack_belt_LR: MRC_Backpack_belt_base
     {
         class XtdGearInfo
         {
-            model="MRCJT12Jumppack";
-            Jumpack="Empty";
+            model="MRCBelt";
+            Belt="Standard LR";
         };
     };
-    class MRC_veteran_jumpack_JT12: MRC_jumpack_JT12
-    {
-        class XtdGearInfo
-        {
-            model="MRCJT12Jumppack";
-            Jumpack="Veteran";
-        };
-    };
-    class MRC_TL_jumpack_JT12: MRC_jumpack_JT12
-    {
-        class XtdGearInfo
-        {
-            model="MRCJT12Jumppack";
-            Jumpack="Teamlead";
-        };
-    };
-    // CDV
-    class MRC_AA_jumpack_archangel: MRC_Base_MC_JP
-    {
-        class XtdGearInfo
-        {
-            model="MRCCDVJumppack";
-            CDV="MedicCDV";
-        };
-    };
-    #define Macro_MRC_Compat_Jumppack_MC_Backpack(a) class MRC_jumppack_mc_##a## : MRC_Base_MC_JP {\
-		class XtdGearInfo\
+    
+    #define Macro_MRC_Compat_Backpack_belt(a) class MRC_Backpack_belt_##a##: MRC_Backpack_belt_base { \
+        class XtdGearInfo\
         {\
-            model="MRCCDVJumppack";\
-            CDV=##a##CDV;\
+            model="MRCBelt";\
+            Belt=##a##;\
+        };\
+    };
+    #define Macro_MRC_Compat_Backpack_belt_LR(a) class MRC_Backpack_belt_LR_##a##: MRC_Backpack_belt_base { \
+        class XtdGearInfo\
+        {\
+            model="MRCBelt";\
+            Belt=##a## LR;\
         };\
 	};
 
-    Macro_MRC_Compat_Jumppack_MC_Backpack(Jade);
-    Macro_MRC_Compat_Jumppack_MC_Backpack(Kyber);
-    Macro_MRC_Compat_Jumppack_MC_Backpack(Nova);
-    Macro_MRC_Compat_Jumppack_MC_Backpack(Beskar);
-    Macro_MRC_Compat_Jumppack_MC_Backpack(munka);
-    Macro_MRC_Compat_Jumppack_MC_Backpack(Medic);
-    Macro_MRC_Compat_Jumppack_MC_Backpack(Scorch);
+    Macro_MRC_Compat_Backpack_belt(Medic);
+
+    Macro_MRC_Compat_Backpack_belt_LR(Medic);
+
+
+    //Jumppacks
+    // JT12
+    #define Macro_MRC_Compat_JT12_Jumppack(a) class MRC_jumppack_##a##: MRC_Jumppack_base { \
+        class XtdGearInfo\
+        {\
+            model="MRCJT12Jumppack";\
+            Jumpack=##a##;\
+        };\
+    }; 
+
+    Macro_MRC_Compat_JT12_Jumppack(Empty);
+    Macro_MRC_Compat_JT12_Jumppack(Trooper);
+    Macro_MRC_Compat_JT12_Jumppack(Teamleader);
+    Macro_MRC_Compat_JT12_Jumppack(Veteran);
+    Macro_MRC_Compat_JT12_Jumppack(Medic);
+
+    // CDV
+    
+    #define Macro_MRC_Compat_CDV_Jumppack(a) class MRC_jumppack_CDV_##a## : MRC_CDV_base { \
+		class XtdGearInfo\
+        {\
+            model="MRCCDVJumppack";\
+            CDV=##a##;\
+        };\
+	};
+    Macro_MRC_Compat_CDV_Jumppack(Jade);
+    Macro_MRC_Compat_CDV_Jumppack(Kyber);
+    Macro_MRC_Compat_CDV_Jumppack(Nova);
+    Macro_MRC_Compat_CDV_Jumppack(Beskar);
+    Macro_MRC_Compat_CDV_Jumppack(Munka);
+    Macro_MRC_Compat_CDV_Jumppack(Medic);
+    Macro_MRC_Compat_CDV_Jumppack(Scorch);
 
     // B1 Backpack
     class JLTS_B1_backpack;
@@ -379,6 +387,7 @@ class CfgVehicles
 	Macro_MRC_Compat_B1_Backpack(Officer);
 	Macro_MRC_Compat_B1_Backpack(AT);
 	Macro_MRC_Compat_B1_Backpack(AA);
+    Macro_MRC_Compat_B1_Backpack(MrBones);
 
     class JLTS_B1_antenna;
     class MRC_B1_Antenna_Base: JLTS_B1_antenna
@@ -409,4 +418,5 @@ class CfgVehicles
 	Macro_MRC_Compat_B1_Antenna(Officer);
 	Macro_MRC_Compat_B1_Antenna(AT);
 	Macro_MRC_Compat_B1_Antenna(AA);
+    Macro_MRC_Compat_B1_Antenna(MrBones);
 };
