@@ -100,7 +100,7 @@ class CfgWeapons
         class XtdGearInfo
         {
             model="CustomVests";
-            CustomVest="Woach";
+            CustomVest="Roach";
         };
     };
     
