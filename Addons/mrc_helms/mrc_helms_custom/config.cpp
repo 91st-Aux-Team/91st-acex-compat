@@ -35,7 +35,6 @@ class XtdGearModels
                     "Blanks",
                     "Charred",
                     "Chop",
-                    "Christmas",
                     "Chubs",
                     "Con",
                     "Cross",
@@ -66,6 +65,7 @@ class XtdGearModels
                     "Praetorian",
                     "Predator",
                     "Romeo",
+                    "Samael",
                     "Sappheron",
                     "Scorch",
                     "Silver",
@@ -250,6 +250,7 @@ class CfgWeapons
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Romeo);
 	
+    Macro_MRC_Inf_Custom_Compat_Helmet(Samael);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sappheron);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Scorch);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Silver);
