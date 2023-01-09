@@ -63,6 +63,7 @@ class XtdGearModels
                     "Odin",
                     "Opossum",
                     "Perry",
+                    "Postal",
                     "Praetorian",
                     "Predator",
                     "Romeo",
@@ -114,8 +115,8 @@ class XtdGearModels
                 {
                     "Crew",
                     "Kuro",
-                    "Crit",
-                    "Woost"
+                    "Woost",
+                    "Weylyn"
                 };
             };
         };
@@ -249,6 +250,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Opossum);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Perry);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Postal);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Praetorian);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Predator);
 
@@ -319,8 +321,8 @@ class CfgWeapons
     };
 
     Macro_MRC_Beskar_Custom_Compat_Helmet(Kuro);
-	Macro_MRC_Beskar_Custom_Compat_Helmet(Crit);
     Macro_MRC_Beskar_Custom_Compat_Helmet(Woost);
+    Macro_MRC_Beskar_Custom_Compat_Helmet(Weylyn);
 
     //Arc helms
     class MRC_Roach_Helmet: JLTS_CloneHelmetARC_illum
