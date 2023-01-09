@@ -263,39 +263,34 @@ class CfgGlasses
     //     };
     // };
 
-    #define Macro_MRC_Visors_Compat(a) class MRC_Visor_##a##_Glasses : MRC_Glasses_Base  {\
-        class XtdGearInfo\
-        {\
-            model="MRC_Visors_Glasses";\
-            Visor=##a##;\
+    #define MACRO_MRC_GLASSES_NVG_COMPAT(a) class MRC_Glasses_Visor_##a: MRC_Glasses_Visor_Up { \
+        class XtdGearInfo { \
+            model="MRC_Visors_Glasses"; \
+            Visor=##a; \
+            Type = "Up"; \
+        }; \
+        class MRC_Glasses_Visor_##a##_Down: MRC_Glasses_Visor_Down { \
+            class XtdGearInfo { \
+                model="MRC_Visors_Glasses"; \
+                Visor=##a; \
+                Type = "Down"; \
+            }; \
         };\
     };
-    #define MACRO_MRC_GLASSES_NVG_COMPAT(a) class MRC_Glasses_Visor##a: MRC_Glasses_Visor_Up { \
-        class XtdGearInfo { \
-            model="MRC_Visors_Glasses"; \
-            Visor=##a; \
-            Type = "Up"; \
-        }; \
-        class MRC_Glasses_Visor_##a##_Down: MRC_Glasses_Visor_Down { \
-        class XtdGearInfo { \
-            model="MRC_Visors_Glasses"; \
-            Visor=##a; \
-            Type = "Down"; \
-        }; \
-    };
 
-    #define MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(a) class MRC_Glasses_Visor##a: MRC_Glasses_Visor_Up { \
+    #define MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(a) class MRC_Glasses_Visor_##a: MRC_Glasses_Visor_Up { \
         class XtdGearInfo { \
             model="Custom_NVG_Visors_Glasses"; \
             Visor=##a; \
             Type = "Up"; \
         }; \
         class MRC_Glasses_Visor_##a##_Down: MRC_Glasses_Visor_Down { \
-        class XtdGearInfo { \
-            model="Custom_NVG_Visors_Glasses"; \
-            Visor=##a; \
-            Type = "Down"; \
-        }; \
+            class XtdGearInfo { \
+                model="Custom_NVG_Visors_Glasses"; \
+                Visor=##a; \
+                Type = "Down"; \
+            }; \
+        };\
     };
 
     MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Avalanche);
