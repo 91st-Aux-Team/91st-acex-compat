@@ -46,6 +46,7 @@ class XtdGearModels
                     "Fraiser",
                     "Freq",
                     "Gibby",
+                    "Jas",
                     "Joker",
                     "Jughead",
                     "Larkkit",
@@ -136,7 +137,7 @@ class XtdGearModels
                     "Skittles",
                     "Scorch",
                     "Jericho",
-                    "Oddball"
+                    "Oddball",
                 };                
             };        
         };
@@ -174,7 +175,9 @@ class XtdGearModels
                     "Qal",
                     "Trill",
                     "Snapper",
-                    "Wagner"
+                    "Wagner",
+                    "Binns",
+                    "Shougun"
                     
                 };
             };
@@ -223,6 +226,7 @@ class CfgWeapons
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
 
+    Macro_MRC_Inf_Custom_Compat_Helmet(Jas);
     Macro_MRC_Inf_Custom_Compat_Helmet(Joker);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Jughead);
 	
@@ -394,4 +398,6 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
     Macro_MRC_BARC_Compat_Helmet(Wagner);
+    Macro_MRC_BARC_Compat_Helmet(Binns);
+    Macro_MRC_BARC_Compat_Helmet(Shogun);
 };
