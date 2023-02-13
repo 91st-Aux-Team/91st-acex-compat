@@ -167,6 +167,7 @@ class XtdGearModels
                     "Base",
                     "Medic",
                     "Avalanche",
+                    "Binns",
                     "Fire",
                     "Jimmy",
                     "Mav",
@@ -391,6 +392,7 @@ class CfgWeapons
 
     Macro_MRC_BARC_Compat_Helmet(Medic);
     Macro_MRC_BARC_Compat_Helmet(Avalanche);
+    Macro_MRC_BARC_Compat_Helmet(Binns);
     Macro_MRC_BARC_Compat_Helmet(Fire);
     Macro_MRC_BARC_Compat_Helmet(Jimmy);
     Macro_MRC_BARC_Compat_Helmet(Mav);

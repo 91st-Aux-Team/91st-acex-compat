@@ -182,6 +182,7 @@ class XtdGearModels
                 {
                     "Charred",
                     "Cross",
+                    "Dev",
                     "Doc",
                     "Frog",
                     "Frasier",
@@ -192,6 +193,7 @@ class XtdGearModels
                     "ScorchARC",
                     "Saint",
                     "Penguin",
+                    "Predator",
                     "Trill",
                     "Hex"
                 };
@@ -403,11 +405,13 @@ class CfgWeapons
     Macro_MRC_Custom_Compat_Armor(Charred);
 	Macro_MRC_Custom_Compat_Armor(Cross);
     Macro_MRC_Custom_Compat_Armor(Doc);
+    Macro_MRC_Custom_Compat_Armor(Dev);
 	Macro_MRC_Custom_Compat_Armor(Frog);
     Macro_MRC_Custom_Compat_Armor(Frasier);
 	Macro_MRC_Custom_Compat_Armor(Kuro);
 	Macro_MRC_Custom_Compat_Armor(Mav);
 	Macro_MRC_Custom_Compat_Armor(Penguin);
+    Macro_MRC_Custom_Compat_Armor(Predator);
 	Macro_MRC_Custom_Compat_Armor(Roach);
 	Macro_MRC_Custom_Compat_Armor(Saint);
 	Macro_MRC_Custom_Compat_Armor(Scorch);
