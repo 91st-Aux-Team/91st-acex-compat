@@ -121,12 +121,15 @@ class XtdGearModels
                     "Charred",
                     "Corn",
                     "Doc",
+                    "Dev",
                     "Frasier",
                     "Kuro",
                     "Main",
                     "Mav",
+                    "Mauser",
                     "Predator",
-                    "Leer"
+                    "Leer",
+                    "Hex",
                 };
             };
         };
@@ -166,6 +169,7 @@ class XtdGearModels
                 {
                     "Scorch",
                     "Roach",
+                    "Jericho",
                 };
             };
         };
@@ -274,9 +278,12 @@ class CfgWeapons
     MACRO_MRC_VEST_OFFICER_COMPAT(Charred,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Corn,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Doc,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Dev,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Frasier,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Kuro,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Main,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Mauser,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Hex,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Mav,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Predator,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Leer,MRC_Officer_Vests_Custom);
@@ -300,6 +307,7 @@ class CfgWeapons
     MACRO_MRC_VEST_ARC_COMPAT(CO,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(Roach,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Scorch,MRC_ARC_Vests_Custom);
+    MACRO_MRC_VEST_ARC_COMPAT(Jericho,MRC_ARC_Vests_Custom);
 
     //Holsters
 
