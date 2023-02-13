@@ -54,7 +54,6 @@ class XtdGearModels
                     "Loki",
                     "Magic",
                     "Main",
-                    "Marf",
                     "Mauser",
                     "Miller",
                     "Misery",
@@ -77,10 +76,8 @@ class XtdGearModels
                     "Sunday",
                     "Tarz",
                     "Volx",
-                    "Wedge",
                     "Widget",
                     "Xero",
-                    "Xetor",
                 };
             };
         };
@@ -177,6 +174,8 @@ class XtdGearModels
                     "Trill",
                     "Snapper",
                     "Wagner",
+                    "Wedge",
+                    "Xetor",
                     "Binns",
                     "Shougun"
                     
@@ -238,7 +237,6 @@ class CfgWeapons
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Magic);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Main);
-	Macro_MRC_Inf_Custom_Compat_Helmet(Marf);
     Macro_MRC_Inf_Custom_Compat_Helmet(Mauser);
     Macro_MRC_Inf_Custom_Compat_Helmet(Mountain);
     Macro_MRC_Inf_Custom_Compat_Helmet(Miller);
@@ -272,7 +270,6 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Wedge);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Widget);
 
-	Macro_MRC_Inf_Custom_Compat_Helmet(Xetor);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Xero);
 
 
@@ -401,6 +398,8 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
     Macro_MRC_BARC_Compat_Helmet(Wagner);
+    Macro_MRC_BARC_Compat_Helmet(Wedge);
+    Macro_MRC_BARC_Compat_Helmet(Xetor);
     Macro_MRC_BARC_Compat_Helmet(Binns);
     Macro_MRC_BARC_Compat_Helmet(Shogun);
 };

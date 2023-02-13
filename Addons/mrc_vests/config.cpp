@@ -20,42 +20,45 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-        class 91stOfficerVests
+        class MRC_Vest_Kama
+        {
+            label = "91st Kamas";
+            author = "91st C-4 Team";
+            options[] = {"Standard"};
+            class Standard
+            {
+                labels = "Standard Kamas";
+                values[] = 
+                {
+                    "Corporal",
+                    "Sergeant",
+                    "Skit",
+                    "Trill"
+                };
+            };
+        };
+        class MRC_Officer_Vests
         {
             label="91st Officer Vests";
             author="91st Aux Team";
-            options[]={"Officervest"};
-            class Officervest
+            options[]={"Standard"};
+            class Standard
             {
-                labels="Officer Vests";
+                labels="91st Officer Vests: Standard";
                 values[]=
                 {
-                    "ReversedGrey",
-                    "Rev_Red_Grey",
-                    "ReversedRed",
                     "Grey",
-                    "Red_Grey",
+                    "Red_Gray",
                     "Red",
                     "Commander",
-                    "CSM"
-                };
-                class ReversedGrey
-                {
-                    label="R PSG/D IC";
-                };
-                class Rev_Red_Grey
-                {
-                    label="R 1SG/DXO";
-                };
-                class ReversedRed
-                {
-                    label="R CO/Off";
+                    "CSM",
+                    "Medic"
                 };
                 class Grey
                 {
                     label="PSG/DNCOIC";
                 };
-                class Red_Grey
+                class Red_Gray
                 {
                     label="1SG/D XO";
                 };
@@ -65,87 +68,108 @@ class XtdGearModels
                 };
                 class Commander
                 {
-                    label="Commander";
+                    label = "TF CC";
                 };
                 class CSM
                 {
-                    label="CSM";
+                    label = "TF CSM";
+                };
+                class Medic
+                {
+                    label = "TF Medic";
+                }
+            };
+        };
+        class MRC_Officer_Vests_Reverse
+        {
+            label="91st Officer Vests: Reversed";
+            author="91st Aux Team";
+            options[]={"Standard"};
+            class Standard
+            {
+                labels="Standard Officer Vests";
+                values[]=
+                {
+                    "Grey",
+                    "Red_Gray",
+                    "Red",
+                };
+                class Grey
+                {
+                    label="PSG/DNCOIC";
+                };
+                class Red_Gray
+                {
+                    label="1SG/D XO";
+                };
+                class Red
+                {
+                    label="CO/Officer";
                 };
             };
         };
-        class 91stARCVests
+        class MRC_Officer_Vests_Custom
         {
-            label="ARC Vests";
+            label="91st Officer Vests: Custom";
             author="91st Aux Team";
-            options[]={"Arcvests"};
-            class Arcvests
+            options[]={"Standard"};
+            class Standard
             {
-                labels="Arc Vest";
+                labels = "Custom Officer Vests";
+                values[] = 
+                {
+                    "Charred",
+                    "Corn",
+                    "Doc",
+                    "Frasier",
+                    "Kuro",
+                    "Main",
+                    "Mav",
+                    "Predator",
+                    "Leer"
+                };
+            };
+        };
+        class MRC_ARC_Vests
+        {
+            label="91st ARC Vests: Standard";
+            author="91st Aux Team";
+            options[]={"Standard"};
+            class Standard
+            {
+                labels="Standard Arc Vests";
                 values[]=
                 {
                     "Cadet",
                     "Trooper",
                     "Veteran",
-                    "Teamlead",
+                    "TL",
                     "NCOIC",
                     "XO",
                     "CO"
                 };
-                class Trooper
+                class TL
                 {
-                    label="Trooper";
-                };
-                class Veteran
-                {
-                    label="Veteran";
-                }; 
-                class Teamlead
-                {
-                    label="Teamlead";
-                };
-                class NCOIC
-                {
-                    label="NCOIC";
-                };
-                class XO
-                {
-                    label="XO";
-                };
-                class CO
-                {
-                    label="CO";
+                    label = "Teamlead";
                 };
             };
         };
-	    class 91stOfficerPauldrons
+        class MRC_ARC_Vests_Custom
         {
-            label="91st Officer Pauldrons";
+            label="91st ARC Vests: Custom";
             author="91st Aux Team";
-            options[]={"Officerpauldron"};
-            class Officerpauldron
+            options[]={"Standard"};
+            class Standard
             {
-                labels="Officer pauldron";
+                labels="Standard Arc Vests";
                 values[]=
                 {
-                    "Grey",
-                    "Red_Grey",
-                    "Red"
-                };
-                class Grey
-                {
-                    label="Grey";
-                };
-                class Red_Grey
-                {
-                    label="Red Grey";
-                }; 
-                class Red
-                {
-                    label="Red";
+                    "Scorch",
+                    "Roach",
                 };
             };
         };
-        class 91stHolsters
+        class MRC_Holsters
         {
             label="91st Holsters";
             author="91st Aux Team";
@@ -155,74 +179,30 @@ class XtdGearModels
                 labels="Holsters";
                 values[]=
                 {
-                    "Senior",
-                    "Veterans",
-                    "Specialist",
-                    "WarrantOfficer",
+                    "SCT",
+                    "VCT",
+                    "CSP",
+                    "WO",
                     "NCO"
-                };
-                class Senior
-                {
-                    label="Senior";
-                };
-                class Veterans
-                {
-                    label="Veterans";
-                }; 
-                class Specialist
-                {
-                    label="Specialist";
-                };
-                class WarrantOfficer
-                {
-                    label="Warrant Officer";
-                };
-                class NCO
-                {
-                    label="NCO";
                 };
             };
         };
-        class 91stStandardVests
+        class MRC_Vest_Recon
         {
             label="91st Standard Vests";
             author="91st Aux Team";
-            options[]={"StandardVests"};
-            class StandardVests
+            options[]={"Standard"};
+            class Standard
             {
                 labels="Standard Vests";
                 values[]=
                 {
                     "Trooper",
-                    "TrooperRecon",
+                    "Heavy",
                     "WO4",
-                    "NCORecon",
-                    "Corporal",
-                    "Sergeant"
-                };
-                class Trooper
-                {
-                    label="Trooper";
-                };
-                class TrooperRecon
-                {
-                    label="Trooper Recon";
-                };
-                class WO4
-                {
-                    label="WO4";
-                };
-                class NCORecon
-                {
-                    label="NCO Recon";
-                };
-                class Corporal
-                {
-                    label="Corporal";
-                }; 
-                class Sergeant
-                {
-                    label="Sergeant";
+                    "SL",
+                    "NCO",
+                    "RTO"
                 };
             };
         }; 
@@ -231,246 +211,127 @@ class XtdGearModels
 class CfgWeapons
 {
     class V_RebreatherB;
+    class ItemCore;
     class MRC_Vest_ARC_Base;
-    //Officer Vests
-    class MRC_Officer_Vest_Gray: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerVests";
-            Officervest="Grey";
-        };
-    };
-    class MRC_Reverse_Officer_Gray: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerVests";
-            Officervest="ReversedGrey";
-        };
-    };
-    class MRC_Officer_Vest_RedGray: MRC_Officer_Vest_gray
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerVests";
-            Officervest="Red_Grey";
-        };
-    };
-    class MRC_Officer_Vest_Red: MRC_Officer_Vest_gray
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerVests";
-            Officervest="Red";
-        };
-    };
-    class MRC_Reverse_Officer_RedGray: MRC_Reverse_Officer_Gray
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerVests";
-            Officervest="Rev_Red_Grey";
-        };
-    };
-    class MRC_Reverse_Officer_Red: MRC_Reverse_Officer_Gray
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerVests";
-            Officervest="ReversedRed";
-        };
-    };
-    class MRC_Commander_Vest: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerVests";
-            Officervest="Commander";
-        };
-    };
-    class MRC_Commander_CSM: MRC_Commander_Vest 
-    {
-       class XtdGearInfo
-        {
-            model="91stOfficerVests";
-            Officervest="CSM";
-        }; 
-    };
+    class MRC_Vest_Holster_Base;
+    class MRC_Vest_Officer_Base;
+    class MRC_Vest_Officer_Reverse_Base;
+    class MRC_Vest_Commander_Base;
 
-    // Officer Pauldrons
-    class MRC_Officer_pauldron_Gray: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerPauldrons";
-            Officerpauldron="Grey";
-        };
-    };
-    class MRC_Officer_pauldron_Red: MRC_Officer_Pauldron_Gray
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerPauldrons";
-            Officerpauldron="Red";
-        };
-    };
-    class MRC_Officer_pauldron_RedGray: MRC_Officer_Pauldron_Gray
-    {
-        class XtdGearInfo
-        {
-            model="91stOfficerPauldrons";
-            Officerpauldron="Red_Grey";
-        };
-    };
+    // KAMA
 
-    // ARC Vests
-    class MRC_Vest_ARC_Cadet: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Cadet";
-        };
-    };
-    class MRC_Vest_ARC_Trooper: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Trooper";
-        };
-    };
-    class MRC_Vest_ARC_veteran: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Veteran";
-        };
-    };
-    class MRC_Vest_ARC_TL: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="Teamlead";
-        };
-    };
-    class MRC_Vest_ARC_NCOIC: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="NCOIC";
-        };
-    };
-    class MRC_Vest_ARC_XO: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="XO";
-        };
-    };
-    class MRC_Vest_ARC_CO: MRC_Vest_ARC_Base
-    {
-        class XtdGearInfo
-        {
-            model="91stARCVests";
-            Arcvests="CO";
-        };
-    };
+    #define MACRO_MRC_VEST_KAMA_COMPAT(a) class MRC_Vest_Kama_##a: MRC_Vest_Officer_Base { \
+        class XtdGearInfo \
+        { \
+            model = "MRC_Vest_Kama"; \
+            Standard = ##a; \
+        }; \
+    }
+
+    MACRO_MRC_VEST_KAMA_COMPAT(Corporal);
+    MACRO_MRC_VEST_KAMA_COMPAT(Sergeant);
+
+    MACRO_MRC_VEST_KAMA_COMPAT(Skit);
+    MACRO_MRC_VEST_KAMA_COMPAT(Trill);
+
+    // OFFICER VESTS
+
+    #define MACRO_MRC_VEST_OFFICER_COMPAT(a,b) class MRC_Vest_Officer_##a : ItemCore { \
+        class XtdGearInfo \
+        { \
+            model = #b; \
+            Standard = #a; \
+        }; \
+    }
+    #define MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(a, b) class MRC_Vest_Officer_Reverse_##a : MRC_Vest_Officer_Reverse_Base { \
+        class XtdGearInfo \
+        { \
+            model = #b; \
+            Standard = #a; \
+        }; \
+    }
+
+    #define MACRO_MRC_VEST_COMMANDER_COMPAT(a, b, c) class MRC_Vest_Commander_##a : MRC_Vest_Commander_Base { \
+        class XtdGearInfo \
+        { \
+            model = #b; \
+            Standard = #c; \
+        }; \
+    }
+
+    MACRO_MRC_VEST_OFFICER_COMPAT(Grey,MRC_Officer_Vests);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Red_Gray,MRC_Officer_Vests);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Red,MRC_Officer_Vests);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Medic,MRC_Officer_Vests);
+
+    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Grey,MRC_Officer_Vests_Reverse);
+    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Red_Gray,MRC_Officer_Vests_Reverse);
+    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Red,MRC_Officer_Vests_Reverse);
+
+    MACRO_MRC_VEST_COMMANDER_COMPAT(Red_Commander,MRC_Officer_Vests,Commander);
+    MACRO_MRC_VEST_COMMANDER_COMPAT(Red_Gray,MRC_Officer_Vests,CSM);
+
+    MACRO_MRC_VEST_OFFICER_COMPAT(Charred,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Corn,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Doc,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Frasier,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Kuro,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Main,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Mav,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Predator,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Leer,MRC_Officer_Vests_Custom);
+
+    // ARC VESTS
+
+    #define MACRO_MRC_VEST_ARC_COMPAT(a,b) class MRC_Vest_ARC_##a: MRC_Vest_ARC_Base { \
+        class XtdGearInfo \
+        { \
+            model=#b; \
+            Standard = #a; \
+        }; \
+    }
+
+    MACRO_MRC_VEST_ARC_COMPAT(Cadet,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(Trooper,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(Veteran,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(TL,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(NCOIC,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(XO,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(CO,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(Roach,MRC_ARC_Vests_Custom);
+    MACRO_MRC_VEST_ARC_COMPAT(Scorch,MRC_ARC_Vests_Custom);
 
     //Holsters
-    class MRC_SCT_Holster: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stHolsters";
-            Holsters="Senior";
-        };
-    };
-    class MRC_VCT_Holster: MRC_SCT_Holster
-    {
-        class XtdGearInfo
-        {
-            model="91stHolsters";
-            Holsters="Veterans";
-        };
-    };
-    class MRC_CSP_Holster: MRC_SCT_Holster
-    {
-        class XtdGearInfo
-        {
-            model="91stHolsters";
-            Holsters="Specialist";
-        };
-    };
-    class MRC_WO_Holster: MRC_SCT_Holster
-    {
-        class XtdGearInfo
-        {
-            model="91stHolsters";
-            Holsters="WarrantOfficer";
-        };
-    };
-    class MRC_NCO_Holster: MRC_SCT_Holster
-    {
-        class XtdGearInfo
-        {
-            model="91stHolsters";
-            Holsters="NCO";
-        };
-    };
+
+    #define MACRO_MRC_VEST_HOLSTER_COMPAT(a) class MRC_##a##_Holster: MRC_Vest_Holster_Base { \
+        class XtdGearInfo \
+        { \
+            model = "MRC_Holsters"; \
+            Holsters = ##a; \
+        }; \
+    }
+
+    MACRO_MRC_VEST_HOLSTER_COMPAT(SCT);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(VCT);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(CSP);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(WO);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(NCO);
 
     //Standard vests and recons
-    class MRC_Trooper_Vest: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stStandardVests";
-            StandardVests="Trooper";
-        };
-    };
-    class MRC_Recon_Vest: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stStandardVests";
-            StandardVests="TrooperRecon";
-        };
-    };
-    class MRC_WO4_Vest: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stStandardVests";
-            StandardVests="WO4";
-        };
-    };
-    class MRC_Recon_NCO_Vest: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stStandardVests";
-            StandardVests="NCORecon";
-        };
-    };
-    class MRC_Corporal_Vest: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stStandardVests";
-            StandardVests="Corporal";
-        };
-    };
-    class MRC_Sergeant_Vest: V_RebreatherB
-    {
-        class XtdGearInfo
-        {
-            model="91stStandardVests";
-            StandardVests="Sergeant";
-        };
-    };
+
+    #define MACRO_MRC_VEST_RECON_COMPAT(a) class MRC_Vest_Recon_##a: V_RebreatherB { \
+        class XtdGearInfo \
+        { \
+            model = "MRC_Vest_Recon"; \
+            Standard = ##a; \
+        }; \
+    } 
+
+    MACRO_MRC_VEST_RECON_COMPAT(Trooper);
+    MACRO_MRC_VEST_RECON_COMPAT(NCO);
+    MACRO_MRC_VEST_RECON_COMPAT(SL);
+    MACRO_MRC_VEST_RECON_COMPAT(WO4);
+    MACRO_MRC_VEST_RECON_COMPAT(Heavy);
+    MACRO_MRC_VEST_RECON_COMPAT(RTO);
+
 };
