@@ -53,7 +53,6 @@ class XtdGearModels
                     "Loki",
                     "Magic",
                     "Main",
-                    "Marf",
                     "Mauser",
                     "Miller",
                     "Misery",
@@ -62,6 +61,7 @@ class XtdGearModels
                     "Odin",
                     "Opossum",
                     "Perry",
+                    "Postal",
                     "Praetorian",
                     "Predator",
                     "Romeo",
@@ -75,10 +75,8 @@ class XtdGearModels
                     "Sunday",
                     "Tarz",
                     "Volx",
-                    "Wedge",
                     "Widget",
                     "Xero",
-                    "Xetor",
                 };
             };
         };
@@ -113,8 +111,8 @@ class XtdGearModels
                 {
                     "Crew",
                     "Kuro",
-                    "Crit",
-                    "Woost"
+                    "Woost",
+                    "Weylyn"
                 };
             };
         };
@@ -174,7 +172,9 @@ class XtdGearModels
                     "Qal",
                     "Trill",
                     "Snapper",
-                    "Wagner"
+                    "Wagner",
+                    "Wedge",
+                    "Xetor"
                     
                 };
             };
@@ -233,7 +233,6 @@ class CfgWeapons
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Magic);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Main);
-	Macro_MRC_Inf_Custom_Compat_Helmet(Marf);
     Macro_MRC_Inf_Custom_Compat_Helmet(Mauser);
     Macro_MRC_Inf_Custom_Compat_Helmet(Mountain);
     Macro_MRC_Inf_Custom_Compat_Helmet(Miller);
@@ -245,6 +244,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Opossum);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Perry);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Postal);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Praetorian);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Predator);
 
@@ -266,7 +266,6 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Wedge);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Widget);
 
-	Macro_MRC_Inf_Custom_Compat_Helmet(Xetor);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Xero);
 
 
@@ -315,8 +314,8 @@ class CfgWeapons
     };
 
     Macro_MRC_Beskar_Custom_Compat_Helmet(Kuro);
-	Macro_MRC_Beskar_Custom_Compat_Helmet(Crit);
     Macro_MRC_Beskar_Custom_Compat_Helmet(Woost);
+    Macro_MRC_Beskar_Custom_Compat_Helmet(Weylyn);
 
     //Arc helms
     class MRC_Roach_Helmet: JLTS_CloneHelmetARC_illum
@@ -395,4 +394,6 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
     Macro_MRC_BARC_Compat_Helmet(Wagner);
+    Macro_MRC_BARC_Compat_Helmet(Wedge);
+    Macro_MRC_BARC_Compat_Helmet(Xetor);
 };

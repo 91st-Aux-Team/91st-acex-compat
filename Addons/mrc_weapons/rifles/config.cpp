@@ -142,9 +142,7 @@ class CfgWeapons
     class MRC_DC15L_base;
     class Rifle_Base_F;
     class JLTS_DC15X;
-    class 327th_dc15le;
     class JLTS_DC15S;
-    class 327th_firepuncher_rifle;
     class JLTS_DW32S;
     class JLTS_Z6;
     class JLTS_DP23;
@@ -256,7 +254,7 @@ class CfgWeapons
 
 
     //marksmen
-    class MRC_firepuncher_rifle: 327th_firepuncher_rifle
+    class MRC_firepuncher_rifle: Rifle_Base_F
     {
         class XtdGearInfo
         {
@@ -280,7 +278,7 @@ class CfgWeapons
             Marksmen="DC15LE";
         };
     };
-    class 91_773_rifle_base: k_773_rifle_base
+    class MRC_773_rifle_base: k_773_rifle_base
     {
         class XtdGearInfo
         {
