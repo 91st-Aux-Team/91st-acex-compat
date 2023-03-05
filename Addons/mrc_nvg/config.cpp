@@ -110,7 +110,8 @@ class XtdGearModels
                     "Xetor",
                     "Bardok",
                     "Miller",
-                    "Snapper"
+                    "Snapper",
+                    "Bardok"
                 };
             };
             class Type
