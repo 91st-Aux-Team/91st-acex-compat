@@ -111,6 +111,7 @@ class XtdGearModels
                     "Bardok",
                     "Miller",
                     "Snapper",
+                    "Bardok",
                     "Skit",
                     "Binns",,
                     "Binns",
