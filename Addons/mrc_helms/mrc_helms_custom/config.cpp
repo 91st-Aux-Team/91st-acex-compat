@@ -226,6 +226,7 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Jas);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Jimmy);
     Macro_MRC_Inf_Custom_Compat_Helmet(Joker);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Jughead);
 	
@@ -240,7 +241,8 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Mountain);
     Macro_MRC_Inf_Custom_Compat_Helmet(Miller);
     Macro_MRC_Inf_Custom_Compat_Helmet(Misery);
-    
+
+    Macro_MRC_Inf_Custom_Compat_Helmet(Nova);
     Macro_MRC_Inf_Custom_Compat_Helmet(Nuclear);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Odin);
@@ -256,6 +258,7 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Samael);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sappheron);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Scorch);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Shogun);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Silver);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
@@ -263,6 +266,7 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Sunday);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Tarz);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Trauma);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Volx);
 
@@ -400,4 +404,5 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Wagner);
     Macro_MRC_BARC_Compat_Helmet(Wedge);
     Macro_MRC_BARC_Compat_Helmet(Xetor);
+    Macro_MRC_BARC_Compat_Helmet(Shogun);
 };

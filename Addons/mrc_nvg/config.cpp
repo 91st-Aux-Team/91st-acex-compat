@@ -113,6 +113,7 @@ class XtdGearModels
                     "Snapper",
                     "Skit",
                     "Binns",
+                    "Bardok"
                 };
             };
             class Type
