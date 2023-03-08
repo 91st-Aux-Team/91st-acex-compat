@@ -45,6 +45,7 @@ class XtdGearModels
                     "Fraiser",
                     "Freq",
                     "Gibby",
+                    "Jas",
                     "Joker",
                     "Jughead",
                     "Larkkit",
@@ -166,6 +167,7 @@ class XtdGearModels
                     "Base",
                     "Medic",
                     "Avalanche",
+                    "Binns",
                     "Fire",
                     "Jimmy",
                     "Mav",
@@ -223,6 +225,7 @@ class CfgWeapons
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
 
+    Macro_MRC_Inf_Custom_Compat_Helmet(Jas);
     Macro_MRC_Inf_Custom_Compat_Helmet(Jimmy);
     Macro_MRC_Inf_Custom_Compat_Helmet(Joker);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Jughead);
@@ -391,6 +394,7 @@ class CfgWeapons
 
     Macro_MRC_BARC_Compat_Helmet(Medic);
     Macro_MRC_BARC_Compat_Helmet(Avalanche);
+    Macro_MRC_BARC_Compat_Helmet(Binns);
     Macro_MRC_BARC_Compat_Helmet(Fire);
     Macro_MRC_BARC_Compat_Helmet(Jimmy);
     Macro_MRC_BARC_Compat_Helmet(Mav);
@@ -398,10 +402,7 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
     Macro_MRC_BARC_Compat_Helmet(Wagner);
-<<<<<<< Updated upstream
     Macro_MRC_BARC_Compat_Helmet(Wedge);
     Macro_MRC_BARC_Compat_Helmet(Xetor);
-=======
     Macro_MRC_BARC_Compat_Helmet(Shogun);
->>>>>>> Stashed changes
 };

@@ -111,6 +111,8 @@ class XtdGearModels
                     "Bardok",
                     "Miller",
                     "Snapper",
+                    "Skit",
+                    "Binns",
                     "Bardok"
                 };
             };
@@ -227,8 +229,10 @@ class CfgWeapons
 
     Macro_MRC_Visor_Custom_Compat_NVG(Frasier);
     Macro_MRC_Visor_Custom_Compat_NVG(Bardok);
+    Macro_MRC_Visor_Custom_Compat_NVG(Binns);
     Macro_MRC_Visor_Custom_Compat_NVG(Leer);
     Macro_MRC_Visor_Custom_Compat_NVG(Perry);
+    Macro_MRC_Visor_Custom_Compat_NVG(Skit);
     Macro_MRC_Visor_Custom_Compat_NVG(Sound);
     Macro_MRC_Visor_Custom_Compat_NVG(Snapper);
     Macro_MRC_Visor_Custom_Compat_NVG(Jericho);
