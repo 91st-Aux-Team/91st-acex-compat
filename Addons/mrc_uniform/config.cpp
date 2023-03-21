@@ -182,6 +182,7 @@ class XtdGearModels
                     "Kuro",
                     "Main",
                     "Mav",
+                    "Nova",
                     "Roach",
                     "Scorch",
                     "ScorchARC",
@@ -395,6 +396,7 @@ class CfgWeapons
 	Macro_MRC_Custom_Compat_Armor(Kuro);
 	Macro_MRC_Custom_Compat_Armor(Mav);
     Macro_MRC_Custom_Compat_Armor(Main);
+    Macro_MRC_Custom_Compat_Armor(Nova);
 	Macro_MRC_Custom_Compat_Armor(Penguin);
     Macro_MRC_Custom_Compat_Armor(Predator);
 	Macro_MRC_Custom_Compat_Armor(Roach);
