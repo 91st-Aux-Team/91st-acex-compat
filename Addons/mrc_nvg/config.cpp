@@ -115,6 +115,8 @@ class XtdGearModels
                     "Binns",,
                     "Binns",
                     "Bardock"
+                    "Skit",
+                    "Binns",
                 };
             };
             class Type
