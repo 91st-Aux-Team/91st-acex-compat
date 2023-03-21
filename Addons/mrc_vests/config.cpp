@@ -33,7 +33,9 @@ class XtdGearModels
                     "Corporal",
                     "Sergeant",
                     "Skit",
-                    "Trill"
+                    "Trill",
+                    "Weylyn",
+                    "Misery",
                 };
             };
         };
@@ -128,7 +130,6 @@ class XtdGearModels
                     "Mav",
                     "Mauser",
                     "Predator",
-                    "Leer",
                     "Hex",
                 };
             };
@@ -170,6 +171,7 @@ class XtdGearModels
                     "Scorch",
                     "Roach",
                     "Jericho",
+                    "Cannon",
                 };
             };
         };
@@ -235,8 +237,10 @@ class CfgWeapons
     MACRO_MRC_VEST_KAMA_COMPAT(Corporal);
     MACRO_MRC_VEST_KAMA_COMPAT(Sergeant);
 
+    MACRO_MRC_VEST_KAMA_COMPAT(Misery);
     MACRO_MRC_VEST_KAMA_COMPAT(Skit);
     MACRO_MRC_VEST_KAMA_COMPAT(Trill);
+    MACRO_MRC_VEST_KAMA_COMPAT(Weylyn);
 
     // OFFICER VESTS
 
@@ -286,7 +290,6 @@ class CfgWeapons
     MACRO_MRC_VEST_OFFICER_COMPAT(Hex,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Mav,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Predator,MRC_Officer_Vests_Custom);
-    MACRO_MRC_VEST_OFFICER_COMPAT(Leer,MRC_Officer_Vests_Custom);
 
     // ARC VESTS
 
@@ -308,6 +311,7 @@ class CfgWeapons
     MACRO_MRC_VEST_ARC_COMPAT(Roach,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Scorch,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Jericho,MRC_ARC_Vests_Custom);
+    MACRO_MRC_VEST_ARC_COMPAT(Cannon,MRC_ARC_Vests_Custom);
 
     //Holsters
 

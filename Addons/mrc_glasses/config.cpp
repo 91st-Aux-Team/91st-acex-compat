@@ -53,7 +53,6 @@ class XtdGearModels
                     "Avalanche",
                     "Baker",
                     "Frasier",
-                    "Leer",
                     "Perry",
                     "Sound",
                     "Jericho",
@@ -202,7 +201,6 @@ class CfgGlasses
     MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Avalanche);
 	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Baker);
 	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Frasier);
-	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Leer);
 	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Perry);
 	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Sound);
 	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Jericho);
