@@ -33,7 +33,9 @@ class XtdGearModels
                     "Corporal",
                     "Sergeant",
                     "Skit",
-                    "Trill"
+                    "Trill",
+                    "Weylyn",
+                    "Misery",
                 };
             };
         };
@@ -128,7 +130,6 @@ class XtdGearModels
                     "Mav",
                     "Mauser",
                     "Predator",
-                    "Leer",
                     "Hex",
                 };
             };
@@ -165,11 +166,13 @@ class XtdGearModels
             class Standard
             {
                 labels="Standard Arc Vests";
+                labels="Standard Arc Vests";
                 values[]=
                 {
                     "Scorch",
                     "Roach",
                     "Jericho",
+                    "Cannon",
                 };
             };
         };
@@ -235,8 +238,10 @@ class CfgWeapons
     MACRO_MRC_VEST_KAMA_COMPAT(Corporal);
     MACRO_MRC_VEST_KAMA_COMPAT(Sergeant);
 
+    MACRO_MRC_VEST_KAMA_COMPAT(Misery);
     MACRO_MRC_VEST_KAMA_COMPAT(Skit);
     MACRO_MRC_VEST_KAMA_COMPAT(Trill);
+    MACRO_MRC_VEST_KAMA_COMPAT(Weylyn);
 
     // OFFICER VESTS
 
@@ -286,10 +291,16 @@ class CfgWeapons
     MACRO_MRC_VEST_OFFICER_COMPAT(Hex,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Mav,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Predator,MRC_Officer_Vests_Custom);
-    MACRO_MRC_VEST_OFFICER_COMPAT(Leer,MRC_Officer_Vests_Custom);
 
     // ARC VESTS
 
+    #define MACRO_MRC_VEST_ARC_COMPAT(a,b) class MRC_Vest_ARC_##a: MRC_Vest_ARC_Base { \
+        class XtdGearInfo \
+        { \
+            model=#b; \
+            Standard = #a; \
+        }; \
+    }
     #define MACRO_MRC_VEST_ARC_COMPAT(a,b) class MRC_Vest_ARC_##a: MRC_Vest_ARC_Base { \
         class XtdGearInfo \
         { \
@@ -308,8 +319,23 @@ class CfgWeapons
     MACRO_MRC_VEST_ARC_COMPAT(Roach,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Scorch,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Jericho,MRC_ARC_Vests_Custom);
+    MACRO_MRC_VEST_ARC_COMPAT(Cannon,MRC_ARC_Vests_Custom);
 
     //Holsters
+
+    #define MACRO_MRC_VEST_HOLSTER_COMPAT(a) class MRC_##a##_Holster: MRC_Vest_Holster_Base { \
+        class XtdGearInfo \
+        { \
+            model = "MRC_Holsters"; \
+            Holsters = ##a; \
+        }; \
+    }
+
+    MACRO_MRC_VEST_HOLSTER_COMPAT(SCT);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(VCT);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(CSP);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(WO);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(NCO);
 
     #define MACRO_MRC_VEST_HOLSTER_COMPAT(a) class MRC_##a##_Holster: MRC_Vest_Holster_Base { \
         class XtdGearInfo \
