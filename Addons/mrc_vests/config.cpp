@@ -166,6 +166,7 @@ class XtdGearModels
             class Standard
             {
                 labels="Standard Arc Vests";
+                labels="Standard Arc Vests";
                 values[]=
                 {
                     "Scorch",
@@ -300,6 +301,13 @@ class CfgWeapons
             Standard = #a; \
         }; \
     }
+    #define MACRO_MRC_VEST_ARC_COMPAT(a,b) class MRC_Vest_ARC_##a: MRC_Vest_ARC_Base { \
+        class XtdGearInfo \
+        { \
+            model=#b; \
+            Standard = #a; \
+        }; \
+    }
 
     MACRO_MRC_VEST_ARC_COMPAT(Cadet,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(Trooper,MRC_ARC_Vests);
@@ -314,6 +322,20 @@ class CfgWeapons
     MACRO_MRC_VEST_ARC_COMPAT(Cannon,MRC_ARC_Vests_Custom);
 
     //Holsters
+
+    #define MACRO_MRC_VEST_HOLSTER_COMPAT(a) class MRC_##a##_Holster: MRC_Vest_Holster_Base { \
+        class XtdGearInfo \
+        { \
+            model = "MRC_Holsters"; \
+            Holsters = ##a; \
+        }; \
+    }
+
+    MACRO_MRC_VEST_HOLSTER_COMPAT(SCT);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(VCT);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(CSP);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(WO);
+    MACRO_MRC_VEST_HOLSTER_COMPAT(NCO);
 
     #define MACRO_MRC_VEST_HOLSTER_COMPAT(a) class MRC_##a##_Holster: MRC_Vest_Holster_Base { \
         class XtdGearInfo \
