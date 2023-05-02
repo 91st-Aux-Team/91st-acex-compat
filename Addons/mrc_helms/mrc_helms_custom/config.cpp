@@ -37,11 +37,13 @@ class XtdGearModels
                     "Chop",
                     "Chubs",
                     "Con",
+                    "Corvus",
                     "Cross",
                     "Dante",
                     "Dev",
                     "Doc",
                     "Fraiser",
+                    "Galahad",
                     "Gibby",
                     "Jas",
                     "Jimmy",
@@ -63,14 +65,17 @@ class XtdGearModels
                     "Perry",
                     "Postal",
                     "Predator",
+                    "Saga",
                     "Samael",
                     "Sappheron",
+                    "Scar",
                     "Scorch",
                     "Skit",
                     "Sound",
                     "Steak",
                     "Sunday",
                     "Tarz",
+                    "Tig",
                     "Trauma",
                     "Volx",
                     "Widget",
@@ -91,9 +96,10 @@ class XtdGearModels
                     "Frog",
                     "Hex",
                     "Grizzly",
-                    "Bensen",
+                    "Marf",
                     "Oxide",
-                    "Tiny"
+                    "Tiny",
+                    "Crimmy",
                 };
             };            
         };
@@ -133,6 +139,7 @@ class XtdGearModels
                     "Scorch",
                     "Jericho",
                     "Oddball",
+                    "Trauma",
                 };                
             };        
         };
@@ -172,7 +179,6 @@ class XtdGearModels
                     "Snapper",
                     "Wagner",
                     "Wedge",
-                    "Xetor",
                     "Binns",
                     "Shogun"
                 };
@@ -208,6 +214,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Charred);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Chop);
     Macro_MRC_Inf_Custom_Compat_Helmet(Chubs);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Corvus);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Con);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Dante);
@@ -216,6 +223,7 @@ class CfgWeapons
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Fraiser);
 
+    Macro_MRC_Inf_Custom_Compat_Helmet(Galahad);
     Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Jimmy);
@@ -240,12 +248,16 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Odin);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Opossum);
 
+    
 	Macro_MRC_Inf_Custom_Compat_Helmet(Perry);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Polarbear);
     Macro_MRC_Inf_Custom_Compat_Helmet(Postal);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Predator);
 	
+    Macro_MRC_Inf_Custom_Compat_Helmet(Saga);
     Macro_MRC_Inf_Custom_Compat_Helmet(Samael);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sappheron);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Scar);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Scorch);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
@@ -253,6 +265,7 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Sunday);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Tarz);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Tig);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Trauma);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Volx);
@@ -260,6 +273,8 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Widget);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Xero);
+
+    Macro_MRC_Inf_Custom_Compat_Helmet(Yoshi);
 
     class MRC_Cross_Helmet: JLTS_CloneHelmetP2_illum
     {
@@ -283,8 +298,10 @@ class CfgWeapons
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Frog);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Grizzly);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Hex);
+    Macro_MRC_Pilot_Custom_Compat_Helmet(Marf);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Oxide);
     Macro_MRC_Pilot_Custom_Compat_Helmet(Tiny);
+    Macro_MRC_Pilot_Custom_Compat_Helmet(Crimmy);
 
     //Beskar Helms
     class MRC_Beskar_Helmet: 3as_ATRT_helmet
@@ -334,6 +351,7 @@ class CfgWeapons
 	Macro_MRC_ARC_Compat_Helmet(Scorch);
 	Macro_MRC_ARC_Compat_Helmet(Oddball);
 	Macro_MRC_ARC_Compat_Helmet(Jericho);
+    Macro_MRC_ARC_Compat_Helmet(Trauma);
 
 
     //ARF
@@ -384,6 +402,5 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
     Macro_MRC_BARC_Compat_Helmet(Wedge);
-    Macro_MRC_BARC_Compat_Helmet(Xetor);
     Macro_MRC_BARC_Compat_Helmet(Shogun);
 };

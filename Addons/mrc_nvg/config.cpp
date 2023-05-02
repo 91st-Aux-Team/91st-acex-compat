@@ -104,17 +104,10 @@ class XtdGearModels
                     "Sound",
                     "Jericho",
                     "Avalanche",
-                    "Odin",
                     "Trill",
-                    "Xetor",
                     "Bardok",
                     "Miller",
                     "Snapper",
-                    "Bardok",
-                    "Skit",
-                    "Binns",,
-                    "Binns",
-                    "Bardock"
                     "Skit",
                     "Binns",
                 };
@@ -239,9 +232,7 @@ class CfgWeapons
     Macro_MRC_Visor_Custom_Compat_NVG(Snapper);
     Macro_MRC_Visor_Custom_Compat_NVG(Jericho);
     Macro_MRC_Visor_Custom_Compat_NVG(Avalanche);
-    Macro_MRC_Visor_Custom_Compat_NVG(Odin);
     Macro_MRC_Visor_Custom_Compat_NVG(Trill);
-    Macro_MRC_Visor_Custom_Compat_NVG(Xetor);
     Macro_MRC_Visor_Custom_Compat_NVG(Miller);
 
     //chips

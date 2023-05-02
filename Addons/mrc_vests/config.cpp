@@ -32,6 +32,7 @@ class XtdGearModels
                 {
                     "Corporal",
                     "Sergeant",
+                    "Frasier",
                     "Skit",
                     "Trill",
                     "Weylyn",
@@ -49,24 +50,21 @@ class XtdGearModels
                 labels="91st Officer Vests: Standard";
                 values[]=
                 {
-                    "Grey",
-                    "Red_Gray",
-                    "Red",
-                    "Commander",
+                    "PSGXO",
+                    "PLCO",
+                    "1SG",
                     "CSM",
-                    "Medic"
+                    "Commander",
+                    "Medic",
+                    "WO"
                 };
-                class Grey
+                class PSGXO
                 {
-                    label="PSG/DNCOIC";
+                    label="PSG/XO";
                 };
-                class Red_Gray
+                class PLCO
                 {
-                    label="1SG/D XO";
-                };
-                class Red
-                {
-                    label="CO/Officer";
+                    label="PL/CO";
                 };
                 class Commander
                 {
@@ -79,37 +77,41 @@ class XtdGearModels
                 class Medic
                 {
                     label = "TF Medic";
-                }
-            };
-        };
-        class MRC_Officer_Vests_Reverse
-        {
-            label="91st Officer Vests: Reversed";
-            author="91st Aux Team";
-            options[]={"Standard"};
-            class Standard
-            {
-                labels="Standard Officer Vests";
-                values[]=
-                {
-                    "Grey",
-                    "Red_Gray",
-                    "Red",
                 };
-                class Grey
+                class WO
                 {
-                    label="PSG/DNCOIC";
-                };
-                class Red_Gray
-                {
-                    label="1SG/D XO";
-                };
-                class Red
-                {
-                    label="CO/Officer";
+                    label = "WO5";
                 };
             };
         };
+        // class MRC_Officer_Vests_Reverse
+        // {
+        //     label="91st Officer Vests: Reversed";
+        //     author="91st Aux Team";
+        //     options[]={"Standard"};
+        //     class Standard
+        //     {
+        //         labels="Standard Officer Vests";
+        //         values[]=
+        //         {
+        //             "Grey",
+        //             "Red_Gray",
+        //             "Red",
+        //         };
+        //         class Grey
+        //         {
+        //             label="PSG/DNCOIC";
+        //         };
+        //         class Red_Gray
+        //         {
+        //             label="1SG/D XO";
+        //         };
+        //         class Red
+        //         {
+        //             label="CO/Officer";
+        //         };
+        //     };
+        // };
         class MRC_Officer_Vests_Custom
         {
             label="91st Officer Vests: Custom";
@@ -120,11 +122,11 @@ class XtdGearModels
                 labels = "Custom Officer Vests";
                 values[] = 
                 {
+                    "Avalanche",
                     "Charred",
                     "Corn",
                     "Doc",
                     "Dev",
-                    "Frasier",
                     "Kuro",
                     "Main",
                     "Mav",
@@ -165,7 +167,6 @@ class XtdGearModels
             options[]={"Standard"};
             class Standard
             {
-                labels="Standard Arc Vests";
                 labels="Standard Arc Vests";
                 values[]=
                 {
@@ -238,6 +239,7 @@ class CfgWeapons
     MACRO_MRC_VEST_KAMA_COMPAT(Corporal);
     MACRO_MRC_VEST_KAMA_COMPAT(Sergeant);
 
+    MACRO_MRC_VEST_KAMA_COMPAT(Frasier);
     MACRO_MRC_VEST_KAMA_COMPAT(Misery);
     MACRO_MRC_VEST_KAMA_COMPAT(Skit);
     MACRO_MRC_VEST_KAMA_COMPAT(Trill);
@@ -252,7 +254,7 @@ class CfgWeapons
             Standard = #a; \
         }; \
     }
-    #define MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(a, b) class MRC_Vest_Officer_Reverse_##a : MRC_Vest_Officer_Reverse_Base { \
+    #define MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(a,b) class MRC_Vest_Officer_Reverse_##a : MRC_Vest_Officer_Reverse_Base { \
         class XtdGearInfo \
         { \
             model = #b; \
@@ -260,7 +262,7 @@ class CfgWeapons
         }; \
     }
 
-    #define MACRO_MRC_VEST_COMMANDER_COMPAT(a, b, c) class MRC_Vest_Commander_##a : MRC_Vest_Commander_Base { \
+    #define MACRO_MRC_VEST_COMMANDER_COMPAT(a,b,c) class MRC_Vest_Commander_##a : MRC_Vest_Commander_Base { \
         class XtdGearInfo \
         { \
             model = #b; \
@@ -268,29 +270,29 @@ class CfgWeapons
         }; \
     }
 
-    MACRO_MRC_VEST_OFFICER_COMPAT(Grey,MRC_Officer_Vests);
-    MACRO_MRC_VEST_OFFICER_COMPAT(Red_Gray,MRC_Officer_Vests);
-    MACRO_MRC_VEST_OFFICER_COMPAT(Red,MRC_Officer_Vests);
+    MACRO_MRC_VEST_OFFICER_COMPAT(PSGXO,MRC_Officer_Vests);
+    MACRO_MRC_VEST_OFFICER_COMPAT(PLCO,MRC_Officer_Vests);
+    MACRO_MRC_VEST_OFFICER_COMPAT(1SG,MRC_Officer_Vests);
+    MACRO_MRC_VEST_OFFICER_COMPAT(WO,MRC_Officer_Vests);
     MACRO_MRC_VEST_OFFICER_COMPAT(Medic,MRC_Officer_Vests);
-
-    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Grey,MRC_Officer_Vests_Reverse);
-    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Red_Gray,MRC_Officer_Vests_Reverse);
-    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Red,MRC_Officer_Vests_Reverse);
 
     MACRO_MRC_VEST_COMMANDER_COMPAT(Red_Commander,MRC_Officer_Vests,Commander);
     MACRO_MRC_VEST_COMMANDER_COMPAT(Red_Gray,MRC_Officer_Vests,CSM);
 
+    MACRO_MRC_VEST_OFFICER_COMPAT(Avalanche,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Charred,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Corn,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Doc,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Dev,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Frasier,MRC_Officer_Vests_Custom);
-    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Kuro,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Main,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Mauser,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Hex,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Mav,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Predator,MRC_Officer_Vests_Custom);
+
+    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Kuro,MRC_Officer_Vests_Custom);
+
 
     // ARC VESTS
 
