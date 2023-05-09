@@ -51,7 +51,6 @@ class XtdGearModels
                 values[]=
                 {
                     "Avalanche",
-                    "Baker",
                     "Frasier",
                     "Perry",
                     "Sound",
@@ -95,7 +94,9 @@ class XtdGearModels
                     "Trooper",
                     "Medic",
                     "Veteran",
-                    "Teamlead"
+                    "Teamlead",
+                    "Perry",
+                    "Loki",
                 };
                 // Class used for defining in the shit below
             };
@@ -199,7 +200,6 @@ class CfgGlasses
 
 
     MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Avalanche);
-	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Baker);
 	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Frasier);
 	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Perry);
 	MACRO_MRC_GLASSES_NVG_CUSTOM_COMPAT(Sound);
@@ -260,6 +260,8 @@ class CfgGlasses
     MACRO_MRC_GLASSES_VEST_MUNKA_COMPAT(Trooper);
     MACRO_MRC_GLASSES_VEST_MUNKA_COMPAT(Veteran);
     MACRO_MRC_GLASSES_VEST_MUNKA_COMPAT(Teamlead);
+    MACRO_MRC_GLASSES_VEST_MUNKA_COMPAT(Perry);
+    MACRO_MRC_GLASSES_VEST_MUNKA_COMPAT(Loki);
 
     //RANGEFINDER
 
