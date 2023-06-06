@@ -173,6 +173,8 @@ class XtdGearModels
                 labels="Customs";
                 values[]=
                 {
+                    "Avalanche",
+                    "Cannon",
                     "Charred",
                     "Cross",
                     "Dev",
@@ -387,6 +389,8 @@ class CfgWeapons
         };\
     };
 
+    Macro_MRC_Custom_Compat_Armor(Avalanche);
+    Macro_MRC_Custom_Compat_Armor(Cannon);
     Macro_MRC_Custom_Compat_Armor(Charred); 
 	Macro_MRC_Custom_Compat_Armor(Cross);
     Macro_MRC_Custom_Compat_Armor(Doc);
