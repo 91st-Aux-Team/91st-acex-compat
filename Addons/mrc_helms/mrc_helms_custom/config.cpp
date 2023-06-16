@@ -409,6 +409,7 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Binns);
     Macro_MRC_BARC_Compat_Helmet(Fire);
     Macro_MRC_BARC_Compat_Helmet(Mav);
+    Macro_MRC_BARC_Compat_Helmet(Gray);
     Macro_MRC_BARC_Compat_Helmet(Qal);
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
