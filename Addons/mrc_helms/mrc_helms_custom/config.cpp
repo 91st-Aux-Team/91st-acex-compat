@@ -178,6 +178,7 @@ class XtdGearModels
                     "Avalanche",
                     "Binns",
                     "Fire",
+                    "Gray",
                     "Mav",
                     "Qal",
                     "Trill",
