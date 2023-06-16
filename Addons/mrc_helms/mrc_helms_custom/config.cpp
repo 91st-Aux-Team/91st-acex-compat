@@ -30,6 +30,7 @@ class XtdGearModels
                 labels="Infantry Custom Helmets";
                 values[]=
                 {
+                    "Ant",
                     "Barr",
                     "Bardok",
                     "Blanks",
@@ -45,6 +46,7 @@ class XtdGearModels
                     "Fraiser",
                     "Galahad",
                     "Gibby",
+                    "Goose",
                     "Jas",
                     "Jimmy",
                     "Joker",
@@ -62,14 +64,17 @@ class XtdGearModels
                     "Nuclear",
                     "Odin",
                     "Opossum",
+                    "Penguin",
                     "Perry",
                     "Postal",
                     "Predator",
                     "Saga",
+                    "Saint",
                     "Samael",
                     "Sappheron",
                     "Scar",
                     "Scorch",
+                    "Snapper",
                     "Skit",
                     "Sound",
                     "Steak",
@@ -207,6 +212,8 @@ class CfgWeapons
         };\
     };
     
+    Macro_MRC_Inf_Custom_Compat_Helmet(Ant);
+
     Macro_MRC_Inf_Custom_Compat_Helmet(Barr);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Bardok);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Blanks);
@@ -225,6 +232,7 @@ class CfgWeapons
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Galahad);
     Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Goose);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Jimmy);
     Macro_MRC_Inf_Custom_Compat_Helmet(Jas);
@@ -248,17 +256,19 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Odin);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Opossum);
 
-    
+    Macro_MRC_Inf_Custom_Compat_Helmet(Penguin);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Perry);
     Macro_MRC_Inf_Custom_Compat_Helmet(Polarbear);
     Macro_MRC_Inf_Custom_Compat_Helmet(Postal);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Predator);
 	
     Macro_MRC_Inf_Custom_Compat_Helmet(Saga);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Saint);
     Macro_MRC_Inf_Custom_Compat_Helmet(Samael);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sappheron);
     Macro_MRC_Inf_Custom_Compat_Helmet(Scar);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Scorch);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Snapper);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Steak);
