@@ -242,6 +242,7 @@ class CfgWeapons
 	
     Macro_MRC_Inf_Custom_Compat_Helmet(Larkkit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Laser);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Legate);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Loki);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Magic);
@@ -262,6 +263,8 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Polarbear);
     Macro_MRC_Inf_Custom_Compat_Helmet(Postal);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Predator);
+
+	Macro_MRC_Inf_Custom_Compat_Helmet(Qal);
 	
     Macro_MRC_Inf_Custom_Compat_Helmet(Saga);
     Macro_MRC_Inf_Custom_Compat_Helmet(Saint);
@@ -410,7 +413,6 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Fire);
     Macro_MRC_BARC_Compat_Helmet(Gray);
     Macro_MRC_BARC_Compat_Helmet(Mav);
-    Macro_MRC_BARC_Compat_Helmet(Qal);
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
     Macro_MRC_BARC_Compat_Helmet(Wedge);
