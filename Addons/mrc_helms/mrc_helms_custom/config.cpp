@@ -182,6 +182,7 @@ class XtdGearModels
                     "Fire",
                     "Gray",
                     "Mav",
+                    "Merit",
                     "Trill",
                     "Snapper",
                     "Wagner",
@@ -414,6 +415,7 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Fire);
     Macro_MRC_BARC_Compat_Helmet(Gray);
     Macro_MRC_BARC_Compat_Helmet(Mav);
+    Macro_MRC_BARC_Compat_Helmet(Merit);
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
     Macro_MRC_BARC_Compat_Helmet(Wedge);
