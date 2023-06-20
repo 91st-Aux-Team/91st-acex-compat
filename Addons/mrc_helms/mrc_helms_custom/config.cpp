@@ -150,21 +150,7 @@ class XtdGearModels
                 };                
             };        
         };
-        class ARFHelmets
-        {
-            label="ARF Helmets";
-            author="91st Aux Team";
-            options[]={"ARFhelms"};
-            class ARFhelms
-            {
-                labels="ARF Helmets";
-                values[]=
-                {
-                    "ARF",
-                    "Kappa",
-                };
-            };
-        };
+
         class Barchelmets
         {
             label="BARC Helmets";
@@ -369,27 +355,6 @@ class CfgWeapons
 	Macro_MRC_ARC_Compat_Helmet(Jericho);
     Macro_MRC_ARC_Compat_Helmet(Trauma);
 
-
-    //ARF
-    class 327th_ARF;
-    class MRC_ARF: 327th_ARF
-    {
-        class XtdGearInfo
-        {
-            model="ARFHelmets";
-            ARFhelms="ARF";
-        };
-    };
-
-    #define Macro_MRC_ARF_Compat_Helmet(a) class MRC_##a##_ARF : MRC_ARF {\
-        class XtdGearInfo\
-        {\
-            model="ARFHelmets";\
-            ARFhelms=##a##;\
-        };\
-    };
-
-	Macro_MRC_ARF_Compat_Helmet(Kappa);
 
 
     //BARC Helms
