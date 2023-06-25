@@ -104,6 +104,7 @@ class XtdGearModels
                     "Sound",
                     "Jericho",
                     "Avalanche",
+                    "Loki",
                     "Trill",
                     "Bardok",
                     "Miller",
@@ -229,6 +230,7 @@ class CfgWeapons
     Macro_MRC_Visor_Custom_Compat_NVG(Perry);
     Macro_MRC_Visor_Custom_Compat_NVG(Skit);
     Macro_MRC_Visor_Custom_Compat_NVG(Sound);
+    Macro_MRC_Visor_Custom_Compat_NVG(Loki);
     Macro_MRC_Visor_Custom_Compat_NVG(Snapper);
     Macro_MRC_Visor_Custom_Compat_NVG(Jericho);
     Macro_MRC_Visor_Custom_Compat_NVG(Avalanche);
