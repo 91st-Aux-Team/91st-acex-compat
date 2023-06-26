@@ -33,6 +33,7 @@ class XtdGearModels
                     "Ant",
                     "Barr",
                     "Bardok",
+                    "Blackout",
                     "Blanks",
                     "Charred",
                     "Chop",
@@ -205,6 +206,7 @@ class CfgWeapons
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Barr);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Bardok);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Blackout);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Blanks);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Charred);
