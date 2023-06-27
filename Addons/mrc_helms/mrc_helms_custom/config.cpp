@@ -33,6 +33,7 @@ class XtdGearModels
                     "Ant",
                     "Barr",
                     "Bardok",
+                    "Blackout",
                     "Blanks",
                     "Charred",
                     "Chop",
@@ -53,6 +54,7 @@ class XtdGearModels
                     "Jughead",
                     "Larkkit",
                     "Laser",
+                    "Legate",
                     "Loki",
                     "Magic",
                     "Main",
@@ -68,6 +70,7 @@ class XtdGearModels
                     "Perry",
                     "Postal",
                     "Predator",
+                    "Qal",
                     "Saga",
                     "Saint",
                     "Samael",
@@ -148,21 +151,7 @@ class XtdGearModels
                 };                
             };        
         };
-        class ARFHelmets
-        {
-            label="ARF Helmets";
-            author="91st Aux Team";
-            options[]={"ARFhelms"};
-            class ARFhelms
-            {
-                labels="ARF Helmets";
-                values[]=
-                {
-                    "ARF",
-                    "Kappa",
-                };
-            };
-        };
+
         class Barchelmets
         {
             label="BARC Helmets";
@@ -178,8 +167,9 @@ class XtdGearModels
                     "Avalanche",
                     "Binns",
                     "Fire",
+                    "Gray",
                     "Mav",
-                    "Qal",
+                    "Merit",
                     "Trill",
                     "Snapper",
                     "Wagner",
@@ -216,6 +206,7 @@ class CfgWeapons
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Barr);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Bardok);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Blackout);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Blanks);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Charred);
@@ -241,6 +232,7 @@ class CfgWeapons
 	
     Macro_MRC_Inf_Custom_Compat_Helmet(Larkkit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Laser);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Legate);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Loki);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Magic);
@@ -261,6 +253,8 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Polarbear);
     Macro_MRC_Inf_Custom_Compat_Helmet(Postal);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Predator);
+
+	Macro_MRC_Inf_Custom_Compat_Helmet(Qal);
 	
     Macro_MRC_Inf_Custom_Compat_Helmet(Saga);
     Macro_MRC_Inf_Custom_Compat_Helmet(Saint);
@@ -364,27 +358,6 @@ class CfgWeapons
     Macro_MRC_ARC_Compat_Helmet(Trauma);
 
 
-    //ARF
-    class 327th_ARF;
-    class MRC_ARF: 327th_ARF
-    {
-        class XtdGearInfo
-        {
-            model="ARFHelmets";
-            ARFhelms="ARF";
-        };
-    };
-
-    #define Macro_MRC_ARF_Compat_Helmet(a) class MRC_##a##_ARF : MRC_ARF {\
-        class XtdGearInfo\
-        {\
-            model="ARFHelmets";\
-            ARFhelms=##a##;\
-        };\
-    };
-
-	Macro_MRC_ARF_Compat_Helmet(Kappa);
-
 
     //BARC Helms
     class MRC_BARC_Base_Helmet: JLTS_CloneHelmetBARC
@@ -407,8 +380,9 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Avalanche);
     Macro_MRC_BARC_Compat_Helmet(Binns);
     Macro_MRC_BARC_Compat_Helmet(Fire);
+    Macro_MRC_BARC_Compat_Helmet(Gray);
     Macro_MRC_BARC_Compat_Helmet(Mav);
-    Macro_MRC_BARC_Compat_Helmet(Qal);
+    Macro_MRC_BARC_Compat_Helmet(Merit);
     Macro_MRC_BARC_Compat_Helmet(Trill);
     Macro_MRC_BARC_Compat_Helmet(Snapper);
     Macro_MRC_BARC_Compat_Helmet(Wedge);

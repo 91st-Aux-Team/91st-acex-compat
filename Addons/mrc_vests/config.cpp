@@ -148,11 +148,19 @@ class XtdGearModels
                 {
                     "Cadet",
                     "Trooper",
+                    "Trooper1",
+                    "Trooper2",
                     "Veteran",
+                    "Veteran1",
+                    "Veteran2",
+                    "Veteran3",
                     "TL",
+                    "TL1",
+                    "TL2",
                     "NCOIC",
                     "XO",
-                    "CO"
+                    "CO",
+                    "CO1",
                 };
                 class TL
                 {
@@ -313,11 +321,19 @@ class CfgWeapons
 
     MACRO_MRC_VEST_ARC_COMPAT(Cadet,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(Trooper,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(Trooper1,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(Trooper2,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(Veteran,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(Veteran1,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(Veteran2,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(Veteran3,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(TL,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(TL1,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(TL2,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(NCOIC,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(XO,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(CO,MRC_ARC_Vests);
+    MACRO_MRC_VEST_ARC_COMPAT(CO1,MRC_ARC_Vests);
     MACRO_MRC_VEST_ARC_COMPAT(Roach,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Scorch,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Jericho,MRC_ARC_Vests_Custom);
