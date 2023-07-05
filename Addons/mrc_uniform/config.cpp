@@ -57,19 +57,12 @@ class XtdGearModels
                 label="Ranks";
                 values[]=
                 {
-                    "CT",
-                    "SCT",
-                    "VCT",
-                    "CSP",
-                    "CLC",
-                    "CP",
-                    "CS",
-                    "CSS",
-                    "WO1",
-                    "WO2",
-                    "WO3",
-                    "WO4",
-                    "WO5"
+                    "CM-C",
+                    "CM",
+                    "CM-V",
+                    "CM-T",
+                    "CM-P",
+                    "CM-S",
                 };
             };
         };
@@ -180,18 +173,24 @@ class XtdGearModels
                 labels="Customs";
                 values[]=
                 {
+                    "Avalanche",
+                    "Cannon",
                     "Charred",
                     "Cross",
+                    "Dev",
                     "Doc",
                     "Frog",
                     "Frasier",
                     "Kuro",
+                    "Main",
                     "Mav",
+                    "Nova",
                     "Roach",
                     "Scorch",
                     "ScorchARC",
                     "Saint",
                     "Penguin",
+                    "Predator",
                     "Trill",
                     "Hex"
                 };
@@ -266,31 +265,21 @@ class CfgWeapons
 
 
     //Medic Armor
-    #define Macro_MRC_Medic_Compat_Armor(a) class MRC_Medic_##a##_Armor : MRC_Armor_Base {\
+    #define MACRO_MRC_MEDIC_COMPAT_ARMOR(dName,cName) class MRC_Medic_##cName##_Armor : MRC_Armor_Base {\
         class XtdGearInfo\
         {\
             model="MRC_Medic_Ranks";\
-            MedicRank=##a##;\
+            MedicRank=##dName##;\
         };\
-    };
+    }
 
-    Macro_MRC_Medic_Compat_Armor(CT);
-    Macro_MRC_Medic_Compat_Armor(SCT);
-    Macro_MRC_Medic_Compat_Armor(VCT);
-    Macro_MRC_Medic_Compat_Armor(CSP);
-
-    Macro_MRC_Medic_Compat_Armor(WO1);
-    Macro_MRC_Medic_Compat_Armor(WO2);
-    Macro_MRC_Medic_Compat_Armor(WO3);
-    Macro_MRC_Medic_Compat_Armor(WO4);
-    Macro_MRC_Medic_Compat_Armor(WO5);
-
-    Macro_MRC_Medic_Compat_Armor(CLC);
-    Macro_MRC_Medic_Compat_Armor(CP);
-    Macro_MRC_Medic_Compat_Armor(CS);
-    Macro_MRC_Medic_Compat_Armor(CSS);
-
-
+    MACRO_MRC_MEDIC_COMPAT_ARMOR(CM-C,CM_C);
+    MACRO_MRC_MEDIC_COMPAT_ARMOR(CM,CM);
+    MACRO_MRC_MEDIC_COMPAT_ARMOR(CM-V,CM_V);
+    MACRO_MRC_MEDIC_COMPAT_ARMOR(CM-T,CM_T);
+    MACRO_MRC_MEDIC_COMPAT_ARMOR(CM-P,CM_P);
+    MACRO_MRC_MEDIC_COMPAT_ARMOR(CM-S,CM_S);
+    
     //Pilots Armor
     #define Macro_MRC_Pilot_Compat_Armor(a) class MRC_Pilot_##a##_Armor : MRC_Armor_Base {\
         class XtdGearInfo\
@@ -400,14 +389,20 @@ class CfgWeapons
         };\
     };
 
-    Macro_MRC_Custom_Compat_Armor(Charred);
+    Macro_MRC_Custom_Compat_Armor(Avalanche);
+    Macro_MRC_Custom_Compat_Armor(Cannon);
+    Macro_MRC_Custom_Compat_Armor(Charred); 
 	Macro_MRC_Custom_Compat_Armor(Cross);
     Macro_MRC_Custom_Compat_Armor(Doc);
+    Macro_MRC_Custom_Compat_Armor(Dev);
 	Macro_MRC_Custom_Compat_Armor(Frog);
     Macro_MRC_Custom_Compat_Armor(Frasier);
 	Macro_MRC_Custom_Compat_Armor(Kuro);
 	Macro_MRC_Custom_Compat_Armor(Mav);
+    Macro_MRC_Custom_Compat_Armor(Main);
+    Macro_MRC_Custom_Compat_Armor(Nova);
 	Macro_MRC_Custom_Compat_Armor(Penguin);
+    Macro_MRC_Custom_Compat_Armor(Predator);
 	Macro_MRC_Custom_Compat_Armor(Roach);
 	Macro_MRC_Custom_Compat_Armor(Saint);
 	Macro_MRC_Custom_Compat_Armor(Scorch);
