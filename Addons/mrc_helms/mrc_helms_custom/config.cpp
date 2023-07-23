@@ -46,6 +46,7 @@ class XtdGearModels
                     "Doc",
                     "Fraiser",
                     "Galahad",
+                    "Ghoul",
                     "Gibby",
                     "Goose",
                     "Jas",
@@ -102,6 +103,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Frog",
+                    "Binns",
                     "Hex",
                     "Grizzly",
                     "Marf",
@@ -168,6 +170,7 @@ class XtdGearModels
                     "Binns",
                     "Fire",
                     "Gray",
+                    "Shank",
                     "Mav",
                     "Merit",
                     "Trill",
@@ -222,6 +225,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Fraiser);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Galahad);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Ghoul);
     Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
     Macro_MRC_Inf_Custom_Compat_Helmet(Goose);
 
@@ -300,6 +304,7 @@ class CfgWeapons
     };
 
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Frog);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Binns);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Grizzly);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Hex);
     Macro_MRC_Pilot_Custom_Compat_Helmet(Marf);
@@ -380,6 +385,7 @@ class CfgWeapons
     Macro_MRC_BARC_Compat_Helmet(Avalanche);
     Macro_MRC_BARC_Compat_Helmet(Binns);
     Macro_MRC_BARC_Compat_Helmet(Fire);
+    Macro_MRC_BARC_Compat_Helmet(Shank);
     Macro_MRC_BARC_Compat_Helmet(Gray);
     Macro_MRC_BARC_Compat_Helmet(Mav);
     Macro_MRC_BARC_Compat_Helmet(Merit);
