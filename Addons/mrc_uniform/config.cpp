@@ -176,6 +176,7 @@ class XtdGearModels
                     "Avalanche",
                     "Cannon",
                     "Charred",
+                    "Corpse",
                     "Cross",
                     "Dev",
                     "Doc",
@@ -392,6 +393,7 @@ class CfgWeapons
     Macro_MRC_Custom_Compat_Armor(Avalanche);
     Macro_MRC_Custom_Compat_Armor(Cannon);
     Macro_MRC_Custom_Compat_Armor(Charred); 
+    Macro_MRC_Custom_Compat_Armor(Corpse);
 	Macro_MRC_Custom_Compat_Armor(Cross);
     Macro_MRC_Custom_Compat_Armor(Doc);
     Macro_MRC_Custom_Compat_Armor(Dev);
