@@ -40,6 +40,7 @@ class XtdGearModels
                     "Chubs",
                     "Con",
                     "Corvus",
+                    "Corpse",
                     "Cross",
                     "Dante",
                     "Dev",
@@ -217,6 +218,7 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Chubs);
     Macro_MRC_Inf_Custom_Compat_Helmet(Corvus);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Con);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Corpse);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Dante);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Dev);
