@@ -3,7 +3,7 @@ $AddonBuilder = Join-Path (Get-ItemProperty "HKCU:\Software\Bohemia Interactive\
 # path "E:\91st\91st-acex-compat"
 
 $mod_path = "E:\91st\91st-acex-compat\Addons"
-$include_path = (Resolve-Path "..\91st-acex-compat\Addons\tools\build\buildIncludes.txt").Path
+$include_path = (Resolve-Path "E:\91st\91st-acex-compat\Addons\tools\build\buildIncludes.txt").Path
 
 $target = Resolve-Path -Path $mod_path
 
