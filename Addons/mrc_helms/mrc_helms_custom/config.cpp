@@ -90,6 +90,7 @@ class XtdGearModels
                     "Volx",
                     "Widget",
                     "Xero",
+                    "Yoshi"
                 };
             };
         };
