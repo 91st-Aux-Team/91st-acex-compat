@@ -31,6 +31,7 @@ class XtdGearModels
                 values[]=
                 {
                     "Ant",
+                    "Awake",
                     "Barr",
                     "Bardok",
                     "Blackout",
@@ -142,6 +143,7 @@ class XtdGearModels
                 labels="ARC Helmets";
                 values[]=
                 {
+                    "Basic",
                     "Cannon",
                     "Talleyrand",
                     "Corn",
@@ -208,6 +210,7 @@ class CfgWeapons
     };
     
     Macro_MRC_Inf_Custom_Compat_Helmet(Ant);
+    Macro_MRC_Inf_Custom_Compat_Helmet(Awake);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Barr);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Bardok);
@@ -355,6 +358,7 @@ class CfgWeapons
         };\
     };
 
+    Macro_MRC_ARC_Compat_Helmet(Basic);
     Macro_MRC_ARC_Compat_Helmet(Cannon);
     Macro_MRC_ARC_Compat_Helmet(Corn);
 	Macro_MRC_ARC_Compat_Helmet(Talleyrand);

@@ -182,6 +182,7 @@ class XtdGearModels
                     "Roach",
                     "Jericho",
                     "Cannon",
+                    "Trauma"
                 };
             };
         };
@@ -218,6 +219,7 @@ class XtdGearModels
                     "WO4",
                     "SL",
                     "NCO",
+                    "Officer",
                     "RTO"
                 };
             };
@@ -338,6 +340,7 @@ class CfgWeapons
     MACRO_MRC_VEST_ARC_COMPAT(Scorch,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Jericho,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Cannon,MRC_ARC_Vests_Custom);
+    MACRO_MRC_VEST_ARC_COMPAT(Trauma,MRC_ARC_Vest_Custom);
 
     //Holsters
 
@@ -381,6 +384,7 @@ class CfgWeapons
 
     MACRO_MRC_VEST_RECON_COMPAT(Trooper);
     MACRO_MRC_VEST_RECON_COMPAT(NCO);
+    MACRO_MRC_VEST_RECON_COMPAT(Officer);
     MACRO_MRC_VEST_RECON_COMPAT(SL);
     MACRO_MRC_VEST_RECON_COMPAT(WO4);
     MACRO_MRC_VEST_RECON_COMPAT(Heavy);
