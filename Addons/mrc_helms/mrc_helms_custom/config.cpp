@@ -47,6 +47,7 @@ class XtdGearModels
                     "Dev",
                     "Doc",
                     "Fraiser",
+                    "Frosty",
                     "Galahad",
                     "Ghoul",
                     "Gibby",
@@ -78,6 +79,7 @@ class XtdGearModels
                     "Saint",
                     "Samael",
                     "Sappheron",
+                    "Shogun",
                     "Scar",
                     "Scorch",
                     "Snapper",
@@ -150,6 +152,9 @@ class XtdGearModels
                     "Roach",
                     "Bacon",
                     "Skittles",
+                    "Snapper",
+                    "Bardok",
+                    "Miller",
                     "Scorch",
                     "Jericho",
                     "Oddball",
@@ -177,7 +182,6 @@ class XtdGearModels
                     "Shank",
                     "Mav",
                     "Merit",
-                    "Trill",
                     "Snapper",
                     "Wagner",
                     "Wedge",
@@ -229,6 +233,7 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Doc);
 
 	Macro_MRC_Inf_Custom_Compat_Helmet(Fraiser);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Frosty);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Galahad);
     Macro_MRC_Inf_Custom_Compat_Helmet(Ghoul);
@@ -272,6 +277,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sappheron);
     Macro_MRC_Inf_Custom_Compat_Helmet(Scar);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Scorch);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Shogun);
     Macro_MRC_Inf_Custom_Compat_Helmet(Snapper);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
@@ -363,6 +369,9 @@ class CfgWeapons
     Macro_MRC_ARC_Compat_Helmet(Corn);
 	Macro_MRC_ARC_Compat_Helmet(Talleyrand);
 	Macro_MRC_ARC_Compat_Helmet(Bacon);
+	Macro_MRC_ARC_Compat_Helmet(Snapper);
+	Macro_MRC_ARC_Compat_Helmet(Miller);
+	Macro_MRC_ARC_Compat_Helmet(Bardok);
 	Macro_MRC_ARC_Compat_Helmet(Skittles);
 	Macro_MRC_ARC_Compat_Helmet(Scorch);
 	Macro_MRC_ARC_Compat_Helmet(Oddball);
