@@ -159,6 +159,7 @@ class XtdGearModels
                     "Jericho",
                     "Oddball",
                     "Trauma",
+                    "Nova"
                 };                
             };        
         };
@@ -377,8 +378,7 @@ class CfgWeapons
 	Macro_MRC_ARC_Compat_Helmet(Oddball);
 	Macro_MRC_ARC_Compat_Helmet(Jericho);
     Macro_MRC_ARC_Compat_Helmet(Trauma);
-
-
+    Macro_MRC_ARC_Compat_Helmet(Nova);
 
     //BARC Helms
     class MRC_BARC_Base_Helmet: JLTS_CloneHelmetBARC

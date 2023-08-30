@@ -133,6 +133,8 @@ class XtdGearModels
                     "Mauser",
                     "Predator",
                     "Hex",
+                    "Frog",
+                    "Misery"
                 };
             };
         };
@@ -219,7 +221,6 @@ class XtdGearModels
                     "WO4",
                     "SL",
                     "NCO",
-                    "Officer",
                     "RTO"
                 };
             };
@@ -300,8 +301,10 @@ class CfgWeapons
     MACRO_MRC_VEST_OFFICER_COMPAT(Hex,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Mav,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Predator,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Misery,MRC_Officer_Vests_Custom);
 
     MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Kuro,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Frog,MRC_Officer_Vests_Custom);
 
 
     // ARC VESTS
@@ -340,7 +343,7 @@ class CfgWeapons
     MACRO_MRC_VEST_ARC_COMPAT(Scorch,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Jericho,MRC_ARC_Vests_Custom);
     MACRO_MRC_VEST_ARC_COMPAT(Cannon,MRC_ARC_Vests_Custom);
-    MACRO_MRC_VEST_ARC_COMPAT(Trauma,MRC_ARC_Vest_Custom);
+    MACRO_MRC_VEST_ARC_COMPAT(Trauma,MRC_ARC_Vests_Custom);
 
     //Holsters
 
@@ -357,21 +360,6 @@ class CfgWeapons
     MACRO_MRC_VEST_HOLSTER_COMPAT(CSP);
     MACRO_MRC_VEST_HOLSTER_COMPAT(WO);
     MACRO_MRC_VEST_HOLSTER_COMPAT(NCO);
-
-    #define MACRO_MRC_VEST_HOLSTER_COMPAT(a) class MRC_##a##_Holster: MRC_Vest_Holster_Base { \
-        class XtdGearInfo \
-        { \
-            model = "MRC_Holsters"; \
-            Holsters = ##a; \
-        }; \
-    }
-
-    MACRO_MRC_VEST_HOLSTER_COMPAT(SCT);
-    MACRO_MRC_VEST_HOLSTER_COMPAT(VCT);
-    MACRO_MRC_VEST_HOLSTER_COMPAT(CSP);
-    MACRO_MRC_VEST_HOLSTER_COMPAT(WO);
-    MACRO_MRC_VEST_HOLSTER_COMPAT(NCO);
-
     //Standard vests and recons
 
     #define MACRO_MRC_VEST_RECON_COMPAT(a) class MRC_Vest_Recon_##a: V_RebreatherB { \
@@ -383,8 +371,6 @@ class CfgWeapons
     } 
 
     MACRO_MRC_VEST_RECON_COMPAT(Trooper);
-    MACRO_MRC_VEST_RECON_COMPAT(NCO);
-    MACRO_MRC_VEST_RECON_COMPAT(Officer);
     MACRO_MRC_VEST_RECON_COMPAT(SL);
     MACRO_MRC_VEST_RECON_COMPAT(WO4);
     MACRO_MRC_VEST_RECON_COMPAT(Heavy);
