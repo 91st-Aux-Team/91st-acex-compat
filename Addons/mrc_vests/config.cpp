@@ -34,6 +34,7 @@ class XtdGearModels
                     "Sergeant",
                     "Frasier",
                     "Skit",
+                    "Chubs",
                     "Trill",
                     "Weylyn",
                     "Misery",
@@ -127,6 +128,7 @@ class XtdGearModels
                     "Corn",
                     "Doc",
                     "Dev",
+                    "Jimmy",
                     "Kuro",
                     "Main",
                     "Mav",
@@ -252,6 +254,7 @@ class CfgWeapons
 
     MACRO_MRC_VEST_KAMA_COMPAT(Frasier);
     MACRO_MRC_VEST_KAMA_COMPAT(Misery);
+    MACRO_MRC_VEST_KAMA_COMPAT(Chubs);
     MACRO_MRC_VEST_KAMA_COMPAT(Skit);
     MACRO_MRC_VEST_KAMA_COMPAT(Trill);
     MACRO_MRC_VEST_KAMA_COMPAT(Weylyn);
@@ -302,6 +305,7 @@ class CfgWeapons
     MACRO_MRC_VEST_OFFICER_COMPAT(Mav,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Predator,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Misery,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Jimmy,MRC_Officer_Vests_Custom);
 
     MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Kuro,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Frog,MRC_Officer_Vests_Custom);
