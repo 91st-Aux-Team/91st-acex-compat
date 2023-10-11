@@ -176,6 +176,7 @@ class XtdGearModels
                     "Avalanche",
                     "Cannon",
                     "Charred",
+                    "Corpse",
                     "Cross",
                     "Dev",
                     "Doc",
@@ -184,11 +185,13 @@ class XtdGearModels
                     "Kuro",
                     "Main",
                     "Mav",
+                    "Misery",
                     "Nova",
                     "Roach",
                     "Scorch",
                     "ScorchARC",
                     "Saint",
+                    "Spacy",
                     "Penguin",
                     "Predator",
                     "Trill",
@@ -392,6 +395,7 @@ class CfgWeapons
     Macro_MRC_Custom_Compat_Armor(Avalanche);
     Macro_MRC_Custom_Compat_Armor(Cannon);
     Macro_MRC_Custom_Compat_Armor(Charred); 
+    Macro_MRC_Custom_Compat_Armor(Corpse);
 	Macro_MRC_Custom_Compat_Armor(Cross);
     Macro_MRC_Custom_Compat_Armor(Doc);
     Macro_MRC_Custom_Compat_Armor(Dev);
@@ -400,6 +404,7 @@ class CfgWeapons
 	Macro_MRC_Custom_Compat_Armor(Kuro);
 	Macro_MRC_Custom_Compat_Armor(Mav);
     Macro_MRC_Custom_Compat_Armor(Main);
+    Macro_MRC_Custom_Compat_Armor(Misery);
     Macro_MRC_Custom_Compat_Armor(Nova);
 	Macro_MRC_Custom_Compat_Armor(Penguin);
     Macro_MRC_Custom_Compat_Armor(Predator);
@@ -407,6 +412,7 @@ class CfgWeapons
 	Macro_MRC_Custom_Compat_Armor(Saint);
 	Macro_MRC_Custom_Compat_Armor(Scorch);
     Macro_MRC_Custom_Compat_Armor(ScorchARC);
+    Macro_MRC_Custom_Compat_Armor(Spacy);
     Macro_MRC_Custom_Compat_Armor(Trill);
     Macro_MRC_Custom_Compat_Armor(Hex);
     

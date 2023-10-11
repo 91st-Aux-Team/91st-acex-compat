@@ -149,6 +149,7 @@ class XtdGearModels
                     "WO1",
                     "WO3",
                     "NCO",
+                    "SNCO",
                     "TeamLead",
                     "SquadLead"
                 };
@@ -229,6 +230,7 @@ class CfgGlasses
     MACRO_MRC_GLASSES_VEST_COMPAT(WO1);
     MACRO_MRC_GLASSES_VEST_COMPAT(WO3);
     MACRO_MRC_GLASSES_VEST_COMPAT(NCO);
+    MACRO_MRC_GLASSES_VEST_COMPAT(SNCO);
     MACRO_MRC_GLASSES_VEST_COMPAT(TeamLead);
     MACRO_MRC_GLASSES_VEST_COMPAT(SquadLead);
 
