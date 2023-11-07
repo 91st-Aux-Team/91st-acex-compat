@@ -305,7 +305,7 @@ class CfgWeapons
     MACRO_MRC_VEST_OFFICER_COMPAT(Mav,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Predator,MRC_Officer_Vests_Custom);
     MACRO_MRC_VEST_OFFICER_COMPAT(Misery,MRC_Officer_Vests_Custom);
-    // MACRO_MRC_VEST_OFFICER_COMPAT(Jimmy,MRC_Officer_Vests_Custom);
+    MACRO_MRC_VEST_OFFICER_COMPAT(Jimmy,MRC_Officer_Vests_Custom);
 
 
     MACRO_MRC_VEST_OFFICER_REVERSE_COMPAT(Kuro,MRC_Officer_Vests_Custom);
