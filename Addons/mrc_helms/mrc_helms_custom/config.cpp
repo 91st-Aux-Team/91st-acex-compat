@@ -249,6 +249,8 @@ class CfgWeapons
     Macro_MRC_Inf_Custom_Compat_Helmet(Galahad);
     Macro_MRC_Inf_Custom_Compat_Helmet(Ghoul);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Gobi);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Gray);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Grizzly);
     Macro_MRC_Inf_Custom_Compat_Helmet(Gibby);
     Macro_MRC_Inf_Custom_Compat_Helmet(Goose);
 
@@ -266,6 +268,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Main);
     Macro_MRC_Inf_Custom_Compat_Helmet(Mauser);
     Macro_MRC_Inf_Custom_Compat_Helmet(Mountain);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Muddy);
     Macro_MRC_Inf_Custom_Compat_Helmet(Miller);
     Macro_MRC_Inf_Custom_Compat_Helmet(Misery);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Max);
@@ -275,6 +278,7 @@ class CfgWeapons
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Odin);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Opossum);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Oddly);
 
     Macro_MRC_Inf_Custom_Compat_Helmet(Penguin);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Perry);
