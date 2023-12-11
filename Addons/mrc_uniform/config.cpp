@@ -186,8 +186,10 @@ class XtdGearModels
                     "Main",
                     "Mav",
                     "Misery",
+                    "Mauser",
                     "Nova",
                     "Roach",
+                    "Jericho",
                     "Scorch",
                     "ScorchARC",
                     "Saint",
@@ -405,10 +407,12 @@ class CfgWeapons
 	Macro_MRC_Custom_Compat_Armor(Mav);
     Macro_MRC_Custom_Compat_Armor(Main);
     Macro_MRC_Custom_Compat_Armor(Misery);
+    Macro_MRC_Custom_Compat_Armor(Mauser);
     Macro_MRC_Custom_Compat_Armor(Nova);
 	Macro_MRC_Custom_Compat_Armor(Penguin);
     Macro_MRC_Custom_Compat_Armor(Predator);
 	Macro_MRC_Custom_Compat_Armor(Roach);
+    Macro_MRC_Custom_Compat_Armor(Jericho);
 	Macro_MRC_Custom_Compat_Armor(Saint);
 	Macro_MRC_Custom_Compat_Armor(Scorch);
     Macro_MRC_Custom_Compat_Armor(ScorchARC);

@@ -79,6 +79,8 @@ class XtdGearModels
                     "Scorch",
                     "Skit",
                     "Sound",
+                    "Stoic",
+                    "Shark",
                     "Steak",
                     "Sunday",
                     "Spacy",
@@ -102,6 +104,8 @@ class XtdGearModels
                 values[]=
                 {
                     "Frog",
+                    "Arcane".
+                    "Thunderbolt",
                     "Binns",
                     "Hex",
                     "Delta",
@@ -268,6 +272,8 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Shogun);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Shark);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Stoic);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Steak);
     Macro_MRC_Inf_Custom_Compat_Helmet(Sunday);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Spacy);
@@ -304,6 +310,8 @@ class CfgWeapons
     };
 
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Frog);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Arcane);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Thunderbolt);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Binns);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Hex);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Delta);
