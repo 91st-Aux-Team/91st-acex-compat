@@ -76,6 +76,7 @@ class XtdGearModels
                     "Sappheron",
                     "Shogun",
                     "Scar",
+                    "Siva",
                     "Scorch",
                     "Skit",
                     "Sound",
@@ -109,6 +110,7 @@ class XtdGearModels
                     "Binns",
                     "Hex",
                     "Delta",
+                    "Vex",
                     "Marf",
                     "Oxide",
                     "Tiny",
@@ -129,7 +131,8 @@ class XtdGearModels
                     "Crew",
                     "Kuro",
                     "Woost",
-                    "Weylyn"
+                    "Baker",
+                    "Weylyn",
                 };
             };
         };
@@ -273,6 +276,7 @@ class CfgWeapons
 	Macro_MRC_Inf_Custom_Compat_Helmet(Skit);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Sound);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Shark);
+	Macro_MRC_Inf_Custom_Compat_Helmet(Siva);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Stoic);
 	Macro_MRC_Inf_Custom_Compat_Helmet(Steak);
     Macro_MRC_Inf_Custom_Compat_Helmet(Sunday);
@@ -314,6 +318,7 @@ class CfgWeapons
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Thunderbolt);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Binns);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Hex);
+	Macro_MRC_Pilot_Custom_Compat_Helmet(Vex);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Delta);
     Macro_MRC_Pilot_Custom_Compat_Helmet(Marf);
 	Macro_MRC_Pilot_Custom_Compat_Helmet(Oxide);
@@ -339,6 +344,7 @@ class CfgWeapons
     };
 
     Macro_MRC_Beskar_Custom_Compat_Helmet(Kuro);
+    Macro_MRC_Beskar_Custom_Compat_Helmet(Baker);
     Macro_MRC_Beskar_Custom_Compat_Helmet(Woost);
     Macro_MRC_Beskar_Custom_Compat_Helmet(Weylyn);
 
